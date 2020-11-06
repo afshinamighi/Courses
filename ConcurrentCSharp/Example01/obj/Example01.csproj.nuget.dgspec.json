@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amighi/workspace/teaching/ConcurrentCSharp/Example01/Example01.csproj": {}
+    "/Users/amighi/workspace/teaching/Courses/ConcurrentCSharp/Example01/Example01.csproj": {}
   },
   "projects": {
-    "/Users/amighi/workspace/teaching/ConcurrentCSharp/Example01/Example01.csproj": {
+    "/Users/amighi/workspace/teaching/Courses/ConcurrentCSharp/Example01/Example01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amighi/workspace/teaching/ConcurrentCSharp/Example01/Example01.csproj",
+        "projectUniqueName": "/Users/amighi/workspace/teaching/Courses/ConcurrentCSharp/Example01/Example01.csproj",
         "projectName": "Example01",
-        "projectPath": "/Users/amighi/workspace/teaching/ConcurrentCSharp/Example01/Example01.csproj",
+        "projectPath": "/Users/amighi/workspace/teaching/Courses/ConcurrentCSharp/Example01/Example01.csproj",
         "packagesPath": "/Users/amighi/.nuget/packages/",
-        "outputPath": "/Users/amighi/workspace/teaching/ConcurrentCSharp/Example01/obj/",
+        "outputPath": "/Users/amighi/workspace/teaching/Courses/ConcurrentCSharp/Example01/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
