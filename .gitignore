@@ -2,3 +2,5 @@ Solution*
 *.cs~
 bin
 obj
+*Sol.cs
+

@@ -15,9 +15,9 @@ namespace Program
             
             SequentialMergeSort mergeSort = new SequentialMergeSort(arr);
 
-            mergeSort.printContent();
+            mergeSort.printContent("\n Before the sequential merge-sort ");
             mergeSort.sortSeq(0, arr.Length - 1);
-            mergeSort.printContent();
+            mergeSort.printContent("\n After the sequential merge-sort ");
 
             // uncomment this only if the solution is available
             //Console.WriteLine("\n Now concurrent sort will be running ...");

@@ -13,9 +13,9 @@ namespace Exercise
             Array.Copy(data, input, data.Length);
         }
 
-        public void printContent()
+        public void printContent(String msg)
         {
-            Console.WriteLine("\n Content of the array is:");
+            Console.WriteLine(msg+"Content of the array is:");
             for (int i = 0; i < input.Length; i++)
                 Console.Write("data[{0}]={1} ;",i,input[i]);
         }
@@ -33,6 +33,8 @@ namespace Exercise
             }
         }
 
+        /** merges two subarrays: left-middle and middle-right.
+         */
         public void merge(int left, int middle, int right)
         {
             int[] leftArray = new int[middle - left + 1];
@@ -41,6 +43,7 @@ namespace Exercise
             Array.Copy(input, left, leftArray, 0, middle - left + 1);
             Array.Copy(input, middle + 1, rightArray, 0, right - middle);
 
+            // in the merge process apply right order of the elements
             int i = 0;
             int j = 0;
             for (int k = left; k < right + 1; k++)

@@ -1,13 +1,21 @@
-﻿<Properties StartupConfiguration="{B6E3BC81-6159-4CF1-AF0D-480F5EB1A7CB}|Default">
+﻿<Properties StartupConfiguration="{7B485568-4C3F-4E8A-95E5-D39D475DD181}|Default">
   <MonoDevelop.Ide.ItemProperties.Example01 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SocketClient/Program.cs">
+    <Files>
+      <File FileName="MergeSort/Exercise.cs" Line="14" Column="10" />
+      <File FileName="MergeSort/Solution.cs" Line="15" Column="40" />
+      <File FileName="MergeSort/Program.cs" Line="20" Column="40" />
+      <File FileName="SocketClient/Program.cs" Line="14" Column="45" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConcurrentCSharp" expanded="True">
-            <Node name="Example01" expanded="True">
+            <Node name="MergeSort" expanded="True" />
+            <Node name="SocketClient" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="SocketServer" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -19,4 +27,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MergeSort PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
