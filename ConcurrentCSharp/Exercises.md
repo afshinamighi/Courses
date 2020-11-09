@@ -13,6 +13,7 @@ This document class activities and exercises are described to be practised in pr
 
 # Week 1: 
 Main objectives of this week is to introduce the main concepts and prepare practical tools needed for upcoming weeks.
+
 **Preparation**:
 1.	 We will discuss about threads in week 3. Here, just think about a thread as a separate paths of execution that can be executed simultanously with the main program.
 2.	 Refresh your C# programming environment: You are expected to be able to write simple console based programs. A set of possible concepts to be used later are: fundamentals (types, conditional statements, loops), defining attributes, methods, public / private / static, arrays, anonymous functions. Implement a simple program: like a counter class that counts until a given number and the main program instantiates an object from this class and prints the final result. The counter class has a state that keeps the latest counting value.
