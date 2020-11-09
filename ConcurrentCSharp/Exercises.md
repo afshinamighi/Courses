@@ -2,12 +2,12 @@
 
 This document class activities and exercises are described to be practised in practicums of Concurrency course of Hogeschool Rotterdam.
 
-The exercises of each week coresponds to some of the source codes available here in Github:
-https://github.com/afshinamighi/Courses
-
-In each practical exercise, students are expected to read the specified source codes, read and analyze provided example codes, understand the structures, analyze the expected behaviour of the programs (guess and justify the output), and in some cases reproduce the concept in a different context.
-
-**Note**: This document will be updated weekly. 
+### Practical notes:
+1. The exercises of each week coresponds to some of the source codes available here in Github: https://github.com/afshinamighi/Courses
+2. Coresponding C# projects are represented with bold font at each exercise.
+3. In each exercise, students are expected to evaluate specified source codes, understand the structures, analyze expected behaviours of the programs (guess and justify the output), and in some cases reproduce the concept in a different context.
+4. In some of the exercises, students are asked to share / discuss / explain results of their evaluations. The teacher will determine how results will be shared with other students and/or the teacher.
+5. This document will be updated weekly. 
 
 
 
@@ -26,5 +26,5 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 	1.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation. 
 	2.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously. How would you do that? What would you need? Explain the logic through the provided client code.Is current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it? Explain the logic through the provided server code.
 3. **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks. 
-	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following sesources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or[here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
+	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following sesources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
 	2. Can you recognise sorting tasks that can be done simultaneously? Share your answer with the teacher. **Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
