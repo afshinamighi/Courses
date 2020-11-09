@@ -14,10 +14,8 @@ In each practical exercise, students are expected to read the specified source c
 # Week 1: 
 Main objectives of this week is to introduce the main concepts and prepare practical tools needed for upcoming weeks.
 **Preparation**:
-\begin{enumerate}
-\item . We will discuss about threads in week 3. Here, just think about a thread as a separate paths of execution that can be executed simultanously with the main program.
-\item . Refresh your C# programming environment: You are expected to be able to write simple console based programs. A set of possible concepts to be used later are: fundamentals (types, conditional statements, loops), defining attributes, methods, public / private / static, arrays, anonymous functions. Implement a simple program: like a counter class that counts until a given number and the main program instantiates an object from this class and prints the final result. The counter class has a state that keeps the latest counting value.
-\end{enumerate}
+1.	 We will discuss about threads in week 3. Here, just think about a thread as a separate paths of execution that can be executed simultanously with the main program.
+2.	 Refresh your C# programming environment: You are expected to be able to write simple console based programs. A set of possible concepts to be used later are: fundamentals (types, conditional statements, loops), defining attributes, methods, public / private / static, arrays, anonymous functions. Implement a simple program: like a counter class that counts until a given number and the main program instantiates an object from this class and prints the final result. The counter class has a state that keeps the latest counting value.
 
 
 ## Exercises:
@@ -28,7 +26,5 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 	1.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation. 
 	2.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously. How would you do that? What would you need? Explain the logic through the provided client code.Is current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it? Explain the logic through the provided server code.
 3. **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks. 
-	i.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works.
-Resource: You can use resources here , or here (don't forget to choose right settings) 
-Can you recognise tasks that can be done simultaneously? Discuss with your classmates and share your answers with the teacher. 
-Note: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
+	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following sesources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or[here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
+	2. Can you recognise sorting tasks that can be done simultaneously? Share your answer with the teacher. **Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
