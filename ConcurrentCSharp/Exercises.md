@@ -21,13 +21,13 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 
 ## Exercises:
 1. Concurrency in your machine:
-	i. - [ ] Make a list of parallel/concurrent programs in your computer: (recall that in mac the command [ps -ax] makes a list of currently running processes with PID and the location of the executable programs). Choose a running program (for example PyCharm) and see how many threads are running by the application.
-	ii. - [ ] Open an internet browser with several tabs. Check how many threads are created. Make a list (at least five) of functionalities (tasks) that each thread of execution is responsible to execute. Share your list with the teacher.
+	i.	Make a list of parallel/concurrent programs in your computer: (recall that in mac the command [ps -ax] makes a list of currently running processes with PID and the location of the executable programs). Choose a running program (for example PyCharm) and see how many threads are running by the application.
+	ii.	Open an internet browser with several tabs. Check how many threads are created. Make a list (at least five) of functionalities (tasks) that each thread of execution is responsible to execute. Share your list with the teacher.
 2. **SocketClient, SocketServer**: 
-	i. - [ ] These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation. 
-	ii. - [ ] Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously. How would you do that? What would you need? Explain the logic through the provided client code.Is current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it? Explain the logic through the provided server code.
+	i.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation. 
+	ii.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously. How would you do that? What would you need? Explain the logic through the provided client code.Is current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it? Explain the logic through the provided server code.
 3. **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks. 
-	i. - [ ] Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works.
+	i.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works.
 Resource: You can use resources here , or here (don't forget to choose right settings) 
 Can you recognise tasks that can be done simultaneously? Discuss with your classmates and share your answers with the teacher. 
 Note: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
