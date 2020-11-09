@@ -1,2 +1,2 @@
 # Courses
-This rep. contains my personal educational materials.
+This repository contains personal educational materials.
