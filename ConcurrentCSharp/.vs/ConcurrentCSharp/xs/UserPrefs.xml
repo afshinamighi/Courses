@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{7B485568-4C3F-4E8A-95E5-D39D475DD181}|Default">
-  <MonoDevelop.Ide.ItemProperties.Example01 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Example01 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SocketClient/Exercise.cs">
     <Files>
-      <File FileName="MergeSort/Exercise.cs" Line="14" Column="10" />
-      <File FileName="MergeSort/Solution.cs" Line="15" Column="40" />
-      <File FileName="MergeSort/Program.cs" Line="20" Column="40" />
-      <File FileName="SocketClient/Program.cs" Line="27" Column="1" />
-      <File FileName="SocketServer/Program.cs" Line="7" Column="18" />
-      <File FileName="SocketServer/Exercise.cs" Line="2" Column="1" />
-      <File FileName="SocketServer/ProgramSol.cs~" Line="22" Column="16" />
-      <File FileName="SocketClient/Exercise.cs" Line="3" Column="18" />
+      <File FileName="MergeSort/Exercise.cs" Line="11" Column="10" />
+      <File FileName="SocketServer/Program.cs" Line="1" Column="1" />
+      <File FileName="SocketServer/Exercise.cs" Line="1" Column="1" />
+      <File FileName="SocketClient/Exercise.cs" Line="12" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

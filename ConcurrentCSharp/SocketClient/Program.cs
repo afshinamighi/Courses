@@ -2,7 +2,6 @@
 using Exercise;
 using System.Threading;
 
-
 namespace Program
 {
     class Program
