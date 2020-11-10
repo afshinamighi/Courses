@@ -14,7 +14,7 @@ This document class activities and exercises are described to be practised in pr
 # Week 1: 
 Main objectives of this week is to introduce the main concepts and prepare practical tools needed for upcoming weeks.
 
-**Preparation**:
+## Preparation:
 1.	 We will discuss about threads in week 3. Here, just think about a thread as a separate paths of execution that can be executed simultanously with the main program.
 2.	 Refresh your C# programming environment: You are expected to be able to write simple console based programs. A set of possible concepts to be used later are: fundamentals (types, conditional statements, loops), defining attributes, methods, public / private / static, arrays, anonymous functions. Implement a simple program: like a counter class that counts until a given number and the main program instantiates an object from this class and prints the final result. The counter class has a state that keeps the latest counting value.
 
@@ -29,3 +29,41 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 3. **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks. 
 	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following sesources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
 	2. Can you recognise sorting tasks that can be done simultaneously? Share your answer with the teacher. **Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
+
+
+
+
+
+# Week 2:
+
+The main objectives are to understand and apply concepts of processes and inter-process communications in programming.
+
+## Preparation:
+1. Use the online reference below and answer the questions:
+Reference: [Process handling in C#](https://www.dotnetperls.com/process)
+- Which namespace is needed?
+- Which class and method are used to run a process?
+- How can we modify properties of a process?
+- How can we get a list of currently running processes?
+2. Use the online reference below to find more information about **Process** component.
+Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netframework-4.8) 
+
+## Exercises:
+
+1. **Processes**: The program will give a list of currently running processes. Names and Ids are printed. 
+	1. Compare Ids and Names with your machine activity (task) manager program. Choose a process id from your computer that its termination is safe: like Whatsapp, emails, browser. Check if the program terminates the given process completely.
+	2. Add a method to the program that gets the name of a process and prints the related id.
+	3. Implement a separate program, name it **ProcessCreation**, that executes our program, i.e. **Processes**. Check project **ProcessCreation**. **Note**: If you can’t locate the executable **Processes** file, you can run any other program instead (try to find the right one at home).
+
+2. **IPCNamedClient, IPCNamedServer**: Two projects are implemented to present how two programs can communicate using named pipes.
+**Note**: Client and server naming is not following strict definition of client-server roles, it is just oriented to have a peer to peer communication.
+	1. Read and analyse the programs for both client and server. What do you expect from the behaviour of these programs?
+	2. Run the server, run the client. Check the behaviour.
+	3. Run one server and two clients. Does the server communicate with both clients?
+	4. What will happen if the name of the pipe in the server is different from the client? Change the name of the pipe in the server (or the client). Re-run both the client and server. Can they communicate? 
+	5. Named pipes are meant for programs where two-way communication is needed. The current implementation provides only one-way communication (from the server to the client). Extend the programs such that the client sends the result of its processing (i.e. reversed message) back to the server. The server will print the result received from the client.
+<!-- Solution: Is available. -->
+
+3.  Using named pipes implement a client / server program that the client sends the name and the path of an executable program to the server and the server starts the process given by the client.
+
+<!-- (Optional) Read this tutorial and practice an example about AnonymousPipes: https://ingeno.io/2016/09/c-anonymous-pipes-for-interprocess-communication/  -->
