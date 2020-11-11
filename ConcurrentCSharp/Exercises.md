@@ -28,7 +28,7 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 	2.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously. How would you do that? What would you need? Explain the logic through the provided client code.Is current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it? Explain the logic through the provided server code.
 3. **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks. 
 	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following sesources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
-	2. Can you recognise sorting tasks that can be done simultaneously? Share your answer with the teacher. **Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
+	2. Can you recognise sorting tasks that can be done simultaneously? Share your answer with the teacher. **Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. In Week 1, ignore the class named **ConcurrentMergeSort** and its todos.
 
 
 
@@ -51,11 +51,11 @@ Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dot
 ## Exercises:
 
 1. **Processes**: The program will give a list of currently running processes. Names and Ids are printed. 
-	1. Compare Ids and Names with your machine activity (task) manager program. Choose a process id from your computer that its termination is safe: like Whatsapp, emails, browser. Check if the program terminates the given process completely.
+	1. Compare Ids and Names with your machine activity (task) manager program. Choose a process id from your computer that its termination is safe: like whatsapp, editors, browser. Check if the program terminates the given process completely.
 	2. Add a method to the program that gets the name of a process and prints the related id.
-	3. Implement a separate program, name it **ProcessCreation**, that executes our program, i.e. **Processes**. Check project **ProcessCreation**. **Note**: If you can’t locate the executable **Processes** file, you can run any other program instead (try to find the right one at home).
+2. **ProcessCreation**: Implement a program, that executes a command, like **ls**. Modify your program such that executes the result of **Processes** (previous exercise).
 
-2. **IPCNamedClient, IPCNamedServer**: Two projects are implemented to present how two programs can communicate using named pipes.
+3. **IPCNamedClient, IPCNamedServer**: Two projects are implemented to present how two programs can communicate using named pipes.
 **Note**: Client and server naming is not following strict definition of client-server roles, it is just oriented to have a peer to peer communication.
 	1. Read and analyse the programs for both client and server. What do you expect from the behaviour of these programs?
 	2. Run the server, run the client. Check the behaviour.
@@ -64,6 +64,6 @@ Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dot
 	5. Named pipes are meant for programs where two-way communication is needed. The current implementation provides only one-way communication (from the server to the client). Extend the programs such that the client sends the result of its processing (i.e. reversed message) back to the server. The server will print the result received from the client.
 <!-- Solution: Is available. -->
 
-3.  Using named pipes implement a client / server program that the client sends the name and the path of an executable program to the server and the server starts the process given by the client.
+4.  Using named pipes implement a client / server program that the client sends the name and the path of an executable program to the server and the server starts the process given by the client.
 
 <!-- (Optional) Read this tutorial and practice an example about AnonymousPipes: https://ingeno.io/2016/09/c-anonymous-pipes-for-interprocess-communication/  -->

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "SocketClien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServer\SocketServer.csproj", "{92D3E59B-0BE7-4692-944E-2D34B517E0F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processes", "Processes\Processes.csproj", "{248D9F56-F8FC-4FF7-A600-272C45A8FBC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessCreation", "ProcessCreation\ProcessCreation.csproj", "{A3F23F7A-199E-4822-8B7A-C9738AFF5D3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +29,13 @@ Global
 		{92D3E59B-0BE7-4692-944E-2D34B517E0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92D3E59B-0BE7-4692-944E-2D34B517E0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92D3E59B-0BE7-4692-944E-2D34B517E0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248D9F56-F8FC-4FF7-A600-272C45A8FBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248D9F56-F8FC-4FF7-A600-272C45A8FBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248D9F56-F8FC-4FF7-A600-272C45A8FBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248D9F56-F8FC-4FF7-A600-272C45A8FBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F23F7A-199E-4822-8B7A-C9738AFF5D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F23F7A-199E-4822-8B7A-C9738AFF5D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F23F7A-199E-4822-8B7A-C9738AFF5D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F23F7A-199E-4822-8B7A-C9738AFF5D3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
