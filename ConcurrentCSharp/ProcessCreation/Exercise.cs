@@ -1,8 +1,7 @@
 ﻿using System;
-/// <summary>
 /// This example shows how to define a process and start it.
 /// Check here: https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netframework-4.8
-/// </summary>
+
 
 namespace Exercise
 {

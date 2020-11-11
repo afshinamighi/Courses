@@ -4,5 +4,6 @@ bin
 obj
 *Sol.cs
 .vs
+*.zip
 
 
