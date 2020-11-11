@@ -36,7 +36,10 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 
 # Week 2:
 
-The main objectives are to understand and apply concepts of processes and inter-process communications in programming.
+The main objectives are to understand and apply concepts of processes and inter-process communications in programming. In this week you will learn:
+- how to obtain processes information from os.
+- how to create and run a process through a program.
+- how can two running processes communicate with each other.
 
 ## Preparation:
 1. Use the online reference below and answer the questions:
