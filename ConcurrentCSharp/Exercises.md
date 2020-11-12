@@ -74,12 +74,14 @@ Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dot
 
 
 ## Assignment: Practical steps
-Description of the assignment and deliveries will be published by the teacher. Here we try to provide some steps that practically can lead students to implement a solution for the assignment. **Note**: These steps will be updated regularly during the course period.
-1. **Week 1**: Download and execute coresponding projects. Spend enough time to understand details of the code and provided structure. Dare to modify and extend the code.
-2. **Week 2**: Make a list of commands in the client side. Modify server such that it can execute the command sent by the client.
-3. **Week 3**: Extend client side such that it simulates a number of concurrent clients all trying to simultaneously communicating with the server.
-4. **Week 4**: Extend the server that can handle multiple simultaneous clients.
-5. **Week 5**: The server needs to collect data in a shared structure. Extend the server with a proper shared structure such that stores received data from each client.
-6. **Week 6**: Provided shared structure is not thread safe. Extend the server with your solution.
-7. **Week 7**: Execute your final results and test your system: ~ 500 simultenous clients.
-8. **Week 8**: Apply all the requested formats and deliver your solution.
+Description of the assignment and deliveries will be published by the teacher. Here we try to provide some steps that practically can lead students to implement a solution for the assignment. **Note**: These steps be updated regularly during the course period.
+
+During the course after Week ...
+1. students can download and execute coresponding projects. They should spend enough time to understand details of the code and provided structure, modify and extend the code.
+2. students can make a list of commands in the client side. They should modify server such that it can execute the command sent by the client.
+3. students can extend client side such that it simulates a number of concurrent clients all trying to simultaneously communicating with the server.
+4. students can extend the server that can handle multiple simultaneous clients.
+5. students can extend the server with a proper shared structure such that stores received data from all the clients.
+6. students can extend the server with a solution to make the server thread safe, i.e no data race.
+7. students can execute and test their final results: ~ 500 simultenous clients.
+Then, the solution is ready. Students should apply all the requested formats and deliver their solutions according given instructions.
