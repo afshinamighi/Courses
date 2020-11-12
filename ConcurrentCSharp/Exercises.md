@@ -82,4 +82,4 @@ Description of the assignment and deliveries will be published by the teacher. H
 5. **Week 5**: The server needs to collect data in a shared structure. Extend the server with a proper shared structure such that stores received data from each client.
 6. **Week 6**: Provided shared structure is not thread safe. Extend the server with your solution.
 7. **Week 7**: Execute your final results and test your system: ~ 500 simultenous clients.
-8. **Week 8**: Apply requested formats and deliver your solution.
+8. **Week 8**: Apply all the requested formats and deliver your solution.
