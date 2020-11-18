@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <appSettings>
+        <add key="serverPortNumber" value="11111" />
+        <add key="serverIPAddress" value="127.0.0.1" />
+        <add key="clientMinStartingTime" value="100" />
+        <add key="clientMaxStartingTime" value="1000" />
+        <add key="experimentNumberOfClients" value="150" />
+    </appSettings>            
+</configuration>
