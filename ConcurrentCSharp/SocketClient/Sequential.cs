@@ -1,10 +1,10 @@
-﻿/// communication protocol:
-/// client -- connect --->              server
-/// client <-- ready -----              server
-/// client -- command / terminate -->   server
-/// client <-- confirmed ----           server
-/// client .... X .....                 server
-///
+﻿// communication protocol:
+// client -- connect --->              server
+// client <-- ready -----              server
+// client -- command / terminate -->   server
+// client <-- confirmed ----           server
+// client .... X .....                 server
+//
 
 using System;
 using System.IO;
@@ -56,7 +56,7 @@ namespace Sequential {
             this.settings = settings;
             finishing = fin;
             // todo 4: implement a piece of code by which a command is selected (randomly) from the provided voting list (check settings)
-            cmd = "[choose a command from the list provided by settings]";
+            cmd = "[Replace this with a command from the list provided by settings]";
             this.ipAddress = IPAddress.Parse(settings.serverIPAddress);
             waitingTime = new Random().Next(settings.clientMinStartingTime, settings.clientMaxStartingTime);
         }

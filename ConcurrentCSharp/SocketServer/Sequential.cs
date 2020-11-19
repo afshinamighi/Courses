@@ -1,10 +1,10 @@
-﻿/// communication protocol:
-/// client -- connect --->              server
-/// client <-- ready -----              server
-/// client -- command / terminate -->   server
-/// client <-- confirmed ----           server
-/// client .... X .....                 server
-///
+﻿// communication protocol:
+// client -- connect --->              server
+// client <-- ready -----              server
+// client -- command / terminate -->   server
+// client <-- confirmed ----           server
+// client .... X .....                 server
+//
 
 using System;
 using System.Net;
