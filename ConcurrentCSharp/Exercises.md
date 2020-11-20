@@ -21,13 +21,20 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 
 
 ## Exercises:
-_note: just for today ignore the *#todo* inside the code that ask you to write code, we will focus on the understanding and not on producing code._
+_note: just for today ignore the **#todo** inside the code that ask you to write code, we will focus on the understanding and not on producing code._
 1. [~ 5 min ] Concurrency in your machine:
 	1.	Make a list of parallel/concurrent programs in your computer. Choose a running program (for example PyCharm) and see how many threads are running by the application. You can check threads' count in your *task manager/activity monitor* (on Windows *task manager click* on the cloumns name to select colums and add threads if it is not already visible). You can also use in the Linux/MAC shell the command **"top"** (#TH --> total threads/running threads).
 	2.	Open an internet browser with several tabs (*Chrome*) of the same domain website. Check how many threads are created per process (the threads are not directly named but they are listed as parts of the single process: they all have the same Process ID, but contains multiple lines). Make a list (at least five) of functionalities (tasks) that each thread of execution is responsible to execute. Share your list with the teacher.
 2. [~ 20 min ] **SocketClient, SocketServer** (names of the projects/directories you can find in this repository): 
 	1.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation. **Suggestion:** run the client in a shell/terminal and the server in another. Start the server first and when it asks you the question, answer *"S"* (for serial).
-	2.	**#CHANGE** THIS: Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously. How would you do that? What would you need? Explain the logic through the provided client code. Is current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it? Explain the logic through the provided server code.
+	2.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously.	
+	1. In which method is the protocol implemented? Check for client and server.  // hint: at the top of the *Sequential.cs* file there is a high level view of the protocol.
+	2. When is the server supposed to compute the votes?
+	3. How does the client report to the server that the communication is ended?
+	4. How are client and server configured?	// hint: multiple files are involved in this process.
+	5. What is the role of the pending connection queue? Why do we need a queue?	// hint: the size is already defined from us, *"serverListeningQueue"*.
+	6. Is the current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it?	// hint: Which **functionality** of the server can be implemented **concurrently**?
+	
 3. [~ 30 min ] **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks. 
 	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following sesources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
 	2.	Can you recognise sorting tasks that can be done *simultaneously*? Share your answer with the teacher. **Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. In Week 1, ignore the class named **ConcurrentMergeSort** and its todos.
