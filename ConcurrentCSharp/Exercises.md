@@ -30,7 +30,7 @@ _note: just for today ignore the **#todo** inside the code that ask you to write
 	```diff
 	+ Note: this code will be the base line for your assignment, read this document untill the end for more informations.
 	```
-	1.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation. **Suggestion:** run the client in a shell/terminal and the server in another. Start the server first and when it asks you the question, answer *"S"* (for serial).
+	1.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation.	*//hint:* run the client in a shell/terminal and the server in another. Start the server first and when it asks you the question, answer *"S"* (for serial).
 	2.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously.	
 		1. In which method is the protocol implemented? Check for client and server.	*//hint:* at the top of the *Sequential.cs* file there is a high level view of the protocol.
 		2. When is the server supposed to compute the votes?
