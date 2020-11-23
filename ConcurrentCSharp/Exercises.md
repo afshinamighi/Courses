@@ -128,7 +128,7 @@ The main objectives are to understand and apply concepts of multithreading. This
    3. *Implementation (Optional)*:  Generalise your code for more threads.
 4. [~ 30 min] **MergeSort**: A sample implementation of merge sort is given. It is implemented sequentially. Your task is to implement a multi-threaded MergeSort. *Note*: In order to practice with the concepts of merge sort, first, understand how the sequential version works. Check the exercises of Week 1. You can use online resources to observe its execution visually. 
    1. Recognise which task can be assigned to threads to be executed independently. For simplicity, assume only two threads.
-   2. **Implementation**: Follow todos provided in the code to implement the exercise.
+   2. *Implementation*: Follow todos provided in the code to implement the exercise.
 
 <!--Folder **PrimeNumbers**: In exercise C, the min and max are given as arguments to a method. Extend the program as follows:**Implementation**: Define a class, name it as MinMaxPrimes with two fields min and max and number of intervals as integer.Implement a program where the main thread instantiates an object from MinMaxPrimes with initial values for min, max and number of intervals.After initialization, the main thread starts a separate thread for each interval. The created instance of MinMaxPrimes is a shared resource between threads.Having values in the shared resource, each thread will search for prime numbers within defined interval.The main thread has to join the busy threads before its termination.-->
 <!--Example: min = 500 , max = 2000 , num_of_intervals = 3 : needs three threads: Thread 1 searches prime numbers between 500 and 1000, thread 2 between 1000 and 1500 and thread 3 between 1500 and 2000.-->
