@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ClientServerConfig.json = ClientServerConfig.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads", "Threads\Threads.csproj", "{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers", "PrimeNumbers\PrimeNumbers.csproj", "{697E3AA4-4B74-4C5E-8689-A4966C59C49A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,13 @@ Global
 		{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697E3AA4-4B74-4C5E-8689-A4966C59C49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697E3AA4-4B74-4C5E-8689-A4966C59C49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697E3AA4-4B74-4C5E-8689-A4966C59C49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697E3AA4-4B74-4C5E-8689-A4966C59C49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

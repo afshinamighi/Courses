@@ -38,7 +38,7 @@ namespace Sequential
 
     public class SequentialServer
     {
-        // todo 1: check all the required parameters for the server. How are they initialized? 
+        // check all the required parameters for the server. How are they initialized? 
         public Socket listener;
         public IPEndPoint localEndPoint;
         public IPAddress ipAddress;
@@ -90,7 +90,7 @@ namespace Sequential
             this.sendMessage(con, reply);
         }
 
-        // todo [Assignment]: Why is implemented as virtual?
+        // todo [Assignment]: Why is this implemented as virtual?
         public virtual string processMessage(String msg)
         {
             //todo 6: check how received messages are processed and handled. 

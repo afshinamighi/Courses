@@ -89,6 +89,56 @@ Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dot
 
 
 
+# Week 3:
+
+The main objectives are to understand and apply concepts of multithreading. This week we will focus on disjoint threads, i.e. threads that do not communicate with each other. In this week you will learn:
+
+- how to create and start a thread.
+- how to join to a running thread.
+- how to separate a task from a given sequential program to be running concurrently.
+
+## Preparation:
+
+1. Use the online refernce provided here and answer the following questions:
+   Reference: [Multi-threading in C#](http://www.albahari.com/threading/) (Read only *Introduction and Concepts* from Part 1).
+   1. What namespaces are needed to use threads?
+   2. How can you create a thread?
+   3. How do you specify a task to be executed by a thread?
+   4. How should you start a thread?
+   5. What is a main thread? 
+   6. What does happen when a main thread starts another thread? 
+   7. How can a main thread (or in general any thread) join another thread?
+   8. What may happen if a main thread does not join to a running thread?
+
+## Exercises:
+
+1. [~ 15 min] In Week 1, it is discussed how a statement like **C=A+B** is translated to assembly instructions. Answer the following questions and share them with your teacher.
+   1. Check the slides and write down the sequence of assembly code for **C=A+B**
+   2. Assume two threads running concurrently. Thread 1 is executing **X=A+B** and thread 2 is executing **Y=C+D**. 
+      1. Write down three **possible** interleavings (assembly instructions). 
+      2. Write down three **impossible** interleavings.
+2. [~ 30 min] **Threads**: A simple example about threads: creating, starting and joining threads. Read the example. Check how a thread is defined, started and joined. Check how a task can be given to the thread. Run the examples. Check the output. 
+   1. How can we get information about running threads of a specific process?
+   2. How can a main program create and start multiple threads? How can a main program join to multiple threads? Justify your answer by examples in the code. 
+   3. Sometimes you need to pass parameters to a thread. How can you implement it? Justify your answer by examples in the code.
+   4. Justify the output: why you get different output at each run?
+3. [~ 30 min] **PrimeNumbers** : A sample sequential code for finding prime numbers is given. Your task is to write a method that implements the concurrent version of this algorithm.
+   1. Understand how the sequential version works. Recognise which task can be divided between two (or more) threads.
+   2. *Implementation*: Follow todo provided in the code to implement the exercise. For simplicity first implement **only for two threads**. 
+   3. *Implementation (Optional)*:  Generalise your code for more threads.
+4. [~ 30 min] **MergeSort**: A sample implementation of merge sort is given. It is implemented sequentially. Your task is to implement a multi-threaded MergeSort. *Note*: In order to practice with the concepts of merge sort, first, understand how the sequential version works. Check the exercises of Week 1. You can use online resources to observe its execution visually. 
+   1. Recognise which task can be assigned to threads to be executed independently. For simplicity, assume only two threads.
+   2. **Implementation**: Follow todos provided in the code to implement the exercise.
+
+<!--Folder **PrimeNumbers**: In exercise C, the min and max are given as arguments to a method. Extend the program as follows:**Implementation**: Define a class, name it as MinMaxPrimes with two fields min and max and number of intervals as integer.Implement a program where the main thread instantiates an object from MinMaxPrimes with initial values for min, max and number of intervals.After initialization, the main thread starts a separate thread for each interval. The created instance of MinMaxPrimes is a shared resource between threads.Having values in the shared resource, each thread will search for prime numbers within defined interval.The main thread has to join the busy threads before its termination.-->
+<!--Example: min = 500 , max = 2000 , num_of_intervals = 3 : needs three threads: Thread 1 searches prime numbers between 500 and 1000, thread 2 between 1000 and 1500 and thread 3 between 1500 and 2000.-->
+
+
+
+<!--**Solution**: Is available.Discuss: The whole array is a shared resource between the thread. Why the code is still safe to run?--> 
+
+
+
 ## Assignment: Practical steps
 Description of the assignment and deliveries will be published by the teacher. Here we try to provide some steps that practically can lead students to implement a solution for the assignment. **Note**: These steps will be updated regularly during the course period.
 

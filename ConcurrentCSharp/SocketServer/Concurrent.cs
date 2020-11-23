@@ -6,7 +6,7 @@ namespace Concurrent
 {
     public class ConcurrentServer : SequentialServer
     {
-        // todo [Assignment]: add required attributes specific for concurrent server
+        // todo [Assignment]: implement required attributes specific for concurrent server
 
         public ConcurrentServer(Setting settings) : base(settings)
         {
