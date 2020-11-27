@@ -83,7 +83,7 @@ Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dot
 	5. Named pipes are meant for programs where two-way communication is needed. The current implementation provides only one-way communication (from the server to the client). Extend the programs such that the client sends the result of its processing (i.e. reversed message) back to the server. The server will print the result received from the client.
 <!-- Solution: Is available. -->
 
-4.  [~ 20 min ] Using named pipes implement a client / server program where the client sends the *name and the path* of an executable program to the server and the server starts the process given by the client.
+4.  [~ 20 min ] **[@home]** Using named pipes implement a client / server program where the client sends the *name and the path* of an executable program to the server and the server starts the process given by the client.
 
 <!-- (Optional) Read this tutorial and practice an example about AnonymousPipes: https://ingeno.io/2016/09/c-anonymous-pipes-for-interprocess-communication/  -->
 
