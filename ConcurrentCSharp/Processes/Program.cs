@@ -11,6 +11,7 @@ namespace Example
             Processes exampleProcesses = new Processes();
             exampleProcesses.printAllProcesses();
             exampleProcesses.terminateProcess();
+            //exampleProcesses.printIdByName();
         }
     }
 }

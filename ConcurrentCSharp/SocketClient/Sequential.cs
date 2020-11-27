@@ -28,6 +28,8 @@ namespace Sequential {
         public string votingList { get; set; }
         public int serverListeningQueue { get; set; }
         public int serverProcessingTime { get; set; }
+        public string commands_sep { get; set; }
+        public string command_msg_sep { get; set; }
     }
     // todo 2: check required messages for the protocol
     // DO NOT CHANGE
@@ -48,15 +50,18 @@ namespace Sequential {
         public Setting settings;
         public int waitingTime = 0;
         public readonly int bufferSize = 1024;
-        public bool finishing = false;
-        public string cmd = "";
+        public int client_id = 0;
+        public string cmd = "", cmd_message="";
+        public char commands_sep, command_msg_sep;
 
-        public SimpleClient(bool fin, Setting settings)
+        public SimpleClient(int id, Setting settings)
         {
             this.settings = settings;
-            finishing = fin;
+            client_id = id;
             // todo 4: implement a piece of code by which a command is selected (randomly) from the provided voting list (check settings)
             cmd = "[Replace this with a command from the list provided by settings]";
+            cmd_message = "ClientId="+client_id.ToString()+settings.command_msg_sep+cmd;
+
             this.ipAddress = IPAddress.Parse(settings.serverIPAddress);
             waitingTime = new Random().Next(settings.clientMinStartingTime, settings.clientMaxStartingTime);
         }
@@ -125,10 +130,10 @@ namespace Sequential {
                 switch (msg)
                 {
                     case Message.ready:
-                        if (finishing) // last client terminates the experiment
+                        if (client_id==-1) // last client terminates the experiment
                             replyMsg = Message.terminate;
                         else
-                            replyMsg = this.cmd;
+                            replyMsg = this.cmd_message;
                         break;
                     case Message.confirmed:
                         replyMsg = Message.empty;
@@ -171,7 +176,7 @@ namespace Sequential {
             clients = new SimpleClient[settings.experimentNumberOfClients];
             for (int i = 0; i < settings.experimentNumberOfClients; i++)
             {
-                clients[i] = new SimpleClient(false, settings); // false means this is not a terminating client
+                clients[i] = new SimpleClient(i+1, settings); // id>0 means this is not a terminating client
             }
         }
         public void configure()
@@ -201,7 +206,7 @@ namespace Sequential {
 
             Thread.Sleep(settings.delayForTermination);
 
-            SimpleClient endClient = new SimpleClient(true, settings); // this is a terminating client: it will terminate the whole simulation
+            SimpleClient endClient = new SimpleClient(-1, settings); // this is a terminating client: it will terminate the whole simulation
             endClient.prepareClient();
             // todo 13: check what happens in server side after this client.
             endClient.communicate();

@@ -26,6 +26,8 @@ namespace Sequential
         public string votingList { get; set; }
         public int serverListeningQueue { get; set; }
         public int serverProcessingTime { get; set; }
+        public string commands_sep { get; set; }
+        public string command_msg_sep { get; set; }
     }
     // DO NOT CHANGE
     public class Message

@@ -8,7 +8,7 @@ namespace Concurrent
     {
         public Thread workerThread;
 
-        public ConcurrentClient(bool fin, Setting settings) : base(fin, settings)
+        public ConcurrentClient(int id, Setting settings) : base(id, settings)
         {
             // todo [Assignment]: implement required code
         }

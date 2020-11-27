@@ -59,5 +59,10 @@ namespace Example
                 }
             }
         }
+
+        public void printIdByName()
+        {
+            // todo: Implement the body of this method that gets an input for a process name and prints corresponding id
+        }
     }
 }

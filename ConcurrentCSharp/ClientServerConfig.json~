@@ -9,5 +9,5 @@
     "serverListeningQueue": 20,
     "serverProcessingTime": 100,
     "commands_sep": ":",
-    "command_msg_sep": ">"
+    "ccommand_msg_sep": ">"
 }
