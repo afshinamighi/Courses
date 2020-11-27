@@ -71,7 +71,7 @@ Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dot
 
 1. [~ 20 min ] **Processes**: The program will give a list of currently running processes. Names and Ids are printed. 
 	1. Compare Ids and Names with your machine activity (task) manager program. Choose a process id from your computer that its termination is safe: like whatsapp, editors, browser. Check if the program terminates the given process completely.
-	2. Add a method to the program that gets the name of a process and prints the related id. //**add extra explanations.**
+	2. Add a method to the program that gets the name of a process and prints the related id.
 2. [~ 20 min ] **ProcessCreation**: Implement a program, that executes a command, like **ls**/**dir**. Modify your program such that executes the result of **Processes** (previous exercise, and check the references).
 
 3. [~ 30 min ] **IPCNamedClient, IPCNamedServer**: Two projects are implemented to present how two programs can communicate using named pipes.
