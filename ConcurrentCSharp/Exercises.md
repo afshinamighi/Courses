@@ -118,23 +118,40 @@ The main objectives are to understand and apply concepts of multithreading. This
       1. Write down three **possible** interleavings (assembly instructions). 
       2. Write down three **impossible** interleavings.
 2. [~ 30 min] **Threads**: A simple example about threads: creating, starting and joining threads.
+   
    1. This example presents how to collect information about threads of a process.
+   
       1. Follow todo #1 from class Examples. Run the code. 
       2. How information of threads are extracted? Which process is the owner of these threads? Check the code implemented in class ThreadsList.
+   
    2. This example presents how to create and start multiple threads. Answer the questions below and justify your answers using the code.
+   
       1. Follow todo #2 from class Examples. Run the code. In order to see the behaviour of the program you have to check todo #2.1 provided in method ThreadCreation::runExample().
       2. How can a main program create and start multiple threads? 
       3. How to define a task of a thread?
       4. How can a main program join to multiple threads?  
-   3. This example presents a different scenario of defining tasks of the threads. 
+   
+   3. This example presents a different scenario of defining tasks for the threads. 
+   
       1. Follow todo #3 from class Examples. Run the code. Justify the behaviour of the program.
+   
       2. Check details of the implementation in class ThreadsJoin. How is the task given to the threads? Compare it with class ThreadCreation. 
+   
+      3. What would be the behaviour of the program is we had the following scenario for joining (try and justofy your answer):
+         **t_A.Start();**
+         **t_A.Join();**
+         **t_B.Start();**
+         **t_B.Join();**
+   
+         
 3. [~ 30 min] **PrimeNumbers** : A sample sequential code for finding prime numbers is given. Your task is to write a method that implements the concurrent version of this algorithm.
+   
    1. Understand how the sequential version works. Run the code and check how much time does it take to finish the task. 
    2. Recognise which task can be divided between two (or more) threads.
    3. *Implementation*: Follow todo provided in the code to implement the exercise. For simplicity, implement **only for two threads**. 
    4. Check to see how the time for sequential version is implemented. Apply it to your concurrent solution. Run both sequential and concurrent versions. Is you concurrent version more efficient? 
 4. [~ 30 min] **[@home]**  **MergeSort**: A sample implementation of merge sort is given. It is implemented sequentially. Your task is to implement a multi-threaded MergeSort. *Note*: In order to practice with the concepts of merge sort, first, understand how the sequential version works. Check the exercises of Week 1. You can use online resources to observe its execution visually. 
+   
    1. Recognise which task can be assigned to threads to be executed independently. For simplicity, assume only two threads.
    2. *Implementation*: Follow todos provided in the code to implement the exercise.
 
