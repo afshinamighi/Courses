@@ -15,18 +15,13 @@ namespace Program
         static void Main(string[] args)
         {
             
-            int min = 5, max = 1000000, step = 4;
-            int tMax = 3; // if your code is flexible with the number of threads, assign up to 8 or 10.
+            int min = 5, max = 100000;
 
             ConPrimeNumbers pn = new ConPrimeNumbers();
 
             pn.runSequential(min, max);
-
-            for(int t = 2; t < tMax; t += step)
-            {
-                Thread.Sleep(2000);
-                pn.runConcurrent(min, max, t);
-            }
+            Thread.Sleep(2000);
+            pn.runConcurrent(min, max);
 
 
         }
