@@ -108,7 +108,7 @@ The main objectives are to understand and apply concepts of multithreading. This
    5. What is a main thread? 
    6. What does happen when a main thread starts another thread? 
    7. How can a main thread (or in general any thread) join another thread?
-   8. What may happen if a main thread does not join to a running thread?
+   8. What may happen if a main thread does not wait for another thread to join?
 
 ## Exercises:
 
