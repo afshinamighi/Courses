@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
+
 /// This example shows how to define a process and start it.
-/// Check here: https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netframework-4.8
+/// Check here: https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netcore-3.1
 
 
 namespace Exercise

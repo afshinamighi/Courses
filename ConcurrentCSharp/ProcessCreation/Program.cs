@@ -1,5 +1,5 @@
 ﻿using Exercise;
-using Solution;
+//using Solution;
 
 namespace Program
 {

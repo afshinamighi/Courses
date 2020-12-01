@@ -4,9 +4,10 @@ using System.Threading;
 
 namespace Exercise
 {
-    class PCInformation
-    {        public int dataValue { get; set; } }
-    class Producer
+    public class PCInformation
+    {   public int dataValue { get; set; } }
+
+    public class Producer
     {
         private int minTime { get; set; }
         private int maxTime { get; set; }
@@ -39,7 +40,7 @@ namespace Exercise
             }
         }
     }
-    class Consumer
+    public class Consumer
     {
         private int minTime { get; set; }
         private int maxTime { get; set; }
@@ -80,7 +81,7 @@ namespace Exercise
 
         }
     }
-    class Simulator
+    public class Simulator
     {
         public LinkedList<PCInformation> buffer;
         public Object mutexObj;

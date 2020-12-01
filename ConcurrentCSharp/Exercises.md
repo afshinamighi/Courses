@@ -117,7 +117,7 @@ The main objectives are to understand and apply concepts of multithreading. This
    2. Assume two threads running concurrently. Thread 1 is executing **X=A+B** and thread 2 is executing **Y=C+D**. 
       1. Write down three **possible** interleavings (assembly instructions). 
       2. Write down three **impossible** interleavings.
-2. [~ 30 min] **Threads**: A simple example about threads: creating, starting and joining threads. Read the example. Check how a thread is defined, started and joined. Check how a task can be given to the thread. Run the examples. Check the output. 
+2. [~ 30 min] **Threads**: A simple example about threads: creating, starting and joining threads. Read the example. Follow todos, check how a thread is defined, started and joined. Check how a task can be given to the thread. Run the examples. Check the output. 
    1. How can we get information about running threads of a specific process?
    2. How can a main program create and start multiple threads? How can a main program join to multiple threads? Justify your answer by examples in the code. 
    3. Sometimes you need to pass parameters to a thread. How can you implement it? Justify your answer by examples in the code.
