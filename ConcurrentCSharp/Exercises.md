@@ -130,12 +130,61 @@ The main objectives are to understand and apply concepts of multithreading. This
    1. Recognise which task can be assigned to threads to be executed independently. For simplicity, assume only two threads.
    2. *Implementation*: Follow todos provided in the code to implement the exercise.
 
-<!--Folder **PrimeNumbers**: In exercise C, the min and max are given as arguments to a method. Extend the program as follows:**Implementation**: Define a class, name it as MinMaxPrimes with two fields min and max and number of intervals as integer.Implement a program where the main thread instantiates an object from MinMaxPrimes with initial values for min, max and number of intervals.After initialization, the main thread starts a separate thread for each interval. The created instance of MinMaxPrimes is a shared resource between threads.Having values in the shared resource, each thread will search for prime numbers within defined interval.The main thread has to join the busy threads before its termination.-->
-<!--Example: min = 500 , max = 2000 , num_of_intervals = 3 : needs three threads: Thread 1 searches prime numbers between 500 and 1000, thread 2 between 1000 and 1500 and thread 3 between 1500 and 2000.-->
+
+
+# Week 4:
+
+The main objectives are to protect shared resources and to practice basic concepts of synchronisations... [in progress]
+
+- How to ...
+- How to ...
+- ...
+
+## Preparation:
+
+1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining to the threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3**.
+2. Use the reference provided below to answer the following questions:
+   Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
+   1. What are commonly used blocking methods in threads?
+   2. What is the difference between spinning and bloking? Which one is not efficient?
+   3. What is a lock? Why do we need a lock?
+3. If you do not have experience with linked lists, read this tutorial to gain knowledge about linked list in C#:
+   Tutorial: [Linked Lists in C#](https://www.dotnetperls.com/linkedlist) 
 
 
 
-<!--**Solution**: Is available.Discuss: The whole array is a shared resource between the thread. Why the code is still safe to run?--> 
+## Exercises:
+
+1. [~ 20 min ] **Synchronization**: This program is a simple example of **data race**. Follow the comments and todos provided in the main method and run the examples. For each example, read the related code in detail and analyze the behaviour.
+   1. Where is the shared memory here? 
+   2. How do threads access to the shared memory? 
+   3. Do you recognise a data race here? Justofy your answer?
+   4. Do you recognise a critical section in the code? Where is it protected? 
+   5. Which mechanism is used to protect the shared memory?
+2. [~ 15 min ] **MergeSort** **[@home]** : Use the code and justify your answers for the following questions. 
+   1. Do you recognise a shared memory? 
+   2. Do you need to protect the shared memory?
+3. [~ 30 min ] **ProducerConsumer**: This program is a simple simulation of (sequential) producer-consumer problem. There are a number of generated data (here just random numbers) produced by the producer, inserted in a shared buffer (list), and consumed by a consumer.
+   1. Follow todos in the program and run the sequential version of producer-consumer. Check the order of data producing and consuming.
+   2. Read the program carefully: 
+      1. How are the producer and consumer generating / consuming data?
+      2. How is the channel defined?
+      3. How are the producer-consumer accessing the channel?
+      4. Do we need to protect the channel in the sequential version? 
+   3. Follow todos and run the **concurrentOneProducerOneConsumer** method. Check the order of the execution. 
+      1. Re-run the program several times. Can the consumer consume all the generated data?
+   4. **[@home]**: As you can recognise, usually, the shared buffer is left with some unused data items. Fix the program in a way that the consumer can use all the data available.
+      Hint: First, instead of a fixed number of iterations, trigger producer and consumer in every *t* milliseconds. *t* can be a random number within an interval. Then, the consumer should consume all the items whenever it has a chance to execute.
+4. [~ 30 min] **ProducerConsumer**:
+   1. Implement a method that simulates multiple producers, one consumer.
+   2. Implement a method that simulates multiple producers and multiple consumers.
+5. **DataProcessor** (Optional): In a project, there are several sensors generating and sending data to a server. The server is responsible to collect all the data and visualize them.
+   1. **Implementation**: Implement a program that provides the core for the above application. Data can be simply temperature of various locations that is measured every 10 milliseconds and being sent to the server together with the location data values. 
+      *Hint*: The purpose of this exercise is not to implement a client server program. Focus on the model of data gathering and synchronisation with the visualizer. Visualization can simply be printing the data values in the output console. 
+
+
+
+
 
 
 
@@ -144,7 +193,7 @@ Description of the assignment and deliveries will be published by the teacher. H
 
 During the course after Week ...
 1. students can download and execute coresponding projects. They should spend enough time to understand details of the code and provided structure, modify and extend the code.
-2. students can make a list of commands in the client side. They should modify server such that it can execute the command sent by the client.
+2. students can make a list of commands in the client side. They should modify server such that it can execute the command sent by the client. First step: all clients are sending only one command to be executed at the server.
 3. students can extend client side such that it simulates a number of concurrent clients all trying to simultaneously communicating with the server.
 4. students can extend the server that can handle multiple simultaneous clients.
 5. students can extend the server with a proper shared structure such that stores received data from all the clients.
