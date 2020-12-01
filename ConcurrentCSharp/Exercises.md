@@ -126,7 +126,7 @@ The main objectives are to understand and apply concepts of multithreading. This
    1. Understand how the sequential version works. Recognise which task can be divided between two (or more) threads.
    2. *Implementation*: Follow todo provided in the code to implement the exercise. For simplicity first implement **only for two threads**. 
    3. *Implementation (Optional)*:  Generalise your code for more threads.
-4. [~ 30 min] **MergeSort**: A sample implementation of merge sort is given. It is implemented sequentially. Your task is to implement a multi-threaded MergeSort. *Note*: In order to practice with the concepts of merge sort, first, understand how the sequential version works. Check the exercises of Week 1. You can use online resources to observe its execution visually. 
+4. [~ 30 min] **[@home]**  **MergeSort**: A sample implementation of merge sort is given. It is implemented sequentially. Your task is to implement a multi-threaded MergeSort. *Note*: In order to practice with the concepts of merge sort, first, understand how the sequential version works. Check the exercises of Week 1. You can use online resources to observe its execution visually. 
    1. Recognise which task can be assigned to threads to be executed independently. For simplicity, assume only two threads.
    2. *Implementation*: Follow todos provided in the code to implement the exercise.
 
