@@ -143,7 +143,6 @@ The main objectives are to understand and apply concepts of multithreading. This
          **t_B.Start();**
          **t_B.Join();**
    
-         
 3. [~ 30 min] **PrimeNumbers** : A sample sequential code for finding prime numbers is given. Your task is to write a method that implements the concurrent version of this algorithm.
    
    1. Understand how the sequential version works. Run the code and check how much time does it take to finish the task. 
@@ -159,11 +158,10 @@ The main objectives are to understand and apply concepts of multithreading. This
 
 # Week 4:
 
-The main objectives are to protect shared resources and to practice basic concepts of synchronisations... [in progress]
+The main objectives are to protect shared resources and to practice basic concepts of synchronisations. In this week we will practice:
 
-- How to ...
-- How to ...
-- ...
+- How to recognise critical section and possible data race.
+- How to employ locks to avoid data race.
 
 ## Preparation:
 
@@ -183,29 +181,37 @@ The main objectives are to protect shared resources and to practice basic concep
 1. [~ 20 min ] **Synchronization**: This program is a simple example of **data race**. Follow the comments and todos provided in the main method and run the examples. For each example, read the related code in detail and analyze the behaviour.
    1. Where is the shared memory here? 
    2. How do threads access to the shared memory? 
-   3. Do you recognise a data race here? Justofy your answer?
+   3. Do you recognise a data race here? 
    4. Do you recognise a critical section in the code? Where is it protected? 
    5. Which mechanism is used to protect the shared memory?
-2. [~ 15 min ] **MergeSort** **[@home]** : Use the code and justify your answers for the following questions. 
+2. [~ 15 min ] **MergeSort**: Use the code and justify your answers for the following questions. 
+   
    1. Do you recognise a shared memory? 
    2. Do you need to protect the shared memory?
-3. [~ 30 min ] **ProducerConsumer**: This program is a simple simulation of (sequential) producer-consumer problem. There are a number of generated data (here just random numbers) produced by the producer, inserted in a shared buffer (list), and consumed by a consumer.
+3. [~ 40 min ] **ProducerConsumer**: This program is a simple simulation of (sequential) producer-consumer problem. There are a number of generated data (here just random numbers) produced by the producer, inserted in a shared buffer (list), and consumed by a consumer.
    1. Follow todos in the program and run the sequential version of producer-consumer. Check the order of data producing and consuming.
    2. Read the program carefully: 
       1. How are the producer and consumer generating / consuming data?
       2. How is the channel defined?
       3. How are the producer-consumer accessing the channel?
       4. Do we need to protect the channel in the sequential version? 
-   3. Follow todos and run the **concurrentOneProducerOneConsumer** method. Check the order of the execution. 
-      1. Re-run the program several times. Can the consumer consume all the generated data?
+   3. Follow todos and run the **concurrentOneProducerOneConsumer** method. Your task will be to update the program to be thread safe. 
+      1. Re-run the program several times. How do you interpret the behaviour? 
+      2. Read the related code carefully and explain which tasks are concurrent.
+      3. Do you recognise a shared memory? Justify your answer.
+      4. Is the shared memory protected?
    4. **[@home]**: As you can recognise, usually, the shared buffer is left with some unused data items. Fix the program in a way that the consumer can use all the data available.
       Hint: First, instead of a fixed number of iterations, trigger producer and consumer in every *t* milliseconds. *t* can be a random number within an interval. Then, the consumer should consume all the items whenever it has a chance to execute.
-4. [~ 30 min] **ProducerConsumer**:
+4. [~ 30 min] **ProducerConsumer** **[@home]**:
+   
    1. Implement a method that simulates multiple producers, one consumer.
+   
    2. Implement a method that simulates multiple producers and multiple consumers.
-5. **DataProcessor** (Optional): In a project, there are several sensors generating and sending data to a server. The server is responsible to collect all the data and visualize them.
-   1. **Implementation**: Implement a program that provides the core for the above application. Data can be simply temperature of various locations that is measured every 10 milliseconds and being sent to the server together with the location data values. 
-      *Hint*: The purpose of this exercise is not to implement a client server program. Focus on the model of data gathering and synchronisation with the visualizer. Visualization can simply be printing the data values in the output console. 
+   
+      
+   
+
+<!-- DataProcessor** (Optional): In a project, there are several sensors generating and sending data to a server. The server is responsible to collect all the data and visualize them. **Implementation**: Implement a program that provides the core for the above application. Data can be simply temperature of various locations that is measured every 10 milliseconds and being sent to the server together with the location data values. *Hint*: The purpose of this exercise is not to implement a client server program. Focus on the model of data gathering and synchronisation with the visualizer. Visualization can simply be printing the data values in the output console. -->
 
 
 
@@ -223,5 +229,5 @@ During the course after Week ...
 4. students can extend the server that can handle multiple simultaneous clients.
 5. students can extend the server with a proper shared structure such that stores received data from all the clients.
 6. students can extend the server with a solution to make the server thread safe, i.e no data race.
-7. students can execute and test their final results: ~ 500 simultenous clients.
+7. students can execute and test their final results: ~ 200 simultenous clients.
 Then, the solution is ready. Students should apply all the requested formats and deliver their solutions according given instructions.

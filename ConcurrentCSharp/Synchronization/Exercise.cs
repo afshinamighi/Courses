@@ -3,44 +3,8 @@ using System.Threading;
 
 namespace Exercise
 {
-    public class Counter
-    {
-        private readonly Object mutex = new Object();
-        public int count { get; set; }
-
-        public Counter() { count = 0; }
-
-        public void incrementThreadSafe()
-        {
-            lock (mutex){   this.count++;   }
-        }
-
-        public void incrementUpTo(int n)
-        {
-            for (int i = 0; i < n; i++)
-                this.increment();
-        }
-
-        public void reset(){   this.count = 0; }
-
-        /// <summary>
-        /// Increments the counter by one: it is not thread safe.
-        /// </summary>
-        public void increment(){    this.count++;  }
-
-        /// <summary>
-        /// Increments the counter using a lock to be thread safe.
-        /// </summary>
-        public void incrementUpToThreadSafe(int n)
-        {
-            for (int i = 0; i < n; i++)
-                this.incrementThreadSafe();
-        }
-    }
-
     public class SynchronizationExamples
     {
- 
         /// <summary>
         /// Counts the counter multiple times up to the given limit.
         /// </summary>
@@ -52,7 +16,7 @@ namespace Exercise
             for (int x = 0; x < steps; x++)
                 counter.incrementUpTo(limit);
 
-            Console.WriteLine("[Sequential counter] {0} times count, each up to {1}, expected result = {2}, counter={3}", steps, limit, (steps * limit), counter.count);
+            Console.WriteLine("[Sequential counter] {0} times count, each up to {1}, expected result of the counter = {2}, value of the counter={3}", steps, limit, (steps * limit), counter.count);
 
         }
 
@@ -74,7 +38,7 @@ namespace Exercise
             for (int i = 0; i < steps; i++)
                 threads[i].Join();
 
-            Console.WriteLine("[Concurrent counter] {0} times count, each up to {1}: expected result={2}, counter={3}", steps, limit, steps * limit, counter.count);
+            Console.WriteLine("[Concurrent counter] {0} times count, each up to {1}: expected result of the counter = {2}, value of the counter={3}", steps, limit, steps * limit, counter.count);
         }
 
         /// <summary>
@@ -95,7 +59,7 @@ namespace Exercise
             for (int i = 0; i < steps; i++)
                 threads[i].Join();
 
-            Console.WriteLine("[Thread Safe Concurrent counter] {0} times count, each up to {1}: expected result={2}, counter={3}", steps, limit, steps * limit, counter.count);
+            Console.WriteLine("[Thread Safe Concurrent counter] {0} times count, each up to {1}: expected result of the counter = {2}, value of the counter={3}", steps, limit, steps * limit, counter.count);
         }
     }
 }

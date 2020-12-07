@@ -14,11 +14,11 @@ namespace Program
 
             Thread.Sleep(wt);
             // todo 1: uncomment this and check the final result.
-            //examples.countMultipleTimes(times,until);
+            examples.countMultipleTimes(times,until);
 
             Thread.Sleep(wt);
             // todo 2: uncomment this and check the final result. Is the final result reliable? Try to experiment several times.
-            // Why the result different in different scenarios? Check the implementation.
+            // Why the result is different in various scenarios? Check the implementation.
             //examples.countMultipleTimesConc(times, until);
 
             Thread.Sleep(wt);
