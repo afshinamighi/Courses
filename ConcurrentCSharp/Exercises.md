@@ -3,8 +3,8 @@
 This document class activities and exercises are described to be practised in practicums of Concurrency course of Hogeschool Rotterdam.
 
 ### Practical notes:
-1. The exercises of each week coresponds to some of the source codes available here in Github: https://github.com/afshinamighi/Courses
-2. Coresponding C# projects are represented with bold font at each exercise.
+1. The exercises of each week corresponds to some of the source codes available here in Github: https://github.com/afshinamighi/Courses
+2. Corresponding C# projects are represented with bold font at each exercise.
 3. In each exercise, students are expected to evaluate specified source codes, understand the structures, analyze expected behaviours of the programs (guess and justify the output), and in some cases reproduce the concept in a different context.
 4. In some of the exercises, students are asked to share / discuss / explain results of their evaluations. The teacher will determine how results will be shared with other students and/or the teacher.
 5. This document will be updated weekly. 
@@ -15,7 +15,7 @@ This document class activities and exercises are described to be practised in pr
 Main objectives of this week is to introduce the main concepts and prepare practical tools needed for upcoming weeks.
 
 ## Preparation:
-1.	 We will discuss about threads in week 3. Here, just think about a thread as a separate paths of execution that can be executed simultanously with the main program.
+1.	 We will discuss about threads in week 3. Here, just think about a thread as a separate paths of execution that can be executed simultaneously with the main program.
 2.	 Refresh your C# programming environment: You are expected to be able to write simple console based programs. A set of possible concepts to be used later are: fundamentals (types, conditional statements, loops), defining attributes, methods, public / private / static, arrays, anonymous functions.
 3.	 Implement a simple program: like a counter class that counts until a given number and the main program instantiates an object from this class and prints the final result. The counter class has a state that keeps the latest counting value.
 
@@ -23,12 +23,12 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 ## Exercises:
 _note: just for today ignore the **#todo** inside the code that ask you to write code, we will focus on the understanding and not on producing code._
 1. [~ 5 min ] Concurrency in your machine:
-	1.	Make a list of parallel/concurrent programs in your computer. Choose a running program (for example PyCharm) and see how many threads are running by the application. You can check threads' count in your *task manager/activity monitor* (on Windows *task manager click* on the cloumns name to select colums and add threads if it is not already visible). You can also use in the Linux/MAC shell the command **"top"** (#TH --> total threads/running threads).
+	1.	Make a list of parallel/concurrent programs in your computer. Choose a running program (for example PyCharm) and see how many threads are running by the application. You can check threads' count in your *task manager/activity monitor* (on Windows *task manager click* on the columns name to select columns and add threads if it is not already visible). You can also use in the Linux/MAC shell the command **"top"** (#TH --> total threads/running threads).
 	2.	Open an internet browser with several tabs (*Chrome*) of the same domain website. Check how many threads are created per process (the threads are not directly named but they are listed as parts of the single process: they all have the same Process ID, but contains multiple lines). Make a list (at least five) of *functionalities* (tasks) that each thread of execution is responsible to execute.
 	3. Share your list with the teacher.
 2. [~ 30 min ] **SocketClient, SocketServer** (names of the projects/directories you can find in this repository):
 	```diff
-	+ Note: this code will be the base line for your assignment, read this document untill the end for more details.
+	+ Note: this code will be the base line for your assignment, read this document until the end for more details.
 	```
 	1.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation.	*//hint:* run the client in a shell/terminal and the server in another. Start the server first and when it asks you the question, answer *"S"* (for Sequential).
 	2.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously.	
@@ -42,7 +42,7 @@ _note: just for today ignore the **#todo** inside the code that ask you to write
 	
 3. [~ 30 min ] **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks.
 In Week 1, ignore the class named **ConcurrentMergeSort** and its todos.
-	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following sesources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
+	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following resources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
 	2.	**Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
 		1. If you checked the visual algorithm displayed from the above links you should have noted that changes the order and rebuild the re-organised data, can you find these 2 methods in the code?
 		2. How can we make it run faster if we had multiple processors available?
@@ -137,7 +137,7 @@ The main objectives are to understand and apply concepts of multithreading. This
    
       2. Check details of the implementation in class ThreadsJoin. How is the task given to the threads? Compare it with class ThreadCreation. 
    
-      3. What would be the behaviour of the program is we had the following scenario for joining (try and justofy your answer):
+      3. What would be the behaviour of the program if we had the following scenario for joining (try and justify your answer):
          **t_A.Start();**
          **t_A.Join();**
          **t_B.Start();**
@@ -169,7 +169,7 @@ The main objectives are to protect shared resources and to practice basic concep
 2. Use the reference provided below to answer the following questions:
    Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
    1. What are commonly used blocking methods in threads?
-   2. What is the difference between spinning and bloking? Which one is not efficient?
+   2. What is the difference between spinning and blocking? Which one is not efficient?
    3. What is a lock? Why do we need a lock?
 3. If you do not have experience with linked lists, read this tutorial to gain knowledge about linked list in C#:
    Tutorial: [Linked Lists in C#](https://www.dotnetperls.com/linkedlist) 
@@ -223,11 +223,11 @@ The main objectives are to protect shared resources and to practice basic concep
 Description of the assignment and deliveries will be published by the teacher. Here we try to provide some steps that practically can lead students to implement a solution for the assignment. **Note**: These steps will be updated regularly during the course period.
 
 During the course after Week ...
-1. students can download and execute coresponding projects. They should spend enough time to understand details of the code and provided structure, modify and extend the code.
+1. students can download and execute corresponding projects. They should spend enough time to understand details of the code and provided structure, modify and extend the code.
 2. students can make a list of commands in the client side. They should modify server such that it can execute the command sent by the client. First step: all clients are sending only one command to be executed at the server.
 3. students can extend client side such that it simulates a number of concurrent clients all trying to simultaneously communicating with the server.
 4. students can extend the server that can handle multiple simultaneous clients.
 5. students can extend the server with a proper shared structure such that stores received data from all the clients.
 6. students can extend the server with a solution to make the server thread safe, i.e no data race.
-7. students can execute and test their final results: ~ 200 simultenous clients.
+7. students can execute and test their final results: ~ 200 simultaneous clients.
 Then, the solution is ready. Students should apply all the requested formats and deliver their solutions according given instructions.
