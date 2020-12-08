@@ -55,8 +55,8 @@ namespace Exercise
             Console.WriteLine("Press a key to start two threads printing separate characters ... ");
             Console.Read();
             // Check: given tasks will be overlapped ... expect interleaved prints. Discuss why?
-            Thread tOne = new Thread(() => { for (int i = 0; i < 1000; i++) Console.Write("X"); });
-            Thread tTwo = new Thread(() => { for (int i = 0; i < 1000; i++) Console.Write("Y"); });
+            Thread tOne = new Thread(() => { for (int i = 0; i < 10000; i++) Console.Write("X"); });
+            Thread tTwo = new Thread(() => { for (int i = 0; i < 10000; i++) Console.Write("Y"); });
 
             tOne.Start();
             tTwo.Start();
@@ -111,7 +111,8 @@ namespace Exercise
             // todo 2.1: uncomment (only one at the time) the following statements to see the behaviour of the program
 
             //this.createOneThread();
-            //this.createTwoXYThreads();
+
+            this.createTwoXYThreads();
             //this.createMultipleThreads();
         }
     }

@@ -184,7 +184,7 @@ The main objectives are to protect shared resources and to practice basic concep
    3. Do you recognise a data race here? 
    4. Do you recognise a critical section in the code? Where is it protected? 
    5. Which mechanism is used to protect the shared memory?
-2. [~ 15 min ] **MergeSort**: Use the code and justify your answers for the following questions. 
+2. [~ 15 min ] **MergeSort [@home]**: Use the code and justify your answers for the following questions. 
    
    1. Do you recognise a shared memory? 
    2. Do you need to protect the shared memory?
@@ -200,7 +200,7 @@ The main objectives are to protect shared resources and to practice basic concep
       2. Read the related code carefully and explain which tasks are concurrent.
       3. Do you recognise a shared memory? Justify your answer.
       4. Is the shared memory protected?
-   4. **[@home]**: As you can recognise, usually, the shared buffer is left with some unused data items. Fix the program in a way that the consumer can use all the data available.
+   4. *(Optional)*: As you can recognise, usually, the shared buffer is left with some unused data items. Fix the program in a way that the consumer can use all the data available.
       Hint: First, instead of a fixed number of iterations, trigger producer and consumer in every *t* milliseconds. *t* can be a random number within an interval. Then, the consumer should consume all the items whenever it has a chance to execute.
 4. [~ 30 min] **ProducerConsumer** **[@home]**:
    
