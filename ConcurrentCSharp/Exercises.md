@@ -168,8 +168,8 @@ The main objectives are to protect shared resources and to practice basic concep
 1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3**.
 2. Use the reference provided below to answer the following questions:
    Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
-   1. What are commonly used blocking methods in threads?
-   2. What is the difference between spinning and blocking? Which one is not efficient?
+   1. What are the most commonly used blocking methods in threads?
+   2. What is the difference between spinning (busy waiting) and blocking? Which one is not efficient?
    3. What is a lock? Why do we need a lock?
 3. If you do not have experience with linked lists, read this tutorial to gain knowledge about linked list in C#:
    Tutorial: [Linked Lists in C#](https://www.dotnetperls.com/linkedlist) 
@@ -180,16 +180,15 @@ The main objectives are to protect shared resources and to practice basic concep
 
 1. [~ 20 min ] **Synchronization**: This program is a simple example of **data race**. Follow the comments and todos provided in the main method and run the examples. For each example, read the related code in detail and analyze the behaviour.
    1. Where is the shared memory here? 
-   2. How do threads access to the shared memory? 
-   3. Do you recognise a data race here? 
-   4. Do you recognise a critical section in the code? Where is it protected? 
+   2. How do threads access the shared memory? 
+   3. Do you recognise a *critical section* in the code? Where is it protected? 
+   4. Do you recognise a *data race* here? 
    5. Which mechanism is used to protect the shared memory?
 2. [~ 15 min ] **MergeSort [@home]**: Use the code and justify your answers for the following questions. 
-   
    1. Do you recognise a shared memory? 
    2. Do you need to protect the shared memory?
-3. [~ 40 min ] **ProducerConsumer**: This program is a simple simulation of (sequential) producer-consumer problem. There are a number of generated data (here just random numbers) produced by the producer, inserted in a shared buffer (list), and consumed by a consumer.
-   1. Follow todos in the program and run the sequential version of producer-consumer. Check the order of data producing and consuming.
+3. [~ 40 min ] **ProducerConsumer**: This program is a simple simulation of (sequential) producer-consumer problem. There are a number of generated data produced by the *producer*, inserted in a shared buffer (a list), and consumed by a *consumer*.
+   1. Follow the todos in the program and run the sequential version of **ProducerConsumer**. Check the order of data producing and consuming (check the ordering of the printed value).
    2. Read the program carefully: 
       1. How are the producer and consumer generating / consuming data?
       2. How is the channel defined?
