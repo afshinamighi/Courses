@@ -165,7 +165,7 @@ The main objectives are to protect shared resources and to practice basic concep
 
 ## Preparation:
 
-1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining to the threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3**.
+1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3**.
 2. Use the reference provided below to answer the following questions:
    Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
    1. What are commonly used blocking methods in threads?
