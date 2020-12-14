@@ -30,6 +30,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synchronization", "Synchron
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsumer", "ProducerConsumer\ProducerConsumer.csproj", "{D2BDB502-A915-42FC-8935-D71AFECC7394}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaphore", "Semaphore\Semaphore.csproj", "{5F339DDF-97BA-4D92-AE69-052A6A462D2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiningPhilosophers", "DiningPhilosophers\DiningPhilosophers.csproj", "{44BE8E97-DDA7-4BA4-B4E7-06BD6292CF7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +88,13 @@ Global
 		{D2BDB502-A915-42FC-8935-D71AFECC7394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2BDB502-A915-42FC-8935-D71AFECC7394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2BDB502-A915-42FC-8935-D71AFECC7394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F339DDF-97BA-4D92-AE69-052A6A462D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F339DDF-97BA-4D92-AE69-052A6A462D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F339DDF-97BA-4D92-AE69-052A6A462D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F339DDF-97BA-4D92-AE69-052A6A462D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BE8E97-DDA7-4BA4-B4E7-06BD6292CF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE8E97-DDA7-4BA4-B4E7-06BD6292CF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE8E97-DDA7-4BA4-B4E7-06BD6292CF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE8E97-DDA7-4BA4-B4E7-06BD6292CF7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

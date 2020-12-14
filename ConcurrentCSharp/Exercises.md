@@ -168,9 +168,9 @@ The main objectives are to protect shared resources and to practice basic concep
 1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3**.
 2. Use the reference provided below to answer the following questions:
    Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
-   1. What are the most commonly used blocking methods in threads?
-   2. What is the difference between spinning (busy waiting) and blocking? Which one is not efficient?
-   3. What is a lock? Why do we need a lock?
+   1. What is a deadlock?
+   2. What is a semaphore?
+   3. What is a mutex?
 3. If you do not have experience with linked lists, read this tutorial to gain knowledge about linked list in C#:
    Tutorial: [Linked Lists in C#](https://www.dotnetperls.com/linkedlist) 
 
@@ -184,10 +184,12 @@ The main objectives are to protect shared resources and to practice basic concep
    3. Do you recognise a *critical section* in the code? Where is it protected? 
    4. Do you recognise a *data race* here? 
    5. Which mechanism is used to protect the shared memory?
-2. [~ 15 min ] **MergeSort [@home]**: Use the code and justify your answers for the following questions. 
+2. [~ 15 min ] **[@home]** **MergeSort **: Use the code and justify your answers for the following questions. 
+   
    1. Do you recognise a shared memory? 
    2. Do you need to protect the shared memory?
 3. [~ 40 min ] **ProducerConsumer**: This program is a simple simulation of (sequential) producer-consumer problem. There are a number of generated data produced by the *producer*, inserted in a shared buffer (a list), and consumed by a *consumer*.
+   
    1. Follow the todos in the program and run the sequential version of **ProducerConsumer**. Check the order of data producing and consuming (check the ordering of the printed value).
    2. Read the program carefully: 
       1. How are the producer and consumer generating / consuming data?
@@ -203,7 +205,7 @@ The main objectives are to protect shared resources and to practice basic concep
    4. *(Optional)*: As you can recognise, usually, the shared buffer is left with some unused data items. Fix the program in a way that the consumer can use all the data available.
    
       Hint: First, instead of a fixed number of iterations, trigger producer and consumer in every *t* milliseconds. *t* can be a random number within an interval. Then, the consumer should consume all the items whenever it has a chance to execute.
-4. [~ 30 min] **ProducerConsumer** **[@home]**:
+4. [~ 30 min]**[@home]** **ProducerConsumer** :
    
    1. Implement a method that simulates multiple producers, one consumer.
    
@@ -216,7 +218,51 @@ The main objectives are to protect shared resources and to practice basic concep
 
 
 
+# Week 5:
 
+The main objectives are to practice synchronisations of threads using Semaphores and to understand deadlocks. In this week we will practice:
+
+- How to employ semaphores to protect shared resources.
+- How to [in progess: deadlocks].
+
+## Preparation:
+
+1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3, Week 4: Exercises 1 and 3**.
+2. Use the reference provided below to answer the following questions:
+   Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
+   1. What are the most commonly used blocking methods in threads?
+   2. What is the difference between spinning (busy waiting) and blocking? Which one is not efficient?
+   3. What is a lock? Why do we need a lock?
+
+## Exercises:
+
+1. [~ 40 min] **Semaphores**: This exercise is implementing Producer-Consumers signalling each other using Semaphores.
+   1. todo 1: analyze the behaviour of sequentialOneProducerOneConsumer().
+   2. Answer todo 2. 
+   3. todo 1: analyze the output of concurrentOneProducerOneConsumer(). Do producer and consumer threads work correctly? Justify your answer. 
+   4.  By doing todo 3 fix the problem of producer and consumer.
+   5. Check the code implemented in ProducerConsumerSimulator::concurrentMultiProducerMultiConsumer(). Run the method (check todo 1) and analyze the output.
+2. [~ 40 min] **DiningPhilosophers**: This is simple implementation of dining philosopher problem. Two versions have been implemented: **DiningNormal** implements a version where each philosopher needs only one fork to eat the food; and, **Exercise** implements the version where each philosopher needs two forks. 
+   1. Run the code implemented for **DiningNormal** (use the correct namespace). Check how resources are locked. Check how a parameterized method is passed to the threads.
+   2. Check the code of **Exercise**. Implement all the todos provided. 
+3. **[@home]** In order to synchronize threads, different synchronization constructs are implemented. So far, you have practiced to provide mutual exclusion using **lock(obj){ ... }** statement. However, C# provides a synchronization primitive named **Mutex**. 
+   1. Read the specification of class **Mutex** and check how a critical section can be protected with an instance of **Mutex**:
+      Reference: read [Class Mutex](https://docs.microsoft.com/en-us/dotnet/api/system.threading.mutex?view=net-5.0) 
+   2. As we have discussed in the lesson, a binary semaphore (a semaphore initialized with one) can also be employed to implement mutual exclusion. Again, C# has already implemented a synchronization primitive named Semaphore (see [here](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphore?view=netcore-3.1)). 
+      1. What are the main differences between class **Mutex** and class **Semaphore**? Can one replace the other?
+      2. Is it possible to implement **Week 5: Exercise 1** using a **Mutex**? Justify your answer.
+
+
+
+# Week 6:
+
+[will be available soon]
+
+
+
+# Week 7:
+
+[will be available soon]
 
 
 
