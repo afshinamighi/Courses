@@ -237,12 +237,13 @@ The main objectives are to practice synchronisations of threads using Semaphores
 ## Exercises:
 
 1. [~ 40 min] **Semaphores**: This exercise is implementing Producer-Consumers signalling each other using Semaphores.
-   1. todo 1: analyze the behaviour of sequentialOneProducerOneConsumer().
-   2. Answer todo 2. 
-   3. todo 1: analyze the output of concurrentOneProducerOneConsumer(). Do producer and consumer threads work correctly? Justify your answer. 
-   4.  By doing todo 3 fix the problem of producer and consumer.
-   5. Check the code implemented in ProducerConsumerSimulator::concurrentMultiProducerMultiConsumer(). Run the method (check todo 1) and analyze the output.
-2. [~ 40 min] **DiningPhilosophers**: This is simple implementation of dining philosopher problem. Two versions have been implemented: **DiningNormal** implements a version where each philosopher needs only one fork to eat the food; and, **Exercise** implements the version where each philosopher needs two forks. 
+   1. From #todo 1: analyse *sequential*OneProducerOneConsumer() before moving to the concurrent one.
+   2. Answer #todo 2. 
+   3. From #todo 3: analyze the output of *concurrent*OneProducerOneConsumer().
+   	Do producer and consumer threads work correctly? Justify your answer. 
+   4. From #todo 4: fix the problem of producer and consumer.
+   5. From #todo 5: check the code implemented in ProducerConsumerSimulator::concurrentMultiProducerMultiConsumer(). Run the method and analyze the output.
+2. [~ 40 min] **DiningPhilosophers**: This is simple implementation of dining philosopher problem. Two versions have been implemented: **DiningNormal** implements a version where each philosopher needs only one fork to eat the food; and, in *Exercise* (namespace) implements the version where each philosopher needs two forks. *Pay extra attention to the number of forks used and the possible mistakes in the colouring.*
    1. Run the code implemented for **DiningNormal** (use the correct namespace). Check how resources are locked. Check how a parameterized method is passed to the threads.
    2. Check the code of **Exercise**. Implement all the todos provided. 
 3. **[@home]** In order to synchronize threads, different synchronization constructs are implemented. So far, you have practiced to provide mutual exclusion using **lock(obj){ ... }** statement. However, C# provides a synchronization primitive named **Mutex**. 
