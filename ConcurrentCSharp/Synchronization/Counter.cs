@@ -13,7 +13,12 @@ namespace Exercise
 
         public void incrementThreadSafe()
         {
-            lock (mutex) { this.count++; }
+            lock (mutex) {
+
+                this.count++;
+
+
+            }
         }
 
         public void incrementUpTo(int n)
@@ -27,7 +32,9 @@ namespace Exercise
         /// <summary>
         /// Increments the counter by one: it is not thread safe.
         /// </summary>
-        public void increment() { this.count++; }
+        public void increment() {
+            this.count++; // this.count = this.count + 1;
+        }
 
         /// <summary>
         /// Increments the counter using a lock to be thread safe.

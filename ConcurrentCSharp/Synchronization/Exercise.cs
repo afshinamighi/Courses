@@ -33,8 +33,11 @@ namespace Exercise
 
             for (int i = 0; i < steps; i++)
                 threads[i] = new Thread(() => { counter.incrementUpTo(limit); });
+
             for (int i = 0; i < steps; i++)
                 threads[i].Start();
+
+
             for (int i = 0; i < steps; i++)
                 threads[i].Join();
 

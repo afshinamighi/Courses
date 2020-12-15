@@ -3,42 +3,90 @@ using System.Threading;
 
 namespace Exercise
 {
-    class Fork
+    public class Fork
     {
-
+        public int id { get; set; }
+        public int users { get; set; }
+        public Fork(int id) { users = 0; this.id = id; }
+        public void pick()
+        {
+            lock (this)
+            {
+                users++;
+                if (users > 1)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("[Fork {0}] Multiple users ... ", this.id);
+                    Console.ResetColor();
+                }
+            }
+        }
+        public void release()
+        {
+            lock (this)
+            {
+                users--;
+                if (users < 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("[Fork {0}] Negative users ... ", this.id);
+                    Console.ResetColor();
+                }
+            }
+        }
     }
-    class Philosopher
+    public class Philosopher
     {
         public Fork rightFork { get; set; }
         public Fork leftFork { get; set; }
-        // Hint: After finishing other todos, experiment with different values: smaller and larger numbers.
-        //  Higher max time, higher probability of late deadlock
-        public int maxTime = 200;
+        public int maxEatingTime = 100;
         public int number;
         public Philosopher(int n)
         {
-            number = n;
+            this.number = n;
         }
-        public void eat()
+        // this method implement eating with only one resource: enough resources, therefore no deadlock should occur
+        public void eatWithOneFork()
         {
-            //todo: In this version, eating is happening without locking shared resources: forks. Lock one right fork, then lock one left fork to have safe eating...
-            Console.WriteLine("[{0} waiting for the right fork ...]", number);
-            Console.WriteLine("[{0} waiting for the left fork ...]", number);
-            Console.WriteLine("[{0} started eating ...]", number);
-            Thread.Sleep(new Random().Next(10, maxTime));
-            Console.WriteLine("[{0} finished eating ...]", number);
-        }
 
-        public void startEating(Object it)
+            Console.WriteLine("[{0} waiting for fork {1} ...]", number, rightFork.id);
+            lock (rightFork)
+            {
+                rightFork.pick();
+                Console.WriteLine("[{0} started eating ...]", number);
+                Thread.Sleep(new Random().Next(1, maxEatingTime));
+                Console.WriteLine("[{0} finished eating ...]", number);
+                rightFork.release();
+            }
+        }
+        // todo: lock required resources (forks) in a correct order
+        public virtual void eatWithTwoForks()
         {
-            Thread.Sleep(new Random().Next(10, maxTime));
+            Console.WriteLine("[{0} waiting for right fork ...]", number);
+            rightFork.pick();
+            Console.WriteLine("[{0} picked right fork {1}, waiting for left fork {2} ...]", number, rightFork.id, leftFork.id);
+            leftFork.pick();
+            Console.WriteLine("[{0} started eating ...]", number);
+            Thread.Sleep(new Random().Next(1, maxEatingTime));
+            Console.WriteLine("[{0} finished eating ...]", number);
+            leftFork.release();
+            rightFork.release();
+        }
+        public void startEatingWithOneFork(Object it)
+        {
             int iterations = (int)it;
             for (int i = 0; i < iterations; i++)
-                this.eat();
+                this.eatWithOneFork();
         }
 
+        public void startEatingWithTwoForks(Object it)
+        {
+            int iterations = (int)it;
+            for (int i = 0; i < iterations; i++)
+                this.eatWithTwoForks();
+        }
     }
-    class Table
+    public class Table
     {
         public Fork[] forks;
         public Philosopher[] philosophers;
@@ -51,8 +99,8 @@ namespace Exercise
 
             for (int i = 0; i < num; i++)
             {
-                forks[i] = new Fork();
-                philosophers[i] = new Philosopher(i);
+                forks[i] = new Fork(i + 1);
+                philosophers[i] = new Philosopher(i+1);
             }
             int rightIndex = 0, leftIndex = 0;
             for (int i = 0; i < num; i++)
@@ -60,25 +108,31 @@ namespace Exercise
                 rightIndex = (i) % (num);
                 leftIndex = ((i + num - 1) % (num));
                 philosophers[i].rightFork = forks[rightIndex];
-                Console.WriteLine("[Philosopher {0}] got right fork {1}", i, rightIndex);
                 philosophers[i].leftFork = forks[leftIndex];
-                Console.WriteLine("[Philosopher {0}] got left fork {1}", i, leftIndex);
+                Console.WriteLine("Philosopher {0} sitting with right fork {1} left fork {2}", philosophers[i].number, philosophers[i].rightFork.id, philosophers[i].leftFork.id);
             }
         }
-        public void startConcurrentDining(int it)
+        public void startOneForkDining(int it)
         {
             for (int i = 0; i < threads.Length; i++)
-            {
-                //todo: create the threads
-            }
+                threads[i] = new Thread(philosophers[i].startEatingWithOneFork);
+
             for (int i = 0; i < threads.Length; i++)
-            {
-                //todo: start the threads
-            }
+                threads[i].Start(it);
+
             for (int i = 0; i < threads.Length; i++)
-            {
-                //todo: join to the threads
-            }
+                threads[i].Join();
+        }
+        public void startTwoForksDining(int it)
+        {
+            for (int i = 0; i < threads.Length; i++)
+                threads[i] = new Thread(philosophers[i].startEatingWithTwoForks);
+
+            for (int i = 0; i < threads.Length; i++)
+                threads[i].Start(it);
+
+            for (int i = 0; i < threads.Length; i++)
+                threads[i].Join();
         }
     }
 }

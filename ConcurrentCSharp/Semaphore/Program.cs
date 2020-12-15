@@ -11,9 +11,11 @@ namespace Semaphores
 
             ProducerConsumerSimulator pcSimulator = new ProducerConsumerSimulator(min,max);
 
-            //todo 1: Uncomment the following statements, one at a time and check the behaviour of the program. 
+            //todo 1: Uncomment the following statement and analyze the behaviour of the program. 
             //pcSimulator.sequentialOneProducerOneConsumer();
-            pcSimulator.concurrentOneProducerOneConsumer();
+            //todo 4: Uncomment the following statement and analyze the behaviour of the program. 
+            //pcSimulator.concurrentOneProducerOneConsumer();
+            //todo 5: Uncomment the following statement and analyze the behaviour of the program. 
             //pcSimulator.concurrentMultiProducerMultiConsumer();
 
             Console.WriteLine("[END]");

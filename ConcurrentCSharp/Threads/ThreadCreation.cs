@@ -60,6 +60,7 @@ namespace Exercise
 
             tOne.Start();
             tTwo.Start();
+            //h here we have two thrads running at the same time
             Console.WriteLine(" The main thread has terminated ... ");
 
         }

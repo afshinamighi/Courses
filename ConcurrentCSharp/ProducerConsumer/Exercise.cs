@@ -55,6 +55,9 @@ namespace Exercise
             producerThread.Start();
             consumerThread.Start();
 
+
+            // producer and consumer are busy concurrently
+
             producerThread.Join();
             consumerThread.Join();
 

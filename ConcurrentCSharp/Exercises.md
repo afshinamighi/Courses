@@ -243,9 +243,12 @@ The main objectives are to practice synchronisations of threads using Semaphores
    	Do producer and consumer threads work correctly? Justify your answer. 
    4. From #todo 4: fix the problem of producer and consumer.
    5. From #todo 5: check the code implemented in ProducerConsumerSimulator::concurrentMultiProducerMultiConsumer(). Run the method and analyze the output.
-2. [~ 40 min] **DiningPhilosophers**: This is simple implementation of dining philosopher problem. Two versions have been implemented: **DiningNormal** implements a version where each philosopher needs only one fork to eat the food; and, in *Exercise* (namespace) implements the version where each philosopher needs two forks. *Pay extra attention to the number of forks used and the possible mistakes in the colouring.*
-   1. Run the code implemented for **DiningNormal** (use the correct namespace). Check how resources are locked. Check how a parameterized method is passed to the threads.
-   2. Check the code of **Exercise**. Implement all the todos provided. 
+2. [~ 40 min] **DiningPhilosophers**: This is a simple implementation of dining philosopher problem. *Philosopher* implements two versions of eating: every philosopher needs only one (right) fork to eat the food; and, each philosopher needs two (left and right) forks. 
+   1. Run the code implemented for both kind of eating. Check how resources are locked. Check how a parameterized method is passed to the threads.
+   2. Discuss the problem of two forks eating.
+   3. Follow the todo and fix the problem of two forks eating. 
+   4. Run the code with your solution. Does a deadlock occur? 
+   5. Discuss what would be a solution for the deadlock. 
 3. **[@home]** In order to synchronize threads, different synchronization constructs are implemented. So far, you have practiced to provide mutual exclusion using **lock(obj){ ... }** statement. However, C# provides a synchronization primitive named **Mutex**. 
    1. Read the specification of class **Mutex** and check how a critical section can be protected with an instance of **Mutex**:
       Reference: read [Class Mutex](https://docs.microsoft.com/en-us/dotnet/api/system.threading.mutex?view=net-5.0) 

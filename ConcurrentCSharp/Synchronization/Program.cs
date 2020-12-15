@@ -8,7 +8,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            int until = 1000, times = 10, wt = 2000;
+            int until = 10000, times = 10, wt = 2000;
             SynchronizationExamples examples = new SynchronizationExamples();
             Console.WriteLine("Example:" + examples.GetType().Name);
 
@@ -19,7 +19,7 @@ namespace Program
             Thread.Sleep(wt);
             // todo 2: uncomment this and check the final result. Is the final result reliable? Try to experiment several times.
             // Why the result is different in various scenarios? Check the implementation.
-            //examples.countMultipleTimesConc(times, until);
+            examples.countMultipleTimesConc(times, until);
 
             Thread.Sleep(wt);
             // todo 3: uncomment this and check the final result. Is this result reliable? Why? Check the implementation.
