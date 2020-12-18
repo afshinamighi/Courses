@@ -168,9 +168,9 @@ The main objectives are to protect shared resources and to practice basic concep
 1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3**.
 2. Use the reference provided below to answer the following questions:
    Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
-   1. What is a deadlock?
-   2. What is a semaphore?
-   3. What is a mutex?
+   1. What are the most commonly used blocking methods in threads?
+   2. What is the difference between spinning (busy waiting) and blocking? Which one is not efficient?
+   3. What is a lock? Why do we need a lock?
 3. If you do not have experience with linked lists, read this tutorial to gain knowledge about linked list in C#:
    Tutorial: [Linked Lists in C#](https://www.dotnetperls.com/linkedlist) 
 
@@ -193,9 +193,9 @@ The main objectives are to protect shared resources and to practice basic concep
    1. Follow the todos in the program and run the sequential version of **ProducerConsumer**. Check the order of data producing and consuming (check the ordering of the printed value).
    2. Read the program carefully: 
       1. How are the producer and consumer generating / consuming data?
-      2. How is the channel defined?
-      3. How are the producer-consumer accessing the channel?
-      4. Do we need to protect the channel in the sequential version? 
+      2. How is the the communication achived?
+      3. How are the producer-consumer accessing the shared buffer?
+      4. Do we need to protect this shared buffer in the sequential version? 
    3. Follow todos and run the **concurrentOneProducerOneConsumer** method. Your task will be to update the program to be thread safe. 
       1. Re-run the program several times. How do you interpret the behaviour? 
       2. Read the related code carefully and explain which tasks are concurrent.
@@ -223,16 +223,17 @@ The main objectives are to protect shared resources and to practice basic concep
 The main objectives are to practice synchronisations of threads using Semaphores and to understand deadlocks. In this week we will practice:
 
 - How to employ semaphores to protect shared resources.
-- How to [in progess: deadlocks].
+- How to recognise deadlocks.
 
 ## Preparation:
 
 1. In order to practice this set of exercises, you need to be confident with creating several threads, passing tasks to the threads, starting and joining threads. If you are not confident yet, first practice with exercises **Week 3: Exercises 2 and 3, Week 4: Exercises 1 and 3**.
 2. Use the reference provided below to answer the following questions:
    Reference: [Synchronization Objects](http://www.albahari.com/threading/part2.aspx) 
-   1. What are the most commonly used blocking methods in threads?
-   2. What is the difference between spinning (busy waiting) and blocking? Which one is not efficient?
-   3. What is a lock? Why do we need a lock?
+   1. What is a deadlock?
+   2. What is a semaphore?
+   3. What is a mutex?
+3. Watch this video: [Dining Philosophers](https://www.youtube.com/watch?v=NbwbQQB7xNQ)
 
 ## Exercises:
 

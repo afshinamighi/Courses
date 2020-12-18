@@ -8,7 +8,7 @@ namespace ThreadVariables
         static void Main(string[] args)
         {
             ExampleLocals examples = new ExampleLocals();
-            examples.multiRun(100, 1000);
+            examples.multiRun(50, 1000);
             Console.WriteLine("[End]");
         }
     }
