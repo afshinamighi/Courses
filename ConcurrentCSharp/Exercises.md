@@ -1,14 +1,14 @@
 # Concurrency in C#: Practicum
 
 This document class activities and exercises are described to be practised in practicums of Concurrency course of Hogeschool Rotterdam.
-
-### Practical notes:
+<details>
+<summary>### Practical notes:</summary>
 1. The exercises of each week corresponds to some of the source codes available here in Github: https://github.com/afshinamighi/Courses
 2. Corresponding C# projects are represented with bold font at each exercise.
 3. In each exercise, students are expected to evaluate specified source codes, understand the structures, analyze expected behaviours of the programs (guess and justify the output), and in some cases reproduce the concept in a different context.
 4. In some of the exercises, students are asked to share / discuss / explain results of their evaluations. The teacher will determine how results will be shared with other students and/or the teacher.
 5. This document will be updated weekly. 
-
+</details>
 
 
 # Week 1: 
