@@ -21,11 +21,11 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 
 ## Exercises:
 _note: just for today ignore the **#todo** inside the code that ask you to write code, we will focus on the understanding and not on producing code._
-1. <details><summary>[~ 5 min ] Concurrency in your machine:</summary>
+1. [~ 5 min ] Concurrency in your machine:
 	1.	Make a list of parallel/concurrent programs in your computer. Choose a running program (for example PyCharm) and see how many threads are running by the application. You can check threads' count in your *task manager/activity monitor* (on Windows *task manager click* on the columns name to select columns and add threads if it is not already visible). You can also use in the Linux/MAC shell the command **"top"** (#TH --> total threads/running threads).
 	2.	Open an internet browser with several tabs (*Chrome*) of the same domain website. Check how many threads are created per process (the threads are not directly named but they are listed as parts of the single process: they all have the same Process ID, but contains multiple lines). Make a list (at least five) of *functionalities* (tasks) that each thread of execution is responsible to execute.
 	3. Share your list with the teacher.
-</details>
+
 2. [~ 30 min ] **SocketClient, SocketServer** (names of the projects/directories you can find in this repository):
 	```diff
 	+ Note: this code will be the base line for your assignment, read this document until the end for more details.
