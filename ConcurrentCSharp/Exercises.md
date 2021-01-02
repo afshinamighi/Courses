@@ -184,7 +184,7 @@ The main objectives are to protect shared resources and to practice basic concep
    3. Do you recognise a *critical section* in the code? Where is it protected? 
    4. Do you recognise a *data race* here? 
    5. Which mechanism is used to protect the shared memory?
-2. [~ 15 min ] **[@home]** **MergeSort **: Use the code and justify your answers for the following questions. 
+2. [~ 15 min ] **[@home]** **MergeSort**: Use the code and justify your answers for the following questions. 
    
    1. Do you recognise a shared memory? 
    2. Do you need to protect the shared memory?
