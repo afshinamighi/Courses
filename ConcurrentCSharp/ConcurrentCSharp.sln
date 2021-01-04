@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPCNamedClient", "IPCNamedC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPCNamedServer", "IPCNamedServer\IPCNamedServer.csproj", "{FE81BA09-993B-4DCB-AF20-0E03AA421D29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A9D0BC0-933B-4DA3-A991-1E1F07469243}"
 	ProjectSection(SolutionItems) = preProject
 		ClientServerConfig.json = ClientServerConfig.json
@@ -35,6 +33,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiningPhilosophers", "DiningPhilosophers\DiningPhilosophers.csproj", "{44BE8E97-DDA7-4BA4-B4E7-06BD6292CF7A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadVariables", "ThreadVariables\ThreadVariables.csproj", "{1C1D14D1-2E80-4B10-9C0C-33C8C0E48A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{09D2E5EA-3B24-4F00-871F-D16AE8FC3A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asynchronous", "Asynchronous\Asynchronous.csproj", "{CFF4C5D4-01AA-4394-940A-97F1C493D67D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,10 +72,6 @@ Global
 		{FE81BA09-993B-4DCB-AF20-0E03AA421D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE81BA09-993B-4DCB-AF20-0E03AA421D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE81BA09-993B-4DCB-AF20-0E03AA421D29}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4AFB2BF-255D-458F-97A0-31FAC9B0DCC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1B65EEF-72B1-4960-AE2E-6242A8C37C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -102,5 +100,13 @@ Global
 		{1C1D14D1-2E80-4B10-9C0C-33C8C0E48A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C1D14D1-2E80-4B10-9C0C-33C8C0E48A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C1D14D1-2E80-4B10-9C0C-33C8C0E48A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D2E5EA-3B24-4F00-871F-D16AE8FC3A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D2E5EA-3B24-4F00-871F-D16AE8FC3A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D2E5EA-3B24-4F00-871F-D16AE8FC3A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D2E5EA-3B24-4F00-871F-D16AE8FC3A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF4C5D4-01AA-4394-940A-97F1C493D67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF4C5D4-01AA-4394-940A-97F1C493D67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF4C5D4-01AA-4394-940A-97F1C493D67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF4C5D4-01AA-4394-940A-97F1C493D67D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,6 @@
 Solution*
+ClientSolution*
+ServerSolution*
 *.cs~
 bin
 obj

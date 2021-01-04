@@ -14,10 +14,7 @@ namespace Exercise
         public void incrementThreadSafe()
         {
             lock (mutex) {
-
                 this.count++;
-
-
             }
         }
 

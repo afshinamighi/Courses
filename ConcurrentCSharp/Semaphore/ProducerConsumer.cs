@@ -1,6 +1,13 @@
 ﻿using System;
 using System.Threading;
 
+/// <summary>
+/// Buffer: is implemented as a two cells array. Assumed empty at the beginning.
+/// Buffer::write(): write a value at empty index and moved the index forward.
+/// Buffer::read(): finds the index to read (next index after empty index, because it has only two cells) and reads the value ready.
+/// Producer: only writes
+/// Consumer: only reads
+/// </summary>
 
 // todo 3: Check methods Producer::produce() and Consumer::consume(). Using defined semaphores, protect shared memory.
 namespace ProducerConsumer
@@ -17,7 +24,7 @@ namespace ProducerConsumer
         }
         public void write(int pid)
         {
-            buffer[emptyIndex]++;
+            buffer[emptyIndex]++; // for simplicity we just increment the value at empty current empty index
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.Out.WriteLine("[Producer {0}] wrote {1} at index {2}", pid.ToString(), buffer[emptyIndex].ToString(), emptyIndex.ToString());
             Console.ForegroundColor = ConsoleColor.Black;
@@ -26,8 +33,8 @@ namespace ProducerConsumer
         }
         public int read(int cid)
         {
-            int readIndex = (emptyIndex + buffer.Length - 1) % buffer.Length;
-            int result = buffer[readIndex];
+            int readIndex = (emptyIndex + buffer.Length - 1) % buffer.Length; // calculate which index must be read
+            int result = buffer[readIndex]; // read the value at reading index
             Console.Out.WriteLine("[Consumer {0}] read {1} from index {2} ", cid.ToString(), result.ToString() , readIndex.ToString());
             return result;
         }
@@ -53,9 +60,8 @@ namespace ProducerConsumer
         public void produce()
         {
             Thread.Sleep(new Random().Next(minTime, maxTime));
-            int data = new Random().Next();
-
-            this.buffer.write(this.id);
+            //int data = new Random().Next();
+            this.buffer.write(this.id); // we can ask buffer to write generated data
         }
         public void MultiProduce(Object n)
         {
@@ -85,7 +91,6 @@ namespace ProducerConsumer
         public void consume()
         {
             Thread.Sleep(new Random().Next(minTime, maxTime));
-
             int data = this.buffer.read(this.id);
         }
         public void MultiConsume(Object n)
