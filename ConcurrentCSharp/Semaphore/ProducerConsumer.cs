@@ -3,8 +3,8 @@ using System.Threading;
 
 /// <summary>
 /// Buffer: is implemented as a two cells array. Assumed empty at the beginning.
-/// Buffer::write(): write a value at empty index and moved the index forward.
-/// Buffer::read(): finds the index to read (next index after empty index, because it has only two cells) and reads the value ready.
+/// Buffer::write(): writes a value at empty index and moves the index forward.
+/// Buffer::read(): finds the index to read (next index after empty index, because it has only two cells) and reads the value.
 /// Producer: only writes
 /// Consumer: only reads
 /// </summary>
@@ -24,12 +24,15 @@ namespace ProducerConsumer
         }
         public void write(int pid)
         {
+
             buffer[emptyIndex]++; // for simplicity we just increment the value at empty current empty index
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.Out.WriteLine("[Producer {0}] wrote {1} at index {2}", pid.ToString(), buffer[emptyIndex].ToString(), emptyIndex.ToString());
             Console.ForegroundColor = ConsoleColor.Black;
 
             emptyIndex = (emptyIndex + 1) % buffer.Length;
+
+
         }
         public int read(int cid)
         {
@@ -61,7 +64,11 @@ namespace ProducerConsumer
         {
             Thread.Sleep(new Random().Next(minTime, maxTime));
             //int data = new Random().Next();
+
+            this.producerSemaphore.WaitOne(); // P(ps)
             this.buffer.write(this.id); // we can ask buffer to write generated data
+            this.consumerSemaphore.Release(); // V(cs)
+            
         }
         public void MultiProduce(Object n)
         {
@@ -91,7 +98,12 @@ namespace ProducerConsumer
         public void consume()
         {
             Thread.Sleep(new Random().Next(minTime, maxTime));
+
+            this.consumerSemaphore.WaitOne(); // P(cs)
             int data = this.buffer.read(this.id);
+            this.producerSemaphore.Release(); // V(ps)
+
+
         }
         public void MultiConsume(Object n)
         {

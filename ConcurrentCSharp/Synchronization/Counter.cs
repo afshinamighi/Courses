@@ -13,9 +13,12 @@ namespace Exercise
 
         public void incrementThreadSafe()
         {
-            lock (mutex) {
+            lock (mutex) { // lock occures here
+
                 this.count++;
-            }
+                // more tasks 
+
+            } // unlock happens here
         }
 
         public void incrementUpTo(int n)

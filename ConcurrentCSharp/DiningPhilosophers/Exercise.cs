@@ -5,12 +5,13 @@ namespace Exercise
 {
     public class Fork
     {
+        private readonly Object using_lock = new object();
         public int id { get; set; }
         public int users { get; set; }
         public Fork(int id) { users = 0; this.id = id; }
         public void pick()
         {
-            lock (this)
+            lock (using_lock)
             {
                 users++;
                 if (users > 1)
@@ -23,7 +24,7 @@ namespace Exercise
         }
         public void release()
         {
-            lock (this)
+            lock (using_lock)
             {
                 users--;
                 if (users < 0)
@@ -45,6 +46,12 @@ namespace Exercise
         {
             this.number = n;
         }
+        public void eat()
+        {
+            Console.WriteLine("[{0} started eating ...]", number);
+            Thread.Sleep(new Random().Next(1, maxEatingTime));
+            Console.WriteLine("[{0} finished eating ...]", number);
+        }
         // this method implement eating with only one resource: enough resources, therefore no deadlock should occur
         public void eatWithOneFork()
         {
@@ -53,9 +60,7 @@ namespace Exercise
             lock (rightFork)
             {
                 rightFork.pick();
-                Console.WriteLine("[{0} started eating ...]", number);
-                Thread.Sleep(new Random().Next(1, maxEatingTime));
-                Console.WriteLine("[{0} finished eating ...]", number);
+                this.eat();
                 rightFork.release();
             }
         }
@@ -66,9 +71,7 @@ namespace Exercise
             rightFork.pick();
             Console.WriteLine("[{0} picked right fork {1}, waiting for left fork {2} ...]", number, rightFork.id, leftFork.id);
             leftFork.pick();
-            Console.WriteLine("[{0} started eating ...]", number);
-            Thread.Sleep(new Random().Next(1, maxEatingTime));
-            Console.WriteLine("[{0} finished eating ...]", number);
+            this.eat();
             leftFork.release();
             rightFork.release();
         }

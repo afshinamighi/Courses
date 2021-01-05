@@ -269,15 +269,17 @@ The main objective is to learn the basics of asynchronous programming in C#. In 
 
 Practising basics of asynchronous programming in C#, the following online resource can be conslted:
 
-- For Basics of Asynchronous Programming [click here](https://docs.microsoft.com/en-us/dotnet/csharp/async)
+- async and await in C#: Read the basics more [here](https://www.dotnetperls.com/async)
+- Asynchronous Programming with an example: How to prepare breakfast asynchronously? [click here](https://docs.microsoft.com/en-us/dotnet/csharp/async)
 - For more in-depth about Task Parallelism  [click here](http://www.albahari.com/threading/part5.aspx#_Task_Parallelism)
 
 ## Exercises:
 
-1. [~ 30 min] **Asynchronous**: In namespace **TaskExamples** follow *check* comments to understand various ways of defining and using *Task*s  and the use of async methods. From the main method, uncomment the coresponding statement and run the example. Compare and discuss measured times.  
+1. [~ 30 min] **Asynchronous**: In namespace **TaskExamples** have a look at the "*check*" comments to understand various ways of defining and using *Task*s and the use of *async methods*. From the *main* method, uncomment the coresponding statement and run the example. Compare and discuss the measured times.  
 2. [~ 20 min] **PrimeNumbers**: Check the provided solution.
 3. [~ 20 min] **ProcessCreation**: Check the provided solution.
-4. **[@home] ** **ICPNamedClient** , **ICPNamedServer**: Check the provided solution.
+4. [~ 20 min] **MergeSort**: Check the provided solution.
+5. **[@home]**  **ICPNamedClient** , **ICPNamedServer**: Check the provided solution.
 
 
 
@@ -291,9 +293,8 @@ Make your solutions ready.
 
 ## Exercises:
 
-1. [~ 20 min] **MergeSort**: Check the provided solution.
-2. [~ 20 min] **DiningPhilosophers**: Check the provided solution.
-3. [~ 30 min] **Semaphores**: We have learned how producers consumers can be synchronized with semaphores. 
+1. [~ 20 min] **DiningPhilosophers**: Check the provided solution.
+2. [~ 30 min] **Semaphores**: We have learned how producers consumers can be synchronized with semaphores. 
    1. Check the provided solution.
    2. Wtach this video to see how semaphores can be initialized to exploit full capacity of a shared buffer.
       Video: https://www.youtube.com/watch?v=LRiN3DJdskA
