@@ -13,7 +13,7 @@ namespace Semaphores
 
             //todo 1: Uncomment the following statement and analyze the behaviour of the program. 
             //pcSimulator.sequentialOneProducerOneConsumer();
-            //todo 4: Uncomment the following statement and analyze the behaviour of the program. 
+            //todo 3: Uncomment the following statement and analyze the behaviour of the program. 
             pcSimulator.concurrentOneProducerOneConsumer();
             //todo 5: Uncomment the following statement and analyze the behaviour of the program. 
             //pcSimulator.concurrentMultiProducerMultiConsumer();

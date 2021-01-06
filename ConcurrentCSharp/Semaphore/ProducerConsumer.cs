@@ -9,7 +9,7 @@ using System.Threading;
 /// Consumer: only reads
 /// </summary>
 
-// todo 3: Check methods Producer::produce() and Consumer::consume(). Using defined semaphores, protect shared memory.
+// todo 4: Check methods Producer::produce() and Consumer::consume(). Using defined semaphores, protect shared memory.
 namespace ProducerConsumer
 {
     public class PCBuffer
@@ -64,10 +64,7 @@ namespace ProducerConsumer
         {
             Thread.Sleep(new Random().Next(minTime, maxTime));
             //int data = new Random().Next();
-
-            this.producerSemaphore.WaitOne(); // P(ps)
             this.buffer.write(this.id); // we can ask buffer to write generated data
-            this.consumerSemaphore.Release(); // V(cs)
             
         }
         public void MultiProduce(Object n)
@@ -98,12 +95,7 @@ namespace ProducerConsumer
         public void consume()
         {
             Thread.Sleep(new Random().Next(minTime, maxTime));
-
-            this.consumerSemaphore.WaitOne(); // P(cs)
             int data = this.buffer.read(this.id);
-            this.producerSemaphore.Release(); // V(ps)
-
-
         }
         public void MultiConsume(Object n)
         {
