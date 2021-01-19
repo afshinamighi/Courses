@@ -41,6 +41,7 @@ namespace Exercise
             sw.Start();
             PrimeNumbers.printPrimes(m, M);
             sw.Stop();
+
             Console.WriteLine("Time for sequential version is {0} msec,", sw.ElapsedMilliseconds);
         }
     }

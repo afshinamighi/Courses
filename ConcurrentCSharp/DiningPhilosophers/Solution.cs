@@ -86,10 +86,10 @@ namespace Solution
         // solution: no deadlock here, implemented using mutex with timeout
         public void eatWithTwoForksSafe()
         {
-            Int32 timeout = 10;
+            Int32 timeout = 10; // todo: pass timeout as a parameter to the mutexes and check if deadlock happens
             Console.WriteLine("[{0} waiting for right fork ...]", number);
 
-            if (rightFork.forkMutex.WaitOne())
+            if (rightFork.forkMutex.WaitOne())  
             {
                 rightFork.pick();
 
@@ -107,7 +107,7 @@ namespace Solution
             }
         }
 
-        public void startEatingWithOneFork(Object it)
+        public void startEatingWithOneFork(Object it) // why the parameter has the type Object?
         {
             int iterations = (int)it;
             for (int i = 0; i < iterations; i++)
@@ -169,7 +169,9 @@ namespace Solution
                 threads[i] = new Thread(philosophers[i].startEatingWithTwoForks);
 
             for (int i = 0; i < threads.Length; i++)
+            {
                 threads[i].Start(it);
+            }
 
             for (int i = 0; i < threads.Length; i++)
                 threads[i].Join();

@@ -294,6 +294,7 @@ Make your solutions ready.
 ## Exercises:
 
 1. [~ 20 min] **DiningPhilosophers**: Check the provided solution.
+   1. In the solution a method (named *startEatingWithTwoForksSafe*) is added to prevent a deadlock. In this method, shared resources are protected using class *Mutex*. Check how instances of this class is used. First, try the code without timeout. You should see the deadlock. Then, pass timeout as a parameter to the methods *WaitOne*. Do you expect a deadlock? Justify your answer.
 2. [~ 30 min] **Semaphores**: We have learned how producers consumers can be synchronized with semaphores. 
    1. Check the provided solution.
    2. Wtach this video to see how semaphores can be initialized to exploit full capacity of a shared buffer.

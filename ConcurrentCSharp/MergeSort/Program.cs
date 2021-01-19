@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Exercise;
-//using Solution;
+using Solution;
 
 namespace Program
 {
@@ -15,14 +15,14 @@ namespace Program
             
             SequentialMergeSort mergeSort = new SequentialMergeSort(arr);
 
-            mergeSort.printContent("\n Before the sequential merge-sort ");
+            mergeSort.printContent("\n Before the sequential merge-sort \n");
             mergeSort.sortSeq(0, arr.Length - 1);
-            mergeSort.printContent("\n After the sequential merge-sort ");
+            mergeSort.printContent("\n After the sequential merge-sort \n");
 
             // uncomment this only if the solution is available
-            //Console.WriteLine("\n Now concurrent sort will be running ...");
-            //SolutionConcurrentMergeSort concMergeSort = new SolutionConcurrentMergeSort();
-            //concMergeSort.sortCon(arr);
+            Console.WriteLine("\n Now concurrent sort will be running ...\n");
+            SolutionConcurrentMergeSort concMergeSort = new SolutionConcurrentMergeSort();
+            concMergeSort.sortCon(arr);
 
         }
     }

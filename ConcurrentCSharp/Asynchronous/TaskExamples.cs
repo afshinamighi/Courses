@@ -97,11 +97,15 @@ namespace TaskExamples
         public async Task<int> InvokeAnInefficientAsyncTask()
         {
             int c = 0;
-            Task printTask = new Task(() => Operations.PrintConsole(iterations, wait_time));
+
+            Task printTask = new Task(() => Operations.PrintConsole(iterations, wait_time)); // io bound 
             Console.WriteLine(" Now an Async task is going to be called ...");
             printTask.Start();
+
             await printTask;
-            c = Operations.FindPrimes(min_prime, max_parime);
+
+            c = Operations.FindPrimes(min_prime, max_parime);  // mostly CPU bound task 
+
             Console.WriteLine(" All the tasks are ready here ...");
             return c;
         }
@@ -112,8 +116,11 @@ namespace TaskExamples
             Task printTask = new Task(()=>Operations.PrintConsole(iterations,wait_time));
             Console.WriteLine(" Now an Async task is going to be called ...");
             printTask.Start();
+
             c = Operations.FindPrimes(min_prime, max_parime);
+
             // check: what will be the result if we do not await for printTask? Comment this line and check the output.
+
             await printTask;
             Console.WriteLine(" All the tasks are ready here ...");
             return c;

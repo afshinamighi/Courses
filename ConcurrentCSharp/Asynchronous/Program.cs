@@ -54,7 +54,7 @@ namespace Asynchrounous
         }
         static void Main(string[] args)
         {
-            //Program.ExampleTasks();
+            Program.ExampleTasks();
         }
     }
 }

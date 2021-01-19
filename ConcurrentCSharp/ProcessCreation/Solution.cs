@@ -11,8 +11,8 @@ namespace Solution
         {
             // First define your process
             ProcessStartInfo prInfo = new ProcessStartInfo();
-            prInfo.FileName = "dotnet"; // This is an executable program.
-            prInfo.Arguments = "../../../../Processes/bin/Debug/netcoreapp3.1/Processes.dll";
+            prInfo.FileName = "ls"; // This is an executable program.
+            prInfo.Arguments = "-all";
             prInfo.CreateNoWindow = false; // This means start the process in a new window
             prInfo.UseShellExecute = false;
 

@@ -1,5 +1,5 @@
 ﻿using Exercise;
-//using Solution;
+using Solution;
 
 namespace Program
 {
@@ -9,7 +9,7 @@ namespace Program
         {
             new ProcessCreation().createProcess();
             //uncomment this only when Solution is available
-            //new SolutionProcessCreation().createProcess();
+            new SolutionProcessCreation().createProcess();
         }
     }
 }
