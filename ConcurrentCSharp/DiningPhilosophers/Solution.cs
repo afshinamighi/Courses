@@ -41,7 +41,7 @@ namespace Solution
     {
         public Fork rightFork { get; set; }
         public Fork leftFork { get; set; }
-        public int maxEatingTime = 100;
+        public int maxEatingTime = 10;
         public int number;
         public Philosopher(int n)
         {
@@ -89,13 +89,13 @@ namespace Solution
             Int32 timeout = 10; // todo: pass timeout as a parameter to the mutexes and check if deadlock happens
             Console.WriteLine("[{0} waiting for right fork ...]", number);
 
-            if (rightFork.forkMutex.WaitOne())  
+            if (rightFork.forkMutex.WaitOne(timeout))  
             {
                 rightFork.pick();
 
                 Console.WriteLine("[{0} picked right fork {1}, waiting for left fork {2} ...]", number, rightFork.id, leftFork.id);
 
-                if (leftFork.forkMutex.WaitOne())
+                if (leftFork.forkMutex.WaitOne(timeout))
                 {
                     leftFork.pick();
                     this.eat();
