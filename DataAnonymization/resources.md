@@ -41,7 +41,7 @@ Figure: [An example of a taxonomy tree](./pix/fig-taxonomy-01.png)
 
 #### k-anonimity:
 
-[todo]
+This algorithm is based on QIDs. The algorithm using taxonomy tree, builds a class of records with equal values for *qids*. After applying k-anonymity, if one record in the table has some value *qid*, at least *k* − 1 other records also have the value *qid*. In other words, the minimum group size on *QID* is at least *k*. A table satisfying this requirement is called *k-anonymous*. In a *k*-anonymous table, each record is indistinguishable from at least *k* − 1 other records with respect to *QID*. Consequently, the probability of linking a victim to a specific record through *QID* is at most 1/*k*.
 
 #### l-diversity:
 
@@ -49,20 +49,27 @@ Figure: [An example of a taxonomy tree](./pix/fig-taxonomy-01.png)
 
 # Resources:
 
-## Books:
+## Books
 
 1. Book: ["Database Anonymization: Privacy Models, Data Utility, and Microaggregation-based Inter-model Connections"](https://www.researchgate.net/publication/290229262_Database_Anonymization_Privacy_Models_Data_Utility_and_Microaggregation-based_Inter-model_Connections)
 
-## Surveys:
+## Survey
 
 1. Privacy-preserving data publishing: A survey of recent development [[download here](https://dl-acm-org.ezproxy.hro.nl/doi/10.1145/1749603.1749605)]
 
-## Tools:
+## Tool
 
 1. Tool: [ARX as an anonymization tool and API](https://arx.deidentifier.org/)
 2. Tool: [ARX as a Service](https://oslomet-arx-as-a-service.github.io/resources/Product_Specification.pdf)
 
-## Reports:
+### Report
 
 1. A bachelor thesis: [Anonymization of health data](https://www.duo.uio.no/bitstream/handle/10852/79902/Anonymization-of-Health-Data.pdf?sequence=13&isAllowed=y)
+
+
+
+### misc
+
+1. Fundamentals in data anonimization. [Read here](https://www.dataversity.net/the-fundamentals-of-data-anonymization-and-protection/#)
+2. Is it still possible to identify anonymized data? [Read here](https://www.nytimes.com/2019/07/23/health/data-privacy-protection.html)
 
