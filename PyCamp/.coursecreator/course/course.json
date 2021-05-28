@@ -1,0 +1,193 @@
+{
+  "environment" : "unittest",
+  "summary" : "Python course.\nCreated: May 28, 2021, 4:10:01 PM.",
+  "title" : "PyCamp",
+  "programming_language" : "Python",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "week01",
+      "task_list" : [
+        {
+          "name" : "task01",
+          "files" : {
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import unittest\n\nfrom .. import task as target\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add_binary(self):\n        tcs = [\n            ((3,5), str(bin(3+5))),\n            ((6,10), str(bin(6+10)))]\n        for ((a,b) , tcr) in tcs:\n            self.assertEqual(target.add_binary(a,b), tcr,msg=str((a,b))+' Expected '+str(tcr))\n    def test_add_hex(self):\n        tcs = [\n            ((3,5), str(hex(3+5))),\n            ((6,10), str(hex(6+10)))]\n        for ((a,b) , tcr) in tcs:\n            self.assertEqual(target.add_hex(a,b), tcr,msg=str((a,b))+' Expected '+str(tcr))\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "\n# Implement a function that adds two numbers together\n# and returns their sum in binary, hex.\n# The conversion can be done before, or after the addition.\n#\n# The binary or hex number returned should be a string.\n#\n# Examples:\n#\n# add_binary(5, 9) == \"1110\" (5 + 9 = 14 in decimal or 1110 in binary)\n# add_hex(5, 9) == \"1110\" (5 + 9 = 14 in decimal or 1110 in binary)\n\n\ndef add_binary(a:int,b:int)->str:\n    bresult = bin(a+b)\n    sresult = str(bresult)\n    return sresult\n\ndef add_hex(a:int,b:int)->str:\n    sresult = 'result'\n    return sresult\n"
+            }
+          },
+          "description_text" : "<html>\n\n<h2>Task Description: Tips & Tricks</h2>\n\n<p>This is a task description file.\nIts content will be displayed to a learner\nin the <strong>Task Description</strong> window.</p>\n\n<p>It supports both Markdown and HTML.\nTo toggle the format, you can rename <strong>task.md</strong>\nto <strong>task.html</strong>, or vice versa.\nThe default task description format can be changed\nin <strong>Preferences | Tools | Education</strong>,\nbut this will not affect any existing task description files.</p>\n\n<p>The following features are available in\n<strong>task.md/task.html</strong>\nwhich are specific to the EduTools plugin:</p>\n\n<ul>\n<li>Hints can be added anywhere in the task text.\nType \"hint\" and press Tab.\nHints should be added to an empty line in the task text.\nIn hints you can use both HTML and Markdown.\n<div class=\"hint\">Text of your hint</div></li>\n\n<li>You may need to refer your learners to a particular lesson,\ntask, or file. To achieve this, you can use the in-course links.\nSpecify the path using the <code>&lt;a href=\"course://lesson1/task1/file1\"&gt;\nlink_text&lt;/a&gt;</code> format.</li><br>\n\n<li>You can insert shortcuts in the task description.\nWhile <strong>task.html/task.md</strong> is open,\nright-click anywhere on the <strong>Editor</strong> tab\nand choose the <strong>Insert shortcut</strong> option\nfrom the context menu.\nFor example: &amp;shortcut:FileStructurePopup;.</li><br>\n\n<li>Insert the &percnt;<code>IDE_NAME</code>&percnt; macro,\nwhich will be replaced by the actual IDE name.\nFor example, <strong>%IDE_NAME%</strong>.</li><br>\n\n<li>Insert PSI elements, by using links like\n<code>&lt;a href=\"psi_element://link.to.element\"&gt;element description&lt;/a&gt;</code>.\nTo get such a link, right-click the class or method\nand select <strong>Copy Reference</strong>.\nThen press &amp;shortcut:EditorPaste;\nto insert the link where appropriate.\nFor example, a\n<a href=\"psi_element://java.lang.String#contains\">link to the \"contains\" method</a>.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "task02",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "# todo: replace this with an actual task\ndef sum(a, b):\n    return a + b\n"
+            },
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            }
+          },
+          "description_text" : "<html>\n\n<h2>Task Description: Tips & Tricks</h2>\n\n<p>This is a task description file.\nIts content will be displayed to a learner\nin the <strong>Task Description</strong> window.</p>\n\n<p>It supports both Markdown and HTML.\nTo toggle the format, you can rename <strong>task.md</strong>\nto <strong>task.html</strong>, or vice versa.\nThe default task description format can be changed\nin <strong>Preferences | Tools | Education</strong>,\nbut this will not affect any existing task description files.</p>\n\n<p>The following features are available in\n<strong>task.md/task.html</strong>\nwhich are specific to the EduTools plugin:</p>\n\n<ul>\n<li>Hints can be added anywhere in the task text.\nType \"hint\" and press Tab.\nHints should be added to an empty line in the task text.\nIn hints you can use both HTML and Markdown.\n<div class=\"hint\">Text of your hint</div></li>\n\n<li>You may need to refer your learners to a particular lesson,\ntask, or file. To achieve this, you can use the in-course links.\nSpecify the path using the <code>&lt;a href=\"course://lesson1/task1/file1\"&gt;\nlink_text&lt;/a&gt;</code> format.</li><br>\n\n<li>You can insert shortcuts in the task description.\nWhile <strong>task.html/task.md</strong> is open,\nright-click anywhere on the <strong>Editor</strong> tab\nand choose the <strong>Insert shortcut</strong> option\nfrom the context menu.\nFor example: &amp;shortcut:FileStructurePopup;.</li><br>\n\n<li>Insert the &percnt;<code>IDE_NAME</code>&percnt; macro,\nwhich will be replaced by the actual IDE name.\nFor example, <strong>%IDE_NAME%</strong>.</li><br>\n\n<li>Insert PSI elements, by using links like\n<code>&lt;a href=\"psi_element://link.to.element\"&gt;element description&lt;/a&gt;</code>.\nTo get such a link, right-click the class or method\nand select <strong>Copy Reference</strong>.\nThen press &amp;shortcut:EditorPaste;\nto insert the link where appropriate.\nFor example, a\n<a href=\"psi_element://java.lang.String#contains\">link to the \"contains\" method</a>.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week02",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week03",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week04",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week05",
+      "task_list" : [
+        {
+          "name" : "task01",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "# reference: www.codewars.com\n#\n#\n# You live in the city of Cartesia where all roads are laid out in a perfect grid.\n# You arrived ten minutes too early to an appointment,\n# so you decided to take the opportunity to go for a short walk.\n# The city provides its citizens with a Walk Generating App on their phones\n# -- everytime you press the button it sends you an array of one-letter strings\n# representing directions to walk (eg. ['n', 's', 'w', 'e']).\n# You always walk only a single block for each letter (direction) and\n# you know it takes you one minute to traverse one city block,\n# so create a function that will return true if the walk the app gives you will take you exactly\n# ten minutes (you don't want to be early or late!) and will,\n# of course, return you to your starting point. Return false otherwise.\n#\n# Note: you will always receive a valid array containing a random assortment of\n# direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).\n\n# Extensions:\n# 1. Implement Walk Generting App as a function.\n# 2. Using Python turtle visualise the generated walk\n\ndef cw_validate_walk_path(wt:int, path:str)->bool:\n    result = False\n    steps_freq = { 'w':0, 's':0, 'n':0, 'e':0 }\n    steps = steps_freq.keys()\n    if len(set(path) - set(steps)) != 0 or len(path) != wt :\n        return None # invalid inputs, alternative: raise exceptions\n    for s in path:\n        steps_freq[s]+=1\n    result = (steps_freq['w'] == steps_freq['e'] and steps_freq['n']==steps_freq['s'])\n    return result\n\n"
+            },
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import unittest\n\nfrom .. import task as target\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_cw_validate_walk_path(self):\n        tcs = [\n            ('snnnswwwseee', True),\n            ('snnnswwwssee', False),\n            ('ssssnnnnsn', False),\n            ('wwwwwweeeeeew', False)\n            ]\n        for (tc , tcr) in tcs:\n            self.assertEqual(target.cw_validate_walk_path(len(tc), tc), tcr,tc+' Expected '+str(tcr))\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            }
+          },
+          "description_text" : "<html>\n\n<h2>Task Description: Tips & Tricks</h2>\n\n<p>This is a task description file.\nIts content will be displayed to a learner\nin the <strong>Task Description</strong> window.</p>\n\n<p>It supports both Markdown and HTML.\nTo toggle the format, you can rename <strong>task.md</strong>\nto <strong>task.html</strong>, or vice versa.\nThe default task description format can be changed\nin <strong>Preferences | Tools | Education</strong>,\nbut this will not affect any existing task description files.</p>\n\n<p>The following features are available in\n<strong>task.md/task.html</strong>\nwhich are specific to the EduTools plugin:</p>\n\n<ul>\n<li>Hints can be added anywhere in the task text.\nType \"hint\" and press Tab.\nHints should be added to an empty line in the task text.\nIn hints you can use both HTML and Markdown.\n<div class=\"hint\">Text of your hint</div></li>\n\n<li>You may need to refer your learners to a particular lesson,\ntask, or file. To achieve this, you can use the in-course links.\nSpecify the path using the <code>&lt;a href=\"course://lesson1/task1/file1\"&gt;\nlink_text&lt;/a&gt;</code> format.</li><br>\n\n<li>You can insert shortcuts in the task description.\nWhile <strong>task.html/task.md</strong> is open,\nright-click anywhere on the <strong>Editor</strong> tab\nand choose the <strong>Insert shortcut</strong> option\nfrom the context menu.\nFor example: &amp;shortcut:FileStructurePopup;.</li><br>\n\n<li>Insert the &percnt;<code>IDE_NAME</code>&percnt; macro,\nwhich will be replaced by the actual IDE name.\nFor example, <strong>%IDE_NAME%</strong>.</li><br>\n\n<li>Insert PSI elements, by using links like\n<code>&lt;a href=\"psi_element://link.to.element\"&gt;element description&lt;/a&gt;</code>.\nTo get such a link, right-click the class or method\nand select <strong>Copy Reference</strong>.\nThen press &amp;shortcut:EditorPaste;\nto insert the link where appropriate.\nFor example, a\n<a href=\"psi_element://java.lang.String#contains\">link to the \"contains\" method</a>.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week06",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week07",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week08",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week09",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week10",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week11",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week12",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week13",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week14",
+      "task_list" : [ ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "week15",
+      "task_list" : [ ],
+      "type" : "lesson"
+    }
+  ],
+  "version" : 11
+}
