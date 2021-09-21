@@ -9,6 +9,7 @@ using LibData;
 
 namespace BookHelper
 {
+    // Note: Do not change this class.
     public class Setting
     {
         public int serverPortNumber { get; set; }
@@ -22,16 +23,14 @@ namespace BookHelper
 
     public class SequentialHelper
     {
-
         public SequentialHelper()
         {
-            //todo: implement the body. Add extra fields and methods to the class if it is needed
+            //todo: implement the body. Add extra fields and methods to the class if needed
         }
 
         public void start()
         {
-            //todo: implement the body. Add extra fields and methods to the class if it is needed
+            //todo: implement the body. Add extra fields and methods to the class if needed
         }
-
     }
 }

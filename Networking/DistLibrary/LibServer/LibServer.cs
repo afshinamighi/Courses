@@ -8,6 +8,7 @@ using System.Threading;
 
 namespace LibServer
 {
+    // Note: Do not change this class.
     public class Setting
     {
         public int serverPortNumber { get; set; }
@@ -20,8 +21,7 @@ namespace LibServer
     }
 
     public class SequentialServer
-    {
-        
+    {       
         public SequentialServer()
         {
             //todo: implement the body. Add extra fields and methods to the class if it is needed

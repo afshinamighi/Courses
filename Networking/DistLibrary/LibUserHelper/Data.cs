@@ -23,16 +23,23 @@ namespace LibData
 
     public class BookData
     {
+        // the name of the book
         public string title { get; set; }
+        // the author of the book
         public string author { get; set; }
+        // the availability of the book: can be either Available or Borrowed
         public string status { get; set; }
+        //the user id of the person who borrowed the book, otherwise null if the book is available.
         public string borrowedBy { get; set; }
+        // return date of a book if it is borrowed, otherwise null.
         public string ReturnDate { get; set; }
     }
 
     public class UserData
     {
+        // user id: has the format User-[a number]
         public string user_id { get; set; }
+        // full name
         public string name { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
