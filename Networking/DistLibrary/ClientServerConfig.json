@@ -1,0 +1,9 @@
+﻿{
+    "ServerPortNumber": 11111,
+    "BookHelperPortNumber": 11112,
+    "UserHelperPortNumber": 11113,
+    "ServerIPAddress": "127.0.0.1",
+    "BookHelperIPAddress": "127.0.0.1",
+    "UserHelperIPAddress": "127.0.0.1",
+    "ServerListeningQueue": 5
+}
