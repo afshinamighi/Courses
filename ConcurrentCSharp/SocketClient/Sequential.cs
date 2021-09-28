@@ -166,8 +166,8 @@ namespace Sequential {
     {
         private SimpleClient[] clients;
         public Setting settings;
-        public string configFile = "../ClientServerConfig.json";
-        //public string configFile = "../../../../ClientServerConfig.json"; // for debugging
+        //public string configFile = "../ClientServerConfig.json";
+        public string configFile = "../../../../ClientServerConfig.json"; // for debugging
 
 
         public SequentialClientsSimulator()

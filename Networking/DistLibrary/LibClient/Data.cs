@@ -2,35 +2,36 @@
 
 namespace LibData
 {
+
     public class Message
     {
-        public string type { get; set; }
-        public string content { get; set; }
+        public MessageType Type { get; set; }
+        public string Content { get; set; }
     }
 
-    public class MessageType
+    public enum MessageType
     {
-        public const string hello = "Hello";
-        public const string welcome = "Welcome";
-        public const string bookInquiry = "BookInquiry";
-        public const string userInquiry = "UserInquiry";
-        public const string bookInqReply = "BookInquiryReply";
-        public const string userInqReply = "UserInquiryReply";
-        public const string endComm = "EndCommunication";
-        public const string error = "Error";
-        public const string notFound = "NotFound";
+        Hello,
+        Welcome,
+        BookInquiry,
+        UserInquiry,
+        BookInquiryReply,
+        UserInquiryReply,
+        EndCommunication,
+        Error,
+        NotFound,
     }
 
     public class BookData
     {
         // the name of the book
-        public string title { get; set; }
+        public string Title { get; set; }
         // the author of the book
-        public string author { get; set; }
+        public string Author { get; set; }
         // the availability of the book: can be either Available or Borrowed
-        public string status { get; set; }
+        public string Status { get; set; }
         //the user id of the person who borrowed the book, otherwise null if the book is available.
-        public string borrowedBy { get; set; }
+        public string BorrowedBy { get; set; }
         // return date of a book if it is borrowed, otherwise null.
         public string ReturnDate { get; set; }
     }
@@ -38,10 +39,10 @@ namespace LibData
     public class UserData
     {
         // user id: has the format User-[a number]
-        public string user_id { get; set; }
+        public string User_id { get; set; }
         // full name
-        public string name { get; set; }
-        public string email { get; set; }
-        public string phone { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 }

@@ -2,9 +2,9 @@
 
 **Introduction**: This document presents learning activities for week 02. In Week 02, you will learn basics of Python structures to add decision points to your linear programs. A branching program is a flow of sequential instructions with branching statements. By the end this week, you will be able to implement a program where a user can enter simple input, the program can make choices based on some conditions and after calculation results can be printed as output.
 
-## Day-01: What is a ???
+## Day-01: How to check conditions?
 
-1. Using **Ref-B01: Chapter 03** answer and experiment the following questions:
+1. Using **Ref-O02: Chapter 03** answer and experiment the following questions:
    1. What is a 
 2. Using **RefB-01: Appendix B** perform the following tasks:
    1. Install Pyt

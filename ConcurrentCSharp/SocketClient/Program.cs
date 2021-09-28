@@ -1,7 +1,7 @@
 ﻿using System;
 using Sequential;
-using Concurrent;
-//using Solution;
+//using Concurrent;
+using Solution;
 
 namespace Program
 {

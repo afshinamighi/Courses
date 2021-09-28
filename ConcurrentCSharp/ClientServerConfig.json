@@ -3,7 +3,7 @@
     "serverIPAddress": "127.0.0.1",
     "clientMinStartingTime": 100,
     "clientMaxStartingTime": 1000,
-    "experimentNumberOfClients": 30,
+    "experimentNumberOfClients": 150,
     "delayForTermination": 1000,
     "votingList": "ps :open -a preview :open -a whatsapp :ls -all",
     "serverListeningQueue": 20,
