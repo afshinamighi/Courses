@@ -1,7 +1,6 @@
 ﻿using System.Drawing;
 using System;
 using UserHelper;
-//using UserHelperSolution;
 using System.Text;
 using System.Diagnostics.Tracing;
 

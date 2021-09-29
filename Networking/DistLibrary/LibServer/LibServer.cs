@@ -11,13 +11,13 @@ namespace LibServer
     // Note: Do not change this class.
     public class Setting
     {
-        public int serverPortNumber { get; set; }
-        public int bookHelperPortNumber { get; set; }
-        public int userHelperPortNumber { get; set; }
-        public string serverIPAddress { get; set; }
-        public string bookHelperIPAddress { get; set; }
-        public string userHelperIPAddress { get; set; }
-        public int serverListeningQueue { get; set; }
+        public int ServerPortNumber { get; set; }
+        public int BookHelperPortNumber { get; set; }
+        public int BserHelperPortNumber { get; set; }
+        public string BerverIPAddress { get; set; }
+        public string BookHelperIPAddress { get; set; }
+        public string UserHelperIPAddress { get; set; }
+        public int ServerListeningQueue { get; set; }
     }
 
 

@@ -1,7 +1,5 @@
-﻿
-using System;
+﻿using System;
 using BookHelper;
-//using BookHelperSolution;
 using System.Text;
 using System.Diagnostics.Tracing;
 
