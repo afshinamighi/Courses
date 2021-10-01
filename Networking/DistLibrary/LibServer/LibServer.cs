@@ -13,8 +13,8 @@ namespace LibServer
     {
         public int ServerPortNumber { get; set; }
         public int BookHelperPortNumber { get; set; }
-        public int BserHelperPortNumber { get; set; }
-        public string BerverIPAddress { get; set; }
+        public int UserHelperPortNumber { get; set; }
+        public string ServerIPAddress { get; set; }
         public string BookHelperIPAddress { get; set; }
         public string UserHelperIPAddress { get; set; }
         public int ServerListeningQueue { get; set; }
