@@ -22,26 +22,12 @@ Main objectives of this week is to introduce the main concepts and prepare pract
 ## Exercises:
 _note: just for today ignore the **#todo** inside the code that ask you to write code, we will focus on the understanding and not on producing code._
 1. [~ 5 min ] Concurrency in your machine:
-	1.	Make a list of parallel/concurrent programs in your computer. Choose a running program (for example PyCharm) and see how many threads are running by the application. You can check threads' count in your *task manager/activity monitor* (on Windows *task manager click* on the columns name to select columns and add threads if it is not already visible). You can also use in the Linux/MAC shell the command **"top"** (#TH --> total threads/running threads).
-	2.	Open an internet browser with several tabs (*Chrome*) of the same domain website. Check how many threads are created per process (the threads are not directly named but they are listed as parts of the single process: they all have the same Process ID, but contains multiple lines). Make a list (at least five) of *functionalities* (tasks) that each thread of execution is responsible to execute.
-	3. Share your list with the teacher.
+  1.	Make a list of parallel/concurrent programs in your computer. Choose a running program (for example PyCharm) and see how many threads are running by the application. You can check threads' count in your *task manager/activity monitor* (on Windows *task manager click* on the columns name to select columns and add threads if it is not already visible). You can also use in the Linux/MAC shell the command **"top"** (#TH --> total threads/running threads).
+  2.	Open an internet browser with several tabs (*Chrome*) of the same domain website. Check how many threads are created per process (the threads are not directly named but they are listed as parts of the single process: they all have the same Process ID, but contains multiple lines). Make a list (at least five) of *functionalities* (tasks) that each thread of execution is responsible to execute.
+  3. Share your list with the teacher.
 
-2. [~ 30 min ] **SocketClient, SocketServer** (names of the projects/directories you can find in this repository):
-	```diff
-	+ Note: this code will be the base line for your assignment, read this document until the end for more details.
-	```
-	1.	These two projects implement a simple client and server programs in C#. Create a project in your local machine and run both client and server. Check how network communication is working in this simulation.	*//hint:* run the client in a shell/terminal and the server in another. Start the server first and when it asks you the question, answer *"S"* (for Sequential).
-	2.	Assume you are asked to simulate multiple clients trying to communicate with the server simultaneously.	
-		1. In which method is the protocol implemented? Check for client and server.	*//hint:* at the top of the *Sequential.cs* file there is a high level view of the protocol.
-		2. When is the server supposed to compute the votes?
-		3. How does the client report to the server that the communication is ended?
-		4. How are client and server configured?	*//hint:* multiple files are involved in this process.
-		5. What is the role of the pending connection queue? Why do we need a queue?	*//hint:* the size is already defined from us, *"serverListeningQueue"*.
-		6. Is the current server implementation able to handle multiple simultaneous clients? If not, what would be your proposal to solve it?	*//hint:* Which **functionality** of the server can be implemented **concurrently**?
-	3. Share your answers with the teacher.
-	
 3. [~ 30 min ] **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks.
-In Week 1, ignore the class named **ConcurrentMergeSort** and its todos.
+	In Week 1, ignore the class named **ConcurrentMergeSort** and its todos.
 	1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following resources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
 	2.	**Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
 		1. If you checked the visual algorithm displayed from the above links you should have noted that changes the order and rebuild the re-organised data, can you find these 2 methods in the code?
@@ -311,11 +297,4 @@ Make your solutions ready.
 Description of the assignment and deliveries will be published by the teacher. Here we try to provide some steps that practically can lead students to implement a solution for the assignment. **Note**: These steps will be updated regularly during the course period.
 
 During the course after Week ...
-1. students can download and execute corresponding projects. They should spend enough time to understand details of the code and provided structure, modify and extend the code.
-2. students can make a list of commands in the client side. They should modify server such that it can execute the command sent by the client. First step: all clients are sending only one command to be executed at the server.
-3. students can extend client side such that it simulates a number of concurrent clients all trying to simultaneously communicating with the server.
-4. students can extend the server that can handle multiple simultaneous clients.
-5. students can extend the server with a proper shared structure such that stores received data from all the clients.
-6. students can extend the server with a solution to make the server thread safe, i.e no data race.
-7. students can execute and test their final results: ~ 200 simultaneous clients.
-Then, the solution is ready. Students should apply all the requested formats and deliver their solutions according given instructions.
+1. [in progress]
