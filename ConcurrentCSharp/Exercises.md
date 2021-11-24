@@ -28,12 +28,14 @@ _note: just for today ignore the **#todo** inside the code that ask you to write
 
 2. [~ 30 min ] **MergeSort**: One of the challenges in designing a concurrent program is to recognise potential concurrent tasks.
   In Week 1, ignore the class named **ConcurrentMergeSort** and its todos.
-  1.	Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following resources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
-  2.	**Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
-  	1. If you checked the visual algorithm displayed from the above links you should have noted that changes the order and rebuild the re-organised data, can you find these 2 methods in the code?
-  	2. How can we make it run faster if we had multiple processors available?
-  	3. Can you recognise sorting tasks that can be done *simultaneously*?
+  1. Among various sort algorithms one of the well-known ones is named **merge sort** algorithm. Read and understand how this algorithm works. You can use the following resources: [check here](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/) , or [here, just don't forget to choose right settings](https://visualgo.net/bn/sorting?slide=1).
+  2. **Note**: In week three you will be asked to implement a concurrent version of this algorithm. Therefore, this exercise is crucial to understand and share your ideas. 
+     1. If you checked the visual algorithm displayed from the above links you should have noted that changes the order and rebuild the re-organised data, can you find these 2 methods in the code?
+     2. How can we make it run faster if we had multiple processors available?
+     3. Can you recognise sorting tasks that can be done *simultaneously*?
+
   3. Share your answers with the teacher.
+
 
 
 # Week 2:
