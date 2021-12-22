@@ -60,9 +60,9 @@ Reference: [System calls to make processes](https://docs.microsoft.com/en-us/dot
 1. [~ 20 min ] **Processes**: The program will give a list of currently running processes. Names and Ids are printed. 
 	1. Compare Ids and Names with your machine activity (task) manager program. Choose a process id from your computer that its termination is safe: like whatsapp, editors, browser. Check if the program terminates the given process completely.
 	2. **[@home]** Add a method to the program that gets the name of a process and prints the related id.
-2. [~ 20 min ] **ProcessCreation**: Implement a program, that executes a command, like **ls**/**dir**. Modify your program such that executes the **Processes** (previous exercise compiled version of the dll/exe, and check the references).
+2. [~ 20 min ] **[Solution Available]** **ProcessCreation**: Implement a program, that executes a command, like **ls**/**dir**. Modify your program such that executes the **Processes** (previous exercise compiled version of the dll/exe, and check the references).
 
-3. [~ 30 min ] **IPCNamedClient, IPCNamedServer**: Two projects are implemented to present how two programs can communicate using named pipes.
+3. [~ 30 min ] **[Solution Available]** **IPCNamedClient, IPCNamedServer**: Two projects are implemented to present how two programs can communicate using named pipes.
 **Note**: Client and server naming is not following strict definition of client-server roles, it is just oriented to have a peer to peer communication.
 	1. Read and analyse the programs for both client and server. What do you expect from the behaviour of these programs?
 	2. Run the server, run the client. Check the behaviour.
@@ -131,13 +131,13 @@ The main objectives are to understand and apply concepts of multithreading. This
          **t_B.Start();**
          **t_B.Join();**
    
-3. [~ 30 min] **PrimeNumbers** : A sample sequential code for finding prime numbers is given. Your task is to write a method that implements the concurrent version of this algorithm.
+3. [~ 30 min] **[Solution Available]** **PrimeNumbers**: A sample sequential code for finding prime numbers is given. Your task is to write a method that implements the concurrent version of this algorithm.
    
    1. Understand how the sequential version works. Run the code and check how much time does it take to finish the task. 
    2. Recognise which task can be divided between two (or more) threads.
    3. *Implementation*: Follow todo provided in the code to implement the exercise. For simplicity, implement **only for two threads**. 
    4. Check to see how the time for sequential version is implemented. Apply it to your concurrent solution. Run both sequential and concurrent versions. Is you concurrent version more efficient? 
-4. [~ 30 min] **[@home]**  **MergeSort**: A sample implementation of merge sort is given. It is implemented sequentially. Your task is to implement a multi-threaded MergeSort. *Note*: In order to practice with the concepts of merge sort, first, understand how the sequential version works. Check the exercises of Week 1. You can use online resources to observe its execution visually. 
+4. [~ 30 min] **[Solution Available]** **[@home]**  **MergeSort**: A sample implementation of merge sort is given. It is implemented sequentially. Your task is to implement a multi-threaded MergeSort. *Note*: In order to practice with the concepts of merge sort, first, understand how the sequential version works. Check the exercises of Week 1. You can use online resources to observe its execution visually. 
    
    1. Recognise which task can be assigned to threads to be executed independently. For simplicity, assume only two threads.
    2. *Implementation*: Follow todos provided in the code to implement the exercise.
