@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "BookName": "War and Peace"
   },
@@ -10,11 +10,5 @@
   },
   {
     "BookName": "An Unknown Book"
-  },
-  {
-    "BookName": "Hamlet, Prince of Denmark"
-  },
-  {
-    "BookName": "The Hours"
   }
 ]
