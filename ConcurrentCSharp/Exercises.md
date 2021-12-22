@@ -197,7 +197,7 @@ The main objectives are to protect shared resources and to practice basic concep
    
    1. Implement a method that simulates multiple producers, one consumer.
    
-   2. Implement a method that simulates multiple producers and multiple consumers.
+   2. **[Solution Available]** Implement a method that simulates multiple producers and multiple consumers.
    
       
    
