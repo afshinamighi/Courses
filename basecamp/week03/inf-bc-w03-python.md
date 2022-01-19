@@ -8,6 +8,8 @@ The learning steps are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
+- **Exercises**: Available here [todo: finalise the link to the exercises file of week02].
+
 
 ## Path:
 
@@ -28,10 +30,7 @@ Follow the following steps:
    5. What would be the result of multiplying a number with a string? Try three examples. What if the number is zero?
    6. How can you extract specific character from a given string? How can you specify the first character? Last character? How can you get a slice if a string? Try with several examples in Python shell.
    7. What are the functionality of functions: *len()*, *split()*, *join()*, *replace()*. Try two examples for each function in Python shell.
-2. Implement a program that:
-	1. [todo: several exercises that covers functionalities of strings learned above]
-	2. ...
-	3. ... 
+2. Practice with the provided **Exercises**.
 
 ### Step-02: Looping with *while*
 
@@ -41,23 +40,19 @@ Follow the following steps:
    3. Using *while* loop implement a counter that counts down from 10 until 0. In each iteration, the program must print the value of the counter.
    4. What is *break* statement? 
    5. Implement a program that repeatedly asks the user to enter a character as input until the user enters *q*. If the user enters *q* the program will stop. 
-2. Exercises:
-   1. [todo: the idea is to extend some of the programs from above with more statements. For example: repeadely enter a char until *q* and then print all the chars entered by the user.]
+2. Practice with the provided **Exercises**.
 
 ### Step-03: Looping with *for .. in*
 
 1. Using **BRef-01: Chapter 06** answer and experiment the following questions:
    1. [todo: very similar to Step-02: design some activities.]
-2. Exercises:
-	1. [todo: design some exercises.]
+2. Practice with the provided **Exercises**.
     
 
 ### Step-04: Final Product
 
 1. Make a summary of concepts and techniques you have learned in this PyCamp.
-2. Using **BRef-01: Chapter 06** performs exercises **6.1**, **6.2** and **6.3**.
-2. Implement the following products based on their descriptions:
-   1. [todo: ideas for the products of the PyCamp].
+2. Practice with the provided **Exercises**.
 
 
 

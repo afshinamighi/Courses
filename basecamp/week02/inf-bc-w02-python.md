@@ -8,6 +8,7 @@ The activities are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
+- **Exercises**: Available here [todo: finalise the link to the exercises file of week02].
 
 ## Path:
 
@@ -30,9 +31,8 @@ Follow the following steps:
 1. Using **BRef-01: Chapter 04** answer and experiment the following questions:
    1. What is a comment and how you can specify a comment in Python?
    2. What are boolean values, boolean expressions, comparison operators and conditional statement in Python?
-2. Exercises:
-   1. [todo: the idea is to extend some of the programs from PyCamp 01 with conditional statements. For example: check if the input is a valid input to prevent errors.]
-
+2. Practice with the provided **Exercises**.
+   
 ### Step-03: Strings are essential.
 
 1. Using **BRef-01: Chapter 05** answer and experiment the following questions:
@@ -40,8 +40,7 @@ Follow the following steps:
    2. Can you multiply a number with a string? What is the result? Implement an example.
    3. How can you get character 5 of a given string? How can you get the first character?
    4. How can you get a substring?
-2. Exercises:
-	1. [todo: design some exercises.]
+2. Practice with the provided **Exercises**.
     
 
 ### Step-04: Final Product

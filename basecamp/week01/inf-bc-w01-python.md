@@ -9,11 +9,12 @@ The activities are designed based on these following references:
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **ORef-01**: Online Tutorial; Charles Severance; "Python for Everybody"; [Available here](https://books.trinket.io/pfe/index.html)
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
+- **Exercises**: Available here [todo: finalise the link to the exercises file of week01].
 
 
 ## Path:
 
-**Note:** In PyCamp 01, exercises of can be done using:
+**Note:** In PyCamp 01, exercises and examples can be executed using:
 
 1. Online Python Editor **OPyEditor**: The final program should be stored in local machine.
 2. Local Python Package (see Step-00): Using **BRef-01: Appendix B** Python can be installed in your local machine.
@@ -34,8 +35,7 @@ Follow the following steps:
    2. What are the main elements of a program?
    3. Take some simple python programs and try to guess what does each program do. Discuss inputs, behaviour and expected outputs.
    4. Find a python program. Name five different syntactical elements of the program. Define semantics of two elements of the program.
-   5. *(Optional)* Using **BRef-01-Chapter 01**:
-	   1. Finish all the exercises listed in **Things to Do**.
+2. Practice with the provided **Exercises**. 
 
 
 ### Step-02: Everything starts with Data.
@@ -51,13 +51,10 @@ Follow the following steps:
    4. Define some variables in Python that are not permitted in Python. Experiment with breaking various rules in defining variables. Analyse the error message.
    5. How can you assign a value to a variable? How can we express that two items are equal?
    6. How can you identify the type of a value / variable?
-3. Using **BRef-01: Chapter 02**:
-   1. Finish all the exercise listed in **Things to Do**.
-4. Perform a free (re)-search and answer the following questions:
+3. Perform a free (re)-search and answer the following questions:
    1. What are the character and string types in Python? Make examples.
    2. You have learned how to print something as an output of your program. How can you read something as input? What is the function? What is the type?
-5. Exercises:
-   1. [todo]
+4. Practice with the provided **Exercises**.
 
 ### Step-03: How to Calculate?
 
@@ -67,18 +64,12 @@ Follow the following steps:
    2. What are the basic arithmetic operations? Make a list with the semantics of each operation.
    3. Why *precedences* are important? Make examples.
    4. How can you convert one data type to another? Name basic built-in functions.
-2. Using **ORef-01: Chapter 03**:
-   1. Finish all the items in **Things to Do**.
-3. Exercises:
-   1. Implement a program (name **days-to-hms.py**) that a user can: (1) enter number of days as input, and (2) prints number of hours, minutes and seconds separately as output.
-   2. Experiment the behaviour of **days-to-hms.py** when: (1) input is a negative number, (2) input is a mix of letters and numbers.
-   3. [todo: more exercises]
+2. Practice with the provided **Exercises**.
 
 ### Step-04: Final Product
 
 1. Make a summary of concepts and techniques you have learned in this week.
-2. Implement the following products based on their descriptions:
-   1. [todo: ideas for the products of the week].
+2. Implement the products based on the descriptions provided in the **Exercises**.
 
 
 
