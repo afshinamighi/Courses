@@ -31,7 +31,7 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
 	- *Products*: To do.
 
-### Week04: Review / Challenges
+### Week04: Review / Challenges.
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
@@ -40,34 +40,36 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Exercises*: To do.
 	- *Products*: To do.
 
-### Week05:
+<hr />
 
-- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+### Week05: Functions, Lists and Tuples.
+
+- **Concepts** : General concepts of functions, basics of lists and tuples as collective structures.
+- **Exercises**: To do.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
-### Week06:
+### Week06: Functions, Dictionaries and Sets.
 
-- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Concepts** : Arguments and parameters, default values for parameters, dictionaries and basics of sets.
+- **Exercises**: To do.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
-### Week07:
+### Week07: Functions and Nested Structures.
 
-- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Concepts** : Lambda expressions, namespaces, and nested structures (lists, tuples, sets).
+- **Exercises**: To do.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
-### Week08: Review / Challenges
+### Week08: Review / Challenges.
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
@@ -76,31 +78,33 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Exercises*: To do.
 	- *Products*: To do.
 
-### Week09:
+<hr />
 
-- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+### Week09: Everything is an Object.
+
+- **Concepts** : Basic concepts of classes, objects, attributes and methods in Python.
+- **Exercises**: To do.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
-### Week10:
+### Week10: (Plain) Data Files.
 
-- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Concepts** : Basic concepts of encoding and decoding information, simple processing of plain files (text and binary) in Python.
+- **Exercises**: To do.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
-### Week11:
+### Week11: Structured Data Files.
 
-- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Concepts** : Basics of processing csv and json files.
+- **Exercises**: To do.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
 ### Week12: Review / Challenges
@@ -108,6 +112,6 @@ This collection covers a learning path for Basics of Python Programming. This le
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
 - **Status**: 
-	- *Learning Path*: To do.
-	- *Exercises*: To do.
+	- *Learning Path*: Proof of Concept, ready to experiment.
+	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
