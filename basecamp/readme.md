@@ -16,16 +16,16 @@ This collection covers a learning path for Basics of Python Programming. This le
 ### Week02: Branching Programs.
 
 - **Concepts** : Boolean expressions and conditional statements, basics of string processing with simple input / output.
-- **Exercises**: Exercises from *Week01* will be extended with conditions and simple string processings. Students at this week can practice to prevent some invalid inputs from the user (first step in testing programs). New ideas can be added to the exercises.
+- **Exercises**: A list of candidate exercises is proposed where students practice branching programs with input and outputs. New ideas can be added to the exercises.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: To do (Framework is Ready).
+	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
 	- *Products*: To do.
 
 ### Week03: Iterative Programs.
 
 - **Concepts** : General concepts of loops (*while* and *for*) and more functions for strings: type conversions, length, replacing, splitting and joining.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Exercises**: A list of candidate exercises is proposed where students practice simple programs with input and outputs, conditional statements and loops.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
 	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
@@ -107,11 +107,51 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+<hr />
+
 ### Week12: Review / Challenges
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
 - **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
+	- *Learning Path*: To do.
 	- *Exercises*: To do (Framework is Ready).
+	- *Products*: To do.
+
+### Week13: Data Base.
+
+- **Concepts** : Given an already existing tables, students can extract data using simple sql queries *select x from T where C*. To do.
+- **Exercises**: To do.
+- **Status**: 
+	- *Learning Path*: To do.
+	- *Exercises*: To do.
+	- *Products*: To do.
+
+### Week14: Functions: as a Type.
+
+- **Concepts** : Functions as parameters, Functions as return values. To do.
+- **Exercises**: To do. *Idea*: Students should implement programs covering topics from week 01 to week 13 and refactor their code with concepts of "Functions as Data Types".
+- **Status**: 
+	- *Learning Path*: To do.
+	- *Exercises*: To do.
+	- *Products*: To do.
+
+### Week15: Functions: Recursion.
+
+- **Concepts** : Recursive functions. To do.
+- **Exercises**: To do. *Idea*: Students should implement programs covering topics from week 01 to week 13 and refactor their code with concepts of weeks 14 and 15.
+- **Status**: 
+	- *Learning Path*: To do.
+	- *Exercises*: To do.
+	- *Products*: To do.
+
+<hr />
+
+### Week12: Review / Challenges
+
+- **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
+- **Exercises**: To do.
+- **Status**: 
+	- *Learning Path*: To do.
+	- *Exercises*: To do.
 	- *Products*: To do.
