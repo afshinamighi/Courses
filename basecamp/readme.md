@@ -107,7 +107,6 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
-<hr />
 
 ### Week12: Review / Challenges
 
@@ -117,6 +116,8 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Learning Path*: To do.
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
+
+<hr />
 
 ### Week13: Data Base.
 
@@ -145,7 +146,6 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Exercises*: To do.
 	- *Products*: To do.
 
-<hr />
 
 ### Week16: Review / Challenges
 
@@ -155,3 +155,8 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Learning Path*: To do.
 	- *Exercises*: To do.
 	- *Products*: To do.
+
+<hr />
+
+### Projects
+- [todo: ideas about projects that can cover majority of the learning elements.]
