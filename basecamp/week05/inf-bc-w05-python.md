@@ -1,4 +1,4 @@
-# PyCamp 05: [todo: a proper title]
+# PyCamp 05: Functions, Lists and Tuples.
 
 **Introduction**: This document presents learning activities for PyCamp 05. In PyCamp 05, you will learn basics of functions to oraganise your large programs. A function is a fragment of code with a name to be reused in different places of the program. Moreover, in this PyCamp you will learn how to build a sequence structure using basic data types.
 
@@ -9,6 +9,7 @@ The activities are designed based on these following references:
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **ORef-01**: Online Tutorial; Charles Severance; "Python for Everybody"; [Available here](https://books.trinket.io/pfe/index.html)
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
+- **Exercises**: Available here [todo: finalise the link to the exercises file of week05].
 
 
 ## Path:

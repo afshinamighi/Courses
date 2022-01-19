@@ -8,7 +8,7 @@ The learning steps are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
-- **Exercises**: Available here [todo: finalise the link to the exercises file of week02].
+- **Exercises**: Available here [todo: finalise the link to the exercises file of week03].
 
 
 ## Path:

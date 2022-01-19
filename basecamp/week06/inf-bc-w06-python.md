@@ -1,4 +1,4 @@
-# PyCamp 06: [todo: a proper title]
+# PyCamp 06: Functions, Dictionaries and Sets.
 
 **Introduction**: This document presents learning activities for PyCamp 06. In PyCamp 06, you will learn dictionaries to collect keys and coresponding values. Moreover, in this PyCamp you will learn more about functions. 
 
@@ -9,6 +9,7 @@ The activities are designed based on these following references:
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **ORef-01**: Online Tutorial; Charles Severance; "Python for Everybody"; [Available here](https://books.trinket.io/pfe/index.html)
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
+- **Exercises**: Available here [todo: finalise the link to the exercises file of week06].
 
 
 ## Path:

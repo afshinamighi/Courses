@@ -1,4 +1,4 @@
-# PyCamp 09: Everything is an Object
+# PyCamp 09: Everything is an Object.
 
 **Introduction**: This document presents learning activities for PyCamp 09. In PyCamp 09, you will get introduced with classes and objects in Python. 
 

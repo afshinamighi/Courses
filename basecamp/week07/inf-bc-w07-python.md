@@ -1,4 +1,4 @@
-# PyCamp 07: [todo: a proper title]
+# PyCamp 07: Functions and Collective Structures.
 
 **Introduction**: This document presents learning activities for PyCamp 07. In PyCamp 07, you will learn more in depth about tuples, lists, dictionaris and functions. 
 
