@@ -147,7 +147,7 @@ This collection covers a learning path for Basics of Python Programming. This le
 
 <hr />
 
-### Week12: Review / Challenges
+### Week16: Review / Challenges
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
