@@ -49,11 +49,65 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
 	- *Products*: To do.
 
-### Week01
+### Week06:
 
 - **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
 - **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
 - **Status**: 
 	- *Learning Path*: Proof of Concept, ready to experiment.
 	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Products*: To do.
+
+### Week07:
+
+- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
+- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Status**: 
+	- *Learning Path*: Proof of Concept, ready to experiment.
+	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Products*: To do.
+
+### Week08: Review / Challenges
+
+- **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
+- **Exercises**: To do.
+- **Status**: 
+	- *Learning Path*: To do.
+	- *Exercises*: To do.
+	- *Products*: To do.
+
+### Week09:
+
+- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
+- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Status**: 
+	- *Learning Path*: Proof of Concept, ready to experiment.
+	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Products*: To do.
+
+### Week10:
+
+- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
+- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Status**: 
+	- *Learning Path*: Proof of Concept, ready to experiment.
+	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Products*: To do.
+
+### Week11:
+
+- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
+- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
+- **Status**: 
+	- *Learning Path*: Proof of Concept, ready to experiment.
+	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
+	- *Products*: To do.
+
+### Week12: Review / Challenges
+
+- **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
+- **Exercises**: To do.
+- **Status**: 
+	- *Learning Path*: To do.
+	- *Exercises*: To do.
 	- *Products*: To do.
