@@ -158,5 +158,5 @@ This collection covers a learning path for Basics of Python Programming. This le
 
 <hr />
 
-### Projects
+## Projects
 - [todo: ideas about projects that can cover majority of the learning elements.]
