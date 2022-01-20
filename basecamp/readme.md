@@ -119,6 +119,8 @@ This collection covers a learning path for Basics of Python Programming. This le
 
 <hr />
 
+**Idea**: planning is part of the student activity in the last arch. Students provide their plan at the beginning of the week and based on that they study and provide the solution.
+
 ### Week13: Data Base.
 
 - **Concepts** : Given an already existing tables, students can extract data using simple sql queries *select x from T where C*. To do.
