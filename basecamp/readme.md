@@ -85,6 +85,9 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 4. Implementing their Python programs in Python Shell and an IDE.
 5. Execute Python programs using a terminal and an IDE.
 6. Follow and execute daily learning activities.
+7. Understand the concept of the acceptance testing on general applications.
+8. Plan and Execute basics (variety of user inputs) of acceptance testing on a console based Python program.
+8. 
 
 </details>
 
