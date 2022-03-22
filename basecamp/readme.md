@@ -65,10 +65,8 @@ This collection covers a learning path for Basics of Python Programming. This le
 
 </details>
 
-
-<hr />
 <details>
-<summary>Learning Outcomes:</summary>
+<summary>Learning Outcomes</summary>
 
 **Programming Elements**: In **Part One** the following programming elements are covered:
 
@@ -90,7 +88,16 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 </details>
 
 <hr />
+
+### Part Two:
+
+<details>
+<summary>Program</summary>
+
 ### Week05: Functions, Lists and Tuples.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : General concepts of functions, basics of lists and tuples as collective structures.
 - **Exercises**: To do.
@@ -99,7 +106,12 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+</details>
+
 ### Week06: Functions, Dictionaries and Sets.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Arguments and parameters, default values for parameters, dictionaries and basics of sets.
 - **Exercises**: To do.
@@ -108,7 +120,14 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+</details>
+
+
+
 ### Week07: Functions and Nested Structures.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Lambda expressions, namespaces, and nested structures (lists, tuples, sets).
 - **Exercises**: To do.
@@ -117,7 +136,12 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+</details>
+
 ### Week08: Review / Challenges.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
@@ -126,9 +150,31 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do.
 	- *Products*: To do.
 
+</details>
+
+
+</details>
+
+<details>
+<summary>Learning Outcomes</summary>
+
+As a result of participating in **PyCamp:Part Two**, students will be able to:
+
+1. [todo]
+
+</details>
+
 <hr />
 
+### Part Three:
+
+<details>
+<summary>Program</summary>
+
 ### Week09: Everything is an Object.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Basic concepts of classes, objects, attributes and methods in Python.
 - **Exercises**: To do.
@@ -137,7 +183,14 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+</details>
+
+
+
 ### Week10: (Plain) Data Files.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Basic concepts of encoding and decoding information, simple processing of plain files (text and binary) in Python.
 - **Exercises**: To do.
@@ -146,7 +199,14 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+</details>
+
+
+
 ### Week11: Structured Data Files.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Basics of processing csv and json files.
 - **Exercises**: To do.
@@ -155,8 +215,15 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+</details>
+
+
+
 
 ### Week12: Review / Challenges
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
@@ -165,11 +232,35 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do (Framework is Ready).
 	- *Products*: To do.
 
+</details>
+
+
+
+</details>
+
+<details>
+<summary>Learning Outcomes</summary>
+
+As a result of participating in **PyCamp:Part Three**, students will be able to:
+
+1. [todo]
+
+</details>
+
+
 <hr />
+
+### Part Four:
+
+<details>
+<summary>Program</summary>
 
 **Idea**: planning is part of the student activity in the last arch. Students provide their plan at the beginning of the week and based on that they study and provide the solution.
 
 ### Week13: Data Base.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Given an already existing tables, students can extract data using simple sql queries *select x from T where C*. To do.
 - **Exercises**: To do.
@@ -178,7 +269,14 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do.
 	- *Products*: To do.
 
+</details>
+
+
+
 ### Week14: Functions: as a Type.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Functions as parameters, Functions as return values. To do.
 - **Exercises**: To do. *Idea*: Students should implement programs covering topics from week 01 to week 13 and refactor their code with concepts of "Functions as Data Types".
@@ -187,7 +285,12 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do.
 	- *Products*: To do.
 
+</details>
+
 ### Week15: Functions: Recursion.
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : Recursive functions. To do.
 - **Exercises**: To do. *Idea*: Students should implement programs covering topics from week 01 to week 13 and refactor their code with concepts of weeks 14 and 15.
@@ -196,8 +299,12 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Exercises*: To do.
 	- *Products*: To do.
 
+</details>
 
 ### Week16: Review / Challenges
+
+<details>
+<summary>Content</summary>
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
@@ -205,6 +312,22 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 	- *Learning Path*: To do.
 	- *Exercises*: To do.
 	- *Products*: To do.
+
+</details>
+
+
+</details>
+
+<details>
+<summary>Learning Outcomes</summary>
+
+As a result of participating in **PyCamp:Part Four**, students will be able to:
+
+1. [todo]
+
+
+</details>
+
 
 <hr />
 
