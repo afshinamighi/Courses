@@ -33,7 +33,7 @@ Follow the following steps:
 1. Using **BRef-01: Chapter 01** answer and experiment the following questions:
    1. What is a general definition of a program? Provide some (none-computer) examples.
    2. What are the main elements of a program?
-   3. Take some simple python programs and try to guess what does each program do. Discuss inputs, behaviour and expected outputs.
+   3. Take some simple python programs and try to guess what each program does. Discuss inputs, behaviour and expected outputs.
    4. Find a python program. Name five different syntactical elements of the program. Define semantics of two elements of the program.
 2. Practice with the provided **Exercises**. 
 
