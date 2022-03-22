@@ -81,9 +81,10 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 
 1. Read, Understand and Analyse the behaviour of a Python program implementing the programming elements covered in Part One.
 2. Implement their solutions for a given problem statement using the programming elements covered in Part One.
-3. Execute basic commands (mkdir, cd, ls, rm, cp, mv) in terminal to structure their programming exercises.
-4. Execute Python programs using a terminal and an IDE.
-5. Follow and execute daily learning activities.
+3. Organise working environment using command lines for making folders, changinf paths, listing contents of a folder, managing (copy, delete, rename) files.
+4. Implementing their Python programs in Python Shell and an IDE.
+5. Execute Python programs using a terminal and an IDE.
+6. Follow and execute daily learning activities.
 
 </details>
 
@@ -243,7 +244,9 @@ As a result of participating in **PyCamp:Part Two**, students will be able to:
 
 As a result of participating in **PyCamp:Part Three**, students will be able to:
 
-1. [todo]
+1. Plan and execute detailed learning activity provided given general learning goals and resources.
+2. 
+
 
 </details>
 
@@ -323,7 +326,8 @@ As a result of participating in **PyCamp:Part Three**, students will be able to:
 
 As a result of participating in **PyCamp:Part Four**, students will be able to:
 
-1. [todo]
+1. Plan and execute weekly learning activity provided given end goals.
+2. 
 
 
 </details>
