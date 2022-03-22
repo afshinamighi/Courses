@@ -4,7 +4,14 @@ This collection covers a learning path for Basics of Python Programming. This le
 
 ## Overview:
 
+### Part One:
+<details>
+<summary>Program</summary>
+
 ### Week01: Linear Programs.
+
+<details>
+<summary>Content </summary>
 
 - **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
 - **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
@@ -12,8 +19,13 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Learning Path*: Proof of Concept, ready to experiment.
 	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
 	- *Products*: To do.
+</details>
+
 
 ### Week02: Branching Programs.
+
+<details>
+<summary>Content </summary>
 
 - **Concepts** : Boolean expressions and conditional statements, basics of string processing with simple input / output.
 - **Exercises**: A list of candidate exercises is proposed where students practice branching programs with input and outputs. New ideas can be added to the exercises.
@@ -21,8 +33,13 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Learning Path*: Proof of Concept, ready to experiment.
 	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
 	- *Products*: To do.
+</details>
+
 
 ### Week03: Iterative Programs.
+
+<details>
+<summary>Content </summary>
 
 - **Concepts** : General concepts of loops (*while* and *for*) and more functions for strings: type conversions, length, replacing, splitting and joining.
 - **Exercises**: A list of candidate exercises is proposed where students practice simple programs with input and outputs, conditional statements and loops.
@@ -30,8 +47,13 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Learning Path*: Proof of Concept, ready to experiment.
 	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
 	- *Products*: To do.
+</details>
+
 
 ### Week04: Review / Challenges.
+
+<details>
+<summary>Content </summary>
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
 - **Exercises**: To do.
@@ -39,9 +61,35 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- *Learning Path*: To do.
 	- *Exercises*: To do.
 	- *Products*: To do.
+</details>
+
+</details>
+
 
 <hr />
+<details>
+<summary>Learning Outcomes:</summary>
 
+**Programming Elements**: In **Part One** the following programming elements are covered:
+
+	- primitive data types: characters, strings, integer, float and booleans.
+	- basic numerical operations: + , - , * , / , %
+	- simple user inputs and print formats.
+	- conditional statements: if-else statements
+	- loops: while and for.
+	- basic string processing: length, split, join, replace, join.
+
+As a result of participating in **PyCamp:Part One**, students will be able to:
+
+1. Read, Understand and Analyse the behaviour of a Python program implementing the programming elements covered in Part One.
+2. Implement their solutions for a given problem statement using the programming elements covered in Part One.
+3. Execute basic commands (mkdir, cd, ls, rm, cp, mv) in terminal to structure their programming exercises.
+4. Execute Python programs using a terminal and an IDE.
+5. Follow and execute daily learning activities.
+
+</details>
+
+<hr />
 ### Week05: Functions, Lists and Tuples.
 
 - **Concepts** : General concepts of functions, basics of lists and tuples as collective structures.
