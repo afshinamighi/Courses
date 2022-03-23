@@ -4,7 +4,7 @@ This collection covers a learning path for Basics of Python Programming. This le
 
 ## Overview:
 
-### Part One:
+### Unit One:
 <details>
 <summary>Program</summary>
 
@@ -93,7 +93,7 @@ As a result of participating in **PyCamp:Part One**, students will be able to:
 
 <hr />
 
-### Part Two:
+### Unit Two:
 
 <details>
 <summary>Program</summary>
@@ -170,7 +170,7 @@ As a result of participating in **PyCamp:Part Two**, students will be able to:
 
 <hr />
 
-### Part Three:
+### Unit Three:
 
 <details>
 <summary>Program</summary>
@@ -256,7 +256,7 @@ As a result of participating in **PyCamp:Part Three**, students will be able to:
 
 <hr />
 
-### Part Four:
+### Unit Four:
 
 <details>
 <summary>Program</summary>
@@ -338,5 +338,24 @@ As a result of participating in **PyCamp:Part Four**, students will be able to:
 
 <hr />
 
-## Projects
+## Final Projects
 - [todo: ideas about projects that can cover majority of the learning elements.]
+
+
+## Learning Outcomes
+
+As a result of participating in the **Full Program with Four Units**, each individual student will be able to:
+
+1. Determine if Informatica is her/his choice of study.
+2. Determine if software engineering is her/his future career to pursue.
+3. Manage (plan, monitor and control) his/her learning process in first year and second year HBO courses.
+4. Apply iterative and accumulative concept of Development and Learning. 
+5. Analyse a problem statement, Design a (programming) solution and Implement her/his solution in Python.
+6. Understand and Apply best practices in Python coding ([PEP 8](https://peps.python.org/pep-0008/)).
+7. Understand and Analyse the behaviour of an existing code.
+8. Modify and Add new features to an existing code. 
+9. Test, Debug and Detect syntactical and semantical errors in a Python program. 
+10. Apply (basic) acceptance testing on a Python program.
+11. Design and Implement (simple) unit tests for a Python program.
+12. Communicate (both verbal and written) her/his ideas/solutions/questions clearly in both detailed and abstract level.
+13. [more? skills? version control? github?]
