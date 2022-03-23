@@ -68,7 +68,7 @@ This collection covers a learning path for Basics of Python Programming. This le
 <details>
 <summary>Learning Outcomes</summary>
 
-**Programming Elements**: In **Part One** the following programming elements are covered:
+**Programming Elements**: In **Unit One** the following programming elements are covered:
 
 	- primitive data types: characters, strings, integer, float and booleans.
 	- basic numerical operations: + , - , * , / , %
@@ -77,10 +77,10 @@ This collection covers a learning path for Basics of Python Programming. This le
 	- loops: while and for.
 	- basic string processing: length, split, join, replace, join.
 
-As a result of participating in **PyCamp:Part One**, students will be able to:
+As a result of participating in **PyCamp:Unit One**, students will be able to:
 
-1. Read, Understand and Analyse the behaviour of a Python program implementing the programming elements covered in Part One.
-2. Implement their solutions for a given problem statement using the programming elements covered in Part One.
+1. Read, Understand and Analyse the behaviour of a Python program implementing the programming elements covered in Unit One.
+2. Implement their solutions for a given problem statement using the programming elements covered in Unit One.
 3. Organise working environment using command lines for making folders, changinf paths, listing contents of a folder, managing (copy, delete, rename) files.
 4. Implementing their Python programs in Python Shell and an IDE.
 5. Execute Python programs using a terminal and an IDE.
@@ -344,6 +344,8 @@ As a result of participating in **PyCamp:Part Four**, students will be able to:
 
 ## Learning Outcomes
 
+*Note: In the following learning outcomes the level and complexity of Python programs, problem statements and solutions will be determined based on what have been covered during the four units. For details read the learning outcomes of each unit.*
+ 
 As a result of participating in the **Full Program with Four Units**, each individual student will be able to:
 
 1. Determine if Informatica is her/his choice of study.
