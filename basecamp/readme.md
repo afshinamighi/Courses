@@ -354,8 +354,8 @@ As a result of participating in the **Full Program with Four Units**, each indiv
 4. Apply iterative and accumulative concept of Development and Learning. 
 5. Analyse a problem statement, Design a (programming) solution and Implement her/his solution in Python.
 6. Understand and Apply best practices in Python coding ([PEP 8](https://peps.python.org/pep-0008/)).
-7. Understand and Analyse the behaviour of an existing code.
-8. Modify and Add new features to an existing code. 
+7. Understand and Analyse the behaviour of an existing Python code.
+8. Modify and Add new features to an existing Python code. 
 9. Test, Debug and Detect syntactical and semantical errors in a Python program. 
 10. Apply (basic) acceptance testing on a Python program.
 11. Design and Implement (simple) unit tests for a Python program.
