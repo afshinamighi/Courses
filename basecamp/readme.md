@@ -360,4 +360,5 @@ As a result of participating in the **Full Program with Four Units**, each indiv
 10. Apply (basic) acceptance testing on a Python program.
 11. Design and Implement (simple) unit tests for a Python program.
 12. Communicate (both verbal and written) her/his ideas/solutions/questions clearly in both detailed and abstract level.
-13. [more? skills? version control? github?]
+13. Oragnise *personal* programming Python projects in *her/his github repository*.
+13. [more? skills?]
