@@ -87,7 +87,13 @@ As a result of participating in **PyCamp:Unit One**, students will be able to:
 6. Plan, Follow, Execute daily learning activities and reflect on what have been learned.
 7. Understand the concept of the acceptance testing on general applications.
 8. Plan and Execute basics (variety of user inputs) of acceptance testing on a console based Python program.
-8. 
+9. [todo: what can the student do?] is introduced to the HR, teachers, students and various tools that are used
+10. Manage her/his learning process using basic Time Management methods.
+11. makes plans based on a self-chosen method [todo: overlaps with 6].
+12. is introduced to various learning strategies [todo: overlaps with 6.]
+13. applies learning strategies [todo: rephrase 12, 6]
+14. reflects on his/her own work every week. 
+15. knows how to build a dossier [todo: rephrase, perhaps has built something already] 
 
 </details>
 
@@ -164,7 +170,14 @@ As a result of participating in **PyCamp:Unit One**, students will be able to:
 
 As a result of participating in **PyCamp:Part Two**, students will be able to:
 
-1. [todo]
+1. [todo: Python in progress]
+2. [todo: to be rephrased and aligned] Professionals skills: In Unit Two the following skills are covered: 
+	- Apply and reflect on time management 
+	- Research & problem solving 
+	- Presentation of products/assignments 
+	- Giving & receiving feedback 
+	- Testing 
+	- Introduction to GitHub 
 
 </details>
 
@@ -352,7 +365,7 @@ As a result of participating in the **Full Program with Four Units**, each indiv
 2. Determine if software engineering is her/his future career to pursue.
 3. Manage (plan, monitor and control) his/her learning process in first year and second year HBO courses.
 4. Apply iterative and accumulative concept of Development and Learning. 
-5. Analyse a problem statement, Design a (programming) solution and Implement her/his solution in Python.
+5. Analyse a problem statement [todo: aspects of RE], Design a (programming) solution and Implement her/his solution in Python.
 6. Understand and Apply best practices in Python coding ([PEP 8](https://peps.python.org/pep-0008/)).
 7. Understand and Analyse the behaviour of an existing Python code.
 8. Modify and Add new features to an existing Python code. 
