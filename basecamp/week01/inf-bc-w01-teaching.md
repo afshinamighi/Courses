@@ -16,7 +16,7 @@ As a result of participating in the Full Program 01, each individual student wil
 ## Day 01 (on-site):
 [todo: This is going to be Day 01. Therefore, learning facilitator needs to provide some preparation activities, like Introduction, Some general information, ice breaking activities, an overview of the structure and the week.]
 
-1. **Briefing**: Using directions provided in [Skills 01: Planning and Studying](./inf-bc-w01-skills.md#Planning and Study) explain the goals of the learning activities.
+1. **Briefing**: Using directions provided in [Skills 01: Planning and Studying](./inf-bc-w01-skills.md) explain the goals of the learning activities.
 2. Divide the students into smaller study group.
 3. Ask each group to carry on the activity:
 	- Each group should provide a list of unknown concepts.
