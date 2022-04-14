@@ -10,17 +10,22 @@ This collection covers a learning path for Basics of Python Programming. This le
 
 ### Week01: Linear Programs.
 
+**Facilitating Learning**: [Check Week 01/inf-bc-w01-python.md](./week01/inf-bc-w01-teaching.md) 
+
 <details>
-<summary>Content </summary>
+<summary>Content</summary>
 
-- **Concepts** : General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple linear programs with input and outputs.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
-	- *Products*: To do.
+#### Programming 
+General concepts of programs, basic data types, basic calculations in Python, linear programs in Python with simple input / output.
+
+**Learning Activities**: [Check Week 01/inf-bc-w01-python.md](./week01/inf-bc-w01-python.md) 
+
+#### Skills 
+[todo: make a list of final elements from week 01 skills]
+
+**Learning Activities**: [Check Week 01/inf-bc-w01-python.md](./week01/inf-bc-w01-skills.md) 
+
 </details>
-
 
 ### Week02: Branching Programs.
 
