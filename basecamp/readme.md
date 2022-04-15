@@ -29,15 +29,22 @@ General concepts of programs, basic data types, basic calculations in Python, li
 
 ### Week02: Branching Programs.
 
+**Facilitating Learning**: [Check Week 02/inf-bc-w02-python.md](./week01/inf-bc-w02-teaching.md) 
+
 <details>
 <summary>Content </summary>
 
-- **Concepts** : Boolean expressions and conditional statements, basics of string processing with simple input / output.
-- **Exercises**: A list of candidate exercises is proposed where students practice branching programs with input and outputs. New ideas can be added to the exercises.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
-	- *Products*: To do.
+#### Programming 
+Boolean expressions and conditional statements, basics of string processing with simple input / output.
+
+**Learning Activities**: [Check Week 02/inf-bc-w02-python.md](./week02/inf-bc-w02-python.md) 
+
+#### Skills 
+[todo: make a list of final elements from week 02 skills]
+
+**Learning Activities**: [Check Week 02/inf-bc-w02-python.md](./week02/inf-bc-w02-skills.md) 
+
+
 </details>
 
 
