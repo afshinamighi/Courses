@@ -1,6 +1,11 @@
-# PyCampPyCamp 02: Branching Programs
+# Python 02: Branching Programs
 
-**Introduction**: This document presents learning activities for PyCamp 02. In PyCamp 02, you will learn basics of Python structures to add decision points to your linear programs. A branching program is a flow of sequential instructions with branching statements. By the end this PyCamp, you will be able to implement a program where a user can enter simple input, the program can make choices based on some conditions and after calculation results can be printed as output.
+**Introduction**: This document presents learning activities for Python 02. In Python 02, you will learn basics of Python structures to add decision points to your programs. A branching program is a flow of sequential instructions with branching statements. By the end this week, you will be able to implement a program where a user can enter simple input, the program can make choices based on some conditions and after calculation, results can be printed.
+
+**Note:** Exercises of this learning path can be done using:
+
+1. Online Python Editor **OPyEditor**: The final program should be stored in local machine.
+2. Local Python Package (see Step-00): Using **BRef-01: Appendix B** Python can be installed in your local machine.
 
 ## Materials:
 
@@ -8,46 +13,96 @@ The activities are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
-- **Exercises**: Available here [todo: finalise the link to the exercises file of week02].
 
 ## Path:
 
-**Note:** Exercises of this learning path can be done using:
 
-1. Online Python Editor **OPyEditor**: The final program should be stored in local machine.
-2. Local Python Package (see Step-00): Using **BRef-01: Appendix B** Python can be installed in your local machine.
+Follow these steps:
 
-Follow the following steps:
-
-### Step-01: Set up
+### Step-01: 
+#### Set Up
 1. Using **BRef-01: Appendix B** perform the following tasks:
    1. Install Python on your machine.
    2. Open a terminal (command window) and check the version of your Python. What is the command?
    3. Create a file and name it: hello.py (make sure the extension of the file is py). Open the file and use print statement to print a given text, like Hello Python. Save the file and using your terminal execute your first python program.
 
+#### Exercises:
 
-### Step-02: How to check conditions?
+1. [todo: choose / add the exercises suitable for this step]
+
+<hr>
+
+### Step-02: 
+
+#### How to check conditions?
 
 1. Using **BRef-01: Chapter 04** answer and experiment the following questions:
    1. What is a comment and how you can specify a comment in Python?
    2. What are boolean values, boolean expressions, comparison operators and conditional statement in Python?
-2. Practice with the provided **Exercises**.
-   
-### Step-03: Strings are essential.
+
+#### Exercises:
+
+1. Finish all the exercises listed in **BRef-01-Chapter 04: Things to Do**.
+2. [todo: choose / add the exercises suitable for this step. The idea is to extend some of the programs from PyCamp 01 with conditional statements. For example: check if the input is a valid input to prevent errors.]
+
+<hr> 
+  
+### Step-03: 
+
+#### Strings are essential.
 
 1. Using **BRef-01: Chapter 05** answer and experiment the following questions:
    1. How can you combine several strings? Implement an example.
    2. Can you multiply a number with a string? What is the result? Implement an example.
    3. How can you get character 5 of a given string? How can you get the first character?
    4. How can you get a substring?
-2. Practice with the provided **Exercises**.
-    
 
-### Step-04: Final Product
+#### Exercises:
 
+1. Practice the exercises listed in **BRef-01-Chapter 05: Things to Do**.
+2. [todo: choose / add the exercises suitable for this step]
+ 
+ <hr>    
+
+<!--
 1. Make a summary of concepts and techniques you have learned in this PyCamp.
 2. Implement the following products based on their descriptions:
    1. [todo: ideas for the products of the PyCamp].
 
+-->
 
+## Problems:
 
+**Note**: All your solutions must check invalid inputs from the user and print an appropriate error messages.
+
+1. Write a program that reads an integer from the user. Then your program should display a message indicating whether the integer is even or odd.
+
+2. It is commonly said that one human year is equivalent to 7 dog years. However this simple conversion fails to recognize that dogs reach adulthood in approximately two years. As a result, some people believe that it is better to count each of the first two human years as 10.5 dog years, and then count each additional human year as 4 dog years.
+Write a program that implements the conversion from human years to dog years described in the previous paragraph. Ensure that your program works correctly for conversions of less than two human years and for conversions of two or more human years. Your program should display an appropriate error message if the user enters a negative number.
+
+3. Write a program that determines the name of a shape from its number of sides. Read the number of sides from the user and then report the appropriate name as part of a meaningful message. Your program should support shapes with anywhere from 3 up to (and including) 10 sides. If a number of sides outside of this range is entered then your program should display an appropriate error message.
+
+4. A triangle can be classified based on the lengths of its sides as equilateral, isosceles or scalene. All 3 sides of an equilateral triangle have the same length. An isosceles triangle has two sides that are the same length, and a third side that is a different length. If all of the sides have different lengths then the triangle is scalene.
+Write a program that reads the lengths of 3 sides of a triangle from the user.
+Display a message indicating the type of the triangle.
+
+5. Make a list of national holidays in The Netherlands. Write a program that reads a month and day from the user. If the month and day match one of the holidays in the list then your program should display the holiday’s name. Otherwise your program should indicate that the entered month and day do not correspond to a fixed-date holiday.
+
+6. Positions on a chess board are identified by a letter and a number. Usually, the letter identifies the column, while the number identifies the row.
+Write a program that reads a position from the user. Use an if statement to deter- mine if the column begins with a black square or a white square. Then use modular arithmetic to report the color of the square in that row. For example, if the user enters a1 then your program should report that the square is black. If the user enters d5 then your program should report that the square is white. Your program may assume that a valid position will always be entered. It does not need to perform any error checking.
+
+7. Most years have 365 days. However, the time required for the Earth to orbit the Sun is actually slightly more than that. As a result, an extra day, February 29, is included in some years to correct for this difference. Such years are referred to as leap years.
+The rules for determining whether or not a year is a leap year follow:
+	- Any year that is divisible by 400 is a leap year.
+	- Of the remaining years, any year that is divisible by 100 is not a leap year.
+	- Of the remaining years, any year that is divisible by 4 is a leap year.
+	- All other years are not leap years.
+Write a program that reads a year from the user and displays a message indicating whether or not it is a leap year.
+
+8. Write a program that reads a date from the user and computes its immediate successor. For example, if the user enters values that represent 2013-11-18 then your program should display a message indicating that the day immediately after 2013-11-18 is 2013-11-19. If the user enters values that represent 2013-11-30 then the program should indicate that the next day is 2013-12-01. If the user enters values that represent 2013-12-31 then the program should indicate that the next day is 2014-01-01. The date will be entered in numeric form with three separate input statements; one for the year, one for the month, and one for the day. Ensure that your program works
+correctly for leap years.
+
+9. Consider a valid license plate in The Netherlands (consider only one valid pattern). 
+Write a program that begins by reading a string of characters from the user. Then your program should display a message indicating whether the characters are representing a valid license plate. 
+
+10. [todo: add more exercises with coresponding prepared python file name...]
