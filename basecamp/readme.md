@@ -1,10 +1,10 @@
 # Introduction
 
-This collection covers a learning path for Basics of Python Programming. This learning path covers questions and acitivities around topics that are essential to learn basic elements of Python.
+This collection covers a learning path for Basics of Programming. It covers acitivities around topics that are essential to learn basics of programming in Python.
 
 ## Overview:
 
-### Unit One:
+### Arch One:
 <details>
 <summary>Program</summary>
 
@@ -73,7 +73,7 @@ General concepts of programs, basic data types, basic calculations in Python, li
 <details>
 <summary>Learning Outcomes</summary>
 
-**Programming Elements**: In **Unit One** the following programming elements are covered:
+**Programming Elements**: In **Arch One** the following programming elements are covered:
 
 	- primitive data types: characters, strings, integer, float and booleans.
 	- basic numerical operations: + , - , * , / , %
@@ -82,10 +82,10 @@ General concepts of programs, basic data types, basic calculations in Python, li
 	- loops: while and for.
 	- basic string processing: length, split, join, replace, join.
 
-As a result of participating in **PyCamp:Unit One**, students will be able to:
+As a result of participating in **BaseCamp:Arch One**, students will be able to:
 
-1. Read, Understand and Analyse the behaviour of a Python program implementing the programming elements covered in Unit One.
-2. Implement their solutions for a given problem statement using the programming elements covered in Unit One.
+1. Read, Understand and Analyse the behaviour of a Python program implementing the programming elements covered in Arch One.
+2. Implement their solutions for a given problem statement using the programming elements covered in Arch One.
 3. Organise working environment using command lines for making folders, changinf paths, listing contents of a folder, managing (copy, delete, rename) files.
 4. Implementing their Python programs in Python Shell and an IDE.
 5. Execute Python programs using a terminal and an IDE.
@@ -104,7 +104,7 @@ As a result of participating in **PyCamp:Unit One**, students will be able to:
 
 <hr />
 
-### Unit Two:
+### Arch Two:
 
 <details>
 <summary>Program</summary>
@@ -173,10 +173,10 @@ As a result of participating in **PyCamp:Unit One**, students will be able to:
 <details>
 <summary>Learning Outcomes</summary>
 
-As a result of participating in **PyCamp:Part Two**, students will be able to:
+As a result of participating in **BaseCamp:Part Two**, students will be able to:
 
 1. [todo: Python in progress]
-2. [todo: to be rephrased and aligned] Professionals skills: In Unit Two the following skills are covered: 
+2. [todo: to be rephrased and aligned] Professionals skills: In Arch Two the following skills are covered: 
 	- Apply and reflect on time management 
 	- Research & problem solving 
 	- Presentation of products/assignments 
@@ -188,7 +188,7 @@ As a result of participating in **PyCamp:Part Two**, students will be able to:
 
 <hr />
 
-### Unit Three:
+### Arch Three:
 
 <details>
 <summary>Program</summary>
@@ -263,7 +263,7 @@ As a result of participating in **PyCamp:Part Two**, students will be able to:
 <details>
 <summary>Learning Outcomes</summary>
 
-As a result of participating in **PyCamp:Part Three**, students will be able to:
+As a result of participating in **BaseCamp:Part Three**, students will be able to:
 
 1. Plan and execute detailed learning activity provided given general learning goals and resources.
 2. 
@@ -274,7 +274,7 @@ As a result of participating in **PyCamp:Part Three**, students will be able to:
 
 <hr />
 
-### Unit Four:
+### Arch Four:
 
 <details>
 <summary>Program</summary>
@@ -345,7 +345,7 @@ As a result of participating in **PyCamp:Part Three**, students will be able to:
 <details>
 <summary>Learning Outcomes</summary>
 
-As a result of participating in **PyCamp:Part Four**, students will be able to:
+As a result of participating in **BaseCamp:Part Four**, students will be able to:
 
 1. Plan and execute weekly learning activity provided given end goals.
 2. 
@@ -362,9 +362,9 @@ As a result of participating in **PyCamp:Part Four**, students will be able to:
 
 ## Learning Outcomes
 
-*Note: In the following learning outcomes the level and complexity of Python programs, problem statements and solutions will be determined based on what have been covered during the four units. For details read the learning outcomes of each unit.*
+*Note: In the following learning outcomes the level and complexity of Python programs, problem statements and solutions will be determined based on what have been covered during the four Archs. For details read the learning outcomes of each Arch.*
  
-As a result of participating in the **Full Program with Four Units**, each individual student will be able to:
+As a result of participating in the **Full Program with Four Archs**, each individual student will be able to:
 
 1. Determine if Informatica is her/his choice of study.
 2. Determine if software engineering is her/his future career to pursue.
@@ -380,3 +380,8 @@ As a result of participating in the **Full Program with Four Units**, each indiv
 12. Communicate (both verbal and written) her/his ideas/solutions/questions clearly in both detailed and abstract level.
 13. Oragnise *personal* programming Python projects in *her/his github repository*.
 13. [more? skills?]
+
+## References:
+1. David Allen, Tina Blythe; "Facilitating for Learning: Tools for Teacher Groups of All Kinds". [Check here](https://www.amazon.com/Facilitating-Learning-Tools-Teacher-Groups/dp/0807757381)
+2. Margaret Crockett, Janet Foster; 
+"Training the Trainer Resource Pack" [Check here](http://www.ica-sae.org/trainer/english/index.htmArch)
