@@ -16,9 +16,9 @@ As a result of participating in the Full Program 01, each individual student wil
 ## Day 01 (on-site):
 [todo: This is going to be Day 01. Therefore, learning facilitator needs to provide some preparation activities, like Introduction, Some general information, ice breaking activities, an overview of the structure and the week.]
 
-1. **Briefing**: Using directions provided in [Skills 01: Planning and Studying](./inf-bc-w01-skills.md) explain the goals of the learning activities.
+1. Using directions provided in [Skills 01: Planning and Studying](./inf-bc-w01-skills.md) explain the goals of the learning activities.
 2. Divide the students into smaller study group.
-3. Ask each group to carry on the activity:
+3. Ask each group to carry out the activity:
 	- Each group should provide a list of unknown concepts.
 	- Each group should make a summary of what have been learned.
 	- Each group should share the results with the learning facilitator.
@@ -28,16 +28,16 @@ As a result of participating in the Full Program 01, each individual student wil
 5. [todo: continue with the rest.]
 
 ## Day 02 (off-site):
-[todo: make a list of instructions for the facilitator to carry on Day 02 (off-site)]
+[todo: make a list of instructions for the facilitator to run Day 02 (off-site)]
 
 1. Using Microsoft Teams start an day within an online meeting.
 2. Explain briefly what are the activities of the day.
 3. Ask each study group (only one member) to explain how they are going to perform the learning activities of the day.
-4. Specify the regulations about:
+4. Specify some tips for:
 	- What if students got stuck in their activity?
 	- What if they need the help of the facilitator?
 	- When the facilitator expect them to be online again within the meeting?
-	- What are the expectations of the end of the day.
+	- What are the expectations at the end of the day.
 
 ## Day 03 (on-site):
 
