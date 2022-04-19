@@ -37,7 +37,7 @@ Follow the following steps:
 	- Share your lists within your learning group.
 	- Discuss what will be the result of the program (without execution).
 
-```python:
+```Python:
 #Code 01
 num = int(input("Enter a number"))
 if num < 0:
