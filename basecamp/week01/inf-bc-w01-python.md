@@ -25,13 +25,57 @@ Follow the following steps:
 1. Using **BRef-01: Chapter 01** answer and experiment the following questions:
    1. What is a general definition of a program? Provide some (none-computer) examples.
    2. What are the main elements of a program?
-   3. Take some simple python programs and try to guess what each program does. Discuss inputs, behaviour and expected outputs.
+   3. Find one python program and try to guess what the program does. Discuss inputs, behaviour and expected outputs.
    4. Find a python program. Name five different syntactical elements of the program. Define semantics of two elements of the program.
 
 #### Exercises:
 
 1. Finish all the exercises listed in **BRef-01-Chapter 01: Things to Do**.
-2. [todo: choose / add the exercises suitable for this step]
+2. Take each of the given following Python programs and carry out these steps:
+	- Write down elements that are not understandable for you.
+	- Specify statements that you know (or you can guess) the results of the their executions.
+	- Share your lists within your learning group.
+	- Discuss what will be the result of the program (without execution).
+
+```
+#Code 01
+num = int(input("Enter a number"))
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("Result is", sum)
+```
+
+```
+#Code 02
+import random
+print(random.randint(0,9))
+
+```
+
+```
+#Code 03
+my_str = input("Enter a string: ")
+words = [word.lower() for word in my_str.split()]
+words.sort()
+print("The sorted words are:")
+for word in words:
+   print(word)
+```
+
+```
+#Code 04
+#[todo]
+```
+
+```
+#Code 05
+#todo
+```
 
 <hr>
 
