@@ -50,14 +50,14 @@ else:
    print("Result is", sum)
 ```
 
-```
+```python
 #Code 02
 import random
 print(random.randint(0,9))
 
 ```
 
-```
+```python
 #Code 03
 my_str = input("Enter a string: ")
 words = [word.lower() for word in my_str.split()]
@@ -67,12 +67,12 @@ for word in words:
    print(word)
 ```
 
-```
+```python
 #Code 04
 #[todo]
 ```
 
-```
+```python
 #Code 05
 #todo
 ```
