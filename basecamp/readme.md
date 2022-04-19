@@ -2,6 +2,8 @@
 
 This collection covers a learning path for Basics of Programming. It covers acitivities around topics that are essential to learn basics of programming in Python.
 
+**Note**: The content is designed based on Facilitated Learning method. Facilitated learning is an educational method where the students are encouraged to take more control of their learning process. The role of the coach (teacher) is more a learning facilitator, i.e. organising and providing resources to learners.
+
 ## Overview:
 
 ### Arch One:
