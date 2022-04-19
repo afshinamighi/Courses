@@ -36,7 +36,12 @@ As a result of participating in the Full Program 01, each individual student wil
 5. [todo: continue with the rest.]
 
 ## Day 02 (off-site):
-[todo: make a list of instructions for the facilitator to run Day 02 (off-site)]
+
+### Overview:
+- An overview of the day.
+- [todo: finalise based on the latest contents provided for knowledge and tooling, python and problem solving, reflection.]
+
+### Activities:
 
 1. Using Microsoft Teams start the day within an online meeting.
 2. Explain briefly what are the activities of the day.
@@ -48,6 +53,12 @@ As a result of participating in the Full Program 01, each individual student wil
 	- What are the expectations at the end of the day.
 
 ## Day 03 (on-site):
+### Overview:
+- [todo: ]
+
+### Activities:
+- [todo: ]
+
 
 ## Day 04 (off-site):
 
