@@ -40,7 +40,7 @@ Follow the following steps:
 [todo: some simple exercises]
 <hr>
 
-## Communication:
+## Software Test:
 
 Follow the following steps:
 
