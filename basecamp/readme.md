@@ -10,7 +10,7 @@ This collection covers a learning path for Basics of Programming. It covers acit
 
 ### Week01: Linear Programs.
 
-**Facilitating Learning**: [Check Week 01/inf-bc-w01-python.md](./week01/inf-bc-w01-teaching.md) 
+**Facilitating Learning**: [Check Week 01/inf-bc-w01-teaching.md](./week01/inf-bc-w01-teaching.md) 
 
 <details>
 <summary>Content</summary>
@@ -23,13 +23,13 @@ General concepts of programs, basic data types, basic calculations in Python, li
 #### Skills 
 [todo: make a list of final elements from week 01 skills]
 
-**Learning Activities**: [Check Week 01/inf-bc-w01-python.md](./week01/inf-bc-w01-skills.md) 
+**Learning Activities**: [Check Week 01/inf-bc-w01-skills.md](./week01/inf-bc-w01-skills.md) 
 
 </details>
 
 ### Week02: Branching Programs.
 
-**Facilitating Learning**: [Check Week 02/inf-bc-w02-python.md](./week01/inf-bc-w02-teaching.md) 
+**Facilitating Learning**: [Check Week 02/inf-bc-w02-teaching.md](./week01/inf-bc-w02-teaching.md) 
 
 <details>
 <summary>Content </summary>
@@ -42,7 +42,7 @@ Boolean expressions and conditional statements, basics of string processing with
 #### Skills 
 [todo: make a list of final elements from week 02 skills]
 
-**Learning Activities**: [Check Week 02/inf-bc-w02-python.md](./week02/inf-bc-w02-skills.md) 
+**Learning Activities**: [Check Week 02/inf-bc-w02-skills.md](./week02/inf-bc-w02-skills.md) 
 
 
 </details>
