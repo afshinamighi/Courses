@@ -1,6 +1,6 @@
-# Skills 02: [todo:thema].
+# Skills 03: [todo:thema].
 
-**Introduction**: This document presents learning activities for Skills 02. In [todo: complete].
+**Introduction**: This document presents learning activities for Skills 03. In [todo: complete].
 
 
 ## Materials:

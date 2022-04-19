@@ -1,10 +1,10 @@
-# Facilitating 02:
+# Facilitating 03:
 
 **Introduction**: This document presents learning activities for Facilitating 02. In [todo: complete].
 
 ## Objectives:
 
-As a result of participating in the Full Program 02, each individual student will be able to:
+As a result of participating in the Full Program 03, each individual student will be able to:
 
 1. [todo: make it complete]
  
