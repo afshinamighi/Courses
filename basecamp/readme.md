@@ -29,7 +29,7 @@ General concepts of programs, basic data types, basic calculations in Python, li
 
 ### Week02: Branching Programs.
 
-**Facilitating Learning**: [Check Week 02/inf-bc-w02-teaching.md](./week01/inf-bc-w02-teaching.md) 
+**Facilitating Learning**: [Check Week 02/inf-bc-w02-teaching.md](./week02/inf-bc-w02-teaching.md) 
 
 <details>
 <summary>Content </summary>
@@ -50,15 +50,22 @@ Boolean expressions and conditional statements, basics of string processing with
 
 ### Week03: Iterative Programs.
 
+**Facilitating Learning**: [Check Week 03/inf-bc-w03-teaching.md](./week03/inf-bc-w03-teaching.md) 
+
 <details>
 <summary>Content </summary>
 
-- **Concepts** : General concepts of loops (*while* and *for*) and more functions for strings: type conversions, length, replacing, splitting and joining.
-- **Exercises**: A list of candidate exercises is proposed where students practice simple programs with input and outputs, conditional statements and loops.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: Proof of Concept, ready to experiment. More can be added.
-	- *Products*: To do.
+#### Programming 
+General concepts of loops (*while* and *for*) and more functions for strings: type conversions, length, replacing, splitting and joining.
+
+**Learning Activities**: [Check Week 03/inf-bc-w03-python.md](./week03/inf-bc-w03-python.md) 
+
+#### Skills 
+[todo: make a list of final elements from week 02 skills]
+
+**Learning Activities**: [Check Week 03/inf-bc-w03-skills.md](./week03/inf-bc-w03-skills.md) 
+
+
 </details>
 
 
