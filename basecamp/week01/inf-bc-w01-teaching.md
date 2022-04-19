@@ -9,7 +9,7 @@ As a result of participating in the Full Program 01, each individual student wil
 1. Understand the basic techniques of studying given book chapters.
 2. Participate and communicate within their study group.
 3. Implement basic interactive linear programs in Python using following elements:
-	- variables, primitive types, input / print, arithetic operations.
+	- variables, primitive types, input / print, arithmetic operations.
 	- [add more]
 4. [todo: make it complete]
  
