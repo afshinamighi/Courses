@@ -398,6 +398,24 @@ As a result of participating in the **Full Program with Four Archs**, each indiv
 13. [more? skills?]
 
 ## References:
-1. David Allen, Tina Blythe; "Facilitating for Learning: Tools for Teacher Groups of All Kinds". [Check here](https://www.amazon.com/Facilitating-Learning-Tools-Teacher-Groups/dp/0807757381)
-2. Margaret Crockett, Janet Foster; 
-"Training the Trainer Resource Pack" [Check here](http://www.ica-sae.org/trainer/english/index.htmArch)
+### Programming:
+1. Bill Lubanovic; **"Introducing Python: Modern Computing in Simple Packages"**; [Check here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
+
+
+2. Brian Heinold; **"A Practical Introduction to Python Programming"** [Available Online, Check here](https://www.brianheinold.net/python/python_book.html).
+	- Solutions to the exercises are [available here](https://github.com/henrytirla/Practical-Introduction-to-python).
+
+3. Ben Stephenson; **"The Python Workbook: A Brief Introduction with Exercises and Solutions"** [Check here](https://link.springer.com/book/10.1007/978-3-319-14240-1)
+
+
+### Skills:
+
+1. Fernando Doglio; **"Skills of a Successful Software Engineer"** [Check here](https://www.manning.com/books/skills-of-a-successful-software-engineer?query=skills%20software%20engineers)
+
+### Teaching:
+1. Felienne Hermans; **"The Programmer's Brain: What Every Programmer Needs to Know about Cognition"** [Check here](https://www.amazon.com/Programmers-Brain-every-programmer-cognition/dp/1617298670)
+
+2. David Allen, Tina Blythe; **"Facilitating for Learning: Tools for Teacher Groups of All Kinds"**. [Check here](https://www.amazon.com/Facilitating-Learning-Tools-Teacher-Groups/dp/0807757381)
+
+3. Margaret Crockett, Janet Foster; **"Training the Trainer Resource Pack"** [Check here](http://www.ica-sae.org/trainer/english/index.htmArch)
+
