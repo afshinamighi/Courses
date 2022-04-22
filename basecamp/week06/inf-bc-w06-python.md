@@ -13,7 +13,7 @@ The activities are designed based on these following references:
 ## Path:
 
 ### Step-01: 
-#### Dictinaries.
+#### Dictionaries.
 
 1. Using **BRef-01: Chapter 08** answer and experiment the following questions:
    1. What is a dictionary in Python and how can you create a dictionary?
@@ -53,7 +53,6 @@ The activities are designed based on these following references:
 	   - Union of S1 and S2.
 	   - Difference S1 and S2.
 	   - Is S1 a subset of S2 (or vice-versa)? 
-2. Provide your solutions to the exercises of Python 06: Step-03.
 
 #### Exercises:
 [todo]

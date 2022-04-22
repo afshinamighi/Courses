@@ -54,8 +54,35 @@ The activities are designed based on these following references:
    6. *Mutability* is one of the main differences between a tuple and a list. Elaborate this with some example. 
 
 #### Exercises:
-[todo]
-
+1. Define a list of integers representing scores of a game. Write a program that prints out maximum and minimum of the ```scores```.
+2. Extend your program from the previous exercise such that it prints two largest and two smallest elements of the ```scores```.
+3. Write a program that asks the user to enter a list of integers. Do the following:
+	- Print the total number of items in the list.
+	- Print the last item in the list.
+	- Print the list in reverse order.
+	- Print Yes if the list contains a 5 and No otherwise.
+	- Print the number of fives in the list.
+	- Remove the first and last items from the list, sort the remaining items, and print the result.
+	- Print how many integers in the list are less than 5.
+4. Write a program that generates a list of 20 random numbers between 1 and 100.
+ 	- Print the list.
+	- Print the average of the elements in the list.
+	- Print the largest and smallest values in the list.
+	- Print the second largest and second smallest entries in the list
+	- Print how many even numbers are in the list.
+5. Start with the list ```[8,9,10]```. Do the following:
+	- Set the second entry (index 1) to 17 
+	- Add 4,5, and 6 to the end of the list 
+	- Remove the first entry from the list
+	- Sort the list
+	- Double the list
+	- Insert 25 at index 3
+	- The final list should equal ```[4,5,6,25,10,17,4,5,6,10,17]```
+6. Create the following lists using a loop.
+	- A list consisting of the integers 0 through 49
+	- A list containing the squares of the integers 1 through 50.
+	- The list ```['a','bb','ccc','dddd', . . . ]``` that ends with 26 copies of the letter z.
+7. Write a program that takes any two lists L and M of the same size and adds their elements together to form a new list N whose elements are sums of the corresponding elements in L and M. For instance, if ```L=[3,1,4]``` and ```M=[1,5,9]```, then N should equal ```[4,6,13]```.
 <hr>
 
 ## Problems:
@@ -96,6 +123,13 @@ The complete lyrics are available on the internet.
 	Your task is to write a program that displays the complete lyrics for The Twelve Days of Christmas. Write a function that takes the verse number as its only parameter and displays the specified verse of the song. Then call that function 12 times with integers that increase from 1 to 12.
 Each item that is sent to the recipient in the song should only appear once in your program, with the possible exception of the partridge. It may appear twice if that helps you handle the difference between “A partridge in a pear tree” in the first verse and “And a partridge in a pear tree” in the subsequent verses. 
 
+7. Implement a program that takes a quiz. The quiz contains 10 general questions, like *What is the capital of France?*. The user answers the question and the program must check if the answer is correct or not.
+8. Implement the tic-tac-toe game (console based).
+	- For two players and in each round the program asks the players to specify the position.
+	- After giving the position by each player, the boad is printed in the terminal.
+	- The program determines the winner at the end.
+	- Employ lists, tuples and functions in your program.
+	- **Extended Version**: Extend your program with *two dimensional* lists.
 	 
 ## Extra Steps:
 

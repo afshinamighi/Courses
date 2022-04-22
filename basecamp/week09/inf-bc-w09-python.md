@@ -1,6 +1,6 @@
-# PyCamp 09: Everything is an Object.
+# Python 09: Everything is an Object.
 
-**Introduction**: This document presents learning activities for PyCamp 09. In PyCamp 09, you will get introduced with classes and objects in Python. 
+**Introduction**: This document presents learning activities for Python 09. In Python 09, you will get introduced with classes and objects in Python. 
 
 ## Materials:
 
@@ -8,12 +8,12 @@ The activities are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **ORef-01**: Online Tutorial; Charles Severance; "Python for Everybody"; [Available here](https://books.trinket.io/pfe/index.html)
-- **Exercises**: Available here [todo: finalise the link to the exercises file of week02].
 
 
 ## Path:
 
-### Steps: Class and Object.
+### Steps: 
+#### Class and Object.
 
 1. Using **BRef-01: Chapter 10** answer and experiment the following questions:
    1. What is an Object in Python?
@@ -23,9 +23,27 @@ The activities are designed based on these following references:
    5. What is a method? Focus only on *instance methods*.
    5. How can you initialize an instance (object)? Implement a class with **__init__** method.
    
-2. Provide your solutions to the exercises of PyCamp 09. 
 
-### Optional:
+#### Exercises:
+[todo]
+
+
+
+
+## Problems:
+1. Write a class called ```Product```. The class should have fields called ```name```, ```amount```, and ```price```, holding the product’s name, the number of items of that product in stock, and the regular price of the product. There should be a method ```get_price``` that receives the number of items to be bought and returns a the cost of buying that many items, where the regular price is charged for orders of less than 10 items, a 10% discount is applied for orders of between 10 and 99 items, and a 20% discount is applied for orders of 100 or more items. There should also be a method called ```make_purchase``` that receives the number of items to be bought and decreases amount by that much.
+
+2. Write a class called ```Password_manager```. The class should have a list called ```old_passwords``` that holds all of the user’s past passwords. The last item of the list is the user’s current password. There should be a method called ```get_password``` that returns the current password and a method called ```set_password``` that sets the user’s password. The ```set_password``` method should only change the password if the attempted password is different from all the user’s past passwords. Finally, create a method called ```is_correct``` that receives a string and returns a boolean ```True``` or ```False``` depending on whether the string is equal to the current password or not.
+
+3. Write a class called ```Converter```. The user will pass a length and a unit when declaring an object from the class—for example, ```c = Converter(9,'inches')```. The possible units are inches, feet, yards, miles, kilometers, meters, centimeters, and millimeters. For each of these units there should be a method that returns the length converted into those units. For example, using the ```Converter``` object created above, the user could call ```c.feet()``` and should get 0.75 as the result.
+
+
+10. Implement an object oriented version of tic-tac-toe game.
+	- For two players and in each round the program asks the players to specify the position.
+	- After giving the position by each player, the boad is printed in the terminal.
+	- The program determines the winner at the end.
+
+##Extra Steps: 
 The follwoing concepts are not part of the main learning path, but can be considered as optional learning activities for those who seek more challenges:
 
 - Inheritance
@@ -36,13 +54,3 @@ The follwoing concepts are not part of the main learning path, but can be consid
 - Magic methods
 - Aggregation and Composition
 - Dataclasses
-
-### Final Product
-
-1. Make a summary of concepts and techniques you have learned in this week.
-2. Implement the products provided in PyCamp 09. 
-
-
-
-
-
