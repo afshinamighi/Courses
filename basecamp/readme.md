@@ -410,9 +410,9 @@ As a result of participating in **BaseCamp:Part Four**, students will be able to
 
 ## Learning Outcomes
 
-*Note: In the following learning outcomes the level and complexity of Python programs, problem statements and solutions will be determined based on what have been covered during the four Archs. For details read the learning outcomes of each Arch.*
+*Note: In the following learning outcomes the level and complexity of Python programs, problem statements and solutions will be determined based on what have been covered during the four Arches. For details read the learning outcomes of each Arch.*
  
-As a result of participating in the **Full Program with Four Archs**, each individual student will be able to:
+As a result of participating in the **Full Program with Four Arches**, each individual student will be able to:
 
 1. Determine if Informatica is her/his choice of study.
 2. Determine if software engineering is her/his future career to pursue.
