@@ -28,7 +28,8 @@ Follow these steps:
 
 #### Exercises:
 
-1. [todo: choose / add the exercises suitable for this step]
+1. Create a file named userinput.py. Enter your code in it to ask the user to input a text. Print that text. Run the file using the command line.
+2. [todo: maybe an exercise for writing a code in IDLE]
 
 <hr>
 
@@ -42,8 +43,16 @@ Follow these steps:
 
 #### Exercises:
 
-1. Finish all the exercises listed in **BRef-01-Chapter 04: Things to Do**.
-2. [todo: choose / add the exercises suitable for this step. The idea is to extend some of the programs from PyCamp 01 with conditional statements. For example: check if the input is a valid input to prevent errors.]
+1. Create a variable with the value ```True```. Print it. Change the value to ```False```. Print it. 
+2. Create a variable
+	- named ```a``` with the value ```True```, another 
+	- named ```b``` with the value ```False```. Use print to check the output of ```print(a == b)```.
+	- Do the same for the other comparison operators, ```!=```, ```<```, ```>```, ```<=```, ```>=```.
+4. Repeat the second exercise using an if-statement. Print ```yes``` or ```no```, for true false. 
+	- Write a comment above the if-statement explaining with it does. 
+6. Implement a program in which the user is asked for input. Save the input of the user in a variable. Print ```yes``` if the input contains the character ```e```, ```no``` if not. 
+7. Think of an useful situation where you need to check something with a if-statement within another if-statement (nested if-statements). Code it and write a comment to explain why it needs a nested if. 
+8. Finish all the exercises listed in **BRef-01-Chapter 04: Things to Do**.
 
 <hr> 
   
@@ -59,8 +68,14 @@ Follow these steps:
 
 #### Exercises:
 
-1. Practice the exercises listed in **BRef-01-Chapter 05: Things to Do**.
-2. [todo: choose / add the exercises suitable for this step]
+1. We can use a ```+``` or a ```,``` to combine two strings within a print. What's the difference?
+2. Using a program ask the user for input. Print the first and last characters from the input.
+3. Ask the user to input a number. If it is lower than ```10``` print it, otherwise only print the first character.
+4. Write down the complete alphabet in a variable. Split it halfway over two different variables. Join them back together in the wrong order and print it. 
+5. Explain in your own words with a ```f``` style string is?
+6. Look up the Spanish alphabet and put it in a variable. Put the Dutch alphabet in a variable. Print ```yes``` if the letter k is at the same position at both, print ```no``` if not. Use an if statement. 
+7. Ask the user for input and save it in a variable. Change to the first and last character to uppercase and print it. 
+8. Practice the exercises listed in **BRef-01-Chapter 05: Things to Do**.
  
  <hr>    
 
