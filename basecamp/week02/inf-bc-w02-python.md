@@ -73,7 +73,7 @@ Follow these steps:
 
 ## Problems:
 
-**Note**: All your solutions must check invalid inputs from the user and print an appropriate error messages.
+**Note**: All your solutions must check invalid inputs from the user and print proper error messages.
 
 1. Write a program that reads an integer from the user. Then your program should display a message indicating whether the integer is even or odd.
 
