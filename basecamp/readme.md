@@ -12,7 +12,9 @@ This collection covers a learning path for Basics of Programming. It covers acit
 
 ### Week01: Linear Programs.
 
+<!-- 
 **Facilitating Learning**: [Check Week 01/inf-bc-w01-teaching.md](./week01/inf-bc-w01-teaching.md) 
+--> 
 
 <details>
 <summary>Content</summary>
@@ -31,7 +33,9 @@ General concepts of programs, basic data types, basic calculations in Python, li
 
 ### Week02: Branching Programs.
 
-**Facilitating Learning**: [Check Week 02/inf-bc-w02-teaching.md](./week02/inf-bc-w02-teaching.md) 
+<!-- 
+**Facilitating Learning**: [Check Week 02/inf-bc-w02-teaching.md](./week02/inf-bc-w02-teaching.md)
+--> 
 
 <details>
 <summary>Content </summary>
@@ -52,7 +56,9 @@ Boolean expressions and conditional statements, basics of string processing with
 
 ### Week03: Iterative Programs.
 
-**Facilitating Learning**: [Check Week 03/inf-bc-w03-teaching.md](./week03/inf-bc-w03-teaching.md) 
+<!-- 
+**Facilitating Learning**: [Check Week 03/inf-bc-w03-teaching.md](./week03/inf-bc-w03-teaching.md)
+--> 
 
 <details>
 <summary>Content </summary>
