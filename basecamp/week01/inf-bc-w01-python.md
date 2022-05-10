@@ -37,8 +37,21 @@ Follow the following steps:
 	- Share your lists within your learning group.
 	- Discuss what will be the result of the program (without execution).
 
+*Note*: It is not expected that students understand all the elements of these programs. The main goal is to get a taste of Python programs and discuss about them.
+
 ```python
 #Code 01
+a = 16
+b = 12
+b = a
+a = 22
+print(a)
+print(b)
+# what will be printed here?
+```
+
+```python
+#Code 02
 num = int(input("Enter a number"))
 if num < 0:
    print("Enter a positive number")
@@ -51,30 +64,19 @@ else:
 ```
 
 ```python
-#Code 02
+#Code 03
 import random
 print(random.randint(0,9))
-
 ```
 
 ```python
-#Code 03
+#Code 04
 my_str = input("Enter a string: ")
 words = [word.lower() for word in my_str.split()]
 words.sort()
 print("The sorted words are:")
 for word in words:
    print(word)
-```
-
-```python
-#Code 04
-#[todo]
-```
-
-```python
-#Code 05
-#todo
 ```
 
 <hr>
@@ -101,13 +103,29 @@ for word in words:
 
 #### Exercises:
 
-1. A phone number is a number. Yet we would want to save it as a text. Can you think of a reason why?
-2. The number in the address of your house, for example Kerkweg **8**, is a number. Yet we would want to save it as a text. Can you think of a reason why?
-3. What is an example from a number we use in the real world that we do want to save as a number in Python, not as a text.
-4. User input in Python is always considered a text, even if we just enter numbers, why would it act like this?
-5. Define a variable called zipcode (postcode) and give it the value of your own zipcode. Print it using print().
-6. Define a variable called favorite food, give it the value "Pizza". Print it. Change the value to "Roti". Print it.  
-7. Finish all the exercises listed in **BRef-01-Chapter 02: Things to Do**.
+1. Check the following program and write down what will be the result of the prints:
+
+```python:
+x = 12
+y = 15
+z = 1
+y = z
+z = 12
+y = 13
+x = y 
+y = x
+z = 7
+print(x)
+print(y)
+print(z)
+```
+2. A phone number is a number. Yet we would want to save it as a text. Can you think of a reason why?
+3. The number in the address of your house, for example Kerkweg **8**, is a number. Yet we would want to save it as a text. Can you think of a reason why?
+4. What is an example from a number we use in the real world that we do want to save as a number in Python, not as a text.
+5. User input in Python is always considered a text, even if we just enter numbers, why would it act like this?
+6. Define a variable called zipcode (postcode) and give it the value of your own zipcode. Print it using print().
+7. Define a variable called favorite food, give it the value "Pizza". Print it. Change the value to "Roti". Print it.  
+8. Finish all the exercises listed in **BRef-01-Chapter 02: Things to Do**.
 
 <hr>
 
