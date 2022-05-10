@@ -134,7 +134,9 @@ As a result of participating in **BaseCamp:Arch One**, students will be able to:
 ### Week05: Functions, Lists and Tuples.
 
 
-**Facilitating Learning**: [Check Week 05/inf-bc-w05-teaching.md](./week05/inf-bc-w05-teaching.md) 
+<!--
+**Facilitating Learning**: [Check Week 05/inf-bc-w05-teaching.md](./week05/inf-bc-w05-teaching.md)
+--> 
 
 <details>
 <summary>Content</summary>
@@ -159,7 +161,9 @@ General concepts of functions, basics of lists and tuples as collective structur
 ### Week06: Functions, Dictionaries and Sets.
 
 
-**Facilitating Learning**: [Check Week 06/inf-bc-w06-teaching.md](./week06/inf-bc-w06-teaching.md) 
+<!--
+**Facilitating Learning**: [Check Week 06/inf-bc-w06-teaching.md](./week06/inf-bc-w06-teaching.md)
+--> 
 
 <details>
 <summary>Content</summary>
@@ -181,7 +185,9 @@ Arguments and parameters, default values for parameters, dictionaries and basics
 ### Week07: Functions and Nested Structures.
 
 
-**Facilitating Learning**: [Check Week 07/inf-bc-w07-teaching.md](./week07/inf-bc-w07-teaching.md) 
+<!--
+**Facilitating Learning**: [Check Week 07/inf-bc-w07-teaching.md](./week07/inf-bc-w07-teaching.md)
+--> 
 
 <details>
 <summary>Content</summary>
