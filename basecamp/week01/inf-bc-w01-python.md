@@ -105,7 +105,7 @@ for word in words:
 
 1. Check the following program and write down what will be the result of the prints:
 
-```python:
+```python
 x = 12
 y = 15
 z = 1
