@@ -101,8 +101,13 @@ for word in words:
 
 #### Exercises:
 
-1. Finish all the exercises listed in **BRef-01-Chapter 02: Things to Do**.
-2. [todo: choose / add the exercises suitable for this step]
+1. A phone number is a number. Yet we would want to save it as a text. Can you think of a reason why?
+2. The number in the address of your house, for example Kerkweg **8**, is a number. Yet we would want to save it as a text. Can you think of a reason why?
+3. What is an example from a number we use in the real world that we do want to save as a number in Python, not as a text.
+4. User input in Python is always considered a text, even if we just enter numbers, why would it act like this?
+5. Define a variable called zipcode (postcode) and give it the value of your own zipcode. Print it using print().
+6. Define a variable called favorite food, give it the value "Pizza". Print it. Change the value to "Roti". Print it.  
+7. Finish all the exercises listed in **BRef-01-Chapter 02: Things to Do**.
 
 <hr>
 
@@ -116,8 +121,14 @@ for word in words:
 
 #### Exercises:
 
-1. Finish all the exercises listed in **BRef-01-Chapter 03: Things to Do**.
-2. [todo: choose / add the exercises suitable for this step]
+1. Create two variables with a number in it, you can decide which numbers, add them together and print the result.
+2. Do the same for subtraction, devide and multiply.
+3. Get input from the user. Save it as a number. Print it.
+4. Try to devide something by zero. Describe the error you get.
+5. Create two variables with a text in it. Print them togeter at once, using only print statement.
+6. Python uyses PEMDAS. What is that and is it different from the way you learned it?
+7. Create one calculation using at least parantheses, multiplications and subtractions. Print the result.
+8. Finish all the exercises listed in **BRef-01-Chapter 03: Things to Do**.
 
 <hr>
 
