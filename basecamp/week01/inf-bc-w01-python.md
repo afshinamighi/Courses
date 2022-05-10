@@ -142,10 +142,10 @@ print(z)
 1. Create two variables with a number in it, you can decide which numbers, add them together and print the result.
 2. Do the same for subtraction, devide and multiply.
 3. Get input from the user. Save it as a number. Print it.
-4. Try to devide something by zero. Describe the error you get.
+4. Try to divide something by zero. Describe the error you get.
 5. Create two variables with a text in it. Print them togeter at once, using only print statement.
-6. Python uyses PEMDAS. What is that and is it different from the way you learned it?
-7. Create one calculation using at least parantheses, multiplications and subtractions. Print the result.
+6. Python uses PEMDAS. What is that and is it different from the way you learned it?
+7. Create one calculation using at least four parantheses, three multiplications and four subtractions. Print the result.
 8. Finish all the exercises listed in **BRef-01-Chapter 03: Things to Do**.
 
 <hr>
