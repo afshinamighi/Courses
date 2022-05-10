@@ -127,29 +127,46 @@ As a result of participating in **BaseCamp:Arch One**, students will be able to:
 
 ### Week05: Functions, Lists and Tuples.
 
+
+**Facilitating Learning**: [Check Week 05/inf-bc-w05-teaching.md](./week05/inf-bc-w05-teaching.md) 
+
 <details>
 <summary>Content</summary>
 
-- **Concepts** : General concepts of functions, basics of lists and tuples as collective structures.
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: To do (Framework is Ready).
-	- *Products*: To do.
+#### Programming 
+General concepts of functions, basics of lists and tuples as collective structures.
+
+**Learning Activities**: [Check Week 05/inf-bc-w05-python.md](./week05/inf-bc-w05-python.md) 
+
+#### Skills 
+[todo: make a list of final elements from week 01 skills]
+
+**Learning Activities**: [Check Week 05/inf-bc-w05-skills.md](./week05/inf-bc-w05-skills.md) 
 
 </details>
 
+
+
+
+
+
 ### Week06: Functions, Dictionaries and Sets.
+
+
+**Facilitating Learning**: [Check Week 06/inf-bc-w06-teaching.md](./week06/inf-bc-w06-teaching.md) 
 
 <details>
 <summary>Content</summary>
 
-- **Concepts** : Arguments and parameters, default values for parameters, dictionaries and basics of sets.
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: To do (Framework is Ready).
-	- *Products*: To do.
+#### Programming 
+Arguments and parameters, default values for parameters, dictionaries and basics of sets.
+
+**Learning Activities**: [Check Week 06/inf-bc-w06-python.md](./week06/inf-bc-w06-python.md) 
+
+#### Skills 
+[todo: make a list of final elements from week 01 skills]
+
+**Learning Activities**: [Check Week 06/inf-bc-w06-skills.md](./week06/inf-bc-w06-skills.md) 
 
 </details>
 
@@ -157,17 +174,25 @@ As a result of participating in **BaseCamp:Arch One**, students will be able to:
 
 ### Week07: Functions and Nested Structures.
 
+
+**Facilitating Learning**: [Check Week 07/inf-bc-w07-teaching.md](./week07/inf-bc-w07-teaching.md) 
+
 <details>
 <summary>Content</summary>
 
-- **Concepts** : Lambda expressions, namespaces, and nested structures (lists, tuples, sets).
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: To do (Framework is Ready).
-	- *Products*: To do.
+#### Programming 
+Lambda expressions, namespaces, and nested structures (lists, tuples, sets).
+
+**Learning Activities**: [Check Week 07/inf-bc-w07-python.md](./week07/inf-bc-w07-python.md) 
+
+#### Skills 
+[todo: make a list of final elements from week 01 skills]
+
+**Learning Activities**: [Check Week 07/inf-bc-w07-skills.md](./week07/inf-bc-w07-skills.md) 
 
 </details>
+
+
 
 ### Week08: Review / Challenges.
 
@@ -175,11 +200,6 @@ As a result of participating in **BaseCamp:Arch One**, students will be able to:
 <summary>Content</summary>
 
 - **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: To do.
-	- *Exercises*: To do.
-	- *Products*: To do.
 
 </details>
 
@@ -400,11 +420,8 @@ As a result of participating in the **Full Program with Four Archs**, each indiv
 ## References:
 ### Programming:
 1. Bill Lubanovic; **"Introducing Python: Modern Computing in Simple Packages"**; [Check here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
-
-
 2. Brian Heinold; **"A Practical Introduction to Python Programming"** [Available Online, Check here](https://www.brianheinold.net/python/python_book.html).
 	- Solutions to the exercises are [available here](https://github.com/henrytirla/Practical-Introduction-to-python).
-
 3. Ben Stephenson; **"The Python Workbook: A Brief Introduction with Exercises and Solutions"** [Check here](https://link.springer.com/book/10.1007/978-3-319-14240-1)
 
 
@@ -414,8 +431,6 @@ As a result of participating in the **Full Program with Four Archs**, each indiv
 
 ### Teaching:
 1. Felienne Hermans; **"The Programmer's Brain: What Every Programmer Needs to Know about Cognition"** [Check here](https://www.amazon.com/Programmers-Brain-every-programmer-cognition/dp/1617298670)
-
 2. David Allen, Tina Blythe; **"Facilitating for Learning: Tools for Teacher Groups of All Kinds"**. [Check here](https://www.amazon.com/Facilitating-Learning-Tools-Teacher-Groups/dp/0807757381)
-
 3. Margaret Crockett, Janet Foster; **"Training the Trainer Resource Pack"** [Check here](http://www.ica-sae.org/trainer/english/index.htmArch)
 
