@@ -32,7 +32,7 @@ Follow the following steps:
 
 1. Finish all the exercises listed in **BRef-01-Chapter 01: Things to Do**.
 2. Take each of the given following Python programs and carry out these steps:
-	- Write down elements that are not understandable for you.
+	- Write down elements that are understandable for you.
 	- Specify statements that you know (or you can guess) the results of the their executions.
 	- Share your lists within your learning group.
 	- Discuss what will be the result of the program (without execution).
