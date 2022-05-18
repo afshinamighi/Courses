@@ -19,15 +19,18 @@ The activities are designed based on these following references:
 
 Follow the following steps:
 
-### Step-01: 
-#### What is a Program?
-##### Goal:
+### Step-01: What is a Program?
+
+#### Goals:
 
 ```
 After taking this step, you will be able to:
 	1. understand the concept of (computer and non-computer) programs.
 	2. experience your first taste of Python without knowing all the details.
 ```
+
+#### What to learn?
+
 1. Use **BRef-01: Chapter 01** as a reference and discuss the following questions:
    1. What is a general definition of a program? Provide some (none-computer) examples.
    2. What are the main elements of a program?
@@ -57,7 +60,7 @@ print("This is your list of words:",words)
 *Note*: It is not expected that students understand all the elements of these programs. The main goal is to get a taste of Python programs and discuss about them. *Trust your intuition*.
 
 ```python
-#Code 01
+#Code 02
 a = 16
 b = 12
 b = a
@@ -68,7 +71,7 @@ print(b)
 ```
 	
 ```python
-#Code 02
+#Code 03
 num = int(input("Enter a number"))
 if num < 0:
    print("Enter a positive number")
@@ -81,13 +84,13 @@ else:
 ```
 	
 ```python
-#Code 03
+#Code 04
 import random
 print(random.randint(0,9))
 ```
 	
 ```python
-#Code 04
+#Code 05
 my_str = input("Enter a string: ")
 words = [word.lower() for word in my_str.split()]
 words.sort()
@@ -102,10 +105,9 @@ for word in words:
 
 <hr>
 
-### Step-02: 
+### Step-02: Everything starts with Data.
 
-#### Everything starts with Data.
-##### Goal:
+#### Goals:
 
 ```
 After taking this step, you will be able to:
@@ -114,6 +116,8 @@ After taking this step, you will be able to:
 	3. understand the concept of mutability (some data types are mutable and some are not).
 	4. implement Python programs containing: variables, assigning values, print.
 ```
+
+#### What to learn?
 
 1. Perform a free (re-)search and explore the following answers:
    1. What are the main hardware elements of a computer?
@@ -163,7 +167,7 @@ print(z)
 <hr>
 
 ### Step-03: How to Calculate?
-##### Goal:
+#### Goals:
 ```
 After taking this step, you will be able to:
 	1. understand the main arithmetic operations in Python.
@@ -171,6 +175,7 @@ After taking this step, you will be able to:
 	3. convert one primitive data type to another using functions: int(), float(), str(), bool().
 	4. implement Python programs containing: input from the user, type conversion, calculation, printing.
 ```
+#### What to learn?
 
 1. Using **BRef-01: Chapter 03** answer the following questions:
    1. Name basic built-in data types in Python. Use examples.
