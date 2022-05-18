@@ -123,7 +123,7 @@ After taking this step, you will be able to:
    1. What are the main hardware elements of a computer?
    2. What is an Operating System and why do we need it?
    3. How data (values) are stored / extracted / computed in a computer? *Hint: explore concepts of bytes, bits, ram memory, hard disks, cpu registers.*
-2. Using **BRef-01: Chapter 02** explore the answers for the folowwing questions: 
+2. Using **BRef-01: Chapter 02** explore the answers for the following questions: 
 
 *Note: There are some concepts (like objects, classes, references) that students may not be able to grasp completely. The main idea is to try as much as possible. They will be more clear later when they learn Object Oriented programming in Python.*
 
