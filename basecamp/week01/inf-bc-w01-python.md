@@ -34,20 +34,17 @@ After taking this step, you will be able to:
    3. **First Taste of Python**: Read section *Little Programs* and analyse provided examples.
    4. Consider the following python program and try to guess what the program does. Analyse and discuss inputs, behaviour and expected outputs.
    
-   ```python
-   #Code 01: 
-   words = []
-	num_str = input("How many words would you like to enter?")
+```python
+#Code 01: 
+words = []
+num_str = input("How many words would you like to enter?")
 num = int(num_str)
-	for _ in range(0,num):
-    	word = input("Next word:")
-    	words.append(word)
-	print("This is your list of words:",words)
+for _ in range(0,num):
+	word = input("Next word:")
+   words.append(word)
+print("This is your list of words:",words)
+```
    
-   ```
-   
-<!--   4. Find a python program. Name five different syntactical elements of the program. Define semantics of two elements of the program. -->
-
 #### Exercises:
 
 1. Make a small research to understand the meaning of *syntax in programming*. Give three examples from examples you have read in **BRef-01: Chapter 01**.
