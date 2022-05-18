@@ -50,7 +50,7 @@ print("This is your list of words:",words)
    
 #### Exercises:
 
-1. Make a small research to understand the meaning of *syntax in programming*. Give three examples from examples you have read in **BRef-01: Chapter 01**.
+1. Make a small research to understand the meaning of *syntax in programming*. Give three examples from the programs you have read in **BRef-01: Chapter 01**.
 2. Take each of the given following Python programs and carry out these steps:
 	- Write down sytactical elements that are understandable for you.
 	- Specify statements that you know (or you can guess) the results of the their executions.
