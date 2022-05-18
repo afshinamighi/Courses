@@ -19,12 +19,20 @@ The activities are designed based on these following references:
 
 Follow these steps:
 
-### Step-01: 
-#### Set Up
+### Step-01: Set Up
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. implement and run your Python programs in your local machine.
+```
+
+#### What to Learn?
+
 1. Using **BRef-01: Appendix B** perform the following tasks:
    1. Install Python on your machine.
    2. Open a terminal (command window) and check the version of your Python. What is the command?
-   3. Create a file and name it: hello.py (make sure the extension of the file is py). Open the file and use print statement to print a given text, like Hello Python. Save the file and using your terminal execute your first python program.
+   3. Create a file and name it: ```hello.py``` (make sure the extension of the file is ```py```). Open the file and use print statement to print a given text, like ```Hello Python```. Save the file and using your terminal (command line) execute your first Python program. Which command do you need to execute a Python program?
 
 #### Exercises:
 
@@ -33,13 +41,21 @@ Follow these steps:
 
 <hr>
 
-### Step-02: 
+### Step-02: Programs need to decide.
+#### Goals:
 
-#### How to check conditions?
+```
+After taking this step, you will be able to:
+	1. interpret and implement boolean expressions.
+	2. implement Python programs with conditional statements.
+```
 
-1. Using **BRef-01: Chapter 04** answer and experiment the following questions:
+#### What to Learn?
+
+1. Using **BRef-01: Chapter 04** discuss and experiment the following questions:
    1. What is a comment and how you can specify a comment in Python?
-   2. What are boolean values, boolean expressions, comparison operators and conditional statement in Python?
+   2. What are boolean values, boolean expressions, comparison operators?
+   3. What is a conditional statement in Python? What is correct syntax for a correct *if-else* statament?
 
 #### Exercises:
 
@@ -56,35 +72,36 @@ Follow these steps:
 
 <hr> 
   
-### Step-03: 
+### Step-03: Strings are essential.
+#### Goals:
 
-#### Strings are essential.
+```
+After taking this step, you will be able to:
+	1. interpret and implement basic operations of strings: concatenation (combining), duplicating, scanning and slicing.
+```
 
-1. Using **BRef-01: Chapter 05** answer and experiment the following questions:
+#### What to Learn?
+
+1. Using **BRef-01: Chapter 05** discuss and experiment the following questions:
    1. How can you combine several strings? Implement an example.
    2. Can you multiply a number with a string? What is the result? Implement an example.
    3. How can you get character 5 of a given string? How can you get the first character?
-   4. How can you get a substring?
+   4. How can you get a substring from a given string?
 
 #### Exercises:
 
 1. We can use a ```+``` or a ```,``` to combine two strings within a print. What's the difference?
 2. Using a program ask the user for input. Print the first and last characters from the input.
-3. Ask the user to input a number. If it is lower than ```10``` print it, otherwise only print the first character.
-4. Write down the complete alphabet in a variable. Split it halfway over two different variables. Join them back together in the wrong order and print it. 
-5. Explain in your own words with a ```f``` style string is?
-6. Look up the Spanish alphabet and put it in a variable. Put the Dutch alphabet in a variable. Print ```yes``` if the letter k is at the same position at both, print ```no``` if not. Use an if statement. 
-7. Ask the user for input and save it in a variable. Change to the first and last character to uppercase and print it. 
-8. Practice the exercises listed in **BRef-01-Chapter 05: Things to Do**.
+3. Students numbers start with 0. Implement a program where the user enters her/his student number and your program must check if it starts with 0.
+4. Ask the user to input a number. If it is lower than ```10``` print it, otherwise only print the first character.
+5. Write down the complete alphabet in a variable. Split it halfway over two different variables. Join them back together in the wrong order and print it. 
+6. Explain in your own words with a ```f``` style string is?
+7. Look up the Spanish alphabet and put it in a variable. Put the Dutch alphabet in a variable. Print ```yes``` if the letter k is at the same position at both, print ```no``` if not. Use an ```if``` statement. 
+8. Ask the user for a text input. Change both the first and last characters to uppercase and print it. 
+9. Practice the exercises listed in **BRef-01-Chapter 05: Things to Do**.
  
  <hr>    
 
-<!--
-1. Make a summary of concepts and techniques you have learned in this PyCamp.
-2. Implement the following products based on their descriptions:
-   1. [todo: ideas for the products of the PyCamp].
-
--->
 
 ## Problems:
 
@@ -120,4 +137,4 @@ correctly for leap years.
 9. Consider a valid license plate in The Netherlands (consider only one valid pattern). 
 Write a program that begins by reading a string of characters from the user. Then your program should display a message indicating whether the characters are representing a valid license plate. 
 
-10. [todo: add more exercises with coresponding prepared python file name...]
+## Extra Steps:
