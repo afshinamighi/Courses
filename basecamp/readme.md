@@ -407,7 +407,7 @@ As a result of participating in **BaseCamp:Part Four**, students will be able to
 ## Final Projects
 - [todo: ideas about projects that can cover majority of the learning elements.]
 
-
+<!--
 ## Learning Outcomes
 
 *Note: In the following learning outcomes the level and complexity of Python programs, problem statements and solutions will be determined based on what have been covered during the four Arches. For details read the learning outcomes of each Arch.*
@@ -428,6 +428,14 @@ As a result of participating in the **Full Program with Four Arches**, each indi
 12. Communicate (both verbal and written) her/his ideas/solutions/questions clearly in both detailed and abstract level.
 13. Oragnise *personal* programming Python projects in *her/his github repository*.
 13. [more? skills?]
+
+HBO-I Realiseren, Level One:
+User Interaction: Realise and qualitatively test simple interactive products or services on the basis of an interactive design whereby use is made of accessible
+tools, design guidelines and/or house style.
+Infrustructure: Organise, test and make available
+of a local/small infrastructure.
+Software: Build, test and make available a simple software system. The set-up filling and querying of a data base is part of the software system.
+-->
 
 ## References:
 ### Programming:
