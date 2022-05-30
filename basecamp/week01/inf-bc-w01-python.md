@@ -210,9 +210,13 @@ Implement Python programs to solve the following problem statements:
 6. Implement a program that a user enters number of days as input, and the program prints number of hours, minutes and seconds separately as output.
 
 ## Products:
-1. Implement a program that given number of years as input prints the number of months and days as output. Input example: ```Years: 5``` , Output example: ```Months: 60 , Days: 1825```.
+1. Implement a program that given number of years as input prints the number of months and days as output. 
+	- Keep the problem simple: no leap year, each year is 365 days and 12 months, each month 30 days.
+	- Input example: ```Years: 5``` , Output example: ```Months: 60 , Days: 1825```.
 
 2. The program that you create for this exercise will begin by reading the cost of a meal ordered at a restaurant from the user. Then your program will compute the tax and tip for the meal. Use your local tax rate when computing the amount of tax owing. Compute the tip as 15 percent of the meal amount (without the tax). The output from your program should include the tax amount, the tip amount, and the grand total for the meal including both the tax and the tip.
+	- Assume local tax rate 21 percent.
+	- Input example: ```Cost of the meal: 23.60``` , Output example: ```Tax: 4.956 , Tip: 3.54 , Total: 32.096```.
 
 
 ## Extra Steps:
