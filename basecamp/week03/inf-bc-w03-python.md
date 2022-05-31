@@ -35,8 +35,13 @@ Follow these steps:
 
 #### Exercises:
 
-1. [todo: choose / add the exercises suitable for this step]
-
+1. Ask the user to input a text. Print the length of the entered text.
+2. Ask the user to input a text. Replace the first character with a ```k``` and print the result.
+3. Make a variable with the text "this is a text". Remove all spaces from it. Print the result. 
+4. Ask the user to input a text. Capitalize the complete input. Print the result. 
+5. Ask the user to input a text. Remove all ```e``` characters from it. Print the result. Try to see what happens if the input doesn't contain an ```e```.
+6. Ask the user to input a text. Count how many times the input contains the character ```i```. Print the result.
+7. Ask the user to input two texts (two inputs). Print them together in one line using a ```f string```.
 <hr>
 
 ### Step-02: 
@@ -51,7 +56,38 @@ Follow these steps:
 
 #### Exercises:
 
-1. [todo: choose / add the exercises suitable for this step]
+1. Print the numbers 1 to 42 using a ```while``` loop.
+2. Print all odd numbers between 1 to 100 by using a ```while``` loop. 
+3. Print the numbers from 10 to -10 using a ```while``` loop. 
+4. Ask the user to input a text. Print each character of the input on a new line using a ```while``` loop. 
+5. Ask the user to input a text. Print each character of the input that is the character ```e``` or ```a``` on a new line. 
+6. What will be the output of the given code?
+ 
+ ```python
+i = 20
+while i < 42:
+	i = i *2 
+	print(i-1)
+```
+7. What will be the output of the given code?
+ 
+ ```python
+i = -4
+end = -33
+while i > end:
+	i = i -4 
+	print(i*2)
+```
+
+8. If we swap the last two lines in the previous exercise we get a different output. Why is this?
+ 
+ ```python
+i = -4
+end = -33
+while i > end:
+	print(i*2)
+	i = i -4 
+```
 
 <hr>
 
@@ -63,10 +99,45 @@ Follow these steps:
     
 #### Exercises:
 
-1. Practice the exercises listed in **BRef-01-Chapter 06: Things to Do**:
+1. Print the numbers 1 to 42 using a ```for``` loop.
+2. Print all uneven numbers between 1 to 100 by using a ```for``` loop. 
+3. Ask the user to input a text. Print each character of the input on a new line using a ```for``` loop. 
+4. The ```for``` and ```while``` are considered 'loops'. Explain in your own words what a loop is. 
+5. Describe the difference between the ```for``` and ```while``` in your own words. 
+6. What will be the output of the given code?
+
+ ```python
+	i = 7
+	for number in range(1,i+i):
+   		print(i)
+```
+7. What will be the output of the given code?
+ 
+ ```python
+i = 1
+j = 10
+for number in range(i,j):
+    if number > 5:
+        print(number)
+    else:
+        print('Hello')
+```
+8. What will be the output of the given code?
+ 
+ ```python
+sentence = "I just came to say hello!"
+count = 0
+for letter in sentence:
+    if letter == " ":
+        count = count + 1
+    elif letter == "a":
+        count = count - 1
+print(count)
+```
+
+9. Practice the exercises listed in **BRef-01-Chapter 06: Things to Do**:
 	- **6.1**, **6.2** and **6.3**.
 
-2. [todo: choose / add the exercises suitable for this step]
 
 <hr>
 
