@@ -107,9 +107,9 @@ while i > end:
 6. What will be the output of the given code?
 
  ```python
-	i = 7
-	for number in range(1,i+i):
-   		print(i)
+i = 7
+for number in range(1,i+i):
+	print(number)
 ```
 7. What will be the output of the given code?
  
