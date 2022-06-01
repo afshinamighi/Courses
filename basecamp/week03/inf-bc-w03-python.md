@@ -21,8 +21,17 @@ The learning steps are designed based on these following references:
 
 Follow these steps:
 
-### Step-01: 
-#### Strings
+### Step-01: Strings
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. [todo].
+```
+
+#### What to Learn?
+
 
 1. Using **BRef-01: Chapter 05** experiment and answer the following questions:
    1. What is string data type?
@@ -44,8 +53,16 @@ Follow these steps:
 7. Ask the user to input two texts (two inputs). Print them together in one line using a ```f string```.
 <hr>
 
-### Step-02: 
-#### Looping with *while*
+### Step-02: Looping with *while*
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. [todo].
+```
+
+#### What to Learn?
 
 1. Using **BRef-01: Chapter 06** answer and experiment the following questions:
    1. A *while* loop consists of a condition and a body. Pick and example from **BRef-01: Chapter 06** and specify the condition and the body of the program.
@@ -91,8 +108,16 @@ while i > end:
 
 <hr>
 
-### Step-03: 
-#### Looping with *for .. in*
+### Step-03: Looping with *for .. in*
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. [todo].
+```
+
+#### What to Learn?
 
 1. Using **BRef-01: Chapter 06** answer and experiment the following questions:
    1. [todo: very similar to Step-02: design some activities.]
@@ -151,4 +176,5 @@ print(count)
 4. There are numerous phrases that are palindromes when spacing is ignored. Examples include “go dog”, “flee to me remote elf” and “some men interpret nine memos”, among many others. Write a program that it ignores spacing while determining whether or not a string is a palindrome. For an additional challenge, extend your solution so that is also ignores punctuation marks and treats uppercase and lowercase letters as equivalent.
 5. In this exercise you will create a program that displays a multiplication table that shows the products of all combinations of integers from 1 times 1 up to and including 10 times 10. Your multiplication table should include a row of labels across the top of it containing the numbers 1 through 10. It should also include labels down the left side consisting of the numbers 1 through 10.
 6. Write a program that converts a binary (base 2) number to decimal (base 10). Your program should begin by reading the binary number from the user as a string. Then it should compute the equivalent decimal number by processing each digit in the binary number. Finally, your program should display the equivalent decimal number with an appropriate message.
-7. [todo: add more exercises]
+
+## Products:
