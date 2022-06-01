@@ -5,7 +5,7 @@
 **Note:** Exercises of this learning path can be done using:
 
 1. Online Python Editor **OPyEditor**: The final program should be stored in local machine.
-2. Local Python Package (see Step-00): Using **BRef-01: Appendix B** Python can be installed in your local machine.
+2. Local Python Package (see Step-01): Using **BRef-01: Appendix B** Python can be installed in your local machine.
 
 ## Materials:
 
@@ -40,7 +40,7 @@ After taking this step, you will be able to:
 2. Read **BRef-01: Chapter 01, Section Running Python** and run python shell. Excute ```quit()```. What do you observe?
 3. Start python shell and execute ```num = input('Enter a number:')```. Enter a number and print the value of ```num```. There are two different ways to print the value of ```num```. Try both at shell. Which one works in **OPyEditor**? Do you recognise differences between programming using *python shell* and an *editor*? Read **BRef-01: Chapter 01, Section Running Python** including subsections.  
 
-**Note**: After this step, you can try both *python shell* and *editor* to practice. It is recommended to use *python shell* for small experiments and use programming within *editor*s for writing a full program.
+**Note**: After this step, you can try both *python shell* and *editor* to practice. It is recommended to use *python shell* for small experiments and use programming within *editor*s (local or online) for writing a full program.
  
 <hr>
 
