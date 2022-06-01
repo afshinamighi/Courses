@@ -31,14 +31,17 @@ After taking this step, you will be able to:
 
 1. Using **BRef-01: Appendix B** perform the following tasks:
    1. Install Python on your machine.
-   2. Open a terminal (command window) and check the version of your Python. What is the command?
-   3. Create a file and name it: ```hello.py``` (make sure the extension of the file is ```py```). Open the file and use print statement to print a given text, like ```Hello Python```. Save the file and using your terminal (command line) execute your first Python program. Which command do you need to execute a Python program?
+   2. Open a terminal (command window) and check the version of your Python. Which command did you use?
+   3. Using **OPyEditor** implement a program that prints a statement of a defined variable, like ```Hello Python!```. Save the file in your local machine within a folder created by you. Using your terminal (command line) execute your first Python program. Which command do you need to execute a Python program?
 
 #### Exercises:
 
-1. Create a file named userinput.py. Enter your code in it to ask the user to input a text. Print that text. Run the file using the command line.
-2. [todo: maybe an exercise for writing a code in IDLE]
+1. Create a file named ```print_input.py```. Open it using an editor of your own choice. Enter your code in it to ask the user to input a text. Print that text. Run the file using the command line.
+2. Read **BRef-01: Chapter 01, Section Running Python** and run python shell. Excute ```quit()```. What do you observe?
+3. Start python shell and execute ```num = input('Enter a number:')```. Enter a number and print the value of ```num```. There are two different ways to print the value of ```num```. Try both at shell. Which one works in **OPyEditor**? Do you recognise differences between programming using *python shell* and an *editor*? Read **BRef-01: Chapter 01, Section Running Python** including subsections.  
 
+**Note**: After this step, you can try both *python shell* and *editor* to practice. It is recommended to use *python shell* for small experiments and use programming within *editor*s for writing a full program.
+ 
 <hr>
 
 ### Step-02: Programs need to decide.
@@ -53,9 +56,9 @@ After taking this step, you will be able to:
 #### What to Learn?
 
 1. Using **BRef-01: Chapter 04** discuss and experiment the following questions:
-   1. What is a comment and how you can specify a comment in Python?
-   2. What are boolean values, boolean expressions, comparison operators?
-   3. What is a conditional statement in Python? What is correct syntax for a correct *if-else* statament?
+   1. What is a comment? How can you specify a comment in Python?
+   2. What are: boolean values, boolean expressions, comparison operators?
+   3. What is a conditional statement in Python? What is correct syntax for a correct *if-else* statament? What is a *body* of a *if-else* statement?
 
 #### Exercises:
 
@@ -64,8 +67,8 @@ After taking this step, you will be able to:
 	- named ```a``` with the value ```True```, another 
 	- named ```b``` with the value ```False```. Use print to check the output of ```print(a == b)```.
 	- Do the same for the other comparison operators, ```!=```, ```<```, ```>```, ```<=```, ```>=```.
-4. Repeat the second exercise using an if-statement. Print ```yes``` or ```no```, for true false. 
-	- Write a comment above the if-statement explaining with it does. 
+4. Repeat the second exercise using an *if-statement*. Print ```yes``` or ```no```, for true false. 
+	- Write a comment above the *if-statement* explaining with it does. 
 6. Implement a program in which the user is asked for input. Save the input of the user in a variable. Print ```yes``` if the input contains the character ```e```, ```no``` if not. 
 7. Think of an useful situation where you need to check something with a if-statement within another if-statement (nested if-statements). Code it and write a comment to explain why it needs a nested if. 
 8. Finish all the exercises listed in **BRef-01-Chapter 04: Things to Do**.
