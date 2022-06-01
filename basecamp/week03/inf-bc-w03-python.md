@@ -1,12 +1,12 @@
 # Python 03: Iterative Programs
 
-**Introduction**: This document presents learning steps for Python 03. In Python 03, you will learn basics of strings in PythonPython and required structures to add repetition points to your programs. An iterative program is a flow of sequential instructions with repeating statements. By the end this Python, you will be able to implement a program where a user can have simple interactions: the user repeatedly enters simple input, the program calculats the results and prints the result in output.
+**Introduction**: This document presents learning steps for Python 03. In Python 03, you will learn basics of strings in Python and required programming structures to add repetition points to your programs. An iterative program is a flow of sequential instructions with repeating statements. By the end of Python 03, you will be able to implement a program where a user can have simple interactions: the user repeatedly enters simple input, the program calculats and prints the results.
 
 
 **Note:** Exercises of this learning path can be done using:
 
 1. Online Python Editor **OPyEditor**: The final program should be stored in local machine.
-2. Local Python Package (see Step-00): Using **BRef-01: Appendix B** Python can be installed in your local machine.
+2. Local Python Package: Using **BRef-01: Appendix B** Python can be installed in your local machine.
 
 ## Materials:
 
@@ -14,7 +14,6 @@ The learning steps are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **OPyEditor**: Online Editor for Programming; "Online Python (with shell and file storing functionalities)"; [Available here](https://www.online-python.com/)
-- **Exercises**: Available here [todo: finalise the link to the exercises file of week03].
 
 
 ## Path:
@@ -27,7 +26,7 @@ Follow these steps:
 
 ```
 After taking this step, you will be able to:
-	1. [todo].
+	1. interpret and implement Python programs using string operations and functions: *, +, len(), split(), join(), replace(), subsrtings, slicing, f strings.
 ```
 
 #### What to Learn?
@@ -59,7 +58,7 @@ After taking this step, you will be able to:
 
 ```
 After taking this step, you will be able to:
-	1. [todo].
+	1. interpret and implement Python programs using while-loops.
 ```
 
 #### What to Learn?
@@ -114,13 +113,18 @@ while i > end:
 
 ```
 After taking this step, you will be able to:
-	1. [todo].
+	1. interpret and implement Python programs using for-loops.
 ```
 
 #### What to Learn?
 
 1. Using **BRef-01: Chapter 06** answer and experiment the following questions:
-   1. [todo: very similar to Step-02: design some activities.]
+   1. What are the main elements of a *for* loop? 
+   2. Using *for* loop implement a program that prints a message (like *Hello*) for 10 times.
+   3. Using *for* loop implement a counter that counts down from 10 until 0. In each iteration, the program must print the value of the counter.
+   4. Can you use a *break* statement within a *for* loop? Build a simple example. 
+   5. Implement a *for* loop that prints characters of a given string. 
+   6. Implement a *for* loop that given a string, prints characters positioned in odd indeces, i.e. ```1,3,5,7,...```. 
     
 #### Exercises:
 
@@ -158,6 +162,21 @@ for letter in sentence:
     elif letter == "a":
         count = count - 1
 print(count)
+```
+9. What will be the output of the given code?
+ 
+ ```python
+ sentence="I just came to say hello!"
+ for i in range(0,len(sentence)):
+ 	print(sentence[i])
+```
+
+10. What will be the output of the given code?
+ 
+ ```python
+ sentence="I just came to say hello!"
+ for c in sentence:
+ 	print(c)
 ```
 
 9. Practice the exercises listed in **BRef-01-Chapter 06: Things to Do**:
