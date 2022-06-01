@@ -203,27 +203,27 @@ After taking this step, you will be able to:
 Implement Python programs to solve the following problem statements:
 
 1. Write a program that asks the user to enter his or her name. The program should respond with a message that says hello to the user, using his or her name.
-	- *Step02*: Complete solution.
+	- *Step-02*: Complete solution.
 
 2. Implement a program that given number of years as input prints the number of months and days as output. Input example: ```Years: 5``` , Output example: ```Months: 60 , Days: 1825```.
-	- *Step02*: Partial solution, i.e. no calculation yet. The user enters the number of years and the program prints only ```Months: , Days: ```.
-	- *Step03*: Complete solution, i.e. add calculations. The user enters the number of years and the program prints the number of months and days as output.
+	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the number of years and the program prints only ```Months: , Days: ```.
+	- *Step-03*: Complete solution, i.e. add calculations. The user enters the number of years and the program prints the number of months and days as output.
 
 3. Write a program that asks the user to enter the width and length of a room. Once the values have been read, your program should compute and display the area of the room. The length and the width will be entered as floating point numbers. Include units in your prompt and output message; either feet or meters, depending on which unit you are more comfortable working with.
-	- *Step02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Area of the Room: ```.
-	- *Step03*: Complete solution, i.e. add calculations. 
+	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Area of the Room: ```.
+	- *Step-03*: Complete solution, i.e. add calculations. 
 
 4. An online retailer sells two products: widgets and gizmos. Each widget weighs 75 grams. Each gizmo weighs 112 grams. Write a program that reads the number of widgets and the number of gizmos in an order from the user. Then your program should compute and display the total weight of the order.
-	- *Step02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Total Weight of the Order: ```.
-	- *Step03*: Complete solution, i.e. add calculations. 
+	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Total Weight of the Order: ```.
+	- *Step-03*: Complete solution, i.e. add calculations. 
 
 5.  Develop a program that reads a four-digit integer from the user and displays the sum of the digits in the number. For example, if the user enters ```3141``` then your program should display ```3+1+4+1=9```.
-	- *Step02*: Partial solution, i.e. no calculation yet. The user enters a four-digit integer the program prints only ```Sum: ```.
-	- *Step03*: Complete solution. 
+	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters a four-digit integer the program prints only ```Sum: ```.
+	- *Step-03*: Complete solution. 
 
 6. Implement a program that a user enters number of days as input, and the program prints number of hours, minutes and seconds separately as output.
-	- *Step02*: Partial solution, i.e. no calculation yet.
-	- *Step03*: Complete solution, i.e. add calculations. 
+	- *Step-02*: Partial solution, i.e. no calculation yet.
+	- *Step-03*: Complete solution, i.e. add calculations. 
 
 ## Products:
 
@@ -246,7 +246,7 @@ Implement Python programs to solve the following problem statements:
 1. Using **BRef-01: Appendix B** perform the following tasks:
    1. Install Python on your machine.
    2. Open a terminal (command window) and check the version of your Python. What is the command?
-   3. Create a file and name it: hello.py (make sure the extension of the file is py). Open the file and use print statement to print a given text, like Hello Python. Save the file and using your terminal execute your first python program.
+   3. Create a file and name it: ```hello.py``` (make sure the extension of the file is py). Open the file and use print statement to print a given text, like Hello Python. Save the file and using your terminal execute your first python program.
    4. Finish all the exercises listed in **BRef-01-Chapter 01: Things to Do**.
 <!--
 ### Exercises:
