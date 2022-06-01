@@ -189,11 +189,38 @@ print(count)
 
 **Note**: All your solutions must check invalid inputs from the user and print proper error messages.
 
-1. Write a program that draws “modular rectangles” like the ones below. The user specifies the width and height of the rectangle, and the entries start at 0 and increase typewriter fashion from left to right and top to bottom, but are all done mod 10. Example: Below are examples of a 3 x 5 rectangular: <br>0 1 2 3 4 <br> 5 6 7 8 9 <br> 0 1 2 3 4 <br>.
-2. Write a program that displays a temperature conversion table for degrees Celsius and degrees Fahrenheit. The table should include rows for all temperatures between 0 and 100 degrees Celsius that are multiples of 10 degrees Celsius. Include appropriate headings on your columns. The formula for converting between degrees Celsius and degrees Fahrenheit can be found on the internet .
-3. A string is a palindrome if it is identical forward and backward. For example “anna”, “civic”, “level” and “hannah” are all examples of palindromic words. Write a program that reads a string from the user and uses a loop to determines whether or not it is a palindrome. Display the result, including a meaningful output message.
-4. There are numerous phrases that are palindromes when spacing is ignored. Examples include “go dog”, “flee to me remote elf” and “some men interpret nine memos”, among many others. Write a program that it ignores spacing while determining whether or not a string is a palindrome. For an additional challenge, extend your solution so that is also ignores punctuation marks and treats uppercase and lowercase letters as equivalent.
+1. A string is a palindrome if it is identical forward and backward. For example “anna”, “civic”, “level” and “hannah” are all examples of palindromic words. Write a program that reads a string from the user and uses a loop to determines whether or not it is a palindrome. Display the result, including a meaningful output message.
+	- *Step-01*: Complete solution, **without** loops.
+	- *Step-02*: Complete solution, using *while* loop.
+	- *Step-03*: Complete solution, using *for* loop.
+
+2. There are numerous phrases that are palindromes when spacing is ignored. Examples include “go dog”, “flee to me remote elf” and “some men interpret nine memos”, among many others. Write a program that it ignores spacing while determining whether or not a string is a palindrome.
+	- *Step-01*: Complete solution, **without** loops.
+	- *Step-02*: Complete solution, using *while* loop.
+	- *Step-03*: Complete solution, using *for* loop.
+	- For an additional challenge, extend your solution so that is also ignores punctuation marks (like ```, . ? ! ;```) and treats uppercase and lowercase letters as equivalent.
+
+3. Write a program that draws “modular rectangles” like the ones below. The user specifies the width and height of the rectangle, and the entries start at 0 and increase typewriter fashion from left to right and top to bottom, but are all done mod 10. Example: Below are examples of a 3 x 5 rectangular: <br>0 1 2 3 4 <br> 5 6 7 8 9 <br> 0 1 2 3 4 <br>.
+	- *Step-02*: Complete solution, using *while* loop.
+	- *Step-03*: Complete solution, using *for* loop.
+
+4. Write a program that displays a temperature conversion table for degrees Celsius and degrees Fahrenheit. The table should include rows for all temperatures between 0 and 100 degrees Celsius that are multiples of 10 degrees Celsius. Include appropriate headings on your columns. The formula for converting between degrees Celsius and degrees Fahrenheit can be found on the internet .
+	- *Step-02*: Complete solution, using *while* loop.
+	- *Step-03*: Complete solution, using *for* loop.
+
 5. In this exercise you will create a program that displays a multiplication table that shows the products of all combinations of integers from 1 times 1 up to and including 10 times 10. Your multiplication table should include a row of labels across the top of it containing the numbers 1 through 10. It should also include labels down the left side consisting of the numbers 1 through 10.
+	- *Step-02*: Complete solution, using *while* loop.
+	- *Step-03*: Complete solution, using *for* loop.
+
 6. Write a program that converts a binary (base 2) number to decimal (base 10). Your program should begin by reading the binary number from the user as a string. Then it should compute the equivalent decimal number by processing each digit in the binary number. Finally, your program should display the equivalent decimal number with an appropriate message.
+	- Make a research about binary and decimal numbers and how a binary can be converted to a decimal using pen-paper.
+	- *Step-01*: Partial solution. The program reads a binary number in string format and converts its decimal using built-in functions.
+	- *Step-02*: Complete solution, using *while* loop implement the steps of conversion.
+	- *Step-03*: Complete solution, using *for* loop implement the steps of conversion.
+
+7. Make a research about *truth tables*. Write down truth tables for ```and``` and ```or```. Implement a program that prints these two truth tables.
+	- *Step-03*: Complete solution.
+
+
 
 ## Products:
