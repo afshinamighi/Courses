@@ -24,11 +24,11 @@ General concepts of programs, basic data types, basic calculations in Python, li
 
 **Learning Activities**: [Check Week 01/inf-bc-w01-python.md](./week01/inf-bc-w01-python.md) 
 
-#### Skills 
+<!-- #### Skills 
 [todo: make a list of final elements from week 01 skills]
 
 **Learning Activities**: [Check Week 01/inf-bc-w01-skills.md](./week01/inf-bc-w01-skills.md) 
-
+-->
 </details>
 
 ### Week02: Branching Programs.
@@ -45,11 +45,11 @@ Boolean expressions and conditional statements, basics of string processing with
 
 **Learning Activities**: [Check Week 02/inf-bc-w02-python.md](./week02/inf-bc-w02-python.md) 
 
-#### Skills 
+<!-- #### Skills 
 [todo: make a list of final elements from week 02 skills]
 
 **Learning Activities**: [Check Week 02/inf-bc-w02-skills.md](./week02/inf-bc-w02-skills.md) 
-
+-->
 
 </details>
 
@@ -68,11 +68,11 @@ General concepts of loops (*while* and *for*) and more functions for strings: ty
 
 **Learning Activities**: [Check Week 03/inf-bc-w03-python.md](./week03/inf-bc-w03-python.md) 
 
-#### Skills 
+<!-- #### Skills 
 [todo: make a list of final elements from week 02 skills]
 
 **Learning Activities**: [Check Week 03/inf-bc-w03-skills.md](./week03/inf-bc-w03-skills.md) 
-
+-->
 
 </details>
 
@@ -82,12 +82,11 @@ General concepts of loops (*while* and *for*) and more functions for strings: ty
 <details>
 <summary>Content </summary>
 
-- **Concepts** : There is no new topic for students who need to review previous weeks. The topics for the sprinters can be decided later [to do].
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: To do.
-	- *Exercises*: To do.
-	- *Products*: To do.
+#### Programming 
+A programming challenge that covers previous weeks
+
+**Learning Activities**: [Check Week 04/inf-bc-w04-challenge.md](./week04/inf-bc-w04-challenge.md) 
+
 </details>
 
 </details>
