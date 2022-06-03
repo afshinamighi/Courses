@@ -14,11 +14,6 @@ If everything is going well you will make a challenge assignment in this week, b
 With help of your teachers you have made a **personal plan** for this week to solve this (not necessary 100%)
 They will help you this week with specific problemes you encounter.
 
-<!-- At the end of this week you write a small report with your experiences, activities and a reflection on the progress you made. -->
-
-
-<!-- If everything is OK so far you can pick up the gauntlet with this challenge: -->
-
 ## Challenge: A Text Based Adventure
 
 So far you learned the basics of python programming : variables, input, output, calculations, branching and looping.
@@ -60,10 +55,6 @@ Some ideas (if you have a creativity block):
 	- more puzzles
 	- map of the environment
 
-
-<!-- At the end of the week we will have a **demo day**, to play with the games of your colleagues.
-Also make a report with your designs and code and add it to your [DOSSIER]-->
-<!-- If you finish this challenge satisfactory you get 1SP for het **keuzevak** Basecamp Challenge 01. -->
 
 Enjoy Building.
 
