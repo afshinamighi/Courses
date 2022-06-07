@@ -264,7 +264,6 @@ Here is the final letter to send:
 Dear David Johanson, 
 After careful evaluation of your application for the position of Junior C++ Programmer, 
 at this moment we have decided to proceed with another candidate. 
-[FEEDBACK] 
 We wish you the best in finding your future desired career. Please do not hesitate to contact us with any questions. 
 Sincerely, 
 HR Department of XYZ 
