@@ -11,8 +11,16 @@ The activities are designed based on these following references:
 
 ## Path:
 
-### Step-01: 
-#### What is a function?
+### Step-01: What is a function?
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs with Python functions: function definition, calling functions, return of a function, functions with arguments.
+```
+
+#### What to Learn?
 
 1. Using **BRef-01: Chapter 09** answer and experiment the following questions:
    1. What is a function in Python?
@@ -22,14 +30,31 @@ The activities are designed based on these following references:
    5. What are the arguments and/or parameters?
 
 #### Exercises:
-1. Provide your solutions to the exercises of Python 05: Step-01. **ORef-01: Functions** can be used as extra learning reference.
 
-[todo]
+*Note*: In the following exercises you can decide yourself what should be the name of function in your solution. Check [PEP8 Function and Variable Names](https://peps.python.org/pep-0008/#function-and-variable-names).
+
+1. Explain in your own words the difference between `arguments` and `parameters`.
+2. Create a function that just prints the word `hello`. Call the function and run your program. Where the function is *defined*? Where is it *called*?
+3. Create a function that takes a text as an argument. The function prints the text it receives. Call the function and run your program.
+4. Create a function that takes two numbers as argument. The function adds the numbers together and returns the results. Call the function and run your program.
+5. Create two functions, each takes a number as argument. The first one returns the number multiplied by 2 and returns it. The second multiplies it by 10 and returns it. Calling both functions add the two returned numbers together and print it. Run your program and check the results.
+6. Create two functions. One that prints `hello`, the other prints `bye`. Ask the user to input a number, if the number is higher than 10, call the first function. If the number if lower or equal to 10, call the second function. Test your program.
+7. Create two functions. One that prints `hello`, the other prints `bye`. The first functions calls the second one after printing. Call the first function.
+8. Provide your solutions to the exercises of Python 05: Step-01. **ORef-01: Functions** can be used as extra learning reference.
+
 
 <hr>
 
-### Step-02: 
-#### Tuples.
+### Step-02: Tuples.
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs using tuples.
+```
+
+#### What to Learn?
 
 1. Using **BRef-01: Chapter 07** answer and experiment the following questions:
    1. What is a tuple in Python and how is it defined?
@@ -38,22 +63,59 @@ The activities are designed based on these following references:
    4. How is a tuple modified?
 
 #### Exercises:
-[todo]
+1. You can create a tuple with mixed types in it, for example texts and numbers. Can you think of a advantage and a disadvantage of doing this? Implement your example.
+2. Create a tuple with three numbers in it. Unpack the tuple into three different variables. Print the last one.
+3. Create a tuple with two numbers in it, create a second tuple with two texts in it. Add them together into a new tuple. Print the new tuple.
+4. Create a tuple with three numbers in it. Use a for loop to iterate over each value. Multiply each value by 2 and print each result.
+5. Create a function that returns a tuple containing three texts. Call the function. Unpack the tuple into variables. Print the variables.
+6. Analyse the two given codes below without executing them. What will be the result of the programs?
+
+```python
+thistuple = ('Never', 'gonna', 'give', 'you', 'up')
+counter = 0
+for x in thistuple:
+    if x[0] ==  'g':
+        counter = counter + 1
+    else:
+        counter = counter + 2
+print(counter)
+```
+
+```python
+def doSomething(x):
+    rtuple = x,
+    for i in range(2,11):
+        rtuple = rtuple + ((x*i),)
+    return rtuple
+
+print(doSomething(6))
+```
 
 <hr>
 
-### Step-03: 
-#### Lists.
+### Step-03: Lists.
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs using lists: defining, offset, slicing, adding new element, modifying an element.
+```
+
+#### What to Learn?
+
 
 1. Using **BRef-01: Chapter 07** answer and experiment the following questions:
-   1. What is a tuple in Python and how is it defined?
+   1. What is a list in Python and how is it defined?
    2. What is the result of *split()* on a string?
-   3. There are two ways to get items from a list: offset and slice. What are the pros / cons of each. Experiment with some examples.
+   3. There are two ways to get items from a list: offset and slice. What are the pros / cons of each? Experiment with some examples.
    4. How can you add new elements to a list?
    5. How can you modify elements of a list?
-   6. *Mutability* is one of the main differences between a tuple and a list. Elaborate this with some example. 
+   6. How can one iterate over the elements of a list?
+   7. *Mutability* is one of the main differences between a tuple and a list. Elaborate this with some example. 
 
 #### Exercises:
+
 1. Define a list of integers representing scores of a game. Write a program that prints out maximum and minimum of the ```scores```.
 2. Extend your program from the previous exercise such that it prints two largest and two smallest elements of the ```scores```.
 3. Write a program that asks the user to enter a list of integers. Do the following:
@@ -87,9 +149,15 @@ The activities are designed based on these following references:
 
 ## Problems:
 
+### General Notes:
+- Follow [PEP8 Style Guide for Python Code](https://peps.python.org/pep-0008/#code-lay-out) and apply coding style in your solutions.
+- After taking Step 01: try to implement a partial solution for each program. More likely it will not be complete. Just think about algorithm and functions you would need. Save your partial solutions in your working folder.
+- After taking Step 02: try to continue with your partial solution for each problem. Can you make it complete? Then, it is dones. Do you need Step 03? Save it for later.
+- After taking Step 03: All solutions must be complete.
+
 1. A primary school teacher needs to automate basic arithmetic (summation, multiplication table, subtracton) exercises for her students. You are asked to implement a program that asks what type of the arithmetic the user needs to practice. Then, the program will generate exercises and the user should give the result. Consider the following features for the program:
 	- For each arithmetic operation keep the total number of the exercises 10.
-	- The program must be interactive: for example, if the chosen exercise is multiplication table, then the program generates two random numbers (check how python can generate random integers), like 3 and 5; the program prints 3 * 5 = and the user must give the result; the program will print if the answer was correct or wrong and then the program will generate next question.
+	- The program must be interactive: for example, if the chosen exercise is multiplication table, then the program generates two random numbers (check how python can generate random integers: **Week 01: Step 01, Exercise 2, Code 4**), like 3 and 5; the program prints 3 * 5 = and the user must give the result; the program will print if the answer was correct or wrong and then the program will generate next question.
 	- Your program must be implemented with three functions, one for each arithmetic operation test and one main function that interacts with the user and call coresponding functions.
 	- Numbers for summation and subtractions will be between 1 and 100.
 	- For other aspects of the program feel free to decide your choice.
@@ -126,11 +194,18 @@ Each item that is sent to the recipient in the song should only appear once in y
 7. Implement a program that takes a quiz. The quiz contains 10 general questions, like *What is the capital of France?*. The user answers the question and the program must check if the answer is correct or not.
 8. Implement the tic-tac-toe game (console based).
 	- For two players and in each round the program asks the players to specify the position.
-	- After giving the position by each player, the boad is printed in the terminal.
+	- After giving the position by each player, the board is printed in the terminal.
 	- The program determines the winner at the end.
 	- Employ lists, tuples and functions in your program.
 	- **Extended Version**: Extend your program with *two dimensional* lists.
 	 
+## Products:
+
+
+
+
+
+
 ## Extra Steps:
 
 ### ExtraStep-01:
