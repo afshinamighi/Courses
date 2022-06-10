@@ -159,8 +159,30 @@ for i in schar:
 <hr>
 
 ## Problems:
-[todo]
+1. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
+character in the message to its mapping code. 
+	- Put a space between translated character. Example: `Hello` is translated into `.... . .-.. .-.. --- `. 
+	- Put a 4 spaces when there is a space in the original message. Example: `Hello World` is translated into `.... . .-.. .-.. ---	    .-- --- .-. .-.. -..`. 
+	- Your program should print a proper error message if there is no mapping for specific characters. 
 
+
+```python
+MORSE_CODE_DICT = { 
+	'A':'.-', 'B':'-...',
+	'C':'-.-.', 'D':'-..', 'E':'.',
+	'F':'..-.', 'G':'--.', 'H':'....',
+	'I':'..', 'J':'.---', 'K':'-.-',
+	'L':'.-..', 'M':'--', 'N':'-.',
+	'O':'---', 'P':'.--.', 'Q':'--.-',
+	'R':'.-.', 'S':'...', 'T':'-',
+	'U':'..-', 'V':'...-', 'W':'.--',
+	'X':'-..-', 'Y':'-.--', 'Z':'--..',
+	'1':'.----', '2':'..---', '3':'...--',
+	'4':'....-', '5':'.....', '6':'-....',
+	'7':'--...', '8':'---..', '9':'----.',
+	'0':'-----', ',':'--..--', '.':'.-.-.-',
+	'?':'..--..'}
+```
 ## Products:
 [todo]
 
