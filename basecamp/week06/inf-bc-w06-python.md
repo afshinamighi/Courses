@@ -159,14 +159,19 @@ for i in schar:
 <hr>
 
 ## Problems:
-1. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
+1. Implement a program that determines and displays the number of unique characters in a string entered by the user. For example, `Hello, World!` has 10 unique characters while `zzz` has only one unique character. 
+	- Use only dictionaries to solve this problem. 
+	- Use only sets to solve this problem.
+	- Which solution would you prefer?
+
+2. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
 character in the message to its mapping code. 
-	- Put a space between translated character. 
+	- Put a space between translated character. Example: `Hello` is translated into 
+.... . .-.. .-.. --- 
 
-Example: `Hello` is translated into `.... . .-.. .-.. --- `. 
-	- Put a 2 spaces when there is a space in the original message. 
+	- [todo: finalise what should be between words?]Put a 2 spaces when there is a space in the original message. Example: `Hello World` is translated into
+.... . .-.. .-.. ---	   .-- --- .-. .-.. -... 
 
-Example: `Hello World` is translated into ```.... . .-.. .-.. ---	   .-- --- .-. .-.. -..```. 
 	- Your program should print a proper error message if there is no mapping for specific characters. 
 
 
