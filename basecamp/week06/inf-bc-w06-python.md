@@ -162,8 +162,10 @@ for i in schar:
 1. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
 character in the message to its mapping code. 
 	- Put a space between translated character. 
+
 Example: `Hello` is translated into `.... . .-.. .-.. --- `. 
 	- Put a 4 spaces when there is a space in the original message. 
+
 Example: `Hello World` is translated into ```.... . .-.. .-.. ---	    .-- --- .-. .-.. -..```. 
 	- Your program should print a proper error message if there is no mapping for specific characters. 
 
