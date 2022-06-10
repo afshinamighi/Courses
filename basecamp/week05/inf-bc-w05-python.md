@@ -203,9 +203,6 @@ Each item that is sent to the recipient in the song should only appear once in y
 
 
 
-
-
-
 ## Extra Steps:
 
 ### ExtraStep-01:
