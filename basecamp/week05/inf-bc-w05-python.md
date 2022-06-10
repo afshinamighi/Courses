@@ -1,6 +1,6 @@
 # Python 05: Functions, Lists and Tuples.
 
-**Introduction**: This document presents learning activities for Python 05. In Python 05, you will learn basics of functions to oraganise your large programs. A function is a fragment of code with a name to be reused in different places of the program. Moreover, in this Python you will learn how to build a sequence structure using basic data types.
+**Introduction**: This document presents learning activities for Python 05. In Python 05, you will learn basics of functions to oraganise your large programs. A function is a fragment of code with a name to be reused in different places of the program. Moreover, in this week you will learn how to build a sequence structure using basic data types.
 
 ## Materials:
 
@@ -41,6 +41,7 @@ After taking this step, you will be able to:
 6. Create two functions. One that prints `hello`, the other prints `bye`. Ask the user to input a number, if the number is higher than 10, call the first function. If the number if lower or equal to 10, call the second function. Test your program.
 7. Create two functions. One that prints `hello`, the other prints `bye`. The first functions calls the second one after printing. Call the first function.
 8. Provide your solutions to the exercises of Python 05: Step-01. **ORef-01: Functions** can be used as extra learning reference.
+9. Design two exercises of your own. They should improve understanding topics of this step.
 
 
 <hr>
@@ -70,8 +71,8 @@ After taking this step, you will be able to:
 5. Create a function that returns a tuple containing three texts. Call the function. Unpack the tuple into variables. Print the variables.
 6. Analyse the two given codes below without executing them. What will be the result of the programs?
 
-```python
-thistuple = ('Never', 'gonna', 'give', 'you', 'up')
+ ```python
+a_tuple = ('Never', 'gonna', 'give', 'you', 'up')
 counter = 0
 for x in thistuple:
     if x[0] ==  'g':
@@ -81,15 +82,16 @@ for x in thistuple:
 print(counter)
 ```
 
-```python
-def doSomething(x):
+ ```python
+def do_something(x):
     rtuple = x,
     for i in range(2,11):
         rtuple = rtuple + ((x*i),)
     return rtuple
-
-print(doSomething(6))
+print(do_something(6))
 ```
+
+7. Design two exercises of your own. They should improve understanding topics of this step.
 
 <hr>
 
@@ -145,6 +147,8 @@ After taking this step, you will be able to:
 	- A list containing the squares of the integers 1 through 50.
 	- The list ```['a','bb','ccc','dddd', . . . ]``` that ends with 26 copies of the letter z.
 7. Write a program that takes any two lists L and M of the same size and adds their elements together to form a new list N whose elements are sums of the corresponding elements in L and M. For instance, if ```L=[3,1,4]``` and ```M=[1,5,9]```, then N should equal ```[4,6,13]```.
+8. Design two exercises of your own. They should improve understanding topics of this step.
+
 <hr>
 
 ## Problems:
@@ -192,18 +196,32 @@ The complete lyrics are available on the internet.
 Each item that is sent to the recipient in the song should only appear once in your program, with the possible exception of the partridge. It may appear twice if that helps you handle the difference between “A partridge in a pear tree” in the first verse and “And a partridge in a pear tree” in the subsequent verses. 
 
 7. Implement a program that takes a quiz. The quiz contains 10 general questions, like *What is the capital of France?*. The user answers the question and the program must check if the answer is correct or not.
-8. Implement the tic-tac-toe game (console based).
+	 
+## Products:
+
+1. Thers a data set that contains information of students: student number, first name, last name, date of birth, study program. You are asked to implement a program that given this data set (as a csv file), the program processes the information. The requested criteria are:
+	- A template Python file is provided with a function that loads the data set.
+	- Sometimes data values are corupted. The program must report corupted values. Any invalid or empty value is defined as corrupted.
+	- Student number has this format: 7 digits, starting with 0.
+	- First name and last names, contains only alphabet.
+	- Date of birth has this format: ```YYYY-MM-DD```. Days between 1 and 31, months between 1 and 12 and Years between 1960 and 2004.
+	- Study program can have one of these values: ```INF, TINF, CMD, AI```.
+	- The program should make two separate lists: list of rows with correct values and a list of rows with corrupted values. These two lists will be printed with this format: [todo].
+
+[todo: the main idea is that a python file with a data set will be provided. The python file contains two functions: one to load data and provide information in global variables and one function to validate values and should be implemented by the student.] 
+
+
+## Extra Steps:
+
+### Problems:
+
+1. Implement the tic-tac-toe game (console based).
 	- For two players and in each round the program asks the players to specify the position.
 	- After giving the position by each player, the board is printed in the terminal.
 	- The program determines the winner at the end.
 	- Employ lists, tuples and functions in your program.
 	- **Extended Version**: Extend your program with *two dimensional* lists.
-	 
-## Products:
 
-
-
-## Extra Steps:
 
 ### ExtraStep-01:
 1. [todo]
