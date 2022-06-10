@@ -164,9 +164,9 @@ character in the message to its mapping code.
 	- Put a space between translated character. 
 
 Example: `Hello` is translated into `.... . .-.. .-.. --- `. 
-	- Put a 4 spaces when there is a space in the original message. 
+	- Put a 2 spaces when there is a space in the original message. 
 
-Example: `Hello World` is translated into ```.... . .-.. .-.. ---	    .-- --- .-. .-.. -..```. 
+Example: `Hello World` is translated into ```.... . .-.. .-.. ---	   .-- --- .-. .-.. -..```. 
 	- Your program should print a proper error message if there is no mapping for specific characters. 
 
 
