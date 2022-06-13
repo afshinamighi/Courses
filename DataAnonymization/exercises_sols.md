@@ -48,8 +48,7 @@ Propose a taxonomy tree for **Job**.
 	- Is there only one solution or more?
 
 *Solution*: 
-- Variation one of **Age** taxonomy tree: There is no solution 
-[Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_1.png)
+- Variation one of **Age** taxonomy tree: There is no solution ![Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_1.png)
 
 - Variation two of **Age** taxonomy tree: There is a solution 
 ![Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_2.png)
