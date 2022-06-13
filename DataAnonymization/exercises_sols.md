@@ -48,9 +48,11 @@ Propose a taxonomy tree for **Job**.
 	- Is there only one solution or more?
 
 *Solution*: 
-- Solution for variation one of **Age** taxonomy tree ![Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_1.png)
+- Variation one of **Age** taxonomy tree: There is no solution 
+[Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_1.png)
 
-- Solution for variation two of **Age** taxonomy tree ![Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_2.png)
+- Variation two of **Age** taxonomy tree: There is a solution 
+![Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_2.png)
 
 7. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *4-anonymity*.
 	- Is there only one solution or more?
