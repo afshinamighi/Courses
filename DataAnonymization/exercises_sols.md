@@ -23,12 +23,26 @@ Consider the data set below in the following exercises.
 ### Exercises:
 
 1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
+
+*Solution*: **SSNumber** is an EID. Suppresing the values of **SSNumber** or removing the column can be possible solutions.
+
 2. QIDs (Quasi IDentifiers): Which attributes can be candidates for QIDs?
+
+*Solution*: **Age** and **ZipCode**.
+
 3. Taxonomy Tree: Define a taxonomy tree for **Age** in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
+
+*Solution*: [The taxonomy tree as a csv file can be found here](./datasets/small-dataset-medical/tax_age.csv)
+
 4. Taxonomy Tree: Define a taxonomy tree for **ZipCode**.
+
+*Solution*: [The taxonomy tree as a csv file can be found here](./datasets/small-dataset-medical/tax_zip.csv)
+
 5. Taxonomy Tree: Assume an attribute **Job** with the following values:
 ```Job={Software Developer,Writer,Civil Engineer,Lawyer,Dancer,Graphist,Journalist}```
 Propose a taxonomy tree for **Job**.
+
+*Solution*: No solution, should be straightforward. 
 
 6. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *2-anonymity*.
 	- Is there only one solution or more?

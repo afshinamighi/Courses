@@ -23,17 +23,24 @@ Consider the data set below in the following exercises.
 ### Exercises:
 
 1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
+
 2. QIDs (Quasi IDentifiers): Which attributes can be candidates for QIDs?
+
 3. Taxonomy Tree: Define a taxonomy tree for **Age** in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
+
 4. Taxonomy Tree: Define a taxonomy tree for **ZipCode**.
+
 5. Taxonomy Tree: Assume an attribute **Job** with the following values:
 ```Job={Software Developer,Writer,Civil Engineer,Lawyer,Dancer,Graphist,Journalist}```
 Propose a taxonomy tree for **Job**.
 
 6. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *2-anonymity*.
 	- Is there only one solution or more?
+
+
 7. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *4-anonymity*.
 	- Is there only one solution or more?
+
 8. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
 
 9. 2-Diversity: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it it satisfies *2-diversity*.
