@@ -48,15 +48,32 @@ Propose a taxonomy tree for **Job**.
 	- Is there only one solution or more?
 
 *Solution*: 
-- Solution for variation one of **Age** taxonomy tree [Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_1.png)
+- Solution for variation one of **Age** taxonomy tree ![Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_1.png)
 
-- Solution for variation two of **Age** taxonomy tree [Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_2.png)
+- Solution for variation two of **Age** taxonomy tree ![Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_2.png)
 
 7. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *4-anonymity*.
 	- Is there only one solution or more?
+
+*Solution*: 
+
+- **(Age2 , Zip1)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age2_zip1.png)
+
+- **(Age2 , Zip2)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age2_zip2.png)
+
+- **(Age3 , Zip1)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age3_zip1.png)
+
+- **(Age4 , Zip1)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age4_zip1.png)
+
+
 8. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
 
+*Solution*: Depends on our target in applying SDC technique: The balanace between *utility and risk*.
+
 9. 2-Diversity: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it it satisfies *2-diversity*.
+
+*Solution*: Check which one of our 4-anonymity solutions are 2-diversity.
+
 10. ARX: Download ans install ARX [Check here: https://arx.deidentifier.org/](https://arx.deidentifier.org/) 
 11. Taxonomies as CSVs: Convert your taxonomy trees of **Age** and **ZipCode** to CSV formats.
 12. ARX: Watch provided tutorial video to explore basic steps of ARX and try to anonymize our data set: 4-anonymity and 2-diversity.
