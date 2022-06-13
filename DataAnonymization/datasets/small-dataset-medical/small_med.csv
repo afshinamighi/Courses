@@ -1,0 +1,13 @@
+ss_number;age;zip_code;condition
+*;[21-25];2305*;heart disease
+*;[21-25];2305*;heart disease
+*;[26-30];2306*;viral infection
+*;[26-30];2306*;viral infection
+*;[31-35];2305*;kidney stone
+*;[31-35];2305*;kidney stone
+*;[31-35];2306*;aids
+*;[36-40];2306*;aids
+*;[41-45];2305*;kidney stone
+*;[41-45];2305*;heart disease
+*;[46-50];2306*;viral infection
+*;[46-50];2306*;viral infection
