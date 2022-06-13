@@ -32,7 +32,7 @@ Consider the data set below in the following exercises.
 
 3. Taxonomy Tree: Define a taxonomy tree for **Age** in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
 
-*Solution*: [The taxonomy tree as a csv file can be found here](./datasets/small-dataset-medical/tax_age.csv)
+*Solution*: This is one possble taxonomy tree. Consult your solution with the teacher. [The taxonomy tree as a csv file can be found here](./datasets/small-dataset-medical/tax_age.csv)
 
 4. Taxonomy Tree: Define a taxonomy tree for **ZipCode**.
 
@@ -46,6 +46,12 @@ Propose a taxonomy tree for **Job**.
 
 6. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *2-anonymity*.
 	- Is there only one solution or more?
+
+*Solution*: 
+- Solution for variation one of **Age** taxonomy tree [Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_1.png)
+
+- Solution for variation two of **Age** taxonomy tree [Check here](./datasets/small-dataset-medical/k2_anonym_age_tax_2.png)
+
 7. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *4-anonymity*.
 	- Is there only one solution or more?
 8. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
