@@ -1,0 +1,13 @@
+ss_number,age,zip_code,condition
+1234-12-1234,21,23058,heart disease
+2345-23-2345,24,23059,heart disease
+3456-34-3456,26,23060,viral infection
+4567-45-4567,27,23061,viral infection
+9012-90-9012,32,23058,kidney stone
+0123-12-0123,34,23059,kidney stone
+4321-43-4321,35,23060,aids
+5432-54-5432,38,23061,aids
+5678-56-5678,43,23058,kidney stone
+6789-67-6789,43,23059,heart disease
+7890-78-7890,47,23060,viral infection
+8901-89-8901,49,23061,viral infection
