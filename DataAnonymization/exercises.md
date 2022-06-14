@@ -44,8 +44,10 @@ Propose a taxonomy tree for **Job**.
 8. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
 
 9. 2-Diversity: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it it satisfies *2-diversity*.
-10. ARX: Download ans install ARX [Check here: https://arx.deidentifier.org/](https://arx.deidentifier.org/) 
+10. ARX: Download and install ARX [Check here: https://arx.deidentifier.org/](https://arx.deidentifier.org/) 
 11. Taxonomies as CSVs: Convert your taxonomy trees of **Age** and **ZipCode** to CSV formats.
 12. ARX: Watch provided tutorial video to explore basic steps of ARX and try to anonymize our data set: 4-anonymity and 2-diversity.
 13. ARXaaS: Using ARXaaS [Check here](http://145.24.222.216:3000/) and try to anonymize our data set: 4-anonymity and 2-diversity. 
+
+**Extra Dataset**: A fake data set [available here](./datasets/dataset-fake-2021/)
 
