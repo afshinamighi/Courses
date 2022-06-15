@@ -56,13 +56,13 @@ Propose a taxonomy tree for **Job**.
 
 *Solution*: 
 
-- **(Age2 , Zip1)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age2_zip1.png)
+- **(Age2 , Zip1)**: No Solution ![Check here](./datasets/small-dataset-medical/k4_anonym_age2_zip1.png)
 
-- **(Age2 , Zip2)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age2_zip2.png)
+- **(Age2 , Zip2)**: One Solution ![Check here](./datasets/small-dataset-medical/k4_anonym_age2_zip2.png)
 
-- **(Age3 , Zip1)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age3_zip1.png)
+- **(Age3 , Zip1)**: No Solution ![Check here](./datasets/small-dataset-medical/k4_anonym_age3_zip1.png)
 
-- **(Age4 , Zip1)** ![Check here](./datasets/small-dataset-medical/k4_anonym_age4_zip1.png)
+- **(Age4 , Zip1)**: One Solution ![Check here](./datasets/small-dataset-medical/k4_anonym_age4_zip1.png)
 
 
 8. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
