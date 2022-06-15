@@ -7,7 +7,7 @@ This document collects simple exercises to practice Data Anonymization.
 
 #### Part One :
 1. Template [can be found here](anf-template.pdf)
-2. K-anonymity [a simple dataset is available here](K_Anonym_exercise.csv)
+2. K-anonymity: Apply 4-anonymity (ad-hoc) on this dataset: [a simple dataset is available here](K_Anonym_exercise.csv)
 
 #### Part Two:
 
