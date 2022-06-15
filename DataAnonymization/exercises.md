@@ -13,7 +13,7 @@ This document collects simple exercises to practice Data Anonymization.
 
 For the following exercises use this simple medical dataset:
 
-## Data Set: 
+##### Data Set: 
 Consider the data set below in the following exercises.
 
 | SSNumber | Age | ZipCode | Condition |
