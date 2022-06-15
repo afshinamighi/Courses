@@ -2,6 +2,17 @@
 This document collects simple exercises to practice Data Anonymization.
 
 
+
+### Exercises:
+
+#### Part One :
+1. Template [can be found here](anf-template.pdf)
+2. K-anonymity [a simple dataset is available here](K_Anonym_exercise.csv)
+
+#### Part Two:
+
+For the following exercises use this simple medical dataset:
+
 ## Data Set: 
 Consider the data set below in the following exercises.
 
@@ -20,13 +31,6 @@ Consider the data set below in the following exercises.
 | 7890-78-7890 | 47 | 23060 | viral infection | 
 | 8901-89-8901 | 49 | 23061 | viral infection | 
 
-### Exercises:
-
-#### Part One :
-1. Template [can be found here](anf-template.pdf)
-2. K-anonymity [a simple dataset is available here](K_Anonym_exercise.csv)
-
-#### Part Two:
 
 1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
 
@@ -54,6 +58,5 @@ Propose a taxonomy tree for **Job**.
 11. Taxonomies as CSVs: Convert your taxonomy trees of **Age** and **ZipCode** to CSV formats.
 12. ARX: Watch provided tutorial video to explore basic steps of ARX and try to anonymize our data set: 4-anonymity and 2-diversity.
 13. ARXaaS: Using ARXaaS [Check here](http://145.24.222.216:3000/) and try to anonymize our data set: 4-anonymity and 2-diversity. 
-
-**Extra Dataset**: A fake data set [available here](./datasets/dataset-fake-2021/)
+- You can use our simple medical data set or a (larger) fake data set [available here](./datasets/dataset-fake-2021/)
 
