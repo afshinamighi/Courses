@@ -22,6 +22,12 @@ Consider the data set below in the following exercises.
 
 ### Exercises:
 
+#### Part One :
+1. Template [can be found here](anf-template.pdf)
+2. K-anonymity [a simple dataset is available here](K_Anonym_exercise.csv)
+
+#### Part Two:
+
 1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
 
 2. QIDs (Quasi IDentifiers): Which attributes can be candidates for QIDs?
