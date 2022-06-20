@@ -1,6 +1,10 @@
 # Python 05: Functions, Lists and Tuples.
 
-**Introduction**: This document presents learning activities for Python 05. In Python 05, you will learn basics of functions to oraganise your large programs. A function is a fragment of code with a name to be reused in different places of the program. Moreover, in this week you will learn how to build a sequence structure using basic data types.
+**Introduction**: This document presents learning activities for Python 05. In Python 05, you will learn basics of functions to organise your large programs. A function is a fragment of code with a name to be reused in different places of the program. Moreover, in this week you will learn how to build a sequence structure using basic data types.
+
+**Note:** Exercises of this learning path can be done using:
+
+1. IDE: Using **BRef-01: Chapter 19, Section: Integrated Development Environment** PyCharm can be installed in your local machine.
 
 ## Materials:
 
@@ -42,6 +46,8 @@ After taking this step, you will be able to:
 7. Create two functions. One that prints `hello`, the other prints `bye`. The first functions calls the second one after printing. Call the first function.
 8. Provide your solutions to the exercises of Python 05: Step-01. **ORef-01: Functions** can be used as extra learning reference.
 9. Design two exercises of your own. They should improve understanding topics of this step.
+10. Install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
+	- It is important to learn how to create a new Python program, how to configure interpreter and how to run the program. Where do you see the results?
 
 
 <hr>

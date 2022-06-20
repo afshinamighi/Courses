@@ -2,6 +2,10 @@
 
 **Introduction**: This document presents learning activities for Python 06. In Python 06, you will learn dictionaries to collect keys and coresponding values. Moreover, you will learn more features of functions. 
 
+**Note:** Exercises of this learning path should be done using:
+
+1. IDE: Using **BRef-01: Chapter 19, Section: Integrated Development Environment** PyCharm can be installed in your local machine.
+
 ## Materials:
 
 The activities are designed based on these following references:
@@ -57,6 +61,9 @@ for item in rdic.values():
 [todo]
 
 7. Design two exercises of your own. They should improve understanding topics of this step.
+8. If you don't have PyCharm yet, install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
+	- It is important to learn how to create a new Python program, how to configure interpreter and how to run the program. Where do you see the results?
+
 
 <hr>
 

@@ -2,6 +2,11 @@
 
 **Introduction**: This document presents learning activities for Python 07. In Python 07, you will learn more in depth about tuples, lists, dictionaris and functions. 
 
+**Note:** Exercises of this learning path must be done using:
+
+1. IDE: Using **BRef-01: Chapter 19, Section: Integrated Development Environment** PyCharm can be installed in your local machine.
+
+
 ## Materials:
 
 The activities are designed based on these following references:
@@ -12,8 +17,16 @@ Python
 
 ## Path:
 
-### Step-01: 
-#### Functions (more).
+### Step-01: Functions (more).
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs with Python functions: [todo].
+```
+
+#### What to Learn?
 
 1. Using **BRef-01: Chapter 09** answer and experiment the following questions:
    1. "Functions are first-class citizens": What does this sentence mean?
@@ -21,12 +34,24 @@ Python
    3. What are *namespace* and *scope*? What is the scope of a function? Use examples to justofy your answers. 
 
 #### Exercises:
-[todo]
+
+1. [todo]
+2. Design two exercises of your own. They should improve understanding topics of this step.
+3. If you don't have PyCharm yet, install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
+	- It is important to learn how to create a new Python program, how to configure interpreter and how to run the program. Where do you see the results?
 
 <hr>
 
-### Step-02: 
-#### Tuples and Lists (more).
+### Step-02: Tuples and Lists (more).
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs with Python Tuples and Lists: [todo].
+```
+
+#### What to Learn?
 
 1. Using **BRef-01: Chapter 07** answer and experiment the following questions:
    1. We have learned *join()* on a string. How does *join()* work in a list?
@@ -35,12 +60,21 @@ Python
    4. How can one build a list using *list comprehension*? Do we have *tuple comprehension*?
 
 #### Exercises:
-[todo]
+1. [todo]
+2. Design two exercises of your own. They should improve understanding topics of this step.
 
 <hr>
 
-### Step-03: 
-#### Dictionaries and Sets (more).
+### Step-03: Dictionaries and Sets (more).
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs with Python Dictionaries and Sets: [todo].
+```
+
+#### What to Learn?
 
 1. Using **BRef-01: Chapter 08** answer and experiment the following questions:
    1. How do *copy()* and *deepcopy()* behave on dictionaries? What about sets?
@@ -52,11 +86,15 @@ Python
 	   - List of tuples 
 
 #### Exercises:
-[todo]
+1. [todo]
+2. Design two exercises of your own. They should improve understanding topics of this step.
 
 <hr>
 
 ## Problems:
+[todo]
+
+## Products:
 [todo]
 
 ## Extra Steps:
