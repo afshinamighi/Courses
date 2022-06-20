@@ -35,7 +35,7 @@ This algorithm focuses on sensitive (confidential) attributes. After applying *k
 
 ### Part Zero :
 1. Make a anonymisation-pseudonymisation plan. This should include the following information: 
-creator(s) of the plan, person(s) carrying out the anonymisation, features in the data that have an impact on anonymisation, assessment of the disclosure risk of respondents' personal data, anonymisation techniques used along with the rationale for using them. You can use this template which [can be found here](./docs/anf-template.pdf)
+creator(s) of the plan, person(s) carrying out the anonymisation, features in the data that have an impact on anonymisation, assessment of the disclosure risk of respondents' personal data, anonymisation techniques used along with the rationale for using them. You can use this template which [can be found here](https://www.fsd.tuni.fi/en/services/data-management-guidelines/anf-template.pdf)
 2. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
 	- What are the main challenges in building a k-anonyous table?
 
