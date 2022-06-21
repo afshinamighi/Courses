@@ -236,6 +236,7 @@ print(count)
 	- Date: only in ```YYYY-MM-DD``` format, no negative numbers, days between 1 - 31, month between 1 - 12, year only 2021 and 2022.
 	- Feedback: if the email contains a feedback there is an extra line in the text otherwise that line must be removed (check the example below).
 	- The program will generate emails until the user answers ```No``` to the ```More Letters?``` question.
+	- In case of invalid input from the user, the program must proper message and then repeats the question again.
 	- A sample execution is presented below. Use this sample execution for the templates of the emails. Your program must have only **two** templates:
 
 ```
