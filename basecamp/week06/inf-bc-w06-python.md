@@ -132,7 +132,7 @@ After taking this step, you will be able to:
    1. What is a set in Python and how is it defined?
    2. How can one add/remove elements to/from a set?
    3. How can one iterate over a set?
-   4. Assume two sets S1 and S2. How can one specify the following operations on S1 and S2:Python
+   4. Assume two sets S1 and S2. How can one specify the following operations on S1 and S2 in Python:
 	   - Intersection of S1 and S2.
 	   - Union of S1 and S2.
 	   - Difference S1 and S2.
@@ -171,7 +171,21 @@ for i in schar:
 	- Use only sets to solve this problem.
 	- Which solution would you prefer?
 
-2. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
+2. [todo: needs more polishing] Implement a Python program that collects book information. The program starts with three options: entering new book, searching a book, exit. 
+	- Entering new book: The program will ask to enter: book title, book author, publisher, publication date.
+	- Searching a book: The user enters a term and the program must search the term within titles, authors and publishers and report the existence of such a book with the requested term.
+	- Exist: The program must print all the collected books before exiting.
+	- What structure do you define to store the information? Disucss about your structure with your group mate and/or teacher.
+
+2. In an application a valid password must be a combination of digits, uppercase and lowercase letters and only four symbols `* @ ! ?` . The length of the password must not be less than 8 characters and must not be more than 20 characters. In case the password is not valid, the user can try maximum three times until its is validated. Implement a Python program that asks the password of the user and checks if it is a valid password.
+	- Use sets and set operations to solve this problem.
+
+3. [todo: reshape it for a programming problem.] A group of 40 students were interviewed if they like tennis (T) and football (F). The number liking both tennis and football was three times the number liking only tennis. Adding 3 to the number of liking only tennis and doubling the answer equals the number of people liking only football. Four students said they don’t like any sport at all. Implement a program such that [todo: find some features for intersection, union, etc]
+
+4. [todo: reshape the question for a programming problem statement] One year 37 students sat an examination in physics (P), 48 sat chemistry (C), and 45 sat biology (B). 15 students sat physics and chemistry, 13 sat chemistry and biology, 7 sat physics and biology. 5 students sat all three examinations. [idea: load list of students and at the end report number of students.]
+
+
+3. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
 character in the message to its mapping code. 
 	- Put a space between translated character. Example: `Hello` is translated into ....&nbsp;.&nbsp;.-..&nbsp;.-..&nbsp;--- 
 	- Put a 4 spaces when there is a space in the original message. Example: `Hello World` is translated into ....&nbsp;.&nbsp;.-..&nbsp;.-..&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;.--&nbsp;---&nbsp;.-.&nbsp;.-..&nbsp;-... 
