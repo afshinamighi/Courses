@@ -22,7 +22,7 @@ The activities are designed based on these following references:
 
 ```
 After taking this step, you will be able to:
-	1. interpret and implement Python programs with Python Dictionaries: creating, adding and modifying items,  extracting value extracting key, del, pop and clear, iteration over dictionaries.
+	1. interpret and implement Python programs with Python Dictionaries: creating, adding and modifying items,  extracting value(s), extracting key(s), deleting, pop and clear, iteration over dictionaries.
 ```
 
 #### What to Learn?
@@ -123,7 +123,7 @@ do_something("a", "z", "d", "b", a=1, b=2, c=3, d=4)
 
 ```
 After taking this step, you will be able to:
-	1. interpret and implement Python programs with Python Sets: [todo].
+	1. interpret and implement Python programs with Python Sets: creating sets, difference between sets and lists and tuples, adding and removing elelemnts, membership operator, iteration over a set, basic operations between sets: intersection, union, difference and subset.
 ```
 
 #### What to Learn?
@@ -191,6 +191,8 @@ character in the message to its mapping code.
 	- Put a 4 spaces when there is a space in the original message. Example: `Hello World` is translated into ....&nbsp;.&nbsp;.-..&nbsp;.-..&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;.--&nbsp;---&nbsp;.-.&nbsp;.-..&nbsp;-... 
 
 	- Your program should print a proper error message if there is no mapping for specific characters. 
+	- Extend your program with functionality of decoding a morse code.
+	- Extend your program such that given a string it detects if it is a normal text or a morse code. Then based on the type of the message it translates to the other one. 
 
 
 ```python
@@ -214,7 +216,7 @@ MORSE_CODE_DICT = {
 [todo]
 
 ## Extra Steps
-[todo]
+
 
 
 
