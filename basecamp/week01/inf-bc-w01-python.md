@@ -44,7 +44,7 @@ num_str = input("How many words would you like to enter?")
 num = int(num_str)
 for _ in range(0,num):
 	word = input("Next word:")
-   words.append(word)
+  	words.append(word)
 print("This is your list of words:",words)
 ```
    
@@ -248,10 +248,6 @@ Implement Python programs to solve the following problem statements:
    2. Open a terminal (command window) and check the version of your Python. What is the command?
    3. Create a file and name it: ```hello.py``` (make sure the extension of the file is py). Open the file and use print statement to print a given text, like Hello Python. Save the file and using your terminal execute your first python program.
    4. Finish all the exercises listed in **BRef-01-Chapter 01: Things to Do**.
-<!--
-### Exercises:
-### Problems:
--->
 
 
 
