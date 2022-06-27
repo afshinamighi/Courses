@@ -35,9 +35,61 @@ After taking this step, you will be able to:
 
 #### Exercises:
 
-1. [todo]
-2. Design two exercises of your own. They should improve understanding topics of this step.
-3. If you don't have PyCharm yet, install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
+1. Analyse the given code below without executing it. What will be the result of the program?
+
+```python
+r = lambda a : a + 15
+print(r(10))
+r = lambda x, y : x * y
+print(r(12, 4))
+```
+
+2. Complete the given code by creating a lambda that checks if a given number is even.
+
+```python
+even = #your lambda here
+print(even(4))
+print(even(13))
+```
+
+3. Create a code snippet that splits up a list into two new lists. Depending on if the number in the list is even or odd. Accomplish this with using a lambda and knowledge from the earlier weeks. 
+- For example: Original list of integers:
+`[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+New list with only the even numbers:
+`[2, 4, 6, 8, 10]`.
+New list with the odd numbers:
+`[1, 3, 5, 7, 9]`
+
+4. Complete the function that checks if a given list is sorted or not, use at least one lambda within the function.
+
+```python
+def am_i_sorted(numberlist):
+    #write the code
+result = am_i_sorted([1,2,5,6,8,17])
+print(result) #True
+result = am_i_sorted([1,2,99,6,8,17])
+print(result) #False
+```
+
+5. Create a lambda that takes two arguments and returns a Tuple containing those two values. 
+
+6. Complete the function that checks if the items in a given list are `True` for the given lambda. Return a list containing all `True` values.
+
+```python
+def check_with_lambda(l, lam):
+    #write the code
+
+x = lambda a : a < 10
+y = [1,6,19,22,7]
+print(check_with_lambda(x, y)) #[1,6,7]
+x = lambda a : a.index(1) == 'b'
+y = ["abc", "bcd", "ube", "cur"]
+print(check_with_lambda(x, y)) #["abc","ube"]
+```
+
+7. Design two exercises of your own. They should improve understanding topics of this step.
+
+8. If you don't have PyCharm yet, install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
 	- It is important to learn how to create a new Python program, how to configure interpreter and how to run the program. Where do you see the results?
 
 <hr>
