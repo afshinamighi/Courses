@@ -1,4 +1,4 @@
-# PyCamp 10: (Plain) Data Files
+# Python 10: (Plain) Data Files
 
 **Introduction**: This document presents learning activities for Python 10. In Python 10, you will get introduced with plain data files in Python. 
 
