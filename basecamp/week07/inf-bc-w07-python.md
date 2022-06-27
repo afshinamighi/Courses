@@ -23,7 +23,8 @@ Python
 
 ```
 After taking this step, you will be able to:
-	1. interpret and implement Python programs with Python functions: [todo].
+	1. interpret and implement Python programs with Python functions: anonymous functions.
+	2. understand the concepts of namespace and scope in Python programs.
 ```
 
 #### What to Learn?
@@ -31,7 +32,7 @@ After taking this step, you will be able to:
 1. Using **BRef-01: Chapter 09** answer and experiment the following questions:
    1. "Functions are first-class citizens": What does this sentence mean?
    2. What is an anonymous function and how can you define it in Python? Experiment with some examples.
-   3. What are *namespace* and *scope*? What is the scope of a function? Use examples to justofy your answers. 
+   3. What are *namespace* and *scope*? What is the scope of a function? Use examples to justify your answers. 
 
 #### Exercises:
 
@@ -100,7 +101,7 @@ print(check_with_lambda(x, y)) #["abc","ube"]
 
 ```
 After taking this step, you will be able to:
-	1. interpret and implement Python programs with Python Tuples and Lists: [todo].
+	1. interpret and implement Python programs with Python Tuples and Lists: join(), list(), copy(), deepcopy(), slicing and list comprehension.
 ```
 
 #### What to Learn?
@@ -108,7 +109,7 @@ After taking this step, you will be able to:
 1. Using **BRef-01: Chapter 07** answer and experiment the following questions:
    1. We have learned *join()* on a string. How does *join()* work in a list?
    2. How can we sort items of a list? Is this possible on a tuple?
-   3. There are several ways to copy a list: *list(), clicing, copy()* and *deepcopy()*. Experiment different expamples for each technique.
+   3. There are several ways to copy a list: *list(), slicing, copy()* and *deepcopy()*. Experiment different expamples for each technique.
    4. How can one build a list using *list comprehension*? Do we have *tuple comprehension*?
 
 #### Exercises:
@@ -144,7 +145,7 @@ print(create_list_from_tuples(l))
 
 ```
 After taking this step, you will be able to:
-	1. interpret and implement Python programs with Python Dictionaries and Sets: [todo].
+	1. interpret and implement Python programs with Python Dictionaries and Sets: copy(), deepcopy(), dictionary comprehension, nested structures.
 ```
 
 #### What to Learn?
