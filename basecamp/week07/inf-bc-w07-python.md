@@ -112,8 +112,29 @@ After taking this step, you will be able to:
    4. How can one build a list using *list comprehension*? Do we have *tuple comprehension*?
 
 #### Exercises:
-1. [todo]
-2. Design two exercises of your own. They should improve understanding topics of this step.
+
+1. The method `list.sort()` sorts a list ascending. Look up how to sort descending and try it. 
+
+2. Create a list containing at least three `tuples` containing some numbers. Print the last item of each tuple by looping through the list. 
+
+3. Complete the function that returns a list containing all the values from all tuples in the given list.  
+
+```python
+def create_list_from_tuples(a):
+    #write the code
+
+l = [(1,5,4),(1,2),(8,5,19,0)]
+print(create_list_from_tuples(l))
+#[1,5,4,1,2,8,5,19,0]
+```
+
+4. Take the list of tuples from the previous exercise. Sort the list descending on the last item of each tuple.
+
+5. Create a loop that creates a list containing tuples with the numbers 1 to 10 in pairs of 2. The result should be `[(1,2),(3,4),(5,6),(7,8),(9,10)]`.
+
+6. Take the list from the previous exercise. Remove the tuples in which the first item is an odd number. Use a lambda to determine this. 
+
+7. Design two exercises of your own. They should improve understanding topics of this step.
 
 <hr>
 
@@ -138,8 +159,53 @@ After taking this step, you will be able to:
 	   - List of tuples 
 
 #### Exercises:
-1. [todo]
-2. Design two exercises of your own. They should improve understanding topics of this step.
+
+1. Complete the function to merge two lists into one dictionary.
+
+```python
+def merge_lists_into_dictionary(l1, l2):
+    #write the code
+
+keys = ['red', 'green', 'blue']
+values = ['#FF0000','#008000', '#0000FF']
+result = merge_lists_into_dictionary(keys, values)
+print(result) #{'red': '#FF0000', 'green': '#008000', 'blue': '#0000FF'}
+```
+
+2. Given is a list of dictionaries. Sadly the values are the wrong way around. The first value should be at the last key, second value at the second from last key, and so on. Create a function that switches these values for each list you could give it. 
+
+```python
+def swith_the_values(l):
+    #Write the code
+
+x = [{'Math':81}, {'Physics':83}, {'Chemistry':87}, {'English': 42}]
+print(swith_the_values(x))
+#[{'Math':42, 'Physics':87, 'Chemistry':83}, {'English': 81}]
+x = [{'a':'b'}, {'c':'d'}]
+print(swith_the_values(x))
+#[{'a':'d'}, {'c':'b'}]
+```
+
+3. Given is a dictionary with tuples. Complete to code to add all keys, at which the second Tuple value is Pass, to a list and return that list
+
+```python
+def create_pass_list(l):
+    #Write the code
+
+x = {'Math':(81,"Pass"), 'Physics':(50,"Fail"), 'Chemistry':(90,"Pass"), 'English': (42,"Fail")}
+print(create_pass_list(x))
+#["Math", "Chemistry"]
+```
+
+4. Based on the previous exercise. Write a new function that creates a list with failed subjects. Merge the two lists into a new dictionary with the correct keys. Result should be: `{'Pass':["Math", "Chemistry"], 'Fail':["Physics","English"]}`.
+
+5. Write a function that takes the dictionary from the previous exercise and turns each value into his own key:value pair. Sort the dictionary by the key. The result should be: `{'English':"Fail", 'Chemistry': "Pass", 'Physics': "Fail", 'Math':"Pass"} `;
+
+6. Test all the functions from the last few exercises if they still work given a different starting dictionary. If not, try to explain what went wrond and fix it. 
+A different dictionary could be:
+`{'Soccer':(9, "Pass"), 'Snowboarding':(3, "Fail"), 'Tennis':(7, "Pass")}`.
+
+7. Design two exercises of your own. They should improve understanding topics of this step.
 
 <hr>
 
