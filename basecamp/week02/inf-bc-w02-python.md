@@ -157,6 +157,7 @@ Write a program that begins by reading a string of characters from the user. The
 	- Assume there is no leap year and February is always 28 days.
 	- The program must print ```Input format ERROR. Correct Format: YYYY-MM-DD``` in case the user enters an incorrect input. Some examples of incorrect input: ```2013/12/30```,```2013_12_30```, ```0213/12/30```, ```30-12-2013```.
 	- Input example: ```Input Date: 2013-12-31``` , Output example: ```Next Date: 2014-01-01```.
+	- **Optional**: Check if the given date is valid. For example: `2022-13-22` , `2022-11-35` , `0122-11-35` are not valid dates.
  
 
 
