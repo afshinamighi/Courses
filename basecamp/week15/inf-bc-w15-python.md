@@ -17,11 +17,12 @@ The activities are designed based on these following references:
 After taking this step, you will be able to:
 	1. understand and apply recurive functions.
 ```
+#### What to learn?
 
-Follow the following steps:
-1. Using **BRef-01, Chapter [todo]** make a plan for the week to learn [todo].
-2. Design at least ten exercises by which you can practice how to:
-	- [to continue]  
+1. Using **BRef-01, Chapter 9** make a plan for the week to learn basics of Python programs interacting with relational databases.
+	- Make an overview of the provided problems and final product.
+	- Plan what you need to learn in order to provide your solutions.
+	- Read proposed book chapter and practice basic steps. 
 
 <hr>
 
@@ -29,9 +30,12 @@ Follow the following steps:
 ## Problems:
 
 
-Implement Python programs to solve the following problem statements:
+1. Implement a recursive function named `rec_print(n)` that given a positive integer `n` prints all the positive numbers less than `n` in:
+	- descending order
+	- ascending order
+2. [todo: classic, implement n!]
+3. [todo: give a code for turtle drawing a line and turning left or right. Implement recursively to generate given spiral shape.]
 
-1. [todo]
 ## Products:
 
 [todo]

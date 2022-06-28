@@ -20,7 +20,7 @@ After taking this step, you will be able to:
 	1. understand the concept of databases.
 	2. understand and implement Python programs making basic queries in SQLite: CREATE, INSERT , SELECT x,y,z FROM t WHERE c.
 ```
-#### What ro learn?
+#### What to learn?
 
 1. Using **BRef-01, Chapter 16: Relational Databases** make a plan for the week to learn basics of Python programs interacting with relational databases.
 	- Make an overview of the provided problems and final product.
