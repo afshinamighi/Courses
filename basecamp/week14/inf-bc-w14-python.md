@@ -2,12 +2,15 @@
 
 **Introduction**: This document presents learning activities for Python 14. In Python 14, you will basics of higher order functions in Python.
 
+**Note**: In this phase, it is expected the learner can plan and run required learning process towards the goals of the week: making solutions to the given problems and product(s).
 
 ## Materials:
 
 The activities are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
+
+- Free research.
 
 ## Path:
 
