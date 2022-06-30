@@ -35,7 +35,8 @@ After taking this step, you will be able to:
    1. What is a general definition of a program? Provide some (none-computer) examples.
    2. What are the main elements of a program?
    3. **First Taste of Python**: Read section *Little Programs* and analyse provided examples.
-   4. Consider the following python program and try to guess what the program does. Analyse and discuss inputs, behaviour and expected outputs.
+   4. Consider the following python program and try to guess what each program does. Analyse and discuss inputs, behaviour and expected outputs. 
+   		- *Note*: Certainly there might be some lines that will be impossible to understand fully. The goal is to evaluate your first taste of Python programs and check how intutive they are. You will be learning all details in later stages.  
    
 ```python
 #Code 01: 
