@@ -2,6 +2,9 @@
 
 **Introduction**: This document presents learning activities for Python 11. In Python 11, you will get introduced with files that contains more structured data values. 
 
+**Note**: In this phase, it is expected the learner can divide the program into smaller learning steps. The goal and direction of the topics will be provided. The learning must take smaller steps towards the goals such that can implement solutions to the given problems and product(s).
+
+
 ## Materials:
 
 The activities are designed based on these following references:
@@ -20,6 +23,7 @@ The activities are designed based on these following references:
 After taking this step, you will be able to:
 	1. interpret and implement Python programs using plain data files: reading / writing content from / to CSV / JSON files, processing / modifying content of CSV / JSON files.
 ```
+#### What ro learn?
 
 1. Using **BRef-01: Chapter 16** answer and experiment the following questions:
    1. What is a csv file? How can one read the content of a csv file?
@@ -40,7 +44,7 @@ After taking this step, you will be able to:
 ## Problems:
 [todo]
 
-## Products:
+## Assignment:
 [todo]
 
 ## Extra Steps: 

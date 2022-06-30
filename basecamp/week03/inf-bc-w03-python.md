@@ -223,7 +223,7 @@ print(count)
 
 
 
-## Products:
+## Assignment:
 
 1. Usually companies use a predefined templates in their emails. A company named XYZ would like to have a Python program that collects basic information and generates the content of the email. You are assigned to implement the program with the following criteria:
 	- There are only two templates: ```Job Offer``` and ```Rejection```.

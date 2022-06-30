@@ -1,6 +1,8 @@
 # Python 09: Everything is an Object.
 
-**Introduction**: This document presents learning activities for Python 09. In Python 09, you will get introduced with classes and objects in Python. 
+**Introduction**: This document presents learning activities for Python 09. In Python 09, you will get introduced with classes and objects in Python. This will be the fist step in Object Oriented Programming in Python.
+
+**Note**: In this phase, it is expected the learner can divide the program into smaller learning steps. The goal and direction of the topics will be provided. The learning must take smaller steps towards the goals such that can implement solutions to the given problems and product(s).
 
 ## Materials:
 
@@ -12,8 +14,18 @@ The activities are designed based on these following references:
 
 ## Path:
 
-### Steps: 
-#### Class and Object.
+### Step: Class and Object.
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs with Python objects and classes: defining a class, instantiating an object, attributes and methods, initializing and object.
+	2. understand the concepts of namespace and scope in Python programs.
+```
+
+#### What to Learn?
+
 
 1. Using **BRef-01: Chapter 10** answer and experiment the following questions:
    1. What is an Object in Python?
@@ -25,9 +37,8 @@ The activities are designed based on these following references:
    
 
 #### Exercises:
-[todo]
 
-
+1. Design at least ten different exercises of your own. They should improve understanding topics of this step. Share your exercises with your learning community and practice.
 
 
 ## Problems:
@@ -37,14 +48,20 @@ The activities are designed based on these following references:
 
 3. Write a class called ```Converter```. The user will pass a length and a unit when declaring an object from the class—for example, ```c = Converter(9,'inches')```. The possible units are inches, feet, yards, miles, kilometers, meters, centimeters, and millimeters. For each of these units there should be a method that returns the length converted into those units. For example, using the ```Converter``` object created above, the user could call ```c.feet()``` and should get 0.75 as the result.
 
+4. [todo: more problems to be added]
 
 10. Implement an object oriented version of tic-tac-toe game.
 	- For two players and in each round the program asks the players to specify the position.
 	- After giving the position by each player, the boad is printed in the terminal.
 	- The program determines the winner at the end.
 
-##Extra Steps: 
-The follwoing concepts are not part of the main learning path, but can be considered as optional learning activities for those who seek more challenges:
+
+## Assignment:
+[todo]
+
+## Extra Steps: 
+
+The follwoing concepts are not part of the main learning path, but can be considered as *optional* learning activities for those who seek more challenges:
 
 - Inheritance
 - Polymorphysm

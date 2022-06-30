@@ -226,7 +226,7 @@ Implement Python programs to solve the following problem statements:
 	- *Step-02*: Partial solution, i.e. no calculation yet.
 	- *Step-03*: Complete solution, i.e. add calculations. 
 
-## Products:
+## Assignment:
 
 *Note*: Product 1 will be used as a model to practice submission rules and procedure.  
 

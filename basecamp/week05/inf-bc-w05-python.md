@@ -203,18 +203,17 @@ Each item that is sent to the recipient in the song should only appear once in y
 
 7. Implement a program that takes a quiz. The quiz contains 10 general questions, like *What is the capital of France?*. The user answers the question and the program must check if the answer is correct or not.
 	 
-## Products:
+## Assignment:
 
-1. Thers a data set that contains information of students: student number, first name, last name, date of birth, study program. You are asked to implement a program that given this data set (as a csv file), the program processes the information. The requested criteria are:
-	- A template Python file is provided with a function that loads the data set.
-	- Sometimes data values are corupted. The program must report corupted values. Any invalid or empty value is defined as corrupted.
+1. A dataset is given with information of students: student number, first name, last name, date of birth, study program. You are asked to implement a program that given this dataset (as a csv file), the program processes the information. The requested criteria are:
+	- Sometimes data values are corrupted. The program must report corupted values. Any invalid or empty value is defined as corrupted.
 	- Student number has this format: 7 digits, starting with 0 and second digit (from left) can be either 9 or 8. Example: ```0212345``` is not valid
 	- First name and last names, contains only alphabet.
 	- Date of birth has this format: ```YYYY-MM-DD```. Days between 1 and 31, months between 1 and 12 and Years between 1960 and 2004.
 	- Study program can have one of these values: ```INF, TINF, CMD, AI```.
+	- A template Python file is provided with a function that loads the data set.
 	- The program should make two separate lists: list of rows with correct values and a list of rows with corrupted values. These two lists will be printed with this format: [todo].
-
-[todo: the main idea is that a python file with a data set will be provided. The python file contains two functions: one to load data and provide information in global variables and one function to validate values and should be implemented by the student.] 
+	- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be accessed [here](./assignment_data/process_students.py) and the dataset is [here](./assignment_data/students.csv) 
 
 
 ## Extra Steps:

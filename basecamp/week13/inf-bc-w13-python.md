@@ -40,7 +40,7 @@ Implement Python programs to solve the following problem statements:
 1. [todo: idea, given a dataset in CSV, read the content and create requested tables with specified attributes and fill the table from the content of CSV file. This problem can be extended with providing content in JSON file. Make some queries to extract some basic information.]
 2. [todo: an existing dataset in JSON will be provided. The program, at the start will check the content of JSON and compare it with the related tables in the database. First missing elements must be inserted, file always has latest update. After synchronising the file with db, the program will have an interactive communication with the user (for example: borrow, return, books for a library). The status of the books are in the database but the list of the books will be provided by JSON file.]
 
-## Products:
+## Assignment:
 
 [todo: similar to problem 2 with perhaps information about movies with more strict features, like unit tests.]
 

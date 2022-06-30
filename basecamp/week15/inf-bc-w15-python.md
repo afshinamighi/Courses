@@ -39,7 +39,7 @@ After taking this step, you will be able to:
 2. [todo: classic, implement n!]
 3. [todo: give a code for turtle drawing a line and turning left or right. Implement recursively to generate given spiral shape.]
 
-## Products:
+## Assignment:
 
 [todo]
 

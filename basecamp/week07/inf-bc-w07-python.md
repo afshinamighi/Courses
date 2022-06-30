@@ -213,7 +213,7 @@ A different dictionary could be:
 ## Problems:
 [todo]
 
-## Products:
+## Assignment:
 [todo]
 
 ## Extra Steps:

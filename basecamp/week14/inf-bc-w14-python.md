@@ -37,7 +37,7 @@ After taking this step, you will be able to:
 
 1. [todo]
 
-## Products:
+## Assignment:
 
 [todo]
 
