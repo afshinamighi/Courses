@@ -240,7 +240,7 @@ Implement Python programs to solve the following problem statements:
 	- Input example: ```Cost of the meal: 23.60```.
 	- Output example: ```Tax: 4.956 , Tip: 3.54 , Total: 32.096```.
 	- After running your code, it should print the following to the standard output and wait for the user input: `Cost of the meal:`
-	- The the user enters the input (we assume the input is always valid and correct), let's say user entered `23.60`. 
+	- The user enters the input (we assume the input is always valid and correct), let's say user entered `23.60`. 
 	- Then the program should output the following: `Tax: 4.956 , Tip: 3.54 , Total: 32.096`.
 
 <!--(Pay attention to the space characters in the output and also the digits after "." for the grand total. It should be 3 digits. ):-->
