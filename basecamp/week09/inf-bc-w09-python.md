@@ -42,22 +42,30 @@ After taking this step, you will be able to:
 
 
 ## Problems:
-1. Write a class called ```Product```. The class should have fields called ```name```, ```amount```, and ```price```, holding the product’s name, the number of items of that product in stock, and the regular price of the product. There should be a method ```get_price``` that receives the number of items to be bought and returns a the cost of buying that many items, where the regular price is charged for orders of less than 10 items, a 10% discount is applied for orders of between 10 and 99 items, and a 20% discount is applied for orders of 100 or more items. There should also be a method called ```make_purchase``` that receives the number of items to be bought and decreases amount by that much.
 
-2. Write a class called ```Password_manager```. The class should have a list called ```old_passwords``` that holds all of the user’s past passwords. The last item of the list is the user’s current password. There should be a method called ```get_password``` that returns the current password and a method called ```set_password``` that sets the user’s password. The ```set_password``` method should only change the password if the attempted password is different from all the user’s past passwords. Finally, create a method called ```is_correct``` that receives a string and returns a boolean ```True``` or ```False``` depending on whether the string is equal to the current password or not.
+1. We're going to create a small application for a car dealer. The problem is split up into three steps to help you set up a proper structure for the application.
+	- Create a class named `Car`. Think of at least four relevant attributes and implement these using the `init` function. Also create a fifth attribute called `sold`. The default value for sold is `False`. Create a method called `sell` that changes the value of `sold` to `True`. Create another method called `print` that prints all attributes in a for humans readable way. Create 4 objects of the `Car` class. Sell a few of the cars. Call the `print` function on all of them.
 
-3. Write a class called ```Converter```. The user will pass a length and a unit when declaring an object from the class—for example, ```c = Converter(9,'inches')```. The possible units are inches, feet, yards, miles, kilometers, meters, centimeters, and millimeters. For each of these units there should be a method that returns the length converted into those units. For example, using the ```Converter``` object created above, the user could call ```c.feet()``` and should get 0.75 as the result.
+	- Continue on your code from the previous step with a new class named `Customer`. Define some relevant attributes and methods with implementation. Also create a method `print` that prints all attributes in human-readable way. Modify the `Car` class with a attribute `sold_to`, set this attribute to an object of Customer within the `sell` method (which now needs a parameter with a Customer object). Edit the print method of the `Car` to also print the information about the customer if the car has been sold. Adjust other code were needed to get everything working properly.
 
-4. [todo: more problems to be added]
+	- The car dealer wants to extend his business by selling motorcycles as well. Write all code to properly introduce this into the existing application.
 
-10. Implement an object oriented version of tic-tac-toe game.
+2. Write a class called `Product`. The class should have attributes called `name`, `amount`, and `price`, holding the product’s name, the number of items of that product in stock, and the regular price of the product. There should be a method `get_price` that receives the number of items to be bought and returns a the cost of buying that many items, where the regular price is charged for orders of less than 10 items, a 10% discount is applied for orders of between 10 and 99 items, and a 20% discount is applied for orders of 100 or more items. There should also be a method called `make_purchase` that receives the number of items to be bought and decreases amount by that much.
+
+3. Write a class called `Password_manager`. The class should have a list called `old_passwords` that holds all of the user’s past passwords. The last item of the list is the user’s current password. There should be a method called `get_password` that returns the current password and a method called `set_password` that sets the user’s password. The `set_password` method should only change the password if the attempted password is different from all the user’s past passwords. Finally, create a method called `is_correct` that receives a string and returns a boolean `True` or `False` depending on whether the string is equal to the current password or not.
+
+4. Write a class called `Converter`. The user will pass a length and a unit when declaring an object from the class—for example, `c = Converter(9,'inches')`. The possible units are inches, feet, yards, miles, kilometers, meters, centimeters, and millimeters. For each of these units there should be a method that returns the length converted into those units. For example, using the `Converter` object created above, the user could call `c.feet()` and should get 0.75 as the result.
+
+5. Implement an object oriented version of tic-tac-toe game.
 	- For two players and in each round the program asks the players to specify the position.
-	- After giving the position by each player, the boad is printed in the terminal.
+	- After giving the position by each player, the board is printed in the terminal.
 	- The program determines the winner at the end.
 
 
 ## Assignment:
+
 [todo]
+
 
 ## Extra Steps: 
 
