@@ -214,8 +214,18 @@ MORSE_CODE_DICT = {
 ```
 ## Assignment:
 
-
-- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be accessed [here](./assignment_data/process_addbook.py) and the dataset is [here](./assignment_data/contacts.json) 
+1. Create an application that manages contacts in an adressbook. The following requirements should be implemented:
+	- Add a contact with first name and last name (only alphabet), multiple (unique) e-mails (containing at least one '@'),
+multiple (unique) phone numbers (only digits). Also, an ID should be generated which should be 1 higher 
+than the highest current ID. 
+	- Remove a contact by ID.
+	- List all contacts with the option to sort by first_name or last_name (default first_name) with a sort_by parameter
+and in ascending (ASC) or decending (DESC) direction (default ASC) witb a direction parameter.
+	- Merge duplicate contacts (automatically). Contacts with the exact same full name (first and last name combined) should be merged.
+The e-mails and phone numbers of the duplicate contacts should be added to the the first duplicate contact
+(contact with the highest ID). The other duplicate contcts should be deleted from the addressbook.
+	- Contacts are read from the provided JSON file and should be updated with new or removed contacts.
+	- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be accessed [here](./assignment_data/process_addbook.py) and the dataset is [here](./assignment_data/contacts.json) 
 
 
 ## Extra Steps
