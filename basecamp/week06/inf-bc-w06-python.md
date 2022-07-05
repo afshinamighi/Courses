@@ -213,7 +213,10 @@ MORSE_CODE_DICT = {
 	'?':'..--..'}
 ```
 ## Assignment:
-[todo]
+
+
+- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be accessed [here](./assignment_data/process_addbook.py) and the dataset is [here](./assignment_data/contacts.json) 
+
 
 ## Extra Steps
 
