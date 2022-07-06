@@ -200,7 +200,7 @@ After taking this step, you will be able to:
 
 ## Problems:
 
-*Note*: A systematic approach to transfer a solution in mind into a Python program can be challenging for novice programmers. A check list [accessible here](./misc/checklist_metacog.pdf) can be used to guide beginners to solve the following problems. An example ([here](./misc/cal_area_circle.py)) and a template ([here](./misc/template.py)) also are provided.
+*Note*: A systematic approach to transfer a solution in mind into a Python program can be challenging for novice programmers. A check list [accessible here](./misc/checklist_metacog.pdf) can be used to guide beginners to solve the following problems. Moreover, a template and a couple of examples is provided [here](./misc/template.py).
 
 Implement Python programs to solve the following problem statements:
 
