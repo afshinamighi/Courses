@@ -144,16 +144,13 @@ As a result of participating in **BaseCamp:Arch One**, students will be able to:
 General concepts of functions, basics of lists and tuples as collective structures.
 
 **Learning Activities**: [Check Week 05/inf-bc-w05-python.md](./week05/inf-bc-w05-python.md) 
-
+<!--
 #### Skills 
 [todo: make a list of final elements from week 01 skills]
 
 **Learning Activities**: [Check Week 05/inf-bc-w05-skills.md](./week05/inf-bc-w05-skills.md) 
-
+-->
 </details>
-
-
-
 
 
 
@@ -171,12 +168,12 @@ General concepts of functions, basics of lists and tuples as collective structur
 Arguments and parameters, default values for parameters, dictionaries and basics of sets.
 
 **Learning Activities**: [Check Week 06/inf-bc-w06-python.md](./week06/inf-bc-w06-python.md) 
-
+<!--
 #### Skills 
 [todo: make a list of final elements from week 01 skills]
 
 **Learning Activities**: [Check Week 06/inf-bc-w06-skills.md](./week06/inf-bc-w06-skills.md) 
-
+-->
 </details>
 
 
@@ -195,12 +192,12 @@ Arguments and parameters, default values for parameters, dictionaries and basics
 Lambda expressions, namespaces, and nested structures (lists, tuples, sets).
 
 **Learning Activities**: [Check Week 07/inf-bc-w07-python.md](./week07/inf-bc-w07-python.md) 
-
+<!--
 #### Skills 
 [todo: make a list of final elements from week 01 skills]
 
 **Learning Activities**: [Check Week 07/inf-bc-w07-skills.md](./week07/inf-bc-w07-skills.md) 
-
+-->
 </details>
 
 
@@ -243,50 +240,40 @@ As a result of participating in **BaseCamp:Part Two**, students will be able to:
 ### Week09: Everything is an Object.
 
 <details>
-<summary>Content</summary>
+<summary>Content </summary>
 
-- **Concepts** : Basic concepts of classes, objects, attributes and methods in Python.
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: To do (Framework is Ready).
-	- *Products*: To do.
+#### Programming 
+Basic concepts of Classes, attributes, methods and instances in Python.
+
+**Learning Activities**: [Check Week 09/inf-bc-w09-python.md](./week09/inf-bc-w09-python.md) 
 
 </details>
-
 
 
 ### Week10: (Plain) Data Files.
 
 <details>
-<summary>Content</summary>
+<summary>Content </summary>
 
-- **Concepts** : Basic concepts of encoding and decoding information, simple processing of plain files (text and binary) in Python.
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: To do (Framework is Ready).
-	- *Products*: To do.
+#### Programming 
+Basic concepts of reading / writing data from / to plain files (binary and text) in Python.
+
+**Learning Activities**: [Check Week 10/inf-bc-w10-python.md](./week10/inf-bc-w10-python.md) 
 
 </details>
-
 
 
 ### Week11: Structured Data Files.
 
 <details>
-<summary>Content</summary>
+<summary>Content </summary>
 
-- **Concepts** : Basics of processing csv and json files.
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: Proof of Concept, ready to experiment.
-	- *Exercises*: To do (Framework is Ready).
-	- *Products*: To do.
+#### Programming 
+Basic concepts of reading / writing data from / to structured files (csv and json) in Python.
+
+**Learning Activities**: [Check Week 11/inf-bc-w11-python.md](./week11/inf-bc-w11-python.md) 
 
 </details>
-
-
 
 
 ### Week12: Review / Challenges
@@ -331,14 +318,12 @@ As a result of participating in **BaseCamp:Part Three**, students will be able t
 ### Week13: Data Base.
 
 <details>
-<summary>Content</summary>
+<summary>Content </summary>
 
-- **Concepts** : Given an already existing tables, students can extract data using simple sql queries *select x from T where C*. To do.
-- **Exercises**: To do.
-- **Status**: 
-	- *Learning Path*: To do.
-	- *Exercises*: To do.
-	- *Products*: To do.
+#### Programming 
+Basic concepts of reading / writing data from / to database (SQLite) in Python.
+
+**Learning Activities**: [Check Week 13/inf-bc-w13-python.md](./week13/inf-bc-w13-python.md) 
 
 </details>
 
@@ -347,28 +332,24 @@ As a result of participating in **BaseCamp:Part Three**, students will be able t
 ### Week14: Functions: as a Type.
 
 <details>
-<summary>Content</summary>
+<summary>Content </summary>
 
-- **Concepts** : Functions as parameters, Functions as return values. To do.
-- **Exercises**: To do. *Idea*: Students should implement programs covering topics from week 01 to week 13 and refactor their code with concepts of "Functions as Data Types".
-- **Status**: 
-	- *Learning Path*: To do.
-	- *Exercises*: To do.
-	- *Products*: To do.
+#### Programming 
+Basic concepts of higher order functions in Python.
+
+**Learning Activities**: [Check Week 14/inf-bc-w14-python.md](./week14/inf-bc-w14-python.md) 
 
 </details>
 
 ### Week15: Functions: Recursion.
 
 <details>
-<summary>Content</summary>
+<summary>Content </summary>
 
-- **Concepts** : Recursive functions. To do.
-- **Exercises**: To do. *Idea*: Students should implement programs covering topics from week 01 to week 13 and refactor their code with concepts of weeks 14 and 15.
-- **Status**: 
-	- *Learning Path*: To do.
-	- *Exercises*: To do.
-	- *Products*: To do.
+#### Programming 
+Basic concepts of recursion in Python.
+
+**Learning Activities**: [Check Week 15/inf-bc-w15-python.md](./week15/inf-bc-w15-python.md) 
 
 </details>
 
@@ -402,11 +383,11 @@ As a result of participating in **BaseCamp:Part Four**, students will be able to
 
 
 <hr />
+<!--
 
 ## Final Projects
 - [todo: ideas about projects that can cover majority of the learning elements.]
 
-<!--
 ## Learning Outcomes
 
 *Note: In the following learning outcomes the level and complexity of Python programs, problem statements and solutions will be determined based on what have been covered during the four Arches. For details read the learning outcomes of each Arch.*
