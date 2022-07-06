@@ -14,7 +14,8 @@ Using provided material, explore and discuss the following questions:
 
 1. [todo]
 
-A \implies B \lor C \neg A
+$A \implies B \lor C \neg A$
+
 
 ## Exercises:
 
