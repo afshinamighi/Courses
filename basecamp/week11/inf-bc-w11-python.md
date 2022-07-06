@@ -42,7 +42,42 @@ After taking this step, you will be able to:
 
 
 ## Problems:
-[todo]
+
+1. For the following problems we need the `movies.json` file which can be found [here](./problems_data/movies.json). It contains information of some movies. 
+	1. Implement a program that using the data from `movies.json`, shows the following information:
+		- The number of movies released in 2004.
+		- The number of movies in which the genre is Science Fiction.
+		- All movies with actor `Keanu Reeves`.
+		- All movies with actor `Sylvester Stallone` released between `1995` and `2005`.
+
+2. Using data from `movies.json`, make the following adjustments and write it back to the file:
+	- Change the release year from the movie `Gladiator` from `2000` to `2001`.
+	- Set the release year from the oldest movie to one year earlier.
+	- Actor `Natalie Portman` changed her name to `Nat Portman`. Adjust this at all movies she is in.
+	- Actor `Kevin Spacey` got cancelled. Remove his name from all movies he is in. 
+
+3. Using data from `movies.json`, implement a program that allows the user to search a movie based on the `title`. Show all information about the movies found in a user friendly format. If there's multiple movies by the same name, show these with the release year to user and let them pick which movie they meant. Searching a `title` should not be case sensitive. 
+	- Extend your program by allowing the user to change the title and/or release year of the selected movie (after searching it). Implement this in a user friendly way.
+
+
+For the following problesm we need the bannedvideogames.csv
+5. Load the bannedvideogames.csv file and show the following information:
+a. How many games got banned in Israel?
+b. Which country got the most games banned?
+c. How many games within the Assasins Creed series got banned? Don't count duplicates banned in different countries. 
+d. Show all games (and the details) banned in Germany. 
+e. Show all countries (and the details) the game Red Dead Redemption got banned in
+
+6. Load the bannedvideogames.cvs file, make the following adjustments and write it back to the file:
+a. Germany got a new law that accepts all games as a form of art. Remove all records with Germany from the file.
+b. The game Silent Hill VI got renamed to Silent Hill Remastered, rename this in all corresponding records. 
+c. The ban on the game Bully in Brazil has been lifted. Change the `status` to `Ban Lifted`.
+d. The game Manhunt II is by several countries. It is incorrectly listed as genre `Stealth`, change the genre to `Action` in all corresponding records
+
+7. Create an application that lets the user search by country. Show all details from banned videogames in that country. 
+
+8. Create an application to add new a new record to the file. Ask the user to insert all needed information and write it to the file.
+
 
 ## Assignment:
 [todo]
