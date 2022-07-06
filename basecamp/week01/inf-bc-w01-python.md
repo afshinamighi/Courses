@@ -200,6 +200,7 @@ After taking this step, you will be able to:
 
 ## Problems:
 
+*Note*: A systematic approach to transfer a solution in mind into a Python program can be challenging for novice programmers. A check list [accessible here](./misc/checklist_metacog.pdf) can be used to guide beginners to solve the following problems. An example ([here](./misc/cal_area.circle.py)) and a template ([here](./misc/template.py)) also are provided.
 
 Implement Python programs to solve the following problem statements:
 
@@ -228,7 +229,7 @@ Implement Python programs to solve the following problem statements:
 
 ## Assignment:
 
-*Note*: Product 1 will be used as a model to practice submission rules and procedure.  
+*Note*: Assignment 1 will be used as a model to practice submission rules and procedure.  
 
 1. Implement a program that given number of years as input prints the number of months and days as output. 
 	- Keep the problem simple: no leap year, each year is 365 days and 12 months, each month 30 days.
