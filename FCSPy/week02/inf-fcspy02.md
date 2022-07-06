@@ -14,9 +14,7 @@ Using provided material, explore and discuss the following questions:
 
 1. [todo]
 
-```{=latex}
 A \implies B \lor C \neg A
-```
 
 ## Exercises:
 
