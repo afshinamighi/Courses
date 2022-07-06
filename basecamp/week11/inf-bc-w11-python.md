@@ -49,12 +49,11 @@ After taking this step, you will be able to:
 		- The number of movies in which the genre is Science Fiction.
 		- All movies with actor `Keanu Reeves`.
 		- All movies with actor `Sylvester Stallone` released between `1995` and `2005`.
-
-2. Using data from `movies.json`, make the following adjustments and write it back to the file:
-	- Change the release year from the movie `Gladiator` from `2000` to `2001`.
-	- Set the release year from the oldest movie to one year earlier.
-	- Actor `Natalie Portman` changed her name to `Nat Portman`. Adjust this at all movies she is in.
-	- Actor `Kevin Spacey` got cancelled. Remove his name from all movies he is in. 
+	2. Using data from `movies.json`, make the following adjustments and write it back to the file:
+		- Change the release year from the movie `Gladiator` from `2000` to `2001`.
+		- Set the release year from the oldest movie to one year earlier.
+		- Actor `Natalie Portman` changed her name to `Nat Portman`. Adjust this at all movies she is in.
+		- Actor `Kevin Spacey` got cancelled. Remove his name from all movies he is in. 
 
 3. Using data from `movies.json`, implement a program that allows the user to search a movie based on the `title`. Show all information about the movies found in a user friendly format. If there's multiple movies by the same name, show these with the release year to user and let them pick which movie they meant. Searching a `title` should not be case sensitive. 
 	- Extend your program by allowing the user to change the title and/or release year of the selected movie (after searching it). Implement this in a user friendly way.
