@@ -17,7 +17,7 @@ Using provided material, explore and discuss the following questions:
 1. What is a boolean data type in Python? What is a boolean expression in Python? 
 2. Make a list of boolean *operators* in Python. Write down at least one examples for each.
 3. Make a list of (main) operators in *boolean logic*. Write down at least one examples for each.
-4. What is a truth table? Construct truth tables for the following boolean operators: `AND` (conjunction $\wedge$), `OR` (disjunction $\wee$), `NOT` (negation $\neg$), `XOR`, `IMPL`(implication $\implies$).
+4. What is a truth table? Construct truth tables for the following boolean operators: `AND` (conjunction $\wedge$), `OR` (disjunction $\vee$), `NOT` (negation $\neg$), `XOR`, `IMPL`(implication $\implies$).
 5. How do two boolean expressions become *equivalent*? 
 6. Make a list of comparison operators in Python and math. Write down at least one examples for each.
 7. What is a conditional statement in Python and how it can be used to implement branching algorithms?
