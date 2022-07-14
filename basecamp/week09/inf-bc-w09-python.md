@@ -80,7 +80,7 @@ The classes that needs to be programmed for this assignment are described below.
 
 - `ParkedCar` class storing information of a parked car with the following attributes:
 	- `license_plate` (a string): license plate of the car.
-	- `check-in` (datetime): datetime object of the time checked-in.
+	- `check_in` (datetime): datetime object of the time checked-in.
 - This class has the following methods:
 	- `init` (construtor) that receives the `license_plate` and check-in.
 
