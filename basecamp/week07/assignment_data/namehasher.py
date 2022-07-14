@@ -43,8 +43,8 @@ To test your functions, use the provided unit test file (for boilerplate) and co
 '''
 
 hashmap_key_value = {}
-encoded_values = set()
-decoded_values = set()
+encoded_values = []
+decoded_values = []
 
 # create a function that given the input string converts it to the encoded equivalent based on the provided or already set key/hashmap
 # make sure to only convert values that are in the key/hashmap, if the value is not present, use its own value
