@@ -214,7 +214,51 @@ A different dictionary could be:
 [todo]
 
 ## Assignment:
-[todo]
+
+Create a progam that can convert a name/string to the hashed representation of that value. The program that needs to be implemented for this assignment is described below.
+
+- Create a function that given the input string converts it to the encoded/decoded equivalent based on the provided or already set key/hashmap
+- Make sure to only convert values that are in the key/hashmap, if the value is not present, use its own value
+
+	- `encode_string(data: str, key: str = None) -> str`
+	- `decode_string(data: str, key: str = None) -> str`
+
+- Create a function that given a list of inputs converts the complete list to the encoded/decoded equivalent based on the key/hashmap.
+- You can use the already created encode/decode function when looping through the list. *Hint:* make use of the `map` function within python with a lambda to call the internal function with all elements [element, key]
+- as a return value, you should return a list with the converted values
+	- `encode_list(data: list, key: str = None) -> list`
+	- `decode_list(data: list, key: str = None) -> list`
+
+
+- Create a function that given a encoded value, decoded value and a key/hashmap (optional) checks if the values are correct
+- the return value should be a boolean value (`True` if values match, `False` if they don't match)
+	- `validate_values(encoded: str, decoded: str, key: str = None) -> bool`
+
+- Create a function that given a key, converts to a key_hashmap (Dict) to be used for converting
+	- each oneven character is the Key of the Dict, each even character is the coresponding Value
+	- you should validate if the given input is an even input, otherwise show the error: Invalid hashvalue input
+	- example: `a@b.c>d#eA` will become: `{'a': '@', 'b': '.', 'c': '>', 'd', '#', 'e': 'A'}`
+	- `set_hashmap(conversion_string: str) -> None`
+
+Main program [main():]
+
+- Ask for key to use for convertion (make sure to validate against even string length)
+
+- Build menu structure as following (the input can be case-insensitive (so E and e are valid inputs))
+
+	- [E] Encode value to hashed value
+	- [D] Decode hashed value to normal value
+	- [P] Print all encoded/decoded values
+	- [V] Validate 2 values against eachother
+	- [Q] Quit program
+
+- For ease of use, you can use the following string as a default key to use within your program:
+`a_b?c9d6e1f4g!h:i<j|k{l0m@n7o+p~q2r+s/t=u^v3w]x(y-z>A*B8C;D%E#F}G5H)I[J$`
+
+*Hints*: 
+
+- To test your functions, use the provided unit test file (for boilerplate [available here](./assignment_data/namehasher_test.py)) and complete the test functions with your own code.
+- A template for your solution is [provided here](./assignment_data/namehasher.py)
 
 ## Extra Steps:
 [todo]
