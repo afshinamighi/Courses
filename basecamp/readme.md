@@ -107,9 +107,11 @@ As a result of participating in **BaseCamp:Arch One**, students will be able to:
 
 1. Read, Understand and Analyse the behaviour of a Python program implementing the programming elements covered in Arch One.
 2. Implement their solutions for a given problem statement using the programming elements covered in Arch One.
-3. Organise working environment using command lines for making folders, changinf paths, listing contents of a folder, managing (copy, delete, rename) files.
+3. Organise working environment using command lines for making folders, changing paths, listing contents of a folder, managing (copy, delete, rename) files.
 4. Implementing their Python programs in Python Shell and an IDE.
 5. Execute Python programs using a terminal and an IDE.
+
+<!-- 
 6. Plan, Follow, Execute daily learning activities and reflect on what have been learned.
 7. Understand the concept of the acceptance testing on general applications.
 8. Plan and Execute basics (variety of user inputs) of acceptance testing on a console based Python program.
@@ -120,6 +122,7 @@ As a result of participating in **BaseCamp:Arch One**, students will be able to:
 13. applies learning strategies [todo: rephrase 12, 6]
 14. reflects on his/her own work every week. 
 15. knows how to build a dossier [todo: rephrase, perhaps has built something already] 
+-->
 
 </details>
 
