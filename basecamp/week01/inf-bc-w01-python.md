@@ -120,7 +120,7 @@ After taking this step, you will be able to:
 
 #### What to Learn?
 
-1. Perform a free (re-)search and explore the following answers:
+1. Perform a free (re-)search and explore the answers for the following questions:
    1. What are the main hardware elements of a computer?
    2. What is an Operating System and why do we need it?
    3. How data (values) are stored / extracted / computed in a computer? *Hint: explore concepts of bytes, bits, ram memory, hard disks, cpu registers.*
