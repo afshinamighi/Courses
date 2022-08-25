@@ -1,4 +1,4 @@
-# PyCamp 04: Challenge week
+# Python 04: Challenge week
 
 
 ## Introduction:
