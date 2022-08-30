@@ -67,6 +67,7 @@ Using provided material, explore and discuss the following questions:
  |TRUE	|FALSE	|TRUE|
  |FALSE	|TRUE|FALSE|
  |FALSE|FALSE|TRUE|
+ 
  To enter the mothership, you must find all boolean values for the following expression: $\neg (P \square \neg Q)$ *Hint: make a truth table*.
 
 12. Implement your Python solutions to the problems provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week02/inf-bc-w02-python.md).
