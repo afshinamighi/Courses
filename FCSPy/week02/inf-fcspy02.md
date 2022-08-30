@@ -41,16 +41,13 @@ Using provided material, explore and discuss the following questions:
  - not( x%2 == 0 or ( y>=0 or z==0))
 ```
 
-
-
-
-8. Finish all the exercises provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week02/inf-bc-w02-python.md).
+5. Finish all the exercises provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week02/inf-bc-w02-python.md).
 
 
 ## Problems:
 
 1. quotient and remainder: Input values X and Y. Then, print numbers A, B and C, such that: A is the result(quotient) of float division of X and Y, B is the result of floor division of X and Y, and C is the remainder when you divide X by Y.
-2. seconds to h:m:s: Ask the user to input one numerical value representing time measured in seconds. Then, print it out in a form that is showing hours : minutes : seconds.
+2. seconds to h : m : s : Ask the user to input one numerical value representing time measured in seconds. Then, print it out in a form that is showing hours : minutes : seconds.
 3. area of a triangle: Write a program that will print and calculate the area of a triangle. User should give the base and the height of the triangle.
 4. sum of the areas of two triangles: Write a program that will print and calculate the sum of the areas of two triangles. User should give the bases and the heights of both triangles.
 5. exchange values without “helper” variable: Write a program that will ask the user to input two numeric values and store them in variables A and B. Then, exchange the values so that A gets the value of B and B gets the value of A, but without using helper variable. Print out values of variable A and variable B.
@@ -62,16 +59,16 @@ Using provided material, explore and discuss the following questions:
 	- $\neg P \wedge Q \wedge R$
 	- $(Q \wedge \neg P) \implies R$
 	- $\neg R \implies (Q \wedge \neg P)$
-11. alien logic: An alien mothership has just crashed into your backyard. Upon a closer inspection, you found a circuit board with a logic gate. The logic gate appears to be a binary operator $\circle$, which you never encountered before. Testing it with P and Q, you mapped the following truth table:
+11. alien logic: An alien mothership has just crashed into your backyard. Upon a closer inspection, you found a circuit board with a logic gate. The logic gate appears to be a binary operator $\square$, which you never encountered before. Testing it with P and Q, you mapped the following truth table:
 
-|P | Q | 	P $\circle$ Q |
+|P | Q | 	P $\square$ Q |
 |--|--|--|
 |TRUE	| TRUE| 	TRUE |
 |TRUE	|FALSE	|TRUE|
 |FALSE	|TRUE|FALSE|
 |FALSE|FALSE|TRUE|
 
-To enter the mothership, you must find all boolean values for the following expression: $\neg (P \circle \neg Q)$
+To enter the mothership, you must find all boolean values for the following expression: $\neg (P \square \neg Q)$
 *Hint: make a truth table*.
 
 10. Implement your Python solutions to the problems provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week02/inf-bc-w02-python.md).
