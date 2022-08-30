@@ -61,19 +61,17 @@ Using provided material, explore and discuss the following questions:
 	- $\neg R \implies (Q \wedge \neg P)$
 11. alien logic: An alien mothership has just crashed into your backyard. Upon a closer inspection, you found a circuit board with a logic gate. The logic gate appears to be a binary operator $\square$, which you never encountered before. Testing it with P and Q, you mapped the following truth table:
 
-|P | Q | 	P $\square$ Q |
-|--|--|--|
-|TRUE	| TRUE| 	TRUE |
-|TRUE	|FALSE	|TRUE|
-|FALSE	|TRUE|FALSE|
-|FALSE|FALSE|TRUE|
+ |$P$ | $Q$ | 	$P \square Q$ |
+ |--|--|--|
+ |TRUE	| TRUE| 	TRUE |
+ |TRUE	|FALSE	|TRUE|
+ |FALSE	|TRUE|FALSE|
+ |FALSE|FALSE|TRUE|
+ To enter the mothership, you must find all boolean values for the following expression: $\neg (P \square \neg Q)$ *Hint: make a truth table*.
 
-To enter the mothership, you must find all boolean values for the following expression: $\neg (P \square \neg Q)$
-*Hint: make a truth table*.
+12. Implement your Python solutions to the problems provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week02/inf-bc-w02-python.md).
 
-10. Implement your Python solutions to the problems provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week02/inf-bc-w02-python.md).
-
-1. [todo: idea for using XOR in solving problems: "Classic Problems in Python", Introduction, Using XOR in encryption, 1.3. Unbreakable encryption]
+13. [todo: idea for using XOR in solving problems: "Classic Problems in Python", Introduction, Using XOR in encryption, 1.3. Unbreakable encryption]
 
 
 ## Resources:
