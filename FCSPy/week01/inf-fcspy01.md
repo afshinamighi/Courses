@@ -1,12 +1,12 @@
 # Week 01
 
-We always hear about data, information and computers processing data. But what are those exactly? What are the main elements of a device to call it as a computer? How data represented in various format? What about data? Answering to these questions will help us take first steps in learning fundations of computer science.
+We always hear about data, information and computers processing data. But what are those exactly? What are the main elements of a device to call it as a computer? How can data be represented in various format? Answering to these questions will help us take first steps in learning fundations of Computer Science.
 
-## Learning Outcomes
+## Learning Outcomes:
 
 Practicing this lesson each student will be able to:
 
-1. Understand the basic terminology of data, information, digital vs analog information.
+1. Understand the basic terminology of data and information (digital vs analog).
 2. Understand the basic components of a computer and its basic operations.
 3. Understand what is software and different types of softwares.
 4. Understand and implement basic arithmetic operations in Python.
@@ -39,6 +39,8 @@ Using provided material, explore and discuss the following questions:
 5. Convert the following hexadecimal numbers to decimal: 42, 2F, C02
 6. Convert the following decimal numbers to hexadecimal: 42, 300
 7. Convert the following decimal numbers to binary: 5, 20
+8. Finish all the exercises provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week01/inf-bc-w01-python.md).
+
 
 ## Problems:
 
