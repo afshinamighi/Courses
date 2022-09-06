@@ -379,13 +379,13 @@ Basic concepts of recursion in Python.
 As a result of participating in **BaseCamp:Part Four**, students will be able to:
 
 1. Plan and execute weekly learning activity provided given end goals.
-2. 
 
 
 </details>
 
 
 <hr />
+
 <!--
 
 ## Final Projects
