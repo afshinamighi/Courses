@@ -1,11 +1,12 @@
 # Week 03
 
-Often we need to repeat some actions. How do design algorithms with repeating statements? In this week we will explore loops.
+Often we need to repeat some actions. How do we design algorithms with repeating statements? In this week we will explore loops.
 
 ## Learning Outcomes
 
 After this lesson each student will be able to:
 1. design and implement iterations and cyclic algorithms.
+2. apply basic processes on strings.
 
 ## Learning Activities
 
@@ -15,6 +16,7 @@ Using provided material, explore and discuss the following questions:
 2. What are the main element of a while-loop in Python?
 3. What are the main elements of a for-loop in Python?
 4. How do we implement a cyclic algorithm in Python?
+5. How do we iterate over a string and what are the basic string processings?
 
 
 ## Exercises
