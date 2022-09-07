@@ -72,16 +72,19 @@ Using provided material, explore and discuss the following questions:
 
 12. Implement your Python solutions to the problems provided [here](https://github.com/afshinamighi/Courses/blob/main/basecamp/week02/inf-bc-w02-python.md).
 
+<!--
 13. [todo: idea for using XOR in solving problems: "Classic Problems in Python", Introduction, Using XOR in encryption, 1.3. Unbreakable encryption]
-
+-->
 
 ## Resources:
 ### Books:
-1. Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; Chapters 1,2 and 3.
+1. Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; Chapters 4.
+2. Ryan T. White, Archana Tikayat Ray, "Practical Discrete Mathematics", Chapter 2. 
+3. Susanna S. Epp; "Discrete Mathematics with Applications"; Chapter 2.
 
 ### Videos:
 1. [Truth Tables](https://www.youtube.com/watch?v=VCEYeB3bRW0)
 2. [Boolean Algebra](https://www.youtube.com/watch?v=Hby4mlpSNxo)
 3. [Logical equivalence and De Morgan’s Laws](https://www.youtube.com/watch?v=93CxSLi89Ok)
 4. [How do computers add numbers?](https://www.youtube.com/watch?v=VBDoT8o4q00)
-3. 
+
