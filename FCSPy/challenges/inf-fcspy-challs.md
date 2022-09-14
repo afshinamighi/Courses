@@ -2,14 +2,14 @@
 # Challenges
 
 
-We always hear about data, information and computers processing data. But what are those exactly? What are the main elements of a device to call it as a computer? How can data be represented in various format? Answering to these questions will help us take first steps in learning fundations of Computer Science.
+This file introduces a collection of challenges that can improve your prblem solving and programming skills.
 
 ## ISBN Check:
 
-### Objectives
+### Objectives:
 -	Evaluate the ability to apply concepts of numeral systems, boolean logic, strings, lists and tuples to solve problems.
 
-### Problem Introduction
+### Problem Introduction:
 Recording data files are prone to mistakes. For example in long sequence of numbers a digit can be missed, duplicated, or removed. Processing given information relies on correctness of input values.
 Fortunately, there are techniques at least minimize, such occurrences, and those are often used in computing for error detection. One of those is *checksum*, which is a calculated value used to determine the validity of data.
 
@@ -40,7 +40,7 @@ Dividing control number by 11 (i.e. 249/11) we find 22 with the remaining 7. The
 
 *Note*: Since ISBN-10 uses a modulo-11 checksum, there are cases when the check digit is actually 10. In that case, character X is used as check digit (X as Roman numeral for 10).
 
-### Problem statement
+### Problem Statement:
 A book store uses a scanner to scan the ISBN numbers of the books. Unfortunetly , the scanner was not functioning well and the output file contains some invalid isbn numbers. The owner of the book store found out that there are two groups of invalid isbn numbers: missing digits and wrong check digit. 
 You are asked to implement a program that given an input file with the book names and isbn numbers, the program can make a list of invalid corrupted isbn numbers. The input file is a csv file in which each line has the following format:
 
