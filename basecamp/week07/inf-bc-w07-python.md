@@ -245,7 +245,7 @@ def load_csv_file(file_name):
 
 1. A data file containing average daily tempreture of Amsterdam is [available here](https://academic.udayton.edu/kissock/http/Weather/gsod95-current/NLAMSTDM.txt). The first column is the month number, the second is the day number, the third is the year and fourth column is the weather tempretaure in Farenheit. Download the file and implement your solution to meet the following requirements:
 	- The program gets the file name as a program argument.
-	- Use the function ```load_data``` to load the content of the file in a list.
+	- Use the function ```load_txt_file``` to load the content of the file in a list.
 	- Clean the content of the loaded list. Like: remove new line character, split each line.
 	-  Process the data and calculate the average temprature per year. Make a list of tuples ```(year, average temprature)``` and print the list.
 	-  Make a new list of tuples where the average temprature of each year is in Celcius. *Hint*: Use built-in ```map()``` function.
@@ -255,11 +255,12 @@ def load_csv_file(file_name):
 
 2. A data file containing Netflix title is [available here](https://www.kaggle.com/datasets/shivamb/netflix-shows). A copy of the data set is provided [here](./problems_data/netflix_titles.csv). Implement your solution in a program that meets the following requirements:
 	- The program gets the file name as a program argument.
-	- Use the function ```load_data``` to load the content of the file in a list.
+	- Use the function ```load_csv_file``` to load the content of the file in a list.
 	- The first line of the file specifies the name of each column. For example, the first column is ```show_id```, the second is the ```type``` of the show, the third is the ```title``` of the show, etc. Print this line and explore the kind of information you can extract.
 	- Make two separate lists of show types: TV Show and Movies. Print the lists. Which one do we have more, tv shows or movies?
 	- There are some directors who lead both movies and tv shows. For example, search the name ```David Ayer```. He is the director of three movies and one tv show. Print the (full) names of directors who lead both tv shows and movies.
 	- Print the name of each director, the number of movies (s)he was the director of, the number of tv shows (s)he was the director of. You can construct a list of tuples like ```(director name, number of movies, number of tv shows)``` and print it. 
+	- Propose two data analysis of your own and apply on this data set.
 
 
 ## Assignment:
