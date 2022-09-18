@@ -251,7 +251,7 @@ def load_csv_file(file_name):
 	-  Make a new list of tuples where the average temprature of each year is in Celcius. *Hint*: Use built-in ```map()``` function.
 	-  Which year was the warmest (or coldest) year? Use average temprature.
 	-  Construct a list of tuples where the first element of each tuple is the year and the second element of the tuple is a dictionary with months as the keys and average temprature (F or C) of each month as the value. Which year has the warmest (or coldest) January? Which year has the coldest (or warmest) March?
-	-  Propose an analysis that you would like to apply on this data set and implement your solution.
+	-  Propose one analysis that you would like to apply on this data set and implement your solution.
 
 2. A data file containing Netflix title is [available here](https://www.kaggle.com/datasets/shivamb/netflix-shows). A copy of the data set is provided [here](./problems_data/netflix_titles.csv). Implement your solution in a program that meets the following requirements:
 	- The program gets the file name as a program argument.
@@ -260,7 +260,7 @@ def load_csv_file(file_name):
 	- Make two separate lists of show types: TV Show and Movies. Print the lists. Which one do we have more, tv shows or movies?
 	- There are some directors who lead both movies and tv shows. For example, search the name ```David Ayer```. He is the director of three movies and one tv show. Print the (full) names of directors who lead both tv shows and movies.
 	- Print the name of each director, the number of movies (s)he was the director of, the number of tv shows (s)he was the director of. You can construct a list of tuples like ```(director name, number of movies, number of tv shows)``` and print it. 
-	- Propose two data analysis of your own and apply on this data set.
+	- Propose two analysis that you would like to apply on this data set and implement your solution.
 
 
 ## Assignment:
