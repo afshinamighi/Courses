@@ -211,7 +211,56 @@ A different dictionary could be:
 <hr>
 
 ## Problems:
-[todo]
+
+*Note:* The following functions are implemented to to read the content of a given file (text or csv) and return a list of lines within the file. Use these functions in your solutions.
+
+```python
+def load_txt_file(file_name):
+    try:
+        with open(file_name , 'r') as file_obj:
+            file_content = file_obj.readlines()
+    except:
+        print('Exception in opening file:',file_name)
+    finally:
+    	  file_obj.close()
+    return file_content
+```
+
+```python
+import csv
+
+def load_csv_file(file_name):
+    file_content = []
+    try:
+        with open(file_name , 'r') as csv_file_object:
+            csv_reader = csv.reader(csv_file_object)
+            for row in csv_reader:
+                file_content.append(row)
+    except:
+        print('Exception in opening file:',file_name)
+    finally:
+        csv_file_object.close()
+    return file_content
+```
+
+1. A data file containing average daily tempreture of Amsterdam is [available here](https://academic.udayton.edu/kissock/http/Weather/gsod95-current/NLAMSTDM.txt). The first column is the month number, the second is the day number, the third is the year and fourth column is the weather tempretaure in Farenheit. Download the file and implement your solution to meet the following requirements:
+	- The program gets the file name as a program argument.
+	- Use the function ```load_data``` to load the content of the file in a list.
+	- Clean the content of the loaded list. Like: remove new line character, split each line.
+	-  Process the data and calculate the average temprature per year. Make a list of tuples ```(year, average temprature)``` and print the list.
+	-  Make a new list of tuples where the average temprature of each year is in Celcius. *Hint*: Use built-in ```map()``` function.
+	-  Which year was the warmest (or coldest) year? Use average temprature.
+	-  Construct a list of tuples where the first element of each tuple is the year and the second element of the tuple is a dictionary with months as the keys and average temprature (F or C) of each month as the value. Which year has the warmest (or coldest) January? Which year has the coldest (or warmest) March?
+	-  Propose an analysis that you would like to apply on this data set and implement your solution.
+
+2. A data file containing Netflix title is [available here](https://www.kaggle.com/datasets/shivamb/netflix-shows). A copy of the data set is provided [here](./problems_data/netflix_titles.csv). Implement your solution in a program that meets the following requirements:
+	- The program gets the file name as a program argument.
+	- Use the function ```load_data``` to load the content of the file in a list.
+	- The first line of the file specifies the name of each column. For example, the first column is ```show_id```, the second is the ```type``` of the show, the third is the ```title``` of the show, etc. Print this line and explore the kind of information you can extract.
+	- Make two separate lists of show types: TV Show and Movies. Print the lists. Which one do we have more, tv shows or movies?
+	- There are some directors who lead both movies and tv shows. For example, search the name ```David Ayer```. He is the director of three movies and one tv show. Print the (full) names of directors who lead both tv shows and movies.
+	- Print the name of each director, the number of movies (s)he was the director of, the number of tv shows (s)he was the director of. You can construct a list of tuples like ```(director name, number of movies, number of tv shows)``` and print it. 
+
 
 ## Assignment:
 
