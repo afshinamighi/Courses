@@ -12,6 +12,7 @@ The activities are designed based on these following references:
 
 - **BRef-01**: Book, Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages"; [Available here](https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/) 
 - **ORef-01**: Online Tutorial; Charles Severance; "Python for Everybody"; [Available here](https://books.trinket.io/pfe/index.html)
+- **ORef-02**: Book, Brian Heinold; "A Practical Introduction to Python Programming" [Available Online, Check here](https://www.brianheinold.net/python/python_book.html)
 
 
 ## Path:
@@ -57,12 +58,14 @@ for item in rdic.values():
 
 5. Modify the code from the previous exercise so each value becomes a `tuple` containing two random numbers.
 
-6. Provide your solutions to the exercises of **ORef-01: Dictionary** can be used as extra learning reference.
-[todo]
+6. Provide your solutions to the exercises of **ORef-01: Dictionary**.
 
 7. Design two exercises of your own. They should improve understanding topics of this step.
+
 8. If you don't have PyCharm yet, install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
 	- It is important to learn how to create a new Python program, how to configure interpreter and how to run the program. Where do you see the results?
+
+9. **Extra:** Provide your solutions to the exercises f **ORef-01: Dictionaries** 
 
 
 <hr>
@@ -115,6 +118,9 @@ do_something("a", "z", "d", "b", a=1, b=2, c=3, d=4)
 
 5. Design two exercises of your own. They should improve understanding topics of this step.
 
+6. **Extra:** Provide your solutions to the exercises f **ORef-01: Functions** 
+
+
 <hr>
 
 ### Step-03: Sets.
@@ -166,26 +172,39 @@ for i in schar:
 <hr>
 
 ## Problems:
+
 1. Implement a program that determines and displays the number of unique characters in a string entered by the user. For example, `Hello, World!` has 10 unique characters while `zzz` has only one unique character. 
 	- Use only dictionaries to solve this problem. 
 	- Use only sets to solve this problem.
 	- Which solution would you prefer?
 
-2. [todo: needs more polishing] Implement a Python program that collects book information. The program starts with three options: entering new book, searching a book, exit. 
+2. Implement a Python program that collects book information. The program starts with three options: entering new book, searching a book, exit. 
 	- Entering new book: The program will ask to enter: book title, book author, publisher, publication date.
 	- Searching a book: The user enters a term and the program must search the term within titles, authors and publishers and report the existence of such a book with the requested term.
 	- Exist: The program must print all the collected books before exiting.
 	- What structure do you define to store the information? Disucss about your structure with your group mate and/or teacher.
 
-2. In an application a valid password must be a combination of digits, uppercase and lowercase letters and only four symbols `* @ ! ?` . The length of the password must not be less than 8 characters and must not be more than 20 characters. In case the password is not valid, the user can try maximum three times until its is validated. Implement a Python program that asks the password of the user and checks if it is a valid password.
+2. In an application a valid password must be a combination of digits, uppercase and lowercase letters and only four symbols `* @ ! ?` . The length of the password must not be less than 8 characters and must not be more than 20 characters. In case the password is not valid, the user can try maximum three times until it is validated. Implement a Python program that asks the password of the user and checks if it is a valid password.
 	- Use sets and set operations to solve this problem.
 
-3. [todo: reshape it for a programming problem.] A group of 40 students were interviewed if they like tennis (T) and football (F). The number liking both tennis and football was three times the number liking only tennis. Adding 3 to the number of liking only tennis and doubling the answer equals the number of people liking only football. Four students said they don’t like any sport at all. Implement a program such that [todo: find some features for intersection, union, etc]
+3. The following data reprsents average tempratures of the third month for 1995, 2010, and 2020 recorded in Amsterdam (source is [available here](https://academic.udayton.edu/kissock/http/Weather/gsod95-current/NLAMSTDM.txt)).
 
-4. [todo: reshape the question for a programming problem statement] One year 37 students sat an examination in physics (P), 48 sat chemistry (C), and 45 sat biology (B). 15 students sat physics and chemistry, 13 sat chemistry and biology, 7 sat physics and biology. 5 students sat all three examinations. [idea: load list of students and at the end report number of students.]
+```python
+('1995','3',['47.3', '40.0', '38.3', '36.3', '37.4', '40.3', '41.1', '40.5', '41.6', '43.2', '46.2', '45.8', '44.9', '39.4', '40.5', '42.0', '46.5', '46.2', '43.3', '41.7', '40.7', '39.6', '44.2', '47.8', '45.9', '47.3', '39.8', '35.2', '38.5', '40.5', '47.0'])
+
+('2010','3',['39.2', '36.7', '35.5', '35.2', '35.8', '33.8', '30.7', '33.2', '32.3', '33.3', '37.3', '39.9', '40.8', '42.9', '42.7', '42.6', '44.8', '50.3', '52.2', '55.2', '47.2', '45.0', '48.6', '55.0', '57.4', '50.9', '48.6', '46.2', '49.6', '50.1', '43.6'])
+
+('2020','3',['43.2', '41.1', '40.0', '43.6', '42.6', '44.0', '44.0', '47.9', '46.6', '50.5', '51.5', '47.7', '44.7', '44.0', '48.9', '45.3', '46.6', '49.7', '47.2', '44.8', '41.8', '40.9', '41.0', '42.7', '43.4', '44.0', '46.4', '45.5', '40.7', '39.5', '40.6'])
+
+```
+Implement a program that given this data (copy the structures in your program) prints the answers for the following questions:
+	- How many days have equal average tempratues in March 1995 and March 2010.
+	- How many days have equal average tempratues in March 1995 and March 2020. 
+	- Which year has a day with highest temprature in March?
+	- Which year had the warmest March?
 
 
-3. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
+4. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
 character in the message to its mapping code. 
 	- Put a space between translated character. Example: `Hello` is translated into ....&nbsp;.&nbsp;.-..&nbsp;.-..&nbsp;--- 
 	- Put a 4 spaces when there is a space in the original message. Example: `Hello World` is translated into ....&nbsp;.&nbsp;.-..&nbsp;.-..&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;.--&nbsp;---&nbsp;.-.&nbsp;.-..&nbsp;-... 
@@ -214,7 +233,7 @@ MORSE_CODE_DICT = {
 ```
 ## Assignment:
 
-1. Create an application that manages contacts in an adressbook. The following requirements should be implemented:
+1. Create an application that manages contacts in an addressbook. The following requirements should be implemented:
 	- Add a contact with first name and last name (only alphabet), multiple (unique) e-mails (containing at least one '@'),
 multiple (unique) phone numbers (only digits). Also, an ID should be generated which should be 1 higher 
 than the highest current ID. 
