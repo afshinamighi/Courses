@@ -28,7 +28,7 @@
 4. Which of the following rules are correct? If not, write down the correct rule.
 	- $\neg (\neg p) \equiv p$
 	- $\neg (\neg p \wedge \neg q) \equiv \neg p \vee \neg q$
-	- $p \ XOR \ ~p \equiv p$
+	- $p \oplus ~p \equiv p$
 	- $p \vee \neg p \equiv True$
 	- $p \vee (\neg p \wedge q) \equiv False$
 
