@@ -197,7 +197,8 @@ for i in schar:
 ('2020','3',['43.2', '41.1', '40.0', '43.6', '42.6', '44.0', '44.0', '47.9', '46.6', '50.5', '51.5', '47.7', '44.7', '44.0', '48.9', '45.3', '46.6', '49.7', '47.2', '44.8', '41.8', '40.9', '41.0', '42.7', '43.4', '44.0', '46.4', '45.5', '40.7', '39.5', '40.6'])
 
 ```
-	Implement a program that given this data (copy the structures in your program) prints the answers for the following questions:
+
+Implement a program that given this data (copy the structures in your program) prints the answers for the following questions:
 	- How many days have equal average tempratues in March 1995 and March 2010.
 	- How many days have equal average tempratues in March 1995 and March 2020. 
 	- Which year has a day with highest temprature in March?
