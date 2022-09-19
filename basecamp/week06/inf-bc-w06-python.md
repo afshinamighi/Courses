@@ -188,6 +188,11 @@ for i in schar:
 	- Use sets and set operations to solve this problem.
 
 3. The following data reprsents average tempratures of the third month for 1995, 2010, and 2020 recorded in Amsterdam (source is [available here](https://academic.udayton.edu/kissock/http/Weather/gsod95-current/NLAMSTDM.txt)).
+Implement a program that given this data (copy the structures in your program) prints the answers for the following questions:
+	- How many days have equal average tempratues in March 1995 and March 2010.
+	- How many days have equal average tempratues in March 1995 and March 2020. 
+	- Which year has a day with highest temprature in March?
+	- Which year had the warmest March?
 
 ```python
 ('1995','3',['47.3', '40.0', '38.3', '36.3', '37.4', '40.3', '41.1', '40.5', '41.6', '43.2', '46.2', '45.8', '44.9', '39.4', '40.5', '42.0', '46.5', '46.2', '43.3', '41.7', '40.7', '39.6', '44.2', '47.8', '45.9', '47.3', '39.8', '35.2', '38.5', '40.5', '47.0'])
@@ -197,13 +202,6 @@ for i in schar:
 ('2020','3',['43.2', '41.1', '40.0', '43.6', '42.6', '44.0', '44.0', '47.9', '46.6', '50.5', '51.5', '47.7', '44.7', '44.0', '48.9', '45.3', '46.6', '49.7', '47.2', '44.8', '41.8', '40.9', '41.0', '42.7', '43.4', '44.0', '46.4', '45.5', '40.7', '39.5', '40.6'])
 
 ```
-
-Implement a program that given this data (copy the structures in your program) prints the answers for the following questions:
-	- How many days have equal average tempratues in March 1995 and March 2010.
-	- How many days have equal average tempratues in March 1995 and March 2020. 
-	- Which year has a day with highest temprature in March?
-	- Which year had the warmest March?
-
 
 4. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
 character in the message to its mapping code. 
