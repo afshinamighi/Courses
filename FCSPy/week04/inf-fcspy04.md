@@ -28,11 +28,12 @@
 4. Which of the following rules are correct? If not, write down the correct rule.
 	- $\neg (\neg p) \equiv p$
 	- $\neg (\neg p \wedge \neg q) \equiv \neg p \vee \neg q$
-	- $p \oplus ~p \equiv p$
+	- $p \oplus \neg p \equiv p$
+	- $p \oplus \neg p \equiv False$
 	- $p \vee \neg p \equiv True$
 	- $p \vee (\neg p \wedge q) \equiv False$
+	- $\neg (p \oplus q) \equiv (\neg p \oplus \neg q)$
 
-5. 
 
 ## Programming Problems:
 
@@ -47,7 +48,11 @@
  ******
  ```
 
-2. Students in elementary schools learn how to multiply two 2-digits numbers. A teacher would like to have a console-based program that asks two random (2-digits) numbers. Then, the user (student) will give the answer. If the answer is correct, the program will give another question. But, if the answer is not correct, the program must print the multiplications with intermediate steps. An example of the interactions between the user and program is provided below:
+2. Implement a Python program that prints the truth tables for: ```and, or, not, xor and implication```.
+
+3. Implement a Python progra that prints all the steps of converting a given binary number to decimal and vice versa.
+
+4. Students in elementary schools learn how to multiply two 2-digits numbers. A teacher would like to have a console-based program that asks two random (2-digits) numbers. Then, the user (student) will give the answer. If the answer is correct, the program will give another question. But, if the answer is not correct, the program must print the multiplications with intermediate steps. An example of the interactions between the user and the program is provided below:
 
 ```
 (N)ext Question or (S)top?N
@@ -63,7 +68,3 @@
 55 * 12 = 660
 (N)ext Question or (S)top?S
 ```
-
-2. Implement a Python program that prints the truth tables for: ```and, or, not, xor and implication```.
-
-3. Implement a Python progra that prints all the steps of converting a given binary number to decimal and vice versa.
