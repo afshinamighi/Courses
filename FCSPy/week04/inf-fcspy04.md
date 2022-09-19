@@ -26,7 +26,7 @@
 	- 200
 	- FF
 4. Which of the following rules are correct? If not, write down the correct rule.
-	- $\neg (\neg p) = p$
+	- $\neg (\neg p) \equiv p$
 	- $\neg (\neg p \wedge \neg q) = \neg p \vee \neg q$
 	- $p XOR ~p = p$
 	- $p \vee \neg p = True$
