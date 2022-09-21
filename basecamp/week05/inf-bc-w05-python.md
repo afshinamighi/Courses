@@ -212,7 +212,24 @@ Each item that is sent to the recipient in the song should only appear once in y
 	- Date of birth has this format: ```YYYY-MM-DD```. Days between 1 and 31, months between 1 and 12 and Years between 1960 and 2004.
 	- Study program can have one of these values: ```INF, TINF, CMD, AI```.
 	- A template Python file is provided with a function that loads the data set.
-	- The program should make two separate lists: list of rows with correct values and a list of rows with corrupted values. These two lists will be printed with this format: [todo].
+	- The program should make two separate lists: list of rows with correct values and a list of rows with corrupted values. These two lists will be printed with this format:
+
+```
+### VALID LINES ###
+
+<valid_line_1>
+
+<valid_line_2>
+
+
+
+### CORRUPT LINES ###
+
+<corrupt_line_1> => INVALID DATA: [all invalid founds on this line, separated by comma]
+
+<corrupt_line_2> => INVALID DATA: [all invalid founds on this line, separated by comma]
+```
+
 	- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be accessed [here](./assignment_data/process_students.py) and the dataset is [here](./assignment_data/students.csv) 
 
 
