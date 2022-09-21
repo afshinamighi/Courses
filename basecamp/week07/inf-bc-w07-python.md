@@ -88,10 +88,9 @@ y = ["abc", "bcd", "ube", "cur"]
 print(check_with_lambda(x, y)) #["abc","ube"]
 ```
 
-7. Design two exercises of your own. They should improve understanding topics of this step.
+7. Often implementing your solutions you may need to use some important built-in functions: ```map(...)``` and ```filter(...)```. Study them first [here](https://www.brianheinold.net/python/python_book.html#section_map_filter_reduce) and practice a few small examples to understand how they work and when you might need them.
 
-8. If you don't have PyCharm yet, install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
-	- It is important to learn how to create a new Python program, how to configure interpreter and how to run the program. Where do you see the results?
+8. Design two exercises of your own. They should improve understanding topics of this step.
 
 <hr>
 
@@ -311,7 +310,6 @@ Main program [main():]
 - A template for your solution is [provided here](./assignment_data/namehasher.py)
 
 ## Extra Steps:
-[todo]
 
 
 
