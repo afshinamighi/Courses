@@ -184,10 +184,10 @@ for i in schar:
 	- Exist: The program must print all the collected books before exiting.
 	- What structure do you define to store the information? Disucss about your structure with your group mate and/or teacher.
 
-2. In an application a valid password must be a combination of digits, uppercase and lowercase letters and only four symbols `* @ ! ?` . The length of the password must not be less than 8 characters and must not be more than 20 characters. In case the password is not valid, the user can try maximum three times until it is validated. Implement a Python program that asks the password of the user and checks if it is a valid password.
+3. In an application a valid password must be a combination of digits, uppercase and lowercase letters and only four symbols `* @ ! ?` . The length of the password must not be less than 8 characters and must not be more than 20 characters. In case the password is not valid, the user can try maximum three times until it is validated. Implement a Python program that asks the password of the user and checks if it is a valid password.
 	- Use sets and set operations to solve this problem.
 
-3. The following data reprsents average tempratures of the third month for 1995, 2010, and 2020 recorded in Amsterdam (source is [available here](https://academic.udayton.edu/kissock/http/Weather/gsod95-current/NLAMSTDM.txt)).
+4. The following data reprsents average tempratures of the third month for 1995, 2010, and 2020 recorded in Amsterdam (source is [available here](https://academic.udayton.edu/kissock/http/Weather/gsod95-current/NLAMSTDM.txt)).
 Implement a program that given this data (copy the structures in your program) prints the answers for the following questions:
 	- How many days have equal average tempratues in March 1995 and March 2010.
 	- How many days have equal average tempratues in March 1995 and March 2020. 
@@ -203,7 +203,7 @@ Implement a program that given this data (copy the structures in your program) p
 
 ```
 
-4. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
+5. Morse Code Translator: Morse code is an encoding scheme that uses dashes and dots to represent numbers and letters. Implement a program that uses a dictionary to store the mapping from letters and numbers to Morse code. Your program should read a message from the user. Then it should translate each
 character in the message to its mapping code. 
 	- Put a space between translated character. Example: `Hello` is translated into ....&nbsp;.&nbsp;.-..&nbsp;.-..&nbsp;--- 
 	- Put a 4 spaces when there is a space in the original message. Example: `Hello World` is translated into ....&nbsp;.&nbsp;.-..&nbsp;.-..&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;.--&nbsp;---&nbsp;.-.&nbsp;.-..&nbsp;-... 
@@ -243,7 +243,7 @@ and in ascending (ASC) or decending (DESC) direction (default ASC) witb a direct
 The e-mails and phone numbers of the duplicate contacts should be added to the the first duplicate contact
 (contact with the highest ID). The other duplicate contcts should be deleted from the addressbook.
 	- Contacts are read from the provided JSON file and should be updated with new or removed contacts.
-	- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be accessed [here](./assignment_data/process_addbook.py) and the dataset is [here](./assignment_data/contacts.json) 
+	- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be found in **./week06/assignment_data/process_addbook.py** ([here](./assignment_data/process_addbook.py)) and the dataset is in **./week06/assignment_data/contacts.json** ([here](./assignment_data/contacts.json)). 
 
 
 ## Extra Steps
