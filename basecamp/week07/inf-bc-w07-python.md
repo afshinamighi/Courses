@@ -291,9 +291,9 @@ Create a progam that can convert a name/string to the hashed representation of t
 
 Main program [main():]
 
-- Ask for key to use for convertion (make sure to validate against even string length)
+- Ask for key to use for convertion (make sure to validate against even string length).
 
-- Build menu structure as following (the input can be case-insensitive (so E and e are valid inputs))
+- Build menu structure as following (the input can be case-insensitive (so E and e are valid inputs)).
 
 	- [E] Encode value to hashed value
 	- [D] Decode hashed value to normal value
@@ -309,8 +309,8 @@ key = `a_b?c9d6e1f4g!h:i<j|k{l0m@n7o+p~q2r+s/t=u^v3w]x(y-z>A*B8C;D%E#F}G5H)I[J$`
 
 *Hints*: 
 
-- To test your functions, use the provided unit test file (for boilerplate [available here](./assignment_data/namehasher_test.py)) and complete the test functions with your own code.
-- A template for your solution is [provided here](./assignment_data/namehasher.py)
+- To test your functions, use the provided unit test provided in **/week07/assignment_data/namehasher_test.py** and complete the test functions with your own code.
+- A template for your solution is provided in **/week07/assignment_data/namehasher.py**.
 
 ## Extra Steps:
 
