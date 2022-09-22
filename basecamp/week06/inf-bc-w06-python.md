@@ -243,7 +243,7 @@ and in ascending (ASC) or decending (DESC) direction (default ASC) witb a direct
 The e-mails and phone numbers of the duplicate contacts should be added to the the first duplicate contact
 (contact with the highest ID). The other duplicate contcts should be deleted from the addressbook.
 	- Contacts are read from the provided JSON file and should be updated with new or removed contacts.
-	- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be found in **./week06/assignment_data/process_addbook.py** ([here](./assignment_data/process_addbook.py)) and the dataset is in **./week06/assignment_data/contacts.json** ([here](./assignment_data/contacts.json)). 
+	- **Note**: A Python file and a dataset are provided. The Python file is an incomplete program with `todos comments` for the solution. The incomplete Python program can be found in **/week06/assignment_data/process_addbook.py** and the dataset is in **/week06/assignment_data/contacts.json**. 
 
 
 ## Extra Steps
