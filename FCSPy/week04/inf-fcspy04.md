@@ -12,6 +12,7 @@
 	- 1001001
 	- 1111111
 	- 1000011
+	- 1010101100
 2. Convert (pen-paper) the following decimal numbers to binary and hexadecimal. Use Python to validate your result.
 	- 2
 	- 16
@@ -25,6 +26,7 @@
 	- ff00
 	- 200
 	- FF
+	- 100
 4. Which of the following rules are correct? If not, write down the correct rule.
 	- $\neg (\neg p) \equiv p$
 	- $\neg (\neg p \wedge \neg q) \equiv \neg p \vee \neg q$
