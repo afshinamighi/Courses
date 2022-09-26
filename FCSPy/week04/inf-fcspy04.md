@@ -33,6 +33,7 @@
 	- $p \vee \neg p \equiv True$
 	- $p \vee (\neg p \wedge q) \equiv False$
 	- $\neg (p \oplus q) \equiv (\neg p \oplus \neg q)$
+	- $(p \oplus q) \equiv (\neg p \oplus \neg q)$
 
 
 ## Programming Problems:
