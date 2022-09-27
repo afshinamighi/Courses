@@ -55,6 +55,42 @@ Your program is expected to process the input file and generate a list of books 
 	- Do not add any additional text to the user. 
 	- Perform only validity checks explained above.
 
+### Test Data:
+A file containing some test cases is provided [here](./data/books_isbn_01.csv).
+
+### How to load data?
+Copy input data file in the same folder of your program. Copy the following code in the beginning of your program and implement your solution after the comment specified.
+
+```python
+import string
+
+# DO NOT CHANGE THIS FUNCTION
+# load_data() reads the input file containing all the given information of books
+# The result is collected in the list_of_book_isbn: a list of tuples
+
+input_data_file = 'books_isbn_01.csv'
+list_of_book_isbn = []
+
+def load_data():
+    try:
+        with open(input_data_file , 'r') as books_file_obj:
+            files_content = books_file_obj.readlines()
+        for item in files_content:
+            book_name_isbn = item.split(',')
+            book_name, book_isbn = book_name_isbn[0], book_name_isbn[1].removesuffix('\n')
+            list_of_book_isbn.append((book_name, book_isbn))
+    except:
+        print('Exception openning file')
+    return files_content
+
+load_data()
+print('Data values imported from the file:',list_of_book_isbn)
+
+# Implement your solution starting from next line
+
+
+```
+
 ### Extended Features:
 
 The scanner device has been improved and can put a dot in the position of missing digit. The check digit is guaranteed to be correct. Extend your program that can calculate the missing digit and replace the dot with a correct digit.
