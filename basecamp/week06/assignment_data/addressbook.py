@@ -47,7 +47,7 @@ def remove_contact(...):
     ...
 
 '''
-merge duplicates (automated)
+merge duplicates (automated > same fullname [firstname & lastname])
 '''
 def merge_contacts():
     # todo: implement this function
@@ -82,17 +82,18 @@ main function: build menu structure as following and call the appropriate functi
 - [D] Decode hashed value to normal value
 - [P] Print all encoded/decoded values
 - [Q] Quit program
-
 Don't forget to put the contacts.json file in the same location as this file!
 '''
+
 def main(json_file):
     read_from_json(json_file)
 
     # todo: implement this function.
-    ...
+    
 
 '''
 calling main function: 
 Do NOT change it.
 '''
-main('contacts.json')
+if __name__ == "__main__":
+    main('contacts.json')
