@@ -80,7 +80,7 @@ After taking this step, you will be able to:
  ```python
 a_tuple = ('Never', 'gonna', 'give', 'you', 'up')
 counter = 0
-for x in thistuple:
+for x in a_tuple:
     if x[0] ==  'g':
         counter = counter + 1
     else:
