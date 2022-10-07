@@ -48,8 +48,6 @@ For the following exercises use this simple medical dataset:
 ##### Data Set: 
 Consider the data set below in the following exercises.
 
-Table: A caption
-
 | SSNumber | Age | ZipCode | Condition |
 |---|---|---|---|
 | 1234-12-1234 | 21 | 23058 | heart disease |
@@ -64,6 +62,8 @@ Table: A caption
 | 6789-67-6789 | 43 | 23059 | heart disease | 
 | 7890-78-7890 | 47 | 23060 | viral infection | 
 | 8901-89-8901 | 49 | 23061 | viral infection | 
+
+**Table 0: Small (raw) disease data set.**
 
 #### Taxonomy tree:
 
@@ -99,7 +99,40 @@ Propose a taxonomy tree for **Job**.
 
 #### t-closeness:
 
-Assume the following data
+| | zip code | age | salary | disease |
+|---|---|---|---|---|
+| 1 | 47677 | 29 | 3K | gastric ulcer |
+| 2 | 47602 | 22 | 4K | gastritis |
+| 3 | 47678 | 27 | 5K | stomach cancer |
+| 4 | 47905 | 43 | 6K | gastritis |
+| 5 | 47909 | 52 | 11K | flu |
+| 6 | 47906 | 47 | 8K | bronchitis |
+| 7 | 47605 | 30 | 7K | bronchitis |
+| 8 | 47673 | 36 | 9K | pneumonia |
+| 9 | 47607 | 32 | 10K| stomach cancer |
+
+**Table xy: Salary/Disease raw data.**
+
+| | zip code | age | salary | disease |
+|---|---|---|---|---|
+| 1 | 476** | 2* | 3K | gastric ulcer |
+| 2 | 476** | 2* | 4K | gastritis |
+| 3 | 476** | 2* | 5K | stomach cancer |
+| 4 | 4790* | >=40 | 6K | gastritis |
+| 5 | 4790* | >=40 | 11K | flu |
+| 6 | 4790* | >=40 | 8K | bronchitis |
+| 7 | 476** | 3* | 7K | bronchitis |
+| 8 | 476** | 3* | 9K | pneumonia |
+| 9 | 476** | 3* | 10K| stomach cancer |
+
+**Table xz: A 3-diverse version of Salary/Disease.**
+
+1. Analyze Table xz. Is it 3-anonymouse? Is it 3-diverse? What are the ECs (equivalnce classes)? 
+2. Assume you have some background information about an individual and you know that released table [xz] contains the information of the invidual. Try to see what information you can gain from Table xz? *Hint:* Draw an axsis with a range of numbers between 1(K) and 11(K). Assign a separate symbol for each EC (for example * for EC1, $\circle$ for EC2 and ) and put the symbols on the coresponding salary.
+
+
+
+
 ### Tools:
 
 To carry the exercises of this part, you can use our simple medical data set (Part One) or a (larger) fake data set [available here](./datasets/dataset-fake-2021/)
