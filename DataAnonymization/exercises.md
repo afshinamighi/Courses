@@ -29,17 +29,19 @@ This algorithm is based on QIDs. The algorithm using taxonomy tree, builds a cla
 
 This algorithm focuses on sensitive (confidential) attributes. After applying *k-anonymity*, the dataset can be viewed as a set of *k-anonymous groups* (equivalence classes). The goal is to have at least *l distinct values* for each sensitive attribute within equivalence classes.
 
+#### [t-closeness](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf):
 
+An equivalence class is said to have *t-closeness* if the distance between the distribution of a sensitive attribute in this class and the distribution of the attribute in the whole table is no more than a treshold *t*. A table is said to have *t-closeness* if all equivalence classes have *t-closeness*.
 
 ## Exercises:
 
+<!--
 ### Part Zero :
 1. Make a anonymisation-pseudonymisation plan. This should include the following information: 
 creator(s) of the plan, person(s) carrying out the anonymisation, features in the data that have an impact on anonymisation, assessment of the disclosure risk of respondents' personal data, anonymisation techniques used along with the rationale for using them. You can use this template which [can be found here](https://www.fsd.tuni.fi/en/services/data-management-guidelines/anf-template.pdf)
-2. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
-	- What are the main challenges in building a k-anonyous table?
+-->
 
-### Part One :
+### Manual:
 
 For the following exercises use this simple medical dataset:
 
@@ -60,7 +62,12 @@ Consider the data set below in the following exercises.
 | 6789-67-6789 | 43 | 23059 | heart disease | 
 | 7890-78-7890 | 47 | 23060 | viral infection | 
 | 8901-89-8901 | 49 | 23061 | viral infection | 
+Table: A caption
 
+#### Taxonomy tree:
+
+2. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
+	- What are the main challenges in building a k-anonyous table?
 
 1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
 
@@ -74,6 +81,8 @@ Consider the data set below in the following exercises.
 ```Job={Software Developer,Writer,Civil Engineer,Lawyer,Dancer,Graphist,Journalist}```
 Propose a taxonomy tree for **Job**.
 
+#### k-anonymity:
+
 6. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *2-anonymity*.
 	- Is there only one solution or more?
 
@@ -81,11 +90,16 @@ Propose a taxonomy tree for **Job**.
 7. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *4-anonymity*.
 	- Is there only one solution or more?
 
+#### l-diversity:
+
 8. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
 
 9. 2-Diversity: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it it satisfies *2-diversity*.
 
-### Part Two :
+#### t-closeness:
+
+Assume the following data
+### Tools:
 
 To carry the exercises of this part, you can use our simple medical data set (Part One) or a (larger) fake data set [available here](./datasets/dataset-fake-2021/)
 
