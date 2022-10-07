@@ -48,6 +48,8 @@ For the following exercises use this simple medical dataset:
 ##### Data Set: 
 Consider the data set below in the following exercises.
 
+Table: A caption
+
 | SSNumber | Age | ZipCode | Condition |
 |---|---|---|---|
 | 1234-12-1234 | 21 | 23058 | heart disease |
@@ -62,7 +64,6 @@ Consider the data set below in the following exercises.
 | 6789-67-6789 | 43 | 23059 | heart disease | 
 | 7890-78-7890 | 47 | 23060 | viral infection | 
 | 8901-89-8901 | 49 | 23061 | viral infection | 
-Table: A caption
 
 #### Taxonomy tree:
 
