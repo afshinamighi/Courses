@@ -128,7 +128,7 @@ Propose a taxonomy tree for **Job**.
 **Table xz: A 3-diverse version of Salary/Disease.**
 
 1. Analyze Table xz. Is it 3-anonymouse? Is it 3-diverse? What are the ECs (equivalnce classes)? 
-2. Assume you have some background information about an individual and you know that released table [xz] contains the information of the invidual. Try to see what information you can gain from Table xz? *Hint:* Draw an axsis with a range of numbers between 1(K) and 11(K). Assign a separate symbol for each EC (for example * for EC1, $\circle$ for EC2 and ) and put the symbols on the coresponding salary.
+2. Assume you have some background information about an individual and you know that released table [xz] contains the information of the invidual. Try to see what information you can gain from Table xz? *Hint:* Draw an axsis with a range of numbers between 1(K) and 11(K). Assign a separate symbol for each EC (for example * for EC1, $\circ$ for EC2 and ) and put the symbols on the coresponding salary.
 
 
 
