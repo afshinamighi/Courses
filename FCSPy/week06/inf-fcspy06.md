@@ -103,11 +103,12 @@ print(counter)
 
 ## Problems:
 
-1. A data set containing some information of Netflix is provided (for the reference click here[]()). The first row specifies the attributes. For example, the first item of the first row indicates that in each row, the first item is the id. The third item of each row specifies the title. And so on.
+1. A data set containing some information of Netflix is provided [here](./data/netflix_titles.csv) (for the reference [click here](https://www.kaggle.com/datasets/shivamb/netflix-shows)). The first row specifies the attributes, i.e. labels given for each column. For example, the first item of the first row indicates that in each row, the first item is the id. The third item of each row specifies the title. And so on.
 - Your task is to implement a program that after reading the content of the file, the program collects and prints the information as follows:
 - A list containing two lists.
 - Each list has two elements. The first element is either `TV Show` or `Movie`. The second element will be the list of `(title,director)` tuples that coresponds to the type specified in the first element.
-- To read the content of the file, copy the file in the folder of your program and use the following code:
+- Print the percentage of each type.
+- To read the content of the file, download the data file, copy it in the same folder as your program is implemented and use the following code at the beginning of your program:
 
 ```python
 import csv
