@@ -128,7 +128,10 @@ Propose a taxonomy tree for **Job**.
 **Table xz: A 3-diverse version of Salary/Disease.**
 
 1. Analyze Table xz. Is it 3-anonymouse? Is it 3-diverse? What are the ECs (equivalnce classes)? 
-2. Assume you have some background information about an individual and you know that released table [xz] contains the information of the invidual. Try to see what information you can gain from Table xz? *Hint:* Draw an axsis with a range of numbers between 1(K) and 11(K). Assign a separate symbol for each EC (for example $\times$ for EC1, $\circ$ for EC2 and $\Delta$ for EC3) and put the symbols on the coresponding salary.
+2. Assume you have some background information about an individual and you know that released table [xz] contains the information of the invidual. Try to see what information you can gain from Table xz?
+*Hint:* Draw an axsis with a range of numbers between 1(K) and 11(K). Assign a separate symbol for each EC (for example $\times$ for EC1, $\circ$ for EC2 and $\Delta$ for EC3) and put the symbols on the axis (corresponding to each salary). What do you recognise?
+3. How would you fix the problem you recognised in the previous exercise? Propose a new table which does not have this issue. 
+*Hint:* You may need to change the generalisations.
 
 
 
