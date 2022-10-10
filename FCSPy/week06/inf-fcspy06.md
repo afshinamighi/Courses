@@ -7,7 +7,7 @@ A set builds a collection of well-defined items such that the order and repetiti
 
 **BRef-01**: Bill Lubanovic; "Introducing Python: Modern Computing in Simple Packages";
 
-## Learning Outcomes
+## Learning Outcomes:
 
 ```
 After taking this step, you will be able to:
@@ -117,7 +117,7 @@ input_data_file = 'netflix_titles.csv'
 def load_csv_file(file_name):
     file_content = []
     try:
-        with open(file_name , 'r') as csv_file_object:
+        with open(file_name , 'r', encoding="UTF-8") as csv_file_object:
             csv_reader = csv.reader(csv_file_object)
             for row in csv_reader:
                 file_content.append(row)
