@@ -91,7 +91,7 @@ print('Data values imported from the file:',list_of_book_isbn)
 
 ```
 
-### Extended Features:
+### Extended Features (Optional):
 
 The scanner device has been improved and can put a dot in the position of missing digit. The check digit is guaranteed to be correct. Extend your program that can calculate the missing digit and replace the dot with a correct digit.
 For example, an isbn code with value ISBN .-85375-390-4 can be fixed and corrected value will be ISBN 1-85375-390-4
