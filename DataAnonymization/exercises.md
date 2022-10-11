@@ -1,7 +1,7 @@
 # Personal Data Minimization:
 
 ## Introduction:
-This document presents basic concepts and simple exercises to practice Data Anonymization.
+This document presents basic concepts and simple exercises to practice foundations of personal data minimization.
 
 ## Basic Concepts:
 
@@ -19,11 +19,23 @@ Examples of taxonomy trees: ![An example of a taxonomy tree](./pix/fig-taxonomy-
 #### Suppression:
 Suppression is used to obliterate values that are identifying individuals. One common example could be replacing values of social security numbers with ' * '.
 
+#### Partial Suppression:
+One may generalise a set of values using partial suppression. In partial suppression, the original value is suppressed in different levels which results in hierarchy in values.
+
+Examples:
+
+| zip code 0 | zip code 1 | zip code 2 | zip code 3 |
+|---|---|---|---|
+| 22345 | 2234* | 223** | 22*** |
+| 22014 | 2201* | 220** | 22*** |
+| 21338 | 2133* | 213** | 21*** |
+
+
 ### Fundamental Algorithms:
 
-#### k-anonimity:
+#### [k-anonimity](https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf):
 
-This algorithm is based on QIDs. The algorithm using taxonomy tree, builds a class of records with equal values for *qids*. After applying k-anonymity, if one record in the table has some value *qid*, at least *k* − 1 other records also have the value *qid*. In other words, the minimum group size on *QID* is at least *k*. A table satisfying this requirement is called *k-anonymous*. In a *k*-anonymous table, each record is indistinguishable from at least *k* − 1 other records with respect to *QID*. Consequently, the probability of linking a victim to a specific record through *QID* is at most 1/*k*.
+This algorithm is based on QIDs. Using taxonomy trees, the algorithm builds a class of records with equal values for *qids*. After applying k-anonymity, if one record in the table has some value *qid*, at least *k* − 1 other records also have the value *qid*. In other words, the minimum group size on *QID* is at least *k*. A table satisfying this requirement is called *k-anonymous*. In a *k*-anonymous table, each record is indistinguishable from at least *k* − 1 other records with respect to *QID*. Consequently, the probability of linking a victim to a specific record through *QID* is at most 1/*k*.
 
 #### l-diversity:
 
@@ -67,14 +79,13 @@ Consider the data set below in the following exercises.
 
 #### Taxonomy tree:
 
-2. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
-	- What are the main challenges in building a k-anonyous table?
-
 1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
 
 2. QIDs (Quasi IDentifiers): Which attributes can be candidates for QIDs?
 
-3. Taxonomy Tree: Define a taxonomy tree for **Age** in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
+3. Taxonomy Tree: 
+	- Apply partial suppression and define a taxonomy tree for **Age**.
+	- Using intervals for **Age** define a taxonomy tree in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
 
 4. Taxonomy Tree: Define a taxonomy tree for **ZipCode**.
 
@@ -84,18 +95,23 @@ Propose a taxonomy tree for **Job**.
 
 #### k-anonymity:
 
-6. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *2-anonymity*.
+1. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform  (*ad-hoc*) the original data set to a minimized data set where it satistifies *2-anonymity*.
+	- What are the main challenges in building a k-anonymous table?
 	- Is there only one solution or more?
 
 
-7. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *4-anonymity*.
+2. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform  (*ad-hoc*) the original data set to a minimized data set where it satistifies *4-anonymity* (*ad-hoc*).
+	- What are the main challenges in building a k-anonymous table?
 	- Is there only one solution or more?
+
+3. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
+
 
 #### l-diversity:
 
-8. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
+1. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
 
-9. 2-Diversity: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it it satisfies *2-diversity*.
+2. 2-Diversity: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it it satisfies *2-diversity*.
 
 #### t-closeness:
 
