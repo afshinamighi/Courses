@@ -1,7 +1,7 @@
 # Personal Data Minimization:
 
 ## Introduction:
-This document presents basic concepts and simple exercises to practice foundations of personal data minimization.
+This document presents basic concepts and hands on exercises to practice foundations of personal data minimization.
 
 ## Basic Concepts:
 
@@ -14,13 +14,15 @@ Data anonymization (also known as de-identification or data minimization) is a t
 #### Generalization: 
 Data generalization is a simple technique by which an exact value of a sensitive attribute is replaced with a more general value. In order to choose a general value, a *taxonomy tree* is built by a (data) domain expert. The exact values must be found among the leaves. The most general value appears in the root.  
 
+<!--
 Examples of taxonomy trees: ![An example of a taxonomy tree](./pix/fig-taxonomy-01.png)
+-->
 
 #### Suppression:
 Suppression is used to obliterate values that are identifying individuals. One common example could be replacing values of social security numbers with ' * '.
 
 #### Partial Suppression:
-One may generalise a set of values using partial suppression. In partial suppression, the original value is suppressed in different levels which results in hierarchy in values.
+One may generalise a set of values using partial suppression. In partial suppression, the original value is suppressed in different levels which results in a hierarchy of values.
 
 Examples:
 
@@ -35,9 +37,9 @@ Examples:
 
 #### [k-anonimity](https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf):
 
-This algorithm is based on QIDs. Using taxonomy trees, the algorithm builds a class of records with equal values for *qids*. After applying k-anonymity, if one record in the table has some value *qid*, at least *k* − 1 other records also have the value *qid*. In other words, the minimum group size on *QID* is at least *k*. A table satisfying this requirement is called *k-anonymous*. In a *k*-anonymous table, each record is indistinguishable from at least *k* − 1 other records with respect to *QID*. Consequently, the probability of linking a victim to a specific record through *QID* is at most 1/*k*.
+The main focus of this algorithm is QIDs. Using taxonomy trees, the algorithm builds a class of records with equal values for *qids*. After applying k-anonymity, if one record in the table has some value *qid*, at least *k* − 1 other records also have the value *qid*. In other words, the minimum group size on *QID* is at least *k*. A table satisfying this requirement is called *k-anonymous*. In a *k*-anonymous table, each record is indistinguishable from at least *k* − 1 other records with respect to *QID*. Consequently, the probability of linking a victim to a specific record through *QID* is at most 1/*k*.
 
-#### l-diversity:
+#### [l-diversity](https://personal.utdallas.edu/~mxk055100/courses/privacy08f_files/ldiversity.pdf):
 
 This algorithm focuses on sensitive (confidential) attributes. After applying *k-anonymity*, the dataset can be viewed as a set of *k-anonymous groups* (equivalence classes). The goal is to have at least *l distinct values* for each sensitive attribute within equivalence classes.
 
@@ -55,10 +57,29 @@ creator(s) of the plan, person(s) carrying out the anonymisation, features in th
 
 ### Manual:
 
-For the following exercises use this simple medical dataset:
+#### Linking Tables:
+Assume two following data sets ([reference](https://dl.acm.org/doi/10.5555/1858974.1858983)):
+
+| id | Name | Address | Zip Code | Sex | Year of birth | PV# | PV Date |
+|---|---|---|---|---|---|---|---|
+| 1 | Paelix | Schmidtweg 4 | 1321JE | M | 1975 | 1234-01 | 6-Jun-2001 |
+| 2 | Jans | Wagenstraat 9 | 1212ZK | F | 1960 | 3453-97 | 1-May-1997 |
+
+**Table 0: Small (raw) crime data set.**
+
+| id | Name | Address | City | Sex | Date of birth | Case# | Crime type | Crime date |
+|---|---|---|---|---|---|---|---|---|
+| 3 | Paelix | Schmidtweg 4 | Almere | M | 4-May-1975 | 2535-01 | 1 | 5-6-2001 |
+| 3 | Paelix | Schmidtweg 4 | Almere | M | 4-May-1975 | 2535-01 | 2 | 6-6-2001 |
+| 4 | Burg | Knuthstraat 48 | Tiel | F | 6-Oct-1975 | 2342-01 | 1 | 6-6-2001 |
+
+**Table 1: Small (raw) crime data set.**
+
+1. EIDs (Explicit IDentifiers): Which attributes are candidates for explicit identifier? Suppress EIDs of **Table 0** and transform to a new table **Table 0-1**. How can an intruder link subjects from **Table 0-1** to **Table 1**?
+
 
 ##### Data Set: 
-Consider the data set below in the following exercises.
+Consider this small data set below in the following exercises.
 
 | SSNumber | Age | ZipCode | Condition |
 |---|---|---|---|
@@ -75,43 +96,42 @@ Consider the data set below in the following exercises.
 | 7890-78-7890 | 47 | 23060 | viral infection | 
 | 8901-89-8901 | 49 | 23061 | viral infection | 
 
-**Table 0: Small (raw) disease data set.**
+**Table 2: Small (raw) disease data set.**
 
 #### Taxonomy tree:
 
-1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
-
-2. QIDs (Quasi IDentifiers): Which attributes can be candidates for QIDs?
-
-3. Taxonomy Tree: 
-	- Apply partial suppression and define a taxonomy tree for **Age**.
-	- Using intervals for **Age** define a taxonomy tree in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
-
-4. Taxonomy Tree: Define a taxonomy tree for **ZipCode**.
-
-5. Taxonomy Tree: Assume an attribute **Job** with the following values:
+1. Taxonomy Tree: Assume an attribute **Job** with the following values:
 ```Job={Software Developer,Writer,Civil Engineer,Lawyer,Dancer,Graphist,Journalist}```
 Propose a taxonomy tree for **Job**.
 
+2. QIDs (Quasi IDentifiers): Which attributes in **Table 2** can be candidates for QIDs?
+
+3. Taxonomy Tree: Using **Table 2**
+	- Apply partial suppression and define a taxonomy tree for **Age**.
+	- Using intervals for **Age** define a taxonomy tree in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
+
+4. Taxonomy Tree: Using **Table 2** define a taxonomy tree for **ZipCode**.
+5. Store your taxonomy trees of **Table 2** in separate csv files. 
+
+
 #### k-anonymity:
 
-1. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform  (*ad-hoc*) the original data set to a minimized data set where it satistifies *2-anonymity*.
+1. 2-anonymity of **Table 2**: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform  (*ad-hoc*) the original data set to a minimized data set where it satistifies *2-anonymity*.
 	- What are the main challenges in building a k-anonymous table?
 	- Is there only one solution or more?
 
-
-2. 4-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform  (*ad-hoc*) the original data set to a minimized data set where it satistifies *4-anonymity* (*ad-hoc*).
+2. 4-anonymity of **Table 2**: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform  (*ad-hoc*) the original data set to a minimized data set where it satistifies *4-anonymity* (*ad-hoc*).
 	- What are the main challenges in building a k-anonymous table?
 	- Is there only one solution or more?
 
-3. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
+3. Optimum Solution: Applying k-anonymity of **Table 2**, in case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*? why?
+
+4. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
 
 
 #### l-diversity:
 
-1. Optimum Solution: In case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*?
-
-2. 2-Diversity: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it it satisfies *2-diversity*.
+1. 2-Diversity of **Table 2**: **Condition** is a sensitive attriubte. Transform your *4-anonymity* solution to a new data set where it satisfies *2-diversity*.
 
 #### t-closeness:
 
@@ -127,7 +147,7 @@ Propose a taxonomy tree for **Job**.
 | 8 | 47673 | 36 | 9K | pneumonia |
 | 9 | 47607 | 32 | 10K| stomach cancer |
 
-**Table xy: Salary/Disease raw data.**
+**Table 3: Salary/Disease raw data.**
 
 | | zip code | age | salary | disease |
 |---|---|---|---|---|
@@ -141,26 +161,27 @@ Propose a taxonomy tree for **Job**.
 | 8 | 476** | 3* | 9K | pneumonia |
 | 9 | 476** | 3* | 10K| stomach cancer |
 
-**Table xz: A 3-diverse version of Salary/Disease.**
+**Table 4: A 3-diverse version of Salary/Disease.**
 
-1. Analyze Table xz. Is it 3-anonymouse? Is it 3-diverse? What are the ECs (equivalnce classes)? 
-2. Assume you have some background information about an individual and you know that released table [xz] contains the information of the invidual. Try to see what information you can gain from Table xz?
-*Hint:* Draw an axsis with a range of numbers between 1(K) and 11(K). Assign a separate symbol for each EC (for example $\times$ for EC1, $\circ$ for EC2 and $\Delta$ for EC3) and put the symbols on the axis (corresponding to each salary). What do you recognise?
+1. Analyze **Table 4**. Is it 3-anonymouse? Is it 3-diverse? What are the ECs (equivalnce classes)? 
+2. Assume you have some background information about an individual and you know that released (**Table 4**) contains the information of the invidual. Try to see what information you can gain from **Table 4**?
+*Hint:* Draw one axis with a range of numbers between 1(K) and 11(K). Assign a separate symbol for each EC (for example $\times$ for EC1, $\circ$ for EC2 and $\Delta$ for EC3) and put the symbols on the axis (corresponding to each salary). What do you recognise?
 3. How would you fix the problem you recognised in the previous exercise? Propose a new table which does not have this issue. 
 *Hint:* You may need to change the generalisations.
 
 
-
-
 ### Tools:
 
-To carry the exercises of this part, you can use our simple medical data set (Part One) or a (larger) fake data set [available here](./datasets/dataset-fake-2021/)
+To carry the exercises of this part, you can use our small medical data set (**Table 2**) or a (larger) fake data set [available here](./datasets/dataset-fake-2021/)
 
 1. ARX: Download and install ARX [Check here: https://arx.deidentifier.org/](https://arx.deidentifier.org/) 
-2. Taxonomies as CSVs: Convert your taxonomy trees (from Part One) of **Age** and **ZipCode** to CSV formats.
-3. ARX: Watch provided tutorial video to explore basic steps of ARX and try to anonymize our data set: 4-anonymity and 2-diversity.
+2. Taxonomies as CSVs: Prepare your taxonomy trees (for example **Age** and **ZipCode** from **Table 2**) in CSV formats.
+3. ARX: Watch provided tutorial video to explore basic steps of ARX and try to anonymize our data sets: 4-anonymity and 2-diversity.
+
+<!--
 4. ARXaaS: Using ARXaaS [Check here](http://145.24.222.216:3000/) and try to anonymize our data set: 4-anonymity and 2-diversity. 
 **Important**: Do not use this link for sensitive information. This link is provided only for educational purpose.
+-->
 
 # Resources:
 
@@ -182,10 +203,10 @@ To carry the exercises of this part, you can use our simple medical data set (Pa
 1. A bachelor thesis: [Anonymization of health data](https://www.duo.uio.no/bitstream/handle/10852/79902/Anonymization-of-Health-Data.pdf?sequence=13&isAllowed=y)
 
 
-
+<!--
 ### misc
 
-1. Fundamentals in data anonimization. [Read here](https://www.dataversity.net/the-fundamentals-of-data-anonymization-and-protection/#)
+1. Fundamentals in data anonymization. [Read here](https://www.dataversity.net/the-fundamentals-of-data-anonymization-and-protection/#)
 2. Is it still possible to identify anonymized data? [Read here](https://www.nytimes.com/2019/07/23/health/data-privacy-protection.html)
-
+-->
 
