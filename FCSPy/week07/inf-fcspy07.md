@@ -30,9 +30,11 @@ print(result)
 
 ## Problems:
 
-
 1. Assume we have a fair coin. We toss the coin. What is the probability of having a head?
 	- How would you approach this problem to solve it using programming?
 	- How would you model the parameters from the real world into the coding? 
+
+2. 8-queens Classic Problem: We would like to have a code to check if queens are not attacking each other. 
+	- How would you model the problem into the code?
 
 
