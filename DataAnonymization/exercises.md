@@ -108,7 +108,7 @@ Propose a taxonomy tree for **Job**.
 
 3. Taxonomy Tree: Using **Table 2**
 	- Apply partial suppression and define a taxonomy tree for **Age**.
-	- Using intervals for **Age** define a taxonomy tree in 4 levels. Lowest level, i.e. **Age_0** will be the values in the data set.
+	- Using intervals for **Age** define a taxonomy tree in 4+ levels. Lowest level, i.e. **Age_0** will be the values in the data set.
 
 4. Taxonomy Tree: Using **Table 2** define a taxonomy tree for **ZipCode**.
 5. Store your taxonomy trees of **Table 2** in separate csv files. 
@@ -176,7 +176,8 @@ To carry the exercises of this part, you can use our small medical data set (**T
 
 1. ARX: Download and install ARX [Check here: https://arx.deidentifier.org/](https://arx.deidentifier.org/) 
 2. Taxonomies as CSVs: Prepare your taxonomy trees (for example **Age** and **ZipCode** from **Table 2**) in CSV formats.
-3. ARX: Watch provided tutorial video to explore basic steps of ARX and try to anonymize our data sets: 4-anonymity and 2-diversity.
+3. ARX: Follow live demo or [tutorial video](https://www.youtube.com/watch?v=N8I-sxmMfqQ&t=568s) to explore basic steps of ARX. 
+4. Apply anonymization steps on our data sets: 4-anonymity and 2-diversity.
 
 <!--
 4. ARXaaS: Using ARXaaS [Check here](http://145.24.222.216:3000/) and try to anonymize our data set: 4-anonymity and 2-diversity. 
