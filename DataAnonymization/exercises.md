@@ -22,7 +22,7 @@ Examples of taxonomy trees: ![An example of a taxonomy tree](./pix/fig-taxonomy-
 Suppression is used to obliterate values that are identifying individuals. One common example could be replacing values of social security numbers with ' * '.
 
 #### Partial Suppression:
-One may generalise a set of values using partial suppression. In partial suppression, the original value is suppressed in different levels which results in a hierarchy of values.
+One may generalise a set of values using partial suppression (masking). In partial suppression, the original value is suppressed in different levels which results in a hierarchy of values.
 
 Examples:
 
@@ -65,7 +65,7 @@ Assume two following data sets ([reference](https://dl.acm.org/doi/10.5555/18589
 | 1 | Paelix | Schmidtweg 4 | 1321JE | M | 1975 | 1234-01 | 6-Jun-2001 |
 | 2 | Jans | Wagenstraat 9 | 1212ZK | F | 1960 | 3453-97 | 1-May-1997 |
 
-**Table 0: Small (raw) crime data set.**
+**Table 0: Small (raw) crime data set-View 1**
 
 | id | Name | Address | City | Sex | Date of birth | Case# | Crime type | Crime date |
 |---|---|---|---|---|---|---|---|---|
@@ -73,10 +73,11 @@ Assume two following data sets ([reference](https://dl.acm.org/doi/10.5555/18589
 | 3 | Paelix | Schmidtweg 4 | Almere | M | 4-May-1975 | 2535-01 | 2 | 6-6-2001 |
 | 4 | Burg | Knuthstraat 48 | Tiel | F | 6-Oct-1975 | 2342-01 | 1 | 6-6-2001 |
 
-**Table 1: Small (raw) crime data set.**
+**Table 1: Small (raw) crime data set-View 2**
 
-1. EIDs (Explicit IDentifiers): Which attributes are candidates for explicit identifier? Suppress EIDs of **Table 0** and transform to a new table **Table 0-1**. How can an intruder link subjects from **Table 0-1** to **Table 1**?
+1. EIDs (Explicit IDentifiers): Which attributes are candidates for explicit identifier? Suppress EIDs of **Table 1** and transform to a new table **Table 1-1**. How can an intruder link subjects from **Table 0** to **Table 1-1**?
 
+#### Taxonomy tree:
 
 ##### Data Set: 
 Consider this small data set below in the following exercises.
@@ -98,7 +99,6 @@ Consider this small data set below in the following exercises.
 
 **Table 2: Small (raw) disease data set.**
 
-#### Taxonomy tree:
 
 1. Taxonomy Tree: Assume an attribute **Job** with the following values:
 ```Job={Software Developer,Writer,Civil Engineer,Lawyer,Dancer,Graphist,Journalist}```
@@ -126,7 +126,7 @@ Propose a taxonomy tree for **Job**.
 
 3. Optimum Solution: Applying k-anonymity of **Table 2**, in case you have found more solutions for your transformed data set, which one would you prefer as an *optimum solution*? why?
 
-4. K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
+4. (Optional) K-anonymity: Apply 4-anonymity (*ad-hoc*) on this dataset: [a simple dataset is available here](./datasets/ds_med_01.csv).
 
 
 #### l-diversity:
