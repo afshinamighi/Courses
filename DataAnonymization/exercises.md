@@ -62,7 +62,7 @@ Assume two following data sets ([reference](https://dl.acm.org/doi/10.5555/18589
 
 | id | Name | Address | Zip Code | Sex | Year of birth | PV# | PV Date |
 |---|---|---|---|---|---|---|---|
-| 1 | * | Schmidtweg 4 | 1321JE | M | 1975 | 1234-01 | 6-Jun-2001 |
+| 1 | Paelix | Schmidtweg 4 | 1321JE | M | 1975 | 1234-01 | 6-Jun-2001 |
 | 2 | Jans | Wagenstraat 9 | 1212ZK | F | 1960 | 3453-97 | 1-May-1997 |
 
 **Table 0: Small (raw) crime data set-View 1**
