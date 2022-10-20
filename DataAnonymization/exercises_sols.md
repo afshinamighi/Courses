@@ -21,7 +21,7 @@ Consider the data set below in the following exercises.
 | 8901-89-8901 | 49 | 23061 | viral infection | 
 
 ### Exercises:
-
+<!--
 1. EIDs (Explicit IDentifiers): Which attribute is an explicit identifier? Transform the original data set to a new data set where it protects re-identifying individuals regardin EIDs.
 *Solution*: **SSNumber** is an EID. Suppresing the values of **SSNumber** or removing the column can be possible solutions.
 2. QIDs (Quasi IDentifiers): Which attributes can be candidates for QIDs?
@@ -41,6 +41,7 @@ Consider the data set below in the following exercises.
 Propose a taxonomy tree for **Job**.
 
 *Solution*: No solution, should be straightforward. 
+-->
 
 6. 2-anonymity: For the moment assume **Condition** as a non-sensitive attribute. Use your taxonomy trees and try to transform the original data set to a minimized data set where it satistifies *2-anonymity*.
 	- Is there only one solution or more?
@@ -73,7 +74,9 @@ Propose a taxonomy tree for **Job**.
 
 *Solution*: Check which one of our 4-anonymity solutions are 2-diversity.
 
+<!--
 10. ARX: Download and install ARX [Check here: https://arx.deidentifier.org/](https://arx.deidentifier.org/) 
 11. Taxonomies as CSVs: Convert your taxonomy trees of **Age** and **ZipCode** to CSV formats.
 12. ARX: Watch provided tutorial video to explore basic steps of ARX and try to anonymize our data set: 4-anonymity and 2-diversity.
 13. ARXaaS: Using ARXaaS [Check here](http://145.24.222.216:3000/) and try to anonymize our data set: 4-anonymity and 2-diversity. 
+-->
