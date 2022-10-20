@@ -75,7 +75,7 @@ Assume two following data sets ([reference](https://dl.acm.org/doi/10.5555/18589
 
 **Table 1: Small (raw) crime data set-View 2**
 
-1. EIDs (Explicit IDentifiers): Which attributes are candidates for explicit identifier? Suppress EIDs of **Table 1** and transform to a new table **Table 1-1**. How can an intruder link subjects from **Table 0** to **Table 1-1**?
+1. EIDs (Explicit IDentifiers): Which attributes are candidates for explicit identifier? Assume an intruder already has access to **Table 0 (View 1)**. You are in the process of publishing **Table 1 (View 2)**. Suppress EIDs of **Table 1** and transform to a new table **Table 1-1**. How can the intruder link subjects from **Table 0** to **Table 1-1**?
 
 #### Taxonomy tree:
 
