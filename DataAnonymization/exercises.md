@@ -80,7 +80,7 @@ Assume two following data sets ([reference](https://dl.acm.org/doi/10.5555/18589
 #### Taxonomy tree:
 
 ##### Data Set: 
-Consider this small data set below [csv is here](./datasets/small-dataset-medical/small_med_raw.csv) in the following exercises.
+Consider this small data set below ([csv is here](./datasets/small-dataset-medical/small_med_raw.csv)) in the following exercises.
 
 | SSNumber | Age | ZipCode | Condition |
 |---|---|---|---|
