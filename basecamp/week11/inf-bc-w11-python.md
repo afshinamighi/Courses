@@ -58,7 +58,7 @@ After taking this step, you will be able to:
 		- Extend your program by allowing the user to change the title and/or release year of the selected movie (after searching it). Implement this in a user friendly way.
 
 
-2. For the following problesm we need the `bannedvideogames.csv` file which can be found [here](./problems_data/bannedvideogames.csv) 
+2. For the following problems we need the `bannedvideogames.csv` file which can be found [here](./problems_data/bannedvideogames.csv) 
 	1. Implement a program that shows the following information:
 		- How many games got banned in Israel?
 		- Which country got the most games banned?

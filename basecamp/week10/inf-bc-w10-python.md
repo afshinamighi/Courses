@@ -50,7 +50,7 @@ parameter is omitted.
 	- Option Two: is to read the contents of the file twice, once to count the lines, and a second time to display the last 10 lines. 
 	- Option Three: Options one and two are  not desirable when working with **large** files. Another solution exists that only requires you to read the file once, and only requires you to store 10 lines from the file at one time. 
 
-3. Create a program that adds line numbers to a file. The name of the input file will be read from the user, as will the name of the new file that your program will create. Each line in the output file should begin with the line number, followed by a colon and a space, followed by the line from the input file.
+3. **(Optional)** Create a program that adds line numbers to a file. The name of the input file will be read from the user, as will the name of the new file that your program will create. Each line in the output file should begin with the line number, followed by a colon and a space, followed by the line from the input file.
 
 4. In this exercise you will create a Python program that identifies the longest word(s) in a file. Your program should output an appropriate message that includes the length of the longest word, along with all of the words of that length that occurred in the file. Treat any group of non-white space characters as a word, even if it includes numbers or punctuation marks.
 
@@ -58,21 +58,19 @@ parameter is omitted.
 
 6. Python uses the `#` character to mark the beginning of a comment. The comment ends at the end of the line containing the `#` character. In this exercise, you will create a program that removes all of the comments from a Python source file. Check each line in the file to determine if a `#` character is present. If it is then your program should remove all of the characters from the `#` character to the end of the line (we’ll ignore the situation where the comment character occurs inside of a string). Save the modified file using a new name that will be entered by the user. The user will also enter the name of the input file. Ensure that an appropriate error message is displayed if a problem is encountered while accessing the files.
 
-7. While generating a password by selecting random characters generally gives a rela- tively secure password, it also generally gives a password that is difficult to memorize. As an alternative, some systems construct a password by taking two English words and concatenating them. While this password isn’t as secure, it is much easier to
+7. **(Optional)** While generating a password by selecting random characters generally gives a relatively secure password, it also generally gives a password that is difficult to memorize. As an alternative, some systems construct a password by taking two English words and concatenating them. While this password isn’t as secure, it is much easier to
 memorize.
 Write a program that reads a file containing a list of words, randomly selects two
 of them, and concatenates them to produce a new password. When producing the password ensure that the total length is between 8 and 10 characters, and that each word used is at least three letters long. Capitalize each word in the password so that the user can easily see where one word ends and the next one begins. Display the password for the user.
 
-8. Spelling mistakes are only one of many different kinds of errors that might appear in a written work. Another error that is common for some writers is a repeated word. For example, an author might inadvertently duplicate a word, as shown in the following sentence:
+8. **(Optional)** Spelling mistakes are only one of many different kinds of errors that might appear in a written work. Another error that is common for some writers is a repeated word. For example, an author might inadvertently duplicate a word, as shown in the following sentence:
 `At least one value must be entered
 entered in order to compute the average.`
 Some word processors will detect this error and identify it when a spelling or grammar check is performed. In this exercise you will write a program that detects repeated words in a text file. When a repeated word is found your program should display a message that contains the line number and the repeated word. Then the program must ask the user if the repeated word to be removed or find display next one. 
 The name of the file to examine will be provided as the program’s only command line parameter. Display an appropriate error message if the user fails to provide a command line parameter, or if an error occurs while processing the file.
 
-9. Sensitive information is often removed, or redacted, from documents before they are released to the public. When the documents are released it is common for the
-redacted text to be replaced with black bars.
-In this exercise you will write a program that redacts all occurrences of sensitive
-words in a text file by replacing them with asterisks. Your program should redact sensitive words wherever they occur, even if they occur in the middle of another word. The list of sensitive words will be provided in a separate text file. Save the redacted version of the original text in a new file. The names of the original text file, sensitive words file, and redacted file will all be provided by the user.
+9. **(Optional)** Sensitive information is often removed, or redacted, from documents before they are released to the public. When the documents are released it is common for the redacted text to be replaced with black bars.
+In this exercise you will write a program that redacts all occurrences of sensitive words in a text file by replacing them with asterisks. Your program should redact sensitive words wherever they occur, even if they occur in the middle of another word. The list of sensitive words will be provided in a separate text file. Save the redacted version of the original text in a new file. The names of the original text file, sensitive words file, and redacted file will all be provided by the user.
 
 10. When one writes a function, it is generally a good idea to include a comment that outlines the function’s purpose, its parameters and its return value. However, sometimes comments are forgotten, or left out by well-intentioned programmers that plan to write them later but then never get around to it.
 Create a python program that reads one or more Python source files and identifies functions that are not immediately preceded by a comment. For the purposes of this exercise, assume that any line that begins with `def`, followed by a space, is the beginning of a function definition. Assume that the comment character, `#`, will be the first character on the previous line when the function has a comment. Display the names of all of the functions that are missing comments, along with the file name and line number where the function definition is located.
