@@ -88,12 +88,18 @@ def power_n_range(first=0,last=1,n=1):
 	- Why do you think this may not be feasible? Try to make an experiment. Implement a short code that writes a sring of length 10 in 100,000,000 lines (don't forget newline character). Then in a different code, open the file, read the lines and search for `hello`. Share your experiemnt with your teachers and classmates. *Hint:* First, calculate how much space would you need in your hard disk and make sure you have enough space and **in your program you close the file after writing**. Before trying with 100,000,000 rows test your program with 100 rows.
 	- What would be your solution for reading and processing files with large content? *Hint:* Use *generator function*. A generator function doesn’t hold the values in the main memory. It can deliver each row over time as the caller requests them.
 
+3. **(Optional)** One of the ways to measure the performance of pieces of a code is to measuer the time of the execution. For example, the time is recorded at the begining and at the end of a function. Then, the execution time can be calculated. A desirable implementation is to not change the body of an already implemented function. A decorator can be helpful here. Suppose you have an already implemented function. Decorate your function such the its execution time is printed.
+
 
 
 ## Assignment:
 
-[todo: a short background in code maintainability and reusability will be provided.]
+1. **Background** One of the features that usually software engineers try to consider in their programs is *maintainability*. The idea is to implement your code such that later can be evolved with new functionality with less need to change. 
+Consider the assignment of week 7. Your solution more likely is implemented based on a dictionary as a data structure that maps keys to values (as coding). Suppose you are asked to make your solution more generic such that if the mapping mechanism changes in the future, then your code in other methods, mainly encoding and decoding, stay untouched. For example, in the future, instead of perdefined mapping table, the value for a given key is calculated based on an algorithm.
+	- Propose your solution and refactor your already existing solution such that implements your proposal.
 
 ## Extra Steps:
 
-[todo]
+Extra resources:
+
+1. [Higher-Order Functions and Decorators](https://medium.com/python-supply/higher-order-functions-and-decorators-d6bb31a5c78d)
