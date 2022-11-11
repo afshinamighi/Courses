@@ -96,8 +96,8 @@ def power_n_range(first=0,last=1,n=1):
 
 **Background** One of the features that usually software engineers try to consider in their programs is *maintainability*. The idea is to implement your code such that later can be evolved with less need to change. 
 
-**Assignment** Consider the assignment of **week 7**. Your solution more likely is implemented based on a dictionary as a data structure that maps keys to values (to encode / decode a text). Suppose you are asked to make your solution more generic such that if the mapping mechanism / algorithm / structure changes in the future, then your implementation for the other functions, mainly encoding and decoding, remain without any changes. For example, in the future, instead of perdefined mapping table, the value for a given key is calculated based on an algorithm. Or a different data structure is used instead of a dictionary. What would be your proposal?
-	- Propose your solution and refactor your already existing solution such that implements your proposal. 
+**Assignment** Consider the assignment of **week 7**. Your solution more likely is relying on a dictionary as a data structure that maps keys to values (to encode / decode a text). Suppose you are asked to make your solution more generic such that if the mapping mechanism / algorithm / structure changes in the future, then your implementation for the other functions, mainly encoding and decoding, remain without any changes. For example, in the future, instead of perdefined mapping table, the value for a given key is calculated based on an algorithm. Or a different data structure is used instead of a dictionary. What would be your proposal?
+	- Propose your solution and refactor your already existing solution such that it implements your proposal. 
 
 ## Extra Steps:
 
