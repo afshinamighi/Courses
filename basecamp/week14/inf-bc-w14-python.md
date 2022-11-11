@@ -79,7 +79,7 @@ def power_n_range(first=0,last=1,n=1):
     for x in range(first,last):
         yield x**n
 
-#todo: imlement a for-loop to iterate over generated sequence. Experiment with and without syntactic sugar.
+#todo: implement a for-loop to iterate over generated sequence. Experiment with and without syntactic sugar.
 ```
 ## Problems:
 
