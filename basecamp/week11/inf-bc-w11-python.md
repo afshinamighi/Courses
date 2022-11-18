@@ -71,24 +71,51 @@ After taking this step, you will be able to:
 	
 	[Q] Quit Program
 
-2. For the following problems we need the `bannedvideogames.csv` file which can be found [here](./problems_data/bannedvideogames.csv) 
-	1. Implement a program that shows the following information:
+2. For the following problems we need the `bannedvideogames.csv` file which can be found in **./problems_data/bannedvideogames.csv** ([here](./problems_data/bannedvideogames.csv)).
+	
+	Step 1. Implement a program that shows the following information:
 		- How many games got banned in Israel?
 		- Which country got the most games banned?
 		- How many games within the `Assasins Creed` series got banned? Don't count duplicates banned in different countries. 
 		- Show all games (and the details) banned in `Germany`. 
 		- Show all countries (and the details) the game `Red Dead Redemption` got banned in.
 
-	2. Implement a program that makes the following adjustments and write it back to the file:
+	Step 2. Implement a program that makes the following adjustments and write it back to the file:
 		- `Germany` got a new law that accepts all games as a form of art. Remove all records with `Germany` from the file.
 		- The game `Silent Hill VI` got renamed to `Silent Hill Remastered`, rename this in all corresponding records. 
 		- The ban on the game `Bully` in `Brazil` has been lifted. Change the `status` to `Ban Lifted`.
 		- The game `Manhunt II` is by several countries. It is incorrectly listed as genre `Stealth`, change the genre to `Action` in all corresponding records.
 
-	3. Implement a program that lets the user search the dataset by country. Show all details from banned video games in that country. 
+	Step 3. Implement a program that creates a menu with the input options shown below. 
 
-	4. Create an application to add new a new record to the file. Ask the user to insert all needed information and write it to the file.
+	[I] Print request info (based on Step 1).
+	
+	[M] Make modification (based on Step 2).
 
+	[A] Add game (ask the user to insert all needed information and write it to the file). You can use the following list for keys:
+    
+    ```python
+    ['id', 'name', 'series', 'country', 'details', 'category', 'status', 'wikipedia', 'image', 'summmary', 'developer', 'publisher', 'genre', 'homepage']
+    ```
+
+	[O] Overview of banned games per country
+    
+    ```python
+    <country_name> - <amount_banned>
+    - <game_name_1>
+    - <game_name_2>
+    ...
+    ```
+
+	[S] Search the dataset by country. Show name and details from banned video games in that country.
+
+	```python 
+	<game_name_1> - <game_details_1>
+	<game_name_2> - <game_details_2>
+	...
+	```
+
+	[Q] Quit program
 
 ## Assignment:
 
@@ -134,7 +161,7 @@ car parking machine states. A possible solution would be to create a list in you
 	`[F]` Report total collected parking fee during a parking period for all parking machines.
 
 	- Input: from date, to date (date format: DD-MM-YYYY). Input is comma seperated.
-	- Output: csv file example (semicolon seperated):
+	- Output: csv file example (semicolon is used as delimiter):
 
 	```csv
     car_parking_machine;total_parking_fee
