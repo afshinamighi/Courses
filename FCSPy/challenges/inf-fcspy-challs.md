@@ -4,7 +4,7 @@
 
 This file introduces a collection of challenges that can improve your prblem solving and programming skills.
 
-## ISBN Check:
+## Challenge 1: ISBN Check
 
 ### Objectives:
 -	Evaluate the ability to apply concepts of numeral systems, boolean logic, strings, lists and tuples to solve problems.
@@ -105,4 +105,18 @@ Do not give any other output than what is described here.
 Example input and output:
 Input is given in BLUE. Required output is given in RED. 
 -->
+
+## Challenge 2: Dice Game
+
+*Note* The base of this challenge is [Project Euler: Problem 205](https://projecteuler.net/problem=205).
+
+### Objectives:
+-	Evaluate your skill in applying concepts of: simulation of probabilistic experiments, dictionaries, functions and higher-order functions.
+
+### Problem Introduction:
+
+Peter has nine four-sided (pyramidal) dice, each with faces numbered 1, 2, 3, 4. Colin has six six-sided (cubic) dice, each with faces numbered 1, 2, 3, 4, 5, 6. Peter and Colin roll their dice and compare totals: the highest total wins. The result is a draw if the totals are equal.
+
+#### Step 1:
+Implement a program that simulates the problem and prints the probability that Pyramidal Pete beats Cubic Colin?
 
