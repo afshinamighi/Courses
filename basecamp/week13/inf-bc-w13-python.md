@@ -129,14 +129,14 @@ Add the following functionality to your existing car parking machine:
 <br>This method will update details of a ParkedCar object inside the database (update based on ParkedCar.id <- Datbase Row ID)
 The following funtionality in your existing car parking machine program will be changed:
 * Removed the usage of a log file when checking-in and checking-out cars.
-* Adjust ParkedCar class so it can store: `id: int, license_plate: str, check_in: datetime, check_out: datetime, parking_fee: float` 
+* Adjust ParkedCar class so it can store: `id: int, license_plate: str, check_in: datetime, check_out: datetime, parking_fee: float`
 * car parking init: restore the state of parked cars for a car parking machine by retrieving rows from the PARKINGS table  
 * car parking check-in: insert a row into the PARKINGS to table instead of writing to the JSON state file.
 * car parking check-out: update the row in the database with check_out time and parking_fee information.
 * Adjust the carparkingreporter in such a way that it uses the database for the reports
 * Add the following item to carparkingreport: [C] Report all complete parkings over all parking machines for a specific car
 <br>input: license_plate
-<br<output: csv file example (semicolon seperated):
+<br>output: csv file example (semicolon seperated):
 <br>car_parking_machine;check_in;check_out;parking_fee 
 <br>cpm_north;09-21-2022 16:20:04;09-21-2022 17:20:30;5.00
 <br>cpm_south;09-22-2022 14:11:03;09-23-2022 19:00:10;15.00
