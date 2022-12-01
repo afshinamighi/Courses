@@ -54,7 +54,7 @@
     - ${x^2}+{y^2}=4$
     - $\\{(2,4),(3,9),(4,1),(1,4)\\}$
     - $\\{(2,4),(3,9),(4,1),(2,5)\\}$
-    - $y=\frac{(1-{x^2})}{(2-y)}$
+    - $y=\frac{(1-{x^2})}{(y-2)}$
 
 10. Given the following equations:
     - $2n + 6p = 12$, express $p$ as a function of $n$ (i.e. $p = f(n)$), and also express $n$ as a function of $p$. 
