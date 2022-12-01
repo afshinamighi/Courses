@@ -2,7 +2,7 @@
 
 ## Relations and Functions:
 
-1. Assume these two sets: $A=\\{1,2,3,4,5\\}$ and $B=\{a,b,c\}$. 
+1. Assume these two sets: $A=\\{1,2,3,4,5\\}$ and $B=\\{a,b,c\\}$. 
     - Define three different relations.
     - How many relations can be defined? $(x,y): x \in A, y \in B$
     - Define three different functions: $f: A \rightarrow B$.
