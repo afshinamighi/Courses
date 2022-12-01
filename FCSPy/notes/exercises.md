@@ -57,7 +57,7 @@
     - $y=\frac{(1-{x^2})}{(y-2)}$
 
 10. Given the following equations:
-    - $2n + 6p = 12$, express $p$ as a function of $n$ (i.e. $p = f(n)$), and also express $n$ as a function of $p$. 
+    - $2n + 6p = 12$, express $p$ as a function of $n$, and also express $n$ as a function of $p$. 
     - $x + 4y = 3x - y$, express $x$ as a function of $y$, and express $y$ as a function of $x$.
 
 
