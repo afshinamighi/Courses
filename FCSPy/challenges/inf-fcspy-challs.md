@@ -118,5 +118,12 @@ Input is given in BLUE. Required output is given in RED.
 Peter has nine four-sided (pyramidal) dice, each with faces numbered 1, 2, 3, 4. Colin has six six-sided (cubic) dice, each with faces numbered 1, 2, 3, 4, 5, 6. Peter and Colin roll their dice and compare totals: the highest total wins. The result is a draw if the totals are equal.
 
 #### Step 1:
-Implement a program that simulates the problem and prints the probability that Pyramidal Pete beats Cubic Colin?
+Implement a program that simulates the problem and prints the probability that Pyramidal Peter beats Cubic Colin?
 
+#### Step 2:
+Peter and Colin would like to play a fair game. How many dice each must have in order to have equal (with precision of 2 decimal) probability of winning? Extend your program such that can finds a solution for Peter and Colin. Hint: Peter with 14 four-sided dice and Colin with 10 six-sided dice can have a fair game with probability of winning of 0.47 for each.
+
+#### Step 3:
+Generalize your program such that:
+	- It can start with a any type and any number of dice.
+	- It can find a solution for a fair game.
