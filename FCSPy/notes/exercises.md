@@ -9,7 +9,7 @@
     4. You are in a team with 6 members. There are different tasks, one for each member. In how many ways you can divide tasks among each other? 
 
 
-2. Let $R = \\{Chines, Mexican, Pizza, Pasta, Fries\\}$ (set of dishes) and $D=\\{Fri,Sat, Sun\\}$ (set of days).
+2. Let $R = \\{chinese, Mexican, Pizza, Pasta, Fries\\}$ (set of dishes) and $D=\\{Fri,Sat, Sun\\}$ (set of days).
     - *Math* Define a function that specifies what should be prepared for a dinner in a given day.
     - *Python* Implement your function. How did you implement it?
     - *Math* How many possible mappings can you define for your function? 
@@ -55,6 +55,7 @@
     - $\\{(2,4),(3,9),(4,1),(1,4)\\}$
     - $\\{(2,4),(3,9),(4,1),(2,5)\\}$
     - $y=\frac{(1-{x^2})}{(y-2)}$
+    - $y^{2}+x^{2}=y^{3}+x^{3}+x^{4}+y^{4}$ (plot the equation [here](https://www.desmos.com/calculator))
 
 10. Given the following equations:
     - $2n + 6p = 12$, express $p$ as a function of $n$, and also express $n$ as a function of $p$. 
