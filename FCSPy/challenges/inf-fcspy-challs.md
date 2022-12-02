@@ -125,5 +125,10 @@ Peter and Colin would like to play a fair game. How many dice each must have in 
 
 #### Step 3:
 Generalize your program such that:
-	- It can start with a any type and any number of dice.
-	- It can find a solution for a fair game.
+	1. It can start with a any type and any number of dice.
+	2. It can find a solution for a fair game.
+
+#### Step 4:
+Refactor your code with applications of higher order functions. 
+**Note:** Details of the structure of the code and some test cases will be published later.
+
