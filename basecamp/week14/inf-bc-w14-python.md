@@ -116,7 +116,7 @@ sort_basedon_vowels()
 	- What would be your solution for reading and processing files with large content? *Hint:* Use *generator function*. A generator function doesn’t hold the values in the main memory. It can deliver each row over time as the caller requests them.
 -->
 
-3. One of the ways to measure the performance of pieces of a code is to measuer the time of the execution. For example, the time is recorded at the begining and at the end of a function. Then, the execution time can be calculated. A desirable implementation is to not change the body of an already implemented function. A decorator can be helpful here. Suppose you have an already implemented function. Decorate your function such the its execution time is printed.
+2. One of the ways to measure the performance of pieces of a code is to measuer the time of the execution. For example, the time is recorded at the begining and at the end of a function. Then, the execution time can be calculated. A desirable implementation is to not change the body of an already implemented function. A decorator can be helpful here. Suppose you have an already implemented function. Decorate your function such the its execution time is printed.
 
 
 
