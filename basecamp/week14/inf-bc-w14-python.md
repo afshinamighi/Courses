@@ -109,11 +109,14 @@ def sort_basedon_vowels():
 sort_basedon_vowels()
 
 ```
-2. Usually, processing a dataset a regular function holds the values in (main) memory, known as RAM memory, and returns them to the caller. Suppose you need to search for a word within a very large file (100,000,000+ rows). As you have learned before, one usual solution would be to open the file, load all the rows as a list and search the word. This may not be feasible. 
-	- Why do you think this may not be feasible? Try to make an experiment. Implement a short code that writes a sring of length 10 in 100,000,000 lines (don't forget newline character). Then in a different code, open the file, read the lines and search for `hello`. Share your experiemnt with your teachers and classmates. *Hint:* First, calculate how much space would you need in your hard disk and make sure you have enough space and **in your program you close the file after writing**. Before trying with 100,000,000 rows test your program with 100 rows.
+<!-- 
+2. Usually, processing a dataset a regular function holds the values in (main) memory, known as RAM memory, and returns them to the caller. Suppose you need to implement a function that returns the content of a file for various purposes, like searching, sending over the network, processing, etc. Assume the size of the file is very large (1000,000,000+ rows). As you have learned before, one usual solution would be to open the file, load all the rows as a list (using `readlines`) and return the list. This may not be a proper solution in a large file. 
+	- Why this may not be a proper solution? Try to make an experiment. Implement a short code that writes a sring (any text is fine) of length 10 in 1000,000,000 lines. Then in a different code, as you have learned so far, open the file, read the lines and search for `hello` (`hello` should be in the content). Share your experiemnt with your teacher and classmates. *Hint:* First, calculate how much space is available in your hard disk and make sure you have enough space (Question: How much space do you need for 1000,000,000 lines of a string with length of 10?). **Don't forget: in your program you close the file after writing**. Before trying with 1000,000,000 rows test your program with 100 rows.
+    - Try to monitor memory usage when you test your program. What is your observation?
 	- What would be your solution for reading and processing files with large content? *Hint:* Use *generator function*. A generator function doesn’t hold the values in the main memory. It can deliver each row over time as the caller requests them.
+-->
 
-3. **(Optional)** One of the ways to measure the performance of pieces of a code is to measuer the time of the execution. For example, the time is recorded at the begining and at the end of a function. Then, the execution time can be calculated. A desirable implementation is to not change the body of an already implemented function. A decorator can be helpful here. Suppose you have an already implemented function. Decorate your function such the its execution time is printed.
+3. One of the ways to measure the performance of pieces of a code is to measuer the time of the execution. For example, the time is recorded at the begining and at the end of a function. Then, the execution time can be calculated. A desirable implementation is to not change the body of an already implemented function. A decorator can be helpful here. Suppose you have an already implemented function. Decorate your function such the its execution time is printed.
 
 
 
