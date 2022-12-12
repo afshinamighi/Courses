@@ -107,7 +107,7 @@ def sort_basedon_vowels():
     print(sorted(cases)) # todo: fix the call of the function
 
 sort_basedon_vowels()
-
+```
 
 2. One of the ways to measure the performance of pieces of a code is to measuer the time of the execution. For example, the time is recorded at the begining and at the end of a function. Then, the execution time can be calculated. A desirable implementation is to not change the body of an already implemented function. A decorator can be helpful here. Suppose you have an already implemented function. Decorate your function such the its execution time is printed.
 
