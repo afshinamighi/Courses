@@ -72,26 +72,32 @@ def power_n_range(first=0,last=1,n=1):
         yield x**n
 # complete the code here
 ```
-4. *Decorators*. Take the function `power_n_range` from the previous exercise. We would like to decorate the function such that it provides better printing. For example, printing the sequence of `power_n_range(0,3,3)` will result as the following:
-```
-0^3 = 0
-1^3 = 1
-2^3 = 8
-```
-Make the given code complete and experiment with various values.
+4. *Decorators*. Someone has implemented the following division function. If we test the functions carefully, we will realize that we will face an error in case `b==0` (why?), for example: `division(10,0)`. Of course one solution is to change the implementation of the function. Another solution would be to decorate the currently existing one with a new feature that checks if it is not division by zero. 
 
 ```python
-def pretty_print(func):
-#todo: implement the body of this function
-
-
-#todo: put required syntactic sugar
-def power_n_range(first=0,last=1,n=1):
-    for x in range(first,last):
-        yield x**n
-
-#todo: implement a for-loop to iterate over generated sequence. Experiment with and without syntactic sugar.
+def division(a,b):
+    return a/b
 ```
+
+Complete the following template such that it decorates our division function with a check.
+
+```python
+def division_fixed(func):
+    def check_params(a,b):
+        #todo: complete the code here
+        
+        return check_params
+
+    
+@division_fixed
+def division(a,b):
+    return a/b
+
+print(division(10,2))
+print(division(10,0)) # This must not raise an error
+```
+
+
 ## Problems:
 
 1. The idea is to sort a list of strings. Depending on the purpose of the sorting, the criteria of sorting can be different: alphabetically based on the first letter, length of the string, etc. Use the code template below and implement sorting based on the number of vowels (descending) within a string. For example, `fall` will step before `free`.
@@ -112,13 +118,6 @@ sort_basedon_vowels()
 2. One of the ways to measure the performance of pieces of a code is to measuer the time of the execution. For example, the time is recorded at the begining and at the end of a function. Then, the execution time can be calculated. A desirable implementation is to not change the body of an already implemented function. A decorator can be helpful here. Suppose you have an already implemented function. Decorate your function such the its execution time is printed.
 
 
-<!-- todo: a draft for an optional problem (not complete yet)
-3. Usually, processing a dataset a regular function holds the values in (main) memory, known as RAM memory, and returns them to the caller. Suppose you need to implement a function that returns the content of a file for various purposes, like searching, sending over the network, processing, etc. Assume the size of the file is very large (1000,000,000+ rows). As you have learned before, one usual solution would be to open the file, load all the rows as a list (using `readlines`) and return the list. This may not be a proper solution in a large file. 
-	- Why this may not be a proper solution? Try to make an experiment. Implement a short code that writes a sring (any text is fine) of length 10 in 1000,000,000 lines. Then in a different code, as you have learned so far, open the file, read the lines and search for `hello` (`hello` should be in the content). Share your experiemnt with your teacher and classmates. *Hint:* First, calculate how much space is available in your hard disk and make sure you have enough space (Question: How much space do you need for 1000,000,000 lines of a string with length of 10?). **Don't forget: in your program you close the file after writing**. Before trying with 1000,000,000 rows test your program with 100 rows.
-    - Try to monitor memory usage when you test your program. What is your observation?
-	- What would be your solution for reading and processing files with large content? *Hint:* Use *generator function*. A generator function doesn’t hold the values in the main memory. It can deliver each row over time as the caller requests them.
--->
-
 
 ## Assignment:
 
@@ -133,3 +132,27 @@ sort_basedon_vowels()
 Extra resources:
 
 1. [Higher-Order Functions and Decorators](https://medium.com/python-supply/higher-order-functions-and-decorators-d6bb31a5c78d)
+2. 
+
+<!--
+Take the function `power_n_range` from the previous exercise. We would like to decorate the function such that it provides better printing. For example, printing the sequence of `power_n_range(0,3,3)` will result as the following:
+```
+0^3 = 0
+1^3 = 1
+2^3 = 8
+```
+Make the given code complete and experiment with various values.
+
+```python
+def pretty_print(func):
+#todo: implement the body of this function
+
+
+#todo: put required syntactic sugar
+def power_n_range(first=0,last=1,n=1):
+    for x in range(first,last):
+        yield x**n
+
+#todo: implement a for-loop to iterate over generated sequence. Experiment with and without syntactic sugar.
+```
+-->
