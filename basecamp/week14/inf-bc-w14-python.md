@@ -132,7 +132,7 @@ sort_basedon_vowels()
 Extra resources:
 
 1. [Higher-Order Functions and Decorators](https://medium.com/python-supply/higher-order-functions-and-decorators-d6bb31a5c78d)
-2. 
+
 
 <!--
 Take the function `power_n_range` from the previous exercise. We would like to decorate the function such that it provides better printing. For example, printing the sequence of `power_n_range(0,3,3)` will result as the following:
