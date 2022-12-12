@@ -72,7 +72,7 @@ def power_n_range(first=0,last=1,n=1):
         yield x**n
 # complete the code here
 ```
-4. *Decorators*. Someone has implemented the following division function. If we test the functions carefully, we will realize that we will face an error in case `b==0` (why?), for example: `division(10,0)`. Of course one solution is to change the implementation of the function. Another solution would be to decorate the currently existing one with a new feature that checks if it is not division by zero. 
+4. *Decorators*. Someone has implemented the following division function. If we test the functions carefully, we will realize that there will be an error if `b==0` (why?), for example: `division(10,0)`. Of course one solution is to change the implementation of the function. Another solution would be to decorate the currently existing one with a new feature that checks if it is not division by zero. 
 
 ```python
 def division(a,b):
