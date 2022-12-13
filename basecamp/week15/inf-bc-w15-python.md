@@ -54,17 +54,17 @@ Use the following code template:
 
 ```python
 def rec_print_folders(n:int,pref:str,root:list)->None:
-	'''
-	This function prints the contents of a given root folder with indentations.
-	'''
+    '''        
+    This function prints the contents of a given root folder with indentations.
+    '''
 	# todo: implement the body of this function
 
 def rec_count_files(root:list)->int:
-    '''
-    The functions counts number of files in a given folder (and all its sub-folders).
-    :param root: A nested list: an element either is a file (name) or a list as a sub-folder.
-    :return:
-    '''
+	'''
+	The functions counts number of files in a given folder (and all its sub-folders).
+	:param root: A nested list: an element either is a file (name) or a list as a sub-folder.
+	:return:
+	'''
 	# todo: implement the body of this function
 
 test_cases =[
