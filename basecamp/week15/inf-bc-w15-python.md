@@ -39,7 +39,7 @@ After taking this step, you will be able to:
 
 
 1. You already know how to implement a Python program that prints positive numbers less than `n` (non-recursively). Implement a *recursive* function named `rec_print(n)` that given a positive integer `n` prints all the positive numbers less than `n`. 
-2. Implement two functions, one for non-recursive and one recursive, that calculate the result of multiplication of positive numbers less that or equal given `n`. For example, given `n=5`, the result will be 120 (because 5*4*3*2*1=120). Note: In mathematics this is called calculating *n-factorial*.
+2. Implement two functions, one for non-recursive and one recursive, that calculate the result of multiplication of positive numbers less that or equal given `n`. For example, given `n=5`, the result will be 120 (because `5*4*3*2*1=120`). Note: In mathematics this is called calculating *n-factorial*.
 3. You are already familiar how to check if a list contains an item or not. Assume we would like implement such function ourselves. Implement a recursive function that given an element and a list, returns true if the list contains the element, false otherwise. It would be a good (and very simple) practice to implement a non-recursive one first. 
 4. [todo: give a code for turtle drawing a line and turning left or right. Implement recursively to generate given spiral shape.]
 
