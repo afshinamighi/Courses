@@ -42,7 +42,7 @@ After taking this step, you will be able to:
 ```python
     def rec_power(m:int,n:int)->int:
         '''
-        The function returns m to the power of n.
+        The function implements m to the power of n, recursively.
         '''
         return m*rec_power(m,n-1)
 ```  
@@ -110,4 +110,4 @@ Number of files in case:  ['file_1', 'file_2', ['file_1']]  is  3
 
 ## Extra Steps:
 
-[todo]
+1. Are you curious how to implement a code for Tower of Hanoi? Check [one sample implementation here](https://runestone.academy/ns/books/published/pythonds/Recursion/TowerofHanoi.html).
