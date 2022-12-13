@@ -34,6 +34,19 @@ After taking this step, you will be able to:
 
 <hr>
 
+## Exercises:
+
+1. Play [Tower of Hanoi](https://webgamesonline.com/towers-of-hanoi/).
+2. From elementary school we know $$5^3=5 \times 5 \times 5$$. But, we can also define it recursively: $$5^3 = 5 \times 5^2$$. Or in general we can define the concept of $$m^n$$ recursively: $$m^n=m \times m^(n-1)$$. Check the implementation below. Try the code. There is something missing which makes it incorrect. Fix the implementation.
+
+```python
+    def rec_power(m:int,n:int)->int:
+        '''
+        The function returns m to the power of n.
+        '''
+        return m*rec_power(m,n-1)
+```  
+
 
 ## Problems:
 
