@@ -1,5 +1,6 @@
 # Exercises:
 
+
 ## Relations and Functions:
 
 1. Provide solutions for the following problems:
@@ -61,6 +62,33 @@
     - $2n + 6p = 12$, express $p$ as a function of $n$, and also express $n$ as a function of $p$. 
     - $x + 4y = 3x - y$, express $x$ as a function of $y$, and express $y$ as a function of $x$.
 
+14. Assume the word `ANALYSIS`. Using these letters we generate a random word (same length). what is the probability that `SIS` be part of the generated word (for example: `ASISYLIAN`). Propose your solution using simulation, itertools and theory.
 
 
+11. Assume the word `COMPUTER`. 
+    1. How many ways can the letters in the word be arranged in a row?
+    2. We need the letters `CO` remains next to each other as a unit. In how many ways can the letters be arranged?
+    3. Let's assume we randomly arrange the letters of the word. 
+    - What is the probability that the letters `CO` remain next to each other?
+    - What is the probability that the letters `CO` remain next to each other and at the beginning?
+    4. From the letters of the word we select only three letters. In how many ways these letters can be arranged?
 
+12. Assume there is a group with 7 members.  
+    1. We would like to build a team with 4 members. In how many ways we can build the team?
+    2. Implement a code that builds possible teams of 4 members.
+
+13. Assume a *set* (or a *list*) with 8 ($n$) elements.
+    1. In how many ways we can order the members? In how many ways we can make a *list* (the same size)? ... we can *build a word*?
+    2. In how many ways we can order 4 ($k$) of them? In how many ways we can make a *list* with the size of 4 ($k$)? ... we can *build a word* of size 4 ($k$ in general a shorter word).
+
+     
+## Tutorials:
+
+In order to implement python code for the above exercises often special built-in functions and some important libraries can be useful. Here we list some learning resources:
+- `map()`:[Reference](https://docs.python.org/3/library/functions.html?highlight=map#map), [Examples](https://www.programiz.com/python-programming/methods/built-in/map)
+- `filter()`: [Reference](https://docs.python.org/3/library/functions.html?highlight=map#filter), [Examples](https://www.programiz.com/python-programming/methods/built-in/filter)
+- `join()`: [Reference](https://docs.python.org/3/library/stdtypes.html#str.join) , [Examples](https://www.programiz.com/python-programming/methods/string/join)
+- `zip()`:[Reference](https://docs.python.org/3/library/functions.html?highlight=zip#zip), [Examples](https://www.programiz.com/python-programming/methods/built-in/zip)
+- `product()`:[Reference](https://docs.python.org/3/library/itertools.html?highlight=combination#itertools.product), [Examples]()
+- `permutations()`:[Reference](https://docs.python.org/3/library/itertools.html?highlight=permutation#itertools.permutations), [Examples](https://inventwithpython.com/blog/2021/07/03/combinations-and-permutations-in-python-with-itertools/)
+- `combinations()`:[Reference](https://docs.python.org/3/library/itertools.html?highlight=combination#itertools.combinations) , [Examples](https://inventwithpython.com/blog/2021/07/03/combinations-and-permutations-in-python-with-itertools/)
