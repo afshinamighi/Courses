@@ -79,7 +79,7 @@
 
 13. Assume a *set* (or a *list*) with 8 ($n$) elements.
     1. In how many ways we can order the members? In how many ways we can make a *list* (the same size)? ... we can *build a word*?
-    2. In how many ways we can order 4 ($k$) of them? In how many ways we can make a *list* with the size of 4 ($k$)? ... we can *build a word* of size 4 ($k$ in general a shorter word).
+    2. In how many ways we can order 4 ($$k$$) of them? In how many ways we can make a *list* with the size of 4 ($k$)? ... we can *build a word* of size 4 ($$k$$ in general a shorter word).
 
      
 ## Tutorials:
