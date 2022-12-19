@@ -47,6 +47,9 @@ A book store uses a scanner to scan the ISBN numbers of the books. Unfortunetly 
 You are asked to implement a program that given an input file with the book names and isbn numbers, the program can make a list of invalid corrupted isbn numbers. The input file is a csv file in which each line has the following format:
 
 	book_name,book_isbn_number
+
+##### Test Data:
+A file containing some test cases is provided [here](./data/books_isbn_01.csv).
 	
 ##### Output 1:
 Your program is expected to process the input file and generate a list of books with invalid isbn number and corruption reason. This is an example output:
@@ -57,6 +60,9 @@ Your program is expected to process the input file and generate a list of books 
 #### Step 2:
 The scanner device has been improved and can put a dot in the position of a missing digit for some of the items.  The check digit is guaranteed to be correct for those ISBN numbers that have `.` . Extend your program that can calculate the missing digit and replace the dot with a correct digit.
 For example, an isbn code with value ISBN .-85375-390-4 can be fixed and corrected value will be ISBN 1-85375-390-4
+
+##### Test Data:
+A file containing some test cases is provided [here](./data/books_isbn_02.csv).
 
 ##### Output 2:
 [todo: in progress]
@@ -71,8 +77,7 @@ For example, an isbn code with value ISBN .-85375-390-4 can be fixed and correct
 	- Perform only validity checks explained above.
 
 ### Test Data:
-A file containing some test cases is provided [here](./data/books_isbn_01.csv).
-
+ **Step 01:** A file containing some test cases is provided [here](./data/books_isbn_01.csv).
 ### How to load data?
 Copy input data file in the same folder of your program. Copy the following code in the beginning of your program and implement your solution after the comment specified.
 
@@ -107,7 +112,7 @@ print('Data values imported from the file:',list_of_book_isbn)
 ```
 
 ### Extended Features (Optional):
-
+[todo: in progress]
 
 <!--
 Also, the input should contain only digits, character ‘X’ (capital) and character ‘.’ (dot). If any other character appears in the input, also print “INPUT ERROR” and exit the program.
