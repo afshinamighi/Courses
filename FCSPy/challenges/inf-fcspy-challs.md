@@ -42,13 +42,28 @@ Dividing control number by 11 (i.e. 249/11) we find 22 with the remaining 7. The
 
 ### Problem Statement:
 A book store uses a scanner to scan the ISBN numbers of the books. Unfortunetly , the scanner was not functioning well and the output file contains some invalid isbn numbers. The owner of the book store found out that there are two groups of invalid isbn numbers: missing digits and wrong check digit. 
+
+#### Step 1:
 You are asked to implement a program that given an input file with the book names and isbn numbers, the program can make a list of invalid corrupted isbn numbers. The input file is a csv file in which each line has the following format:
 
 	book_name,book_isbn_number
 	
+##### Output 1:
 Your program is expected to process the input file and generate a list of books with invalid isbn number and corruption reason. This is an example output:
 
 **[('Book1', 'ISBN 1-85375-390-5', 'Wrong Check Number'), ('Book3', 'ISBN -85375-390-4', 'Missing Digits'), ('Book4', 'ISBN 1-8537-390-4', 'Missing Digits')]**
+
+
+#### Step 2:
+The scanner device has been improved and can put a dot in the position of a missing digit for some of the items.  The check digit is guaranteed to be correct for those ISBN numbers that have `.` . Extend your program that can calculate the missing digit and replace the dot with a correct digit.
+For example, an isbn code with value ISBN .-85375-390-4 can be fixed and corrected value will be ISBN 1-85375-390-4
+
+##### Output 2:
+[todo: in progress]
+<!--
+
+**[('Book1', 'ISBN 1-85375-390-5', 'Wrong Check Number'), ('Book3', 'ISBN -85375-390-4', 'Missing Digits'), ('Book4', 'ISBN 1-8537-390-4', 'Missing Digits')]**
+-->
 
 ### Implementation Criteria:
 	- Read ISBN-10 from the given input csv file. 
@@ -73,7 +88,7 @@ list_of_book_isbn = []
 
 def load_data():
     try:
-        with open(input_data_file , 'r') as books_file_obj:
+        with open(input_data_file , 'r', encoding='UTF-8') as books_file_obj:
             files_content = books_file_obj.readlines()
         for item in files_content:
             book_name_isbn = item.split(',')
@@ -93,8 +108,6 @@ print('Data values imported from the file:',list_of_book_isbn)
 
 ### Extended Features (Optional):
 
-The scanner device has been improved and can put a dot in the position of missing digit. The check digit is guaranteed to be correct. Extend your program that can calculate the missing digit and replace the dot with a correct digit.
-For example, an isbn code with value ISBN .-85375-390-4 can be fixed and corrected value will be ISBN 1-85375-390-4
 
 <!--
 Also, the input should contain only digits, character ‘X’ (capital) and character ‘.’ (dot). If any other character appears in the input, also print “INPUT ERROR” and exit the program.
