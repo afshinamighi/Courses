@@ -1,7 +1,4 @@
-# Exercises:
-
-
-## Relations and Functions:
+# Exercises (Relations, Functions, Combinatorics and Probability):
 
 1. Provide solutions for the following problems:
     1. In a resturaunt you have a menue with three starters, five main dishes and four desserts. You want one item from each category. In how many ways you can order your dinner?
@@ -89,6 +86,6 @@ In order to implement python code for the above exercises often special built-in
 - `filter()`: [Reference](https://docs.python.org/3/library/functions.html?highlight=map#filter), [Examples](https://www.programiz.com/python-programming/methods/built-in/filter)
 - `join()`: [Reference](https://docs.python.org/3/library/stdtypes.html#str.join) , [Examples](https://www.programiz.com/python-programming/methods/string/join)
 - `zip()`:[Reference](https://docs.python.org/3/library/functions.html?highlight=zip#zip), [Examples](https://www.programiz.com/python-programming/methods/built-in/zip)
-- `product()`:[Reference](https://docs.python.org/3/library/itertools.html?highlight=combination#itertools.product), [Examples]()
+- `product()`:[Reference](https://docs.python.org/3/library/itertools.html?highlight=combination#itertools.product), [Examples](https://note.nkmk.me/en/python-itertools-product/)
 - `permutations()`:[Reference](https://docs.python.org/3/library/itertools.html?highlight=permutation#itertools.permutations), [Examples](https://inventwithpython.com/blog/2021/07/03/combinations-and-permutations-in-python-with-itertools/)
 - `combinations()`:[Reference](https://docs.python.org/3/library/itertools.html?highlight=combination#itertools.combinations) , [Examples](https://inventwithpython.com/blog/2021/07/03/combinations-and-permutations-in-python-with-itertools/)
