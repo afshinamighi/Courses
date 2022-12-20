@@ -139,8 +139,12 @@ Peter has nine four-sided (pyramidal) dice, each with faces numbered 1, 2, 3, 4.
 Implement a program that simulates the problem and prints the probability that Pyramidal Peter beats Cubic Colin?
 
 #### Step 2:
-Peter and Colin would like to play a fair game. How many dice each must have in order to have equal (with precision of 2 decimal) probability of winning? Extend your program such that can finds a solution for Peter and Colin. Hint: Peter with 14 four-sided dice and Colin with 10 six-sided dice can have a fair game with probability of winning of 0.47 for each. You should note that number of dice (14 and 10) are not the only solutions. Depending on how your search strategy is, you may find 7 for Peter and 5 for Colin. Both are correct.
+Peter and Colin would like to play a fair game. How many dice each must have in order to have equal (with precision of 2 decimal) probability of winning? Extend your program such that can find a solution for Peter and Colin. For example Peter with 14 four-sided dice and Colin with 10 six-sided dice can have a fair game with probability of winning of 0.47 for each. You should note that number of dice (14 and 10) are not the only solutions. Depending on how your search strategy is, you may find 7 for Peter and 5 for Colin. Both are correct. Another case would be:
+ - Peter with 4 four-sided dice and Colin with 2 nine-sided dice can have a fair game with probability of winning of 0.45 for each.
+ - Peter with 6 four-sided dice and Colin with 3 nine-sided dice can have a fair game with probability of winning of 0.46 for each.
+ - Peter with 2 four-sided dice and Colin with 1 nine-sided dice can have a fair game with probability of winning of 0.44 for each.
 
+ 
 #### Step 3:
 Generalize your program such that:
 	1. It can start with a any type and any number of dice.
