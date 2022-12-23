@@ -79,10 +79,10 @@
     2. In how many ways we can order 4 (k) of them? In how many ways we can make a *list* with the size of 4 (k)? ... we can *build a word* of size 4 (k in general a shorter word).
 
 14. Propose your solutions for the following concepts in Python:
-    - Given sets $A$ and $B$, $R=\{(a,b): a \in A, b \in B, a < b+2\}$
+    - Given sets $A$ and $B$, $R=\\{(a,b): a \in A, b \in B, a < b+2\\}$
     - 8 swimmers are racing for a medal (gold, silver, bronze). In how many different ways can the medals be distributed?
     - Using digits 0, 1, 3, 5, 7, 9, how many 4-digit numbers can be written, if we assume that no digit can be used more than once?
-    - Let $S$ be a set of numbers 1-9: $S = {1,2,...,9}$. In how many ways can we pick two numbers if:
+    - Let $S$ be a set of numbers 1-9: $S = \\{1,2,...,9\\}$. In how many ways can we pick two numbers if:
         - The order matters?
         - The order doesn’t matter?
     - You have the following ingredients in your refrigerator: bacon, cheese, eggs, salad, mustard, ketchup. How many different sandwiches can you make if you use 2 of the given ingredients?
