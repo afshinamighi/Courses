@@ -65,7 +65,9 @@ For example, an isbn code with value ISBN .-85375-390-4 can be fixed and correct
 A file containing some test cases is provided [here](./data/books_isbn_02.csv).
 
 ##### Output 2:
-[todo: in progress]
+Your program is expected to process the input file and generate a list of books with dotted isbn number and fixed isbn number. This is an example output:
+
+**[('Book10', 'ISBN 9-4.092-048-8', 'ISBN 9-42092-048-8'), ('Book03', 'ISBN 0-06.02-006-1', 'ISBN 0-06402-006-1'), ('Book06', 'ISBN .-96790-789-4', 'ISBN 9-96790-789-4'), ('Book07', 'ISBN 2-77421-15.-X', 'ISBN 2-77421-159-X'), ('Book18', 'ISBN 6-71603-10.-4', 'ISBN 6-71603-101-4')]**
 <!--
 
 **[('Book1', 'ISBN 1-85375-390-5', 'Wrong Check Number'), ('Book3', 'ISBN -85375-390-4', 'Missing Digits'), ('Book4', 'ISBN 1-8537-390-4', 'Missing Digits')]**
