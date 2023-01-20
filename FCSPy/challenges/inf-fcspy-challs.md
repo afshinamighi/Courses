@@ -78,8 +78,6 @@ Your program is expected to process the input file and generate a list of books 
 	- Do not add any additional text to the user. 
 	- Perform only validity checks explained above.
 
-### Test Data:
- **Step 01:** A file containing some test cases is provided [here](./data/books_isbn_01.csv).
 ### How to load data?
 Copy input data file in the same folder of your program. Copy the following code in the beginning of your program and implement your solution after the comment specified.
 
@@ -113,8 +111,6 @@ print('Data values imported from the file:',list_of_book_isbn)
 
 ```
 
-### Extended Features (Optional):
-[todo: in progress]
 
 <!--
 Also, the input should contain only digits, character ‘X’ (capital) and character ‘.’ (dot). If any other character appears in the input, also print “INPUT ERROR” and exit the program.
