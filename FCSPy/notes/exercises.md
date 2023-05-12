@@ -6,8 +6,23 @@
     3. You have five books and there are only three empty positions left in your shelf. In how many ways you can put them in the empty positions of your shelf.
     4. You are in a team with 6 members. There are different tasks, one for each member. In how many ways you can divide tasks among each other? 
 
+2. Assume these two sets: $A=\\{1,2,3,4,5\\}$ and $B=\\{a,b,c\\}$. 
+    - Define three different relations.
+    - How many relations can be defined? $(x,y): x \in A, y \in B$
+    - Define three different functions: $f: A \rightarrow B$.
+    - How many functions can be defined? $f: A \rightarrow B$.
+3. Let $A = \\{ Cow, Chicken, Crocus \\}$ and $B = \\{ Plant, Animal, Bird, Mammal \\}$.  Let the relation R from A to B be defined as `is a`.
+    - Express R in set-builder notation, in roster notation and in an arrow diagram.
 
-2. Let $R = \\{Chinese, Mexican, Pizza, Pasta, Fries\\}$ (set of dishes) and $D=\\{Fri,Sat, Sun\\}$ (set of days).
+4. Let $A = \\{ 2, 3, 4, 5, 6 \\}$, and let R be the relation on A (i.e. from A to A) defined as: `aRb iff a is a divisor of b`.  E.g. the divisors of 10 are 1, 2, 5, and 10.
+    - Express R in set-builder notation, in roster notation and in an arrow diagram.
+
+5. Let M be the set of months of the year 2020.
+    - Let $f: M \rightarrow Z$ be the function that outputs the number of days in a given input month.  Represent $f$ using a table and using roster notation. 
+    - *Python* Define a dictionary in Python that represents $f$.
+    - *Python* Define a function that implements $f$. 
+
+6. Let $R = \\{Chinese, Mexican, Pizza, Pasta, Fries\\}$ (set of dishes) and $D=\\{Fri,Sat, Sun\\}$ (set of days).
     - *Math* Define a function that specifies what should be prepared for a dinner in a given day.
     - *Python* Implement your function. How did you implement it?
     - *Math* How many possible mappings can you define for your function? 
@@ -17,22 +32,6 @@
     - *Math* Suppose you are asked to serve only 3-course dinner. You can choose which three dishes can be served. How many possible options do you? After your selection, in how many possible ways you can serve?
     - *Python* Implement a code that generates all these possible options (3 dishes out of 5).
 
-
-3. Assume these two sets: $A=\\{1,2,3,4,5\\}$ and $B=\\{a,b,c\\}$. 
-    - Define three different relations.
-    - How many relations can be defined? $(x,y): x \in A, y \in B$
-    - Define three different functions: $f: A \rightarrow B$.
-    - How many functions can be defined? $f: A \rightarrow B$.
-4. Let $A = \\{ Cow, Chicken, Crocus \\}$ and $B = \\{ Plant, Animal, Bird, Mammal \\}$.  Let the relation R from A to B be defined as `is a`.
-    - Express R in set-builder notation, in roster notation and in an arrow diagram.
-
-5. Let $A = \\{ 2, 3, 4, 5, 6 \\}$, and let R be the relation on A (i.e. from A to A) defined as: `aRb iff a is a divisor of b`.  E.g. the divisors of 10 are 1, 2, 5, and 10.
-    - Express R in set-builder notation, in roster notation and in an arrow diagram.
-
-6. Let M be the set of months of the year 2020.
-    - Let $f: M \rightarrow Z$ be the function that outputs the number of days in a given input month.  Represent $f$ using a table and using roster notation. 
-    - *Python* Define a dictionary in Python that represents $f$.
-    - *Python* Define a function that implements $f$. 
 
 7. Given sets $A=\\{1,2,3,4,5\\}$ and $B=\\{a,b,c,d\\}$, determine  
     - *Python* Implement a program that generates all possible relations.
@@ -59,10 +58,10 @@
     - $2n + 6p = 12$, express $p$ as a function of $n$, and also express $n$ as a function of $p$. 
     - $x + 4y = 3x - y$, express $x$ as a function of $y$, and express $y$ as a function of $x$.
 
-14. Assume the word `ANALYSIS`. Using these letters we generate a random word (same length). what is the probability that `SIS` be part of the generated word (for example: `ASISYLIAN`). Propose your solution using simulation, itertools and theory.
+11. Assume the word `ANALYSIS`. Using these letters we generate a random word (same length). what is the probability that `SIS` be part of the generated word (for example: `ASISYLIAN`). Propose your solution using simulation, itertools and theory.
 
 
-11. Assume the word `COMPUTER`. 
+12. Assume the word `COMPUTER`. 
     1. How many ways can the letters in the word be arranged in a row?
     2. We need the letters `CO` remains next to each other as a unit. In how many ways can the letters be arranged?
     3. Let's assume we randomly arrange the letters of the word. 
@@ -70,15 +69,15 @@
     - What is the probability that the letters `CO` remain next to each other and at the beginning?
     4. From the letters of the word we select only three letters. In how many ways these letters can be arranged?
 
-12. Assume there is a group with 7 members.  
+13. Assume there is a group with 7 members.  
     1. We would like to build a team with 4 members. In how many ways we can build the team?
     2. Implement a code that builds possible teams of 4 members.
 
-13. Assume a *set* (or a *list*) with 8 (n) elements.
+14. Assume a *set* (or a *list*) with 8 (n) elements.
     1. In how many ways we can order the members? In how many ways we can make a *list* (the same size)? ... we can *build a word*?
     2. In how many ways we can order 4 (k) of them? In how many ways we can make a *list* with the size of 4 (k)? ... we can *build a word* of size 4 (k in general a shorter word).
 
-14. Propose your solutions for the following concepts in Python:
+15. Propose your solutions for the following concepts in Python:
     - Given sets $A$ and $B$, $R=\\{(a,b): a \in A, b \in B, a < b+2\\}$
     - 8 swimmers are racing for a medal (gold, silver, bronze). In how many different ways can the medals be distributed?
     - Using digits 0, 1, 3, 5, 7, 9, how many 4-digit numbers can be written, if we assume that no digit can be used more than once?
