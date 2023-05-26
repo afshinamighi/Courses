@@ -24,6 +24,14 @@
     - *Math* Suppose you are asked to serve only 3-course dinner. You can choose which three dishes can be served. How many possible options do you? After your selection, in how many possible ways you can serve?
     - *Python* Implement a code that generates all these possible options (3 dishes out of 5).
 
+12. Assume these two sets: $A=\\{1,2,3,4,5\\}$ and $B=\\{a,b,c\\}$. 
+    - Define three different relations.
+    - How many relations can be defined? $(x,y): x \in A, y \in B$
+    - Define three different functions: $f: A \rightarrow B$.
+    - How many functions can be defined? $f: A \rightarrow B$.
+13. Let $A = \\{ Cow, Chicken, Crocus \\}$ and $B = \\{ Plant, Animal, Bird, Mammal \\}$.  Let the relation R from A to B be defined as `is a`.
+    - Express R in set-builder notation, in roster notation and in an arrow diagram.
+
 
 5. Given sets $A=\\{1,2,3,4,5\\}$ and $B=\\{a,b,c,d\\}$, determine  
     - *Python* Implement a program that generates all possible relations.
@@ -61,13 +69,6 @@
     1. We would like to build a team with 4 members. In how many ways we can build the team?
     2. Implement a code that builds possible teams of 4 members.
 
-12. Assume these two sets: $A=\\{1,2,3,4,5\\}$ and $B=\\{a,b,c\\}$. 
-    - Define three different relations.
-    - How many relations can be defined? $(x,y): x \in A, y \in B$
-    - Define three different functions: $f: A \rightarrow B$.
-    - How many functions can be defined? $f: A \rightarrow B$.
-13. Let $A = \\{ Cow, Chicken, Crocus \\}$ and $B = \\{ Plant, Animal, Bird, Mammal \\}$.  Let the relation R from A to B be defined as `is a`.
-    - Express R in set-builder notation, in roster notation and in an arrow diagram.
 
 
 14. Assume the word `ANALYSIS`. Using these letters we generate a random word (same length). what is the probability that `SIS` be part of the generated word (for example: `ASISYLIAN`). Propose your solution using simulation, itertools and theory.
