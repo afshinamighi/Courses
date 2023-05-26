@@ -40,9 +40,9 @@
     - *Python* Implement these functions using anonymous functions (lambda expressions).
 
 8. Which one is a function?
-    - ${x^2}+{y^2}=4$
     - $\\{(2,4),(3,9),(4,1),(1,4)\\}$
     - $\\{(2,4),(3,9),(4,1),(2,5)\\}$
+    - ${x^2}+{y^2}=4$
     - $y=\frac{(1-{x^2})}{(y-2)}$
     - $y^{2}+x^{2}=y^{3}+x^{3}+x^{4}+y^{4}$ (plot the equation [here](https://www.desmos.com/calculator))
 
