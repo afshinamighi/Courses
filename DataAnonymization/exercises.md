@@ -79,6 +79,10 @@ Assume two following data sets ([reference](https://dl.acm.org/doi/10.5555/18589
 
 #### Taxonomy tree:
 
+1. Taxonomy Tree: Assume an attribute **Job** with the following values:
+```Job={Software Developer,Writer,Civil Engineer,Lawyer,Dancer,Graphist,Journalist}```
+Propose a taxonomy tree for **Job**.
+
 ##### Data Set: 
 Consider this small data set below ([csv is here](./datasets/small-dataset-medical/small_med_raw.csv)) in the following exercises.
 
@@ -100,9 +104,6 @@ Consider this small data set below ([csv is here](./datasets/small-dataset-medic
 **Table 2: Small (raw) disease data set.**
 
 
-1. Taxonomy Tree: Assume an attribute **Job** with the following values:
-```Job={Software Developer,Writer,Civil Engineer,Lawyer,Dancer,Graphist,Journalist}```
-Propose a taxonomy tree for **Job**.
 
 2. QIDs (Quasi IDentifiers): Which attributes in **Table 2** can be candidates for QIDs?
 
