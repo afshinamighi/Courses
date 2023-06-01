@@ -66,3 +66,33 @@ interact with the user and exchange information through input and output operati
 By following this tutorial, you should now have a better understanding of computer hardware concepts, data types, variable definition, basic 
 calculations, and the connection between hardware components and Python programs. This knowledge will help you comprehend how programs utilize 
 computer hardware, perform calculations, and interact with the user through input and output operations.
+
+## Example
+
+```python
+ # Problem Statement: Calculate the area of a rectangle
+
+ # Step 1: Define variables to store the dimensions of the rectangle
+length = float(input("Enter the length of the rectangle: "))  # User input for length
+width = float(input("Enter the width of the rectangle: "))  # User input for width
+
+ # Step 2: Perform the calculation
+area = length * width
+
+ # Step 3: Display the result
+print("The area of the rectangle is:", area)
+```
+
+In this example program, we calculate the area of a rectangle using the formula `length * width`.
+
+Here's how the program works:
+
+We prompt the user to enter the length and width of the rectangle using the `input()` function. The input values are stored in the variables `length` and `width`, respectively. We use the `float()` function to convert the input strings into floating-point numbers.
+
+The area is calculated by multiplying the length and width variables and storing the result in the variable `area`.
+
+Finally, we use the print() function to display the calculated area to the user.
+
+You can run this program and provide the `length` and `width` of the `rectangle` as inputs. The program will then calculate and display the area of the rectangle.
+
+This example demonstrates the use of variables, user input, basic calculations, and output display, incorporating the concepts discussed in the tutorial.
