@@ -73,11 +73,11 @@ computer hardware, perform calculations, and interact with the user through inpu
  # Problem Statement: Calculate the area of a rectangle
 
  # Step 1: Define variables to store the dimensions of the rectangle
-length_str = input("Enter the length of the rectangle: ")
-length = float(length_str)  # User input for length
-width_str = input("Enter the width of the rectangle: ")
-width = float(width_str)
-  # User input for width
+length_str = input("Enter the length of the rectangle: "). # User input for length
+length = float(length_str)  # Converting the type
+width_str = input("Enter the width of the rectangle: ")   # User input for width
+width = float(width_str) # Converting the type
+
 
  # Step 2: Perform the calculation
 area = length * width
