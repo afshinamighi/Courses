@@ -1,4 +1,4 @@
-# Short Tutorial: Python 01 
+# Tutorial: Python 01 
 
 ## Computer Hardware
 
@@ -21,6 +21,13 @@ name = "John"
 ```
 Here, the variable `x` is assigned the value `10`, and the variable `name` is assigned the string `"John"`. When you assign a value to a variable in Python, 
 the value is stored in the computer's memory (RAM) at a specific memory address.
+
+usually we need more values to be collected in one place. Then we can use lists. A list in Python is a collection of ordered elements enclosed in square brackets, and here's an example of initializing a list:
+
+```python
+fruits = ["apple", "banana", "orange"]
+even_digits = [0,2,4,6,8]
+```
 
 ## Basic Calculations
 
