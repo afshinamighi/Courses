@@ -203,7 +203,7 @@ while True:
 
     # Take input for five subject grades and calculate total grades
     for i in range(1, 6):
-        grade = int(input("Enter grade for subject {}: ".format(i)))
+        grade = int(input("Enter grade for subject"+str(i)+": "))
         total_grades += grade
 
     # Calculate average grade
