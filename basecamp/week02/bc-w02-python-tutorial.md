@@ -16,7 +16,7 @@ print(is_greater)  # False
 ```
 In the statement `is_greater = x > y`, Python executes the comparison operation `x > y`. Here's a step-by-step explanation of how it is executed:
 
-- Python evaluates the expression on the right-hand side of the assignment operator >: x > y.
+- Python evaluates the expression on the right-hand side of the assignment operator `x > y`.
 - The values of x and y are substituted into the expression. Here `x = 5` and `y = 10`.
 - Python compares the values of `x` and `y` using the `>` operator. In this case, it checks if 5 is greater than 10.
 - The result of the comparison is a boolean value (`True` or `False`). If the comparison is true (in this case, if `x` is indeed greater than `y`), Python assigns `True` to the variable `is_greater`. Otherwise, it assigns `False`.
