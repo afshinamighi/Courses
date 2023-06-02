@@ -11,9 +11,17 @@ For example:
 ```python
 x = 5
 y = 10
-is_greater = x > y
+is_greater = x > y # Check the explanation below
 print(is_greater)  # False
 ```
+In the statement `is_greater = x > y`, Python executes the comparison operation `x > y`. Here's a step-by-step explanation of how it is executed:
+
+- Python evaluates the expression on the right-hand side of the assignment operator >: x > y.
+- The values of x and y are substituted into the expression. Here `x = 5` and `y = 10`.
+- Python compares the values of `x` and `y` using the `>` operator. In this case, it checks if 5 is greater than 10.
+- The result of the comparison is a boolean value (`True` or `False`). If the comparison is true (in this case, if `x` is indeed greater than `y`), Python assigns `True` to the variable `is_greater`. Otherwise, it assigns `False`.
+- The assignment operator `=` assigns the resulting boolean value (`True` or `False`) to the variable `is_greater`. Here, the variable `is_greater` will contain the boolean value `False` since 5 is not greater than 10.
+
 ## Conditional Statements
 
 Conditional statements allow you to execute different blocks of code based on certain conditions. The `if`-statement is used to check a condition and execute the block of code indented below it if the condition is true. If the condition is false, the block is skipped.
