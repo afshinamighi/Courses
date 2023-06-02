@@ -67,7 +67,7 @@ By following this tutorial, you should now have a better understanding of comput
 calculations, and the connection between hardware components and Python programs. This knowledge will help you comprehend how programs utilize 
 computer hardware, perform calculations, and interact with the user through input and output operations.
 
-## Example
+## Problem: Area of a rectangular
 
 ```python
  # Problem Statement: Calculate the area of a rectangle
