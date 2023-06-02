@@ -54,7 +54,6 @@ age = 25
 message = f"Hello, my name is {name} and I'm {age} years old."
 print(message)
 # Output: Hello, my name is Alice and I'm 25 years old.
-Practical Example:
 ```
 
 ### Example:
@@ -75,7 +74,7 @@ message = f"{greeting}, {name}! How are you today?"
 print(message)
 ```
 
-In this example, the user is prompted to enter the current time in 24-hour format. Based on the time, the program uses conditional statements and an f-string to generate a personalized greeting message. If the time is before `12 PM`, it says "Good morning." If the time is between `12 PM` and `6 PM`, it
+In this example, the user is prompted to enter the current time in 24-hour format. Based on the time, the program uses conditional statements and an f-string to generate a personalized greeting message. If the time is before `12 PM`, it says `"Good morning."` If the time is between `12 PM` and `6 PM`, it says `"Good afternoon"` and etc.
 
 ## while-loop:
 
@@ -102,10 +101,11 @@ while True:
 
 ```python
 # Example: Finding the sum of numbers using a while loop
+# Trace and analyze this code carefully. There are a lot to learn.
 num_sum = 0
 num = 1
 while num != 0:
-    num = int(input("Enter a number (enter 0 to exit): "))
+    num = int(input("Enter a number (enter 0 only to exit): "))
     num_sum += num
 print("Sum of numbers:", num_sum)
 ```
@@ -196,19 +196,20 @@ You are tasked with creating a program that calculates the average grade of a st
 ```python
 # Average and Final Grade Calculator
 
+# A loop to interact with the user
 while True:
-    # Step 1: Initialize variables
+    # Initialize variables
     total_grades = 0
 
-    # Step 2: Take input for five subject grades and calculate total grades
+    # Take input for five subject grades and calculate total grades
     for i in range(1, 6):
         grade = int(input("Enter grade for subject {}: ".format(i)))
         total_grades += grade
 
-    # Step 3: Calculate average grade
+    # Calculate average grade
     average_grade = total_grades / 5
 
-    # Step 4: Determine final letter grade based on average grade
+    # Determine final letter grade based on average grade
     if average_grade >= 90:
         final_grade = "A"
     elif average_grade >= 80:
@@ -220,16 +221,17 @@ while True:
     else:
         final_grade = "F"
 
-    # Step 5: Print the average grade and final letter grade
+    # Print the average grade and final letter grade
     print("Average Grade:", average_grade)
     print("Final Grade:", final_grade)
 
+    # Ask the choice of the user
     choice = input("Do you want to continue? (yes/no): ")
     if choice != "yes":
-        break
+        break  # Analyze this statement carefully.
 ```
 
-Explanation:
+#### Explanation:
 
 - The entire code block is enclosed in a while loop with the condition True, allowing the code to repeat until the user chooses to stop.
 - Inside the while loop, the user is prompted to enter grades for five subjects, and the total grades are calculated as before.
@@ -238,4 +240,16 @@ Explanation:
 - If the user enters anything other than "yes" (case-insensitive), the break statement is executed, exiting the while loop and stopping the program. Otherwise, the loop continues, and the user is prompted to enter grades for another round.
 
 This solution allows the user to repeatedly calculate average grades and final letter grades until they choose to stop by entering "no" when prompted to continue.
+
+#### Tips for a beginner programmer:
+
+- Understand the problem: Begin by understanding the problem statement and what is required. In this case, in addition to calculating the average of the grades, the program should also allow the user to choose whether to continue with another round or stop.
+
+- Plan the program flow: Break down the problem into smaller steps and plan the flow of the program. In this case, you can start with a `while`-loop that repeats until the user chooses to stop. Test it carefully and make sure that the loop works correctly. You can use `print()` statements.
+
+- Use a for loop for grade input: Inside the while loop, use a for loop to iterate five times and prompt the user to enter grades for each subject. Store each grade input in a variable, and update `total_grades` by adding the current grade to it.
+
+- Calculate average and final grade: After the for loop, calculate the average grade by dividing `total_grades` by 5. Use conditional statements to determine the final letter grade based on the average grade. Update the `final_grade` variable accordingly.
+
+- Keep practicing and seeking help: Programming skills improve with practice. Experiment with different scenarios, modify the code, and seek help from programming resources or communities when needed. Continuously learning and practicing will enhance your understanding and proficiency.
 

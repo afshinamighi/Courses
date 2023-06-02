@@ -5,8 +5,9 @@
 
 **Note:** Exercises of this learning path can be done using:
 
-1. Online Python Editor **OPyEditor**: The final program should be stored in local machine.
-2. Local Python Package: Using **BRef-01: Appendix B** Python can be installed in your local machine.
+- **Tutorial**: A short tutorial about this week can be found [here](./bc-w03-python-tutorial.md).
+- Online Python Editor **OPyEditor**: The final program should be stored in local machine.
+- Local Python Package: Using **BRef-01: Appendix B** Python can be installed in your local machine.
 
 ## Materials:
 
