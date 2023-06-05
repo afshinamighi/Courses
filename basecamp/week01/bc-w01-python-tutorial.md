@@ -108,7 +108,7 @@ A calculation is performed to determine the birth year by subtracting the age fr
 
 The `print()` function is then used to display a personalized message to the user, including their name and the calculated birth year. The string concatenation operator `+` is used to combine the strings and the variable value in the output.
 
-## Repeatitions
+## Repetitions
 
 Sometimes you need to repeat a set of steps a specific number of times, and that's where the for loop in Python comes in handy. Using the `range()` function, you can easily define the number of iterations. For example, consider the following code:
 
@@ -128,7 +128,7 @@ In this example, the `for`-loop will iterate five times, with the variable `i` t
 # Ask for number of the calculations
 num_calculations = int(input("How many calculations do you have?"))
 
-# Define the repeatitions
+# Define the repetitions
 for i in range(num_calculations):
      # Define variables to store the dimensions of the rectangle
     length_str = input("Enter the length of the rectangle: ") # User input for length
@@ -157,4 +157,4 @@ The area is calculated by multiplying the length and width variables and storing
 
 - You can run this program and provide the `length` and `width` of the `rectangle` as inputs. The program will then calculate and display the area of the rectangle.
 
-This example demonstrates the use of variables, user input, basic calculations, and output display with some repeatitions, incorporating the concepts discussed in the tutorial.
+This example demonstrates the use of variables, user input, basic calculations, and output display with some repetitions, incorporating the concepts discussed in the tutorial.
