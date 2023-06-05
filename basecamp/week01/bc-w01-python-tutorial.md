@@ -63,7 +63,7 @@ In the previous examples, you have learned about the distinction between numeric
 
 ```python
 type_of_num = type(10)
-print(type_of_num) # Output: <class 'int'>
+print(type_of_num) # Output: <class 'int'> which means the type is integer
 ```
 
 Sometimes, you may need to convert values from one type to another. This process is called type casting. Python provides various functions for type casting. For instance, you can convert an `int` to a `str` (string) using the `str()` function, or convert a str to an int using the `int()` function. Similarly, you can convert a `str` or an `int` to a `float` using the `float()` function. Here's an example of converting a `str` to an `int`:
@@ -123,32 +123,38 @@ In this example, the `for`-loop will iterate five times, with the variable `i` t
 ## Problem: Area of a rectangular
 
 ```python
- # Problem Statement: Calculate the area of a rectangle
+# Problem Statement: Calculate the area of some rectangles. The number of the calculations will be given by the user.
 
- # Step 1: Define variables to store the dimensions of the rectangle
-length_str = input("Enter the length of the rectangle: "). # User input for length
-length = float(length_str)  # Converting the type
-width_str = input("Enter the width of the rectangle: ")   # User input for width
-width = float(width_str) # Converting the type
+# Ask for number of the calculations
+num_calculations = int(input("How many calculations do you have?"))
 
+# Define the repeatitions
+for i in range(num_calculations):
+     # Define variables to store the dimensions of the rectangle
+    length_str = input("Enter the length of the rectangle: ") # User input for length
+    length = float(length_str)  # Converting the type
+    width_str = input("Enter the width of the rectangle: ")   # User input for width
+    width = float(width_str) # Converting the type
 
- # Step 2: Perform the calculation
-area = length * width
+     #Perform the calculation
+    area = length * width
 
- # Step 3: Display the result
-print("The area of the rectangle is:", area)
+     #Display the result
+    print("The area of the rectangle is:", area)
+print("All calculations are finished.")
 ```
 
 In this example program, we calculate the area of a rectangle using the formula `length * width`.
 
 Here's how the program works:
 
-We prompt the user to enter the length and width of the rectangle using the `input()` function. The input values are stored in the variables `length` and `width`, respectively. We use the `float()` function to convert the input strings into floating-point numbers.
+- First, we prompt the user to enter the number of calculations to be made. The entered value is then type-casted to an integer using the `int()` function and stored in the variable `num_calculations`. This determines the number of iterations for the loop.
 
+- Next, a `for`-loop is implemented based on the number of iterations specified by `num_calculations`. Within the loop's body, we utilize the `input()` function to request the user's input for the length and width of a rectangle. The input values are captured in the variables length and width, respectively. To ensure proper numerical representation, we convert these input strings into floating-point numbers using the `float()` function.
 The area is calculated by multiplying the length and width variables and storing the result in the variable `area`.
 
-Finally, we use the print() function to display the calculated area to the user.
+- Finally, we use the print() function to display the calculated area to the user.
 
-You can run this program and provide the `length` and `width` of the `rectangle` as inputs. The program will then calculate and display the area of the rectangle.
+- You can run this program and provide the `length` and `width` of the `rectangle` as inputs. The program will then calculate and display the area of the rectangle.
 
-This example demonstrates the use of variables, user input, basic calculations, and output display, incorporating the concepts discussed in the tutorial.
+This example demonstrates the use of variables, user input, basic calculations, and output display with some repeatitions, incorporating the concepts discussed in the tutorial.
