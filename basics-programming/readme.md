@@ -6,3 +6,5 @@ course, you will gain a solid foundation in Python and learn how to create your 
 ## Lessons
 
 ### [First Steps: Calculations](./bc-python-w01.md)
+
+### [Making Decision](./bc-python-w02.md)
