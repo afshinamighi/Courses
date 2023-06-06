@@ -87,7 +87,7 @@ var_s = "Hello"
 print(var_c * 3) # Output: ? 
 ```
 
-### Step 3: Input and Output
+### Step 2: Input and Output
 
 Input and output (I/O) in Python refer to the process of getting input from the user and displaying output to the user. Python provides built-in functions for this purpose.
 
@@ -139,23 +139,55 @@ print( str(km_value) + "kilometer is " + str(meter) + " meter.") # Output: ?
 ```
 
 
-### Step 4: Repetitions
+### Step 3: Repetitions
 
-Sometimes you need to repeat a set of steps a specific number of times, and that's where the for loop in Python comes in handy. Using the `range()` function, you can easily define the number of iterations. For example, consider the following code:
+Sometimes you need to repeat a set of steps a specific number of times, and that's where the `for`-loop in Python comes in handy. Using the `range()` function, you can easily define the number of iterations. For example, consider the following code:
 
 ```python
 for i in range(5):
     print("Iteration", i)
     print("Hello, world!")
-print("Iteration is finished"). # This is outside for-loop
+print("Iteration is finished"). # This is outside of the for-loop
 ```
+
 In this example, the `for`-loop will iterate five times, with the variable `i` taking on the values 0, 1, 2, 3, and 4 in each iteration. The *indented* body of the loop, which consists of the two `print()` statements, will be executed for each iteration. It is crucial to note that the *indented code block* defines the actions to be repeated. You can perform any desired operations within this indented body, such as printing values, manipulating data, or executing specific algorithms. The for loop provides an efficient and concise way to repeat a block of code for a specified number of iterations.
+
+`for`-loops can be also used to access the elements of a list. As mentioned before, list collects of some data values as one package. Elements of this collection can be accessed by indeces. For example, `fruits[2]` reads the *third* value of `fruits`. To access the first value you can use `fruits[0]`.
+Here is an example:
+
+```python
+Copy code
+fruits = ["apple", "banana", "orange", "grape", "mango"]
+
+# Using a for loop to iterate over the list
+for i in range(5):
+    print(fruits[i])
+```
+
+In this example, we have a list called fruits containing five elements. The program uses the `range(5)` function, which generates a sequence of numbers from 0 to 4 (total of five numbers) that will serve as the indices to access the elements of the list.
+The `for`-loop starts with the keyword `for` followed by a loop variable `i`. We use `range(5)` as the iterable, which means the loop will iterate five times, with `i` taking the values 0, 1, 2, 3, and 4 on each iteration.
+Inside the loop, the program accesses the elements of the `fruits` list using the loop variable `i` as the index. By printing `fruits[i]`, we display each element of the list on a separate line.
+
+
 
 #### Exercises:
 
-[todo]
+1. What will be the result of the program? First, answer the question without executing the program. Then, copy the program and run it.
 
-## Problems: Area of a rectangular
+```python
+numbers = [2, 4, 6, 8, 10]
+result = 0
+# Using a for loop to iterate over the list
+for i in range(5):
+    result = result + numbers[i]
+print(result) # Output: ?
+```
+
+## Step 4: Problem Solving
+
+First, a sample problem statement with a solution will be given. Please note that a beginner programmer needs several iterations to implement such a solution. There are some tips given below. Later, some problems are provided to be implemented by you.
+
+### Area of a rectangular
 
 - Problem Statement: Calculate the area of some rectangles. The number of the calculations will be given by the user.
 
@@ -194,7 +226,7 @@ The area is calculated by multiplying the length and width variables and storing
 
 This example demonstrates the use of variables, user input, basic calculations, and output display with some repetitions, incorporating the concepts discussed in the tutorial.
 
-## Problems:
+### Problems:
 
 *Note*: A systematic approach to transfer a solution in mind into a Python program can be challenging for novice programmers. A check list ([accessible here](./misc/checklist_metacog.pdf)) can be used to guide beginners to solve the following problems. Moreover, a template and a couple of examples are provided [here](./misc/template.py).
 
@@ -223,7 +255,7 @@ Implement Python programs to solve the following problem statements:
 	- *Step-02*: Partial solution, i.e. no calculation yet.
 	- *Step-03*: Complete solution, i.e. add calculations. 
 
-## Assignment:
+## Step 5: Assignment:
 
 1. The program that you create for this assignment will begin by reading the cost of a meal ordered at a restaurant from the user. Then your program will compute the tax and tip for the meal. Use your local tax rate when computing the amount of tax owing. Compute the tip as 15 percent of the meal amount (without the tax). The output from your program should include the tax amount, the tip amount, and the grand total for the meal including both the tax and the tip.
 	- Assume local tax rate 21 percent.
