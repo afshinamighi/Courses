@@ -2,6 +2,43 @@
 
 ## Strings
 
+-------------------
+
+Strings
+
+Strings in Python are sequences of characters. Here are some basic string operations:
+
+- Concatenation: Joining two or more strings together using the `+` operator.
+
+```python
+s1 = "Hello"
+s2 = "World"
+s3 = s1 + " " + s2
+print(s3)  # "Hello World"
+```
+
+- Duplicating: Creating multiple copies of a string using the `*` operator.
+
+```python
+s = "Hello"
+duplicated_s = s * 3
+print(duplicated_s)  # "HelloHelloHello"
+```
+- Scanning: Accessing individual characters in a string using indexing.
+
+```python
+s = "Hello"
+print(s[0])  # "H"
+print(s[1])  # "e"
+```
+
+- Slicing: Extracting a portion of a string using the slice notation.
+
+```python
+s = "Hello World"
+print(s[6:11])  # "World"
+```
+
 - Splitting a String: The `split()` function is used to split a string into a *list of substrings* based on a delimiter. By default, the delimiter is a space.
 
 ```python
