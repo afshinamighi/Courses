@@ -35,6 +35,8 @@ Translating your solution from a mental representation into a functional Python 
 
 - Seek Help and Resources: Don't hesitate to seek help when you encounter challenges. Online tutorials, documentation, forums, and communities can provide valuable insights and guidance. Engage with fellow programmers who can offer support and share their experiences.
 
+- Try to solve the same problem *differently*. Use alternative program structures. Solving the same problem with different solutions can be very helpful for beginners. Be creative and go beyond what you are asked in the requirements. 
+
 - Practice, Practice, Practice: The more you practice coding, the better you'll become. Challenge yourself with different problems and projects to reinforce your understanding and improve your problem-solving skills. With time and practice, implementing solutions will become more natural and enjoyable.
 
 

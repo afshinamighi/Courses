@@ -240,7 +240,7 @@ Implement Python programs to solve the following problem statements:
 
 5.  Develop a program that reads a four-digit integer from the user and displays the sum of the digits in the number. For example, if the user enters ```3141``` then your program should display ```3+1+4+1=9```.
 
-## Step 5: Assignment:
+## Step 5: Assignment
 
 1. The program that you create for this assignment will begin by reading the cost of a meal ordered at a restaurant from the user. Then your program will compute the tax and tip for the meal. Use your local tax rate when computing the amount of tax owing. Compute the tip as 15 percent of the meal amount (without the tax). The output from your program should include the tax amount, the tip amount, and the grand total for the meal including both the tax and the tip.
 	- Assume local tax rate 21 percent.
