@@ -4,12 +4,9 @@
 
 In Python 01, we focus on building first steps of interactive programs, which are sequences of instructions executed in a sequential manner without branching or loops. By following Python 01, you will develop the skills to create programs where users can input simple values, and the program will calculate and display the results as output.
 
-By the end of Python 01, you will have the knowledge and proficiency to write your own basic Python programs, allowing you to create interactive 
-applications that perform calculations based on user input. 
-
 ### Step 1: Calculations
 
-Computer hardware refers to the physical components of a computer system. Here are some essential concepts to understand:
+Having basics knowledge of computer hardware can be helpful to understand the execution of the programs better. Computer hardware refers to the physical components of a computer system. Here are some essential concepts to understand:
 
 - Hard Disk: It is a storage device that stores your files and programs permanently.
 - RAM (Random Access Memory): It is the computer's temporary memory that allows quick access to data during program execution.
@@ -38,7 +35,7 @@ even_digits = [0,2,4,6,8]
 ```
 
 Python code is executed by the CPU (Central Processing Unit) of the computer. When you perform calculations in Python using arithmetic operators, such 
-as addition, subtraction, multiplication, and division, these calculations are executed by the CPU. The CPU retrieves the values stored in the memory (RAM), performs the calculations, and stores the results back in the memory if needed. This process happens at a very high speed, allowing for quick computation.
+as addition, subtraction, multiplication, and division, these calculations are executed by the CPU. The CPU retrieves the values stored in the memory (RAM), performs the calculations, and stores the results back in the memory if needed. 
 
 For example, let's perform some basic calculations in Python:
 
@@ -59,7 +56,7 @@ print(f)  # Output: 1.6666666666666667
 In this example, the variables a and b store numeric values. The CPU performs the calculations defined by the arithmetic operators `(+, -, *, /)`, and 
 the results are printed using the `print()` function.
 
-In the previous examples, you have seen the distinction between numerical values and text, which are known as strings in Python. Python differentiates between these values based on their types. Each value in Python has a specific type associated with it, and you can determine the type of a data value using the `type()` function. For example:
+In the previous examples, you have noticed the distinction between numerical values and text, which are known as strings in Python. Python differentiates between these values based on their types. Each value in Python has a specific type associated with it, and you can determine the type of a data value using the `type()` function. For example:
 
 ```python
 type_of_num = type(10)
@@ -75,25 +72,24 @@ print(age_int)
 ```
 #### Exercises:
 
-1. [todo] Discuss what will be the result of the program (without execution).
-
-*Note*: It is not expected that students understand all the elements of these programs. The main goal is to get a taste of Python programs and discuss about them. *Trust your intuition*.
+1. What will be the result of the program? First, answer the question without executing the program. Then, copy the program and run it.
 
 ```python
-#Code 02
-a = 16
-b = 12
-b = a
-a = 22
-print(a)
-print(b)
-# what will be printed here?
+var_a = 16
+var_b = 12
+var_b = a
+var_a = 22
+print(var_a) # Output: ?
+print(var_b) # Output: ?
+var_c = var_a + var_b * 5 - 10 / 3
+print(var_c) # Output: ?
+var_s = "Hello"
+print(var_c * 3) # Output: ? 
 ```
 
 ### Step 3: Input and Output
 
-Input and output (I/O) in Python refer to the process of getting input from the user and displaying output to the user. Python provides built-in 
-functions for this purpose.
+Input and output (I/O) in Python refer to the process of getting input from the user and displaying output to the user. Python provides built-in functions for this purpose.
 
 The `input()` function allows interaction with the user by receiving input from the keyboard. It communicates with the computer's hardware I/O, which 
 includes the keyboard, to get the input. The entered value is then made available to the program for further processing. The type of the value returned to the program is of type `str`.
