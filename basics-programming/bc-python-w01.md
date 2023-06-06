@@ -105,7 +105,8 @@ Here is an example:
 ```python
 # Getting user input
 name = input("Enter your name: ") # Note the text given to input()
-age = int(input("Enter your age: ")) # Pay attention to the type casting
+age_str = input("Enter your age: ") 
+age = int(age_str) # Pay attention to the type casting
 
 # Performing a calculation
 birth_year = 2023 - age
@@ -118,11 +119,25 @@ In this example, the `input()` function is used to prompt the user to enter thei
 
 A calculation is performed to determine the birth year by subtracting the age from the current year `2023`. The result is stored in the `birth_year` variable.
 
-The `print()` function is then used to display a personalized message to the user, including their name and the calculated birth year. The string concatenation operator `+` is used to combine the strings and the variable value in the output.
+The `print()` function is then used to display a personalized message to the user, including their name and the calculated birth year. The operator `+` is used to combine the strings (in this context named as string concatenation operator) and the variable value in the output.
 
 #### Exercises:
 
-[todo]
+1. Without execution check the following program? What will be printed? Is the program correct? Try to understand all the details. Propose your solution if you think it is not correct and run it. 
+
+```python
+# This program converts km to m
+
+# Getting the user input
+km_value = input("Enter the value for km:")
+
+# Calculate
+meter = km_value * 1000
+
+# Print result
+print( str(km_value) + "kilometer is " + str(meter) + " meter.") # Output: ?
+```
+
 
 ### Step 4: Repetitions
 
