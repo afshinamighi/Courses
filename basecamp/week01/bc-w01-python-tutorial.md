@@ -1,6 +1,6 @@
-# Tutorial: Python 01 
+# Python 01: Tutorial
 
-## Computer Hardware
+### Computer Hardware
 
 Computer hardware refers to the physical components of a computer system. Here are some essential concepts to understand:
 
@@ -11,7 +11,8 @@ I/O (Input/Output): It refers to the communication between the computer and exte
 When you run a program on your computer, the program and its associated data are loaded from the hard disk into the computer's RAM. The CPU then 
 executes the program instructions stored in RAM.
 
-## Variables and Data Types
+### Variables and Data Types
+
 In programming, variables are used to store and manipulate data. In Python, you can define variables by giving them a name and assigning a value to 
 them. For example:
 
@@ -30,7 +31,7 @@ fruits = ["apple", "banana", "orange"]
 even_digits = [0,2,4,6,8]
 ```
 
-## Basic Calculations
+### Basic Calculations
 
 Python code is executed by the CPU (Central Processing Unit) of the computer. When you perform calculations in Python using arithmetic operators, such 
 as addition, subtraction, multiplication, and division, these calculations are executed by the CPU.
@@ -54,10 +55,9 @@ print(e)  # Output: 15
 print(f)  # Output: 1.6666666666666667
 ```
 
-In this example, the variables a and b store numeric values. The CPU performs the calculations defined by the arithmetic operators `(+, -, *, /)`, and 
-the results are printed using the `print()` function.
+In this example, the variables a and b store numeric values. The CPU performs the calculations defined by the arithmetic operators `(+, -, *, /)`, and the results are printed using the `print()` function.
 
-## Data Types
+### Data Types
 
 In the previous examples, you have learned about the distinction between numerical values and text, which are known as strings in Python. Python differentiates between these values based on their types. Each value in Python has a specific type associated with it, and you can determine the type of a data value using the `type()` function. For example:
 
@@ -74,7 +74,7 @@ age_int = int(age_str)
 print(age_int)
 ```
 
-## Input and Output in Python
+### Input and Output in Python
 
 Input and output (I/O) in Python refer to the process of getting input from the user and displaying output to the user. Python provides built-in 
 functions for this purpose.
@@ -108,53 +108,3 @@ A calculation is performed to determine the birth year by subtracting the age fr
 
 The `print()` function is then used to display a personalized message to the user, including their name and the calculated birth year. The string concatenation operator `+` is used to combine the strings and the variable value in the output.
 
-## Repetitions
-
-Sometimes you need to repeat a set of steps a specific number of times, and that's where the for loop in Python comes in handy. Using the `range()` function, you can easily define the number of iterations. For example, consider the following code:
-
-```python
-for i in range(5):
-    print("Iteration", i)
-    print("Hello, world!")
-print("Iteration is finished"). # This is outside for-loop
-```
-In this example, the `for`-loop will iterate five times, with the variable `i` taking on the values 0, 1, 2, 3, and 4 in each iteration. The *indented* body of the loop, which consists of the two `print()` statements, will be executed for each iteration. It is crucial to note that the *indented code block* defines the actions to be repeated. You can perform any desired operations within this indented body, such as printing values, manipulating data, or executing specific algorithms. The for loop provides an efficient and concise way to repeat a block of code for a specified number of iterations.
-
-## Problem: Area of a rectangular
-
-```python
-# Problem Statement: Calculate the area of some rectangles. The number of the calculations will be given by the user.
-
-# Ask for number of the calculations
-num_calculations = int(input("How many calculations do you have?"))
-
-# Define the repetitions
-for i in range(num_calculations):
-     # Define variables to store the dimensions of the rectangle
-    length_str = input("Enter the length of the rectangle: ") # User input for length
-    length = float(length_str)  # Converting the type
-    width_str = input("Enter the width of the rectangle: ")   # User input for width
-    width = float(width_str) # Converting the type
-
-     #Perform the calculation
-    area = length * width
-
-     #Display the result
-    print("The area of the rectangle is:", area)
-print("All calculations are finished.")
-```
-
-In this example program, we calculate the area of a rectangle using the formula `length * width`.
-
-Here's how the program works:
-
-- First, we prompt the user to enter the number of calculations to be made. The entered value is then type-casted to an integer using the `int()` function and stored in the variable `num_calculations`. This determines the number of iterations for the loop.
-
-- Next, a `for`-loop is implemented based on the number of iterations specified by `num_calculations`. Within the loop's body, we utilize the `input()` function to request the user's input for the length and width of a rectangle. The input values are captured in the variables length and width, respectively. To ensure proper numerical representation, we convert these input strings into floating-point numbers using the `float()` function.
-The area is calculated by multiplying the length and width variables and storing the result in the variable `area`.
-
-- Finally, we use the print() function to display the calculated area to the user.
-
-- You can run this program and provide the `length` and `width` of the `rectangle` as inputs. The program will then calculate and display the area of the rectangle.
-
-This example demonstrates the use of variables, user input, basic calculations, and output display with some repetitions, incorporating the concepts discussed in the tutorial.
