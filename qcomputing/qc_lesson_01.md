@@ -15,11 +15,11 @@ Nowadays we are all used to program in higher level languages: C, Python, Java, 
 This is just a test for writing matrix:
 
 $$
-[
+\[
   A_{2\times2} =
   \left[ {\begin{array}{cc}
     a_{11} & a_{12} \\
     a_{21} & a_{22} \\
   \end{array} } \right]
-]
+\]
 $$
