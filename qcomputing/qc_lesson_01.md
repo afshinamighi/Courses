@@ -12,7 +12,7 @@ Computation usually involves more complex calculation that just simple addition.
 Nowadays we are all used to program in higher level languages: C, Python, Java, etc. We hardy think about the basics. It is mainly because there is a long history in development of classical computers and higher layers in abstracting details. But, in order to move towards quantum computing, we need to refresh our knowledge and understanding of classical computers.
 
 
-$
+$$
 \[
   A_{2\times2} =
   \left[ {\begin{array}{cc}
@@ -20,4 +20,4 @@ $
     a_{21} & a_{22} \\
   \end{array} } \right]
 \]
-$
+$$
