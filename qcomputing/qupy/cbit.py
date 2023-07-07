@@ -4,7 +4,6 @@ import numpy as np
 def vectorize(seq:str):
     # todo: validate the input, all rows only digits, rows same size
     assert(isinstance(seq,str))
-    # Split the string using the comma separator
     segments = seq.split(',')
     # Convert segments to integer arrays
     digit_arrays = [np.array(list(segment), dtype=int) for segment in segments]
@@ -21,8 +20,11 @@ class VBit:
         return state
     def get_vector(self) ->np.ndarray:
         return self.vec_value
-    def __str__(self) -> str:
+    def str_vector(self) -> str:
         return np.array2string(self.vec_value)
+    def dirac(self,nbits=0):
+        return '|'+str(bin(self.num_value)).removeprefix('0b').zfill(nbits)+'>'
+
 
 class VCBit(VBit):
     def __init__(self,value:object):
@@ -35,6 +37,8 @@ class VCBit(VBit):
             self.num_value = int(value)
         else:
             raise Exception('Invalid type for VCBit initialization.')
+    def __str__(self) -> str:
+        return self.dirac()
 
 
 
@@ -77,18 +81,23 @@ class VCBits(VBit):
         for b in vcbits[1:]:
             result = np.tensordot(result , b.get_vector() , axes = 0)
         self.vec_value = result.reshape(2**len(vcbits),1)
+        is_valid = np.count_nonzero(self.vec_value) == 1 and np.sum(self.vec_value) == 1
+        self.num_value = np.nonzero(self.vec_value)[0][0] if is_valid else None
+        self.num_bits = len(vcbits)
+    def __str__(self) -> str:
+        return self.dirac(self.num_bits)
+
 
 class VCTwoBits(VCBits):
     def __init__(self, *value) -> None:
         if len(value)==1 and isinstance(value[0],np.ndarray):
-            is_valid = np.count_nonzero(value) == 1 and np.sum(value) == 1
+            is_valid = np.count_nonzero(value[0]) == 1 and np.sum(value[0]) == 1
             self.vec_value = value[0]
-            self.num_value = np.nonzero(value) if is_valid else None
+            (self.num_value , self.num_bits) = (np.nonzero(value[0])[0][0] , 2) if is_valid else (None , None)         
         elif len(value)==2 and isinstance(value[0],VCBit) and isinstance(value[1],VCBit):
             super().__init__(*value)
         else:
             raise Exception('Invalid type for VCBit initialization.')
-
 
 class VCTwoBitsOp:
     def __init__(self,operation_vector:np.ndarray) -> None:
@@ -99,11 +108,22 @@ class VCTwoBitsOp:
         result = VCTwoBits(dot_resul)
         return result
 
-
 class VCSwap(VCTwoBitsOp):
     def __init__(self) -> None:
         operation_vector = vectorize('1000,0010,0100,0001')
         super().__init__(operation_vector)
+
+class VCLCNot(VCTwoBitsOp):
+    def __init__(self) -> None:
+        operation_vector = vectorize('1000,0100,0001,0010')
+        super().__init__(operation_vector)
+
+class VCRCNot(VCTwoBitsOp):
+    def __init__(self) -> None:
+        operation_vector = vectorize('1000,0001,0010,0100')
+        super().__init__(operation_vector)
+
+
 
 def tests():
     print(f'negation of {VCBitZero()} is {VCBitNot().apply(VCBitZero())}')
@@ -117,6 +137,15 @@ def tests():
     print(f'Swap of {VCTwoBits(VCBitZero(),VCBitOne())} is {VCSwap().apply(VCTwoBits(VCBitZero(),VCBitOne()))}')
     print(f'Swap of {VCTwoBits(VCBitZero(),VCBitZero())} is {VCSwap().apply(VCTwoBits(VCBitZero(),VCBitZero()))}')
     print(f'Swap of {VCTwoBits(VCBitOne(),VCBitOne())} is {VCSwap().apply(VCTwoBits(VCBitOne(),VCBitOne()))}')
+    print(f'Left cNot of {VCTwoBits(VCBitOne(),VCBitOne())} is {VCLCNot().apply(VCTwoBits(VCBitOne(),VCBitOne()))}')
+    print(f'Left cNot of {VCTwoBits(VCBitOne(),VCBitZero())} is {VCLCNot().apply(VCTwoBits(VCBitOne(),VCBitZero()))}')
+    print(f'Left cNot of {VCTwoBits(VCBitZero(),VCBitOne())} is {VCLCNot().apply(VCTwoBits(VCBitZero(),VCBitOne()))}')
+    print(f'Left cNot of {VCTwoBits(VCBitZero(),VCBitZero())} is {VCLCNot().apply(VCTwoBits(VCBitZero(),VCBitZero()))}')
+    print(f'Right cNot of {VCTwoBits(VCBitOne(),VCBitOne())} is {VCRCNot().apply(VCTwoBits(VCBitOne(),VCBitOne()))}')
+    print(f'Right cNot of {VCTwoBits(VCBitOne(),VCBitZero())} is {VCRCNot().apply(VCTwoBits(VCBitOne(),VCBitZero()))}')
+    print(f'Right cNot of {VCTwoBits(VCBitZero(),VCBitOne())} is {VCRCNot().apply(VCTwoBits(VCBitZero(),VCBitOne()))}')
+    print(f'Right cNot of {VCTwoBits(VCBitZero(),VCBitZero())} is {VCRCNot().apply(VCTwoBits(VCBitZero(),VCBitZero()))}')
+
 
 
 
