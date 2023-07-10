@@ -1,52 +1,54 @@
 import numpy as np
+import sympy as sym
 
-
-def vectorize(seq:str):
-    # todo: validate the input, all rows only digits, rows same size
-    assert(isinstance(seq,str))
-    segments = seq.split(',')
-    # Convert segments to integer arrays
-    digit_arrays = [np.array(list(segment), dtype=int) for segment in segments]
-    # Stack the digit arrays vertically
-    arr = np.vstack(digit_arrays)
-    return arr
+class Bits:
+    '''Represents one or multiple rows of sequence of bits as string '''
+    def __init__(self,seq:str) -> None:
+        assert(isinstance(seq,str))
+        assert(all([(c.isdigit() or c in [',',' ','-']) for c in seq]))
+        self.bits_value = seq
+    def vectorize(self):
+        segments = self.bits_value.split(',')
+        #assert(all(len(s)==len(segments[0]) for s in segments))
+        digit_arrays = [np.array([int(c) for c in segment.split(' ')], dtype=int) for segment in segments]
+        # Stack the digit arrays vertically
+        arr = np.vstack(digit_arrays)
+        return arr
 
 class VBit: 
+    '''Vector representation of one bit'''
     def __init__(self) -> None:
         self.vec_value = np.array([[None],[None]])
-        self.num_value = None
-    def __getstate__(self) -> object:
-        state = self.__dict__.copy()
-        return state
     def get_vector(self) ->np.ndarray:
         return self.vec_value
-    def str_vector(self) -> str:
+    def __str__(self) -> str:
         return np.array2string(self.vec_value)
-    def dirac(self,nbits=0):
-        return '|'+str(bin(self.num_value)).removeprefix('0b').zfill(nbits)+'>'
 
 
 class VCBit(VBit):
+    '''Vector representation of one classical bit (0 or 1)'''
     def __init__(self,value:object):
         super().__init__()
         if isinstance(value,np.ndarray):
             self.vec_value = value
             self.num_value = 0 if value[0]==1 and value[1]==0 else 1 if value[0]==0 and value[1]==1 else None
         elif isinstance(value,bool):
-            self.vec_value = vectorize('0,1') if value else vectorize('1,0')
+            self.vec_value = Bits('0,1').vectorize() if value else Bits('1,0').vectorize()
             self.num_value = int(value)
         else:
             raise Exception('Invalid type for VCBit initialization.')
+    def dirac(self,nbits=0):
+        return '|'+str(bin(self.num_value)).removeprefix('0b').zfill(nbits)+'>'
     def __str__(self) -> str:
-        return self.dirac()
-
-
+        return self.dirac() if self.num_value is type(int) else super().__str__()
 
 class VCBitZero(VCBit):
+    '''Vector representation of one classical bit 0'''
     def __init__(self) -> None:
         super().__init__(False)
 
 class VCBitOne(VCBit):
+    '''Vector representation of one classical bit 1'''
     def __init__(self) -> None:
         super().__init__(True)
 
@@ -64,15 +66,16 @@ class VCBitUnaryOp:
         return VCBit(np.dot(self.op_vector,operand.get_vector()))
 
 class VCBitNot(VCBitUnaryOp):
+    '''Not (Flip) operation'''
     def __init__(self) -> None:
-        super().__init__(vectorize('01,10'))
-
+        super().__init__(Bits('0 1,1 0').vectorize())
 
 class VCBitIdentity(VCBitUnaryOp):
+    '''Identity operation'''
     def __init__(self) -> None:
-        super().__init__(vectorize('10,01'))
+        super().__init__(Bits('1 0,0 1').vectorize())
 
-class VCBits(VBit):
+class VCBits(VCBit):
     def __init__(self,*vcbits:VCBit) -> None:
         assert len(vcbits) > 1 # minimum two bits
         for b in vcbits:
@@ -86,7 +89,6 @@ class VCBits(VBit):
         self.num_bits = len(vcbits)
     def __str__(self) -> str:
         return self.dirac(self.num_bits)
-
 
 class VCTwoBits(VCBits):
     def __init__(self, *value) -> None:
@@ -109,48 +111,66 @@ class VCTwoBitsOp:
         return result
 
 class VCSwap(VCTwoBitsOp):
+    '''Swap (Exchange) operation'''
     def __init__(self) -> None:
-        operation_vector = vectorize('1000,0010,0100,0001')
+        operation_vector = Bits('1 0 0 0,0 0 1 0,0 1 0 0,0 0 0 1').vectorize()
         super().__init__(operation_vector)
 
 class VCLCNot(VCTwoBitsOp):
+    '''left Control Not Operation'''
     def __init__(self) -> None:
-        operation_vector = vectorize('1000,0100,0001,0010')
+        operation_vector = Bits('1 0 0 0,0 1 0 0,0 0 0 1,0 0 1 0').vectorize()
         super().__init__(operation_vector)
 
 class VCRCNot(VCTwoBitsOp):
+    '''right Control Not Operation'''
     def __init__(self) -> None:
-        operation_vector = vectorize('1000,0001,0010,0100')
+        operation_vector = Bits('1 0 0 0,0 0 0 1,0 0 1 0,0 1 0 0').vectorize()
         super().__init__(operation_vector)
 
+# Exercise: Prove / Experiment that Swap_ij = C_ij C_ji C_ij
 
+class VCBitZ(VCBitUnaryOp):
+    '''Z operation'''
+    def __init__(self) -> None:
+        super().__init__(Bits('1 0,0 -1').vectorize())
+
+class VCBitH(VCBitUnaryOp):
+    '''Hadamard operation'''
+    def __init__(self) -> None:
+        super().__init__(sym.sqrt(2)*Bits('1 1,1 -1').vectorize())
+
+# Exercise: Prove / Show C_ji = (H_iH_j) C_ij (H_iH_j) , this means using H, one can change C_ij to C_ji, changing the control and target bits. 
 
 def tests():
-    print(f'negation of {VCBitZero()} is {VCBitNot().apply(VCBitZero())}')
-    print(f'negation of {VCBitOne()} is {VCBitNot().apply(VCBitOne())}')
-    print(f'Identity of {VCBitZero()} is {VCBitIdentity().apply(VCBitZero())}')
-    print(f'Identity of {VCBitOne()} is {VCBitIdentity().apply(VCBitOne())}')
     print(f'Two bits of {VCBitOne()} and {VCBitZero()} is {VCBits(VCBitOne(),VCBitZero())}')
     print(f'Two bits of {VCBitOne()} and {VCBitOne()} is {VCBits(VCBitOne(),VCBitOne())}')
     print(f'Three bits of {VCBitOne()} and {VCBitOne()} and {VCBitZero()} is {VCBits(VCBitOne(),VCBitOne(),VCBitZero())}')
-    print(f'Swap of {VCTwoBits(VCBitOne(),VCBitZero())} is {VCSwap().apply(VCTwoBits(VCBitOne(),VCBitZero()))}')
-    print(f'Swap of {VCTwoBits(VCBitZero(),VCBitOne())} is {VCSwap().apply(VCTwoBits(VCBitZero(),VCBitOne()))}')
-    print(f'Swap of {VCTwoBits(VCBitZero(),VCBitZero())} is {VCSwap().apply(VCTwoBits(VCBitZero(),VCBitZero()))}')
-    print(f'Swap of {VCTwoBits(VCBitOne(),VCBitOne())} is {VCSwap().apply(VCTwoBits(VCBitOne(),VCBitOne()))}')
-    print(f'Left cNot of {VCTwoBits(VCBitOne(),VCBitOne())} is {VCLCNot().apply(VCTwoBits(VCBitOne(),VCBitOne()))}')
-    print(f'Left cNot of {VCTwoBits(VCBitOne(),VCBitZero())} is {VCLCNot().apply(VCTwoBits(VCBitOne(),VCBitZero()))}')
-    print(f'Left cNot of {VCTwoBits(VCBitZero(),VCBitOne())} is {VCLCNot().apply(VCTwoBits(VCBitZero(),VCBitOne()))}')
-    print(f'Left cNot of {VCTwoBits(VCBitZero(),VCBitZero())} is {VCLCNot().apply(VCTwoBits(VCBitZero(),VCBitZero()))}')
-    print(f'Right cNot of {VCTwoBits(VCBitOne(),VCBitOne())} is {VCRCNot().apply(VCTwoBits(VCBitOne(),VCBitOne()))}')
-    print(f'Right cNot of {VCTwoBits(VCBitOne(),VCBitZero())} is {VCRCNot().apply(VCTwoBits(VCBitOne(),VCBitZero()))}')
-    print(f'Right cNot of {VCTwoBits(VCBitZero(),VCBitOne())} is {VCRCNot().apply(VCTwoBits(VCBitZero(),VCBitOne()))}')
-    print(f'Right cNot of {VCTwoBits(VCBitZero(),VCBitZero())} is {VCRCNot().apply(VCTwoBits(VCBitZero(),VCBitZero()))}')
 
+    vcbits = [VCBitZero(),VCBitOne()]
+    def test_one_bit_ops():
+        onebitops = [VCBitNot(),VCBitIdentity(),VCBitZ(),VCBitH()]
+        for act in onebitops:
+            for op in vcbits:
+                print(f'{act.__doc__} of {op} is {act.apply(op)}' )
 
+    def test_two_bits_ops():
+        vctwobits = [VCTwoBits(b1,b2) for b1 in vcbits for b2 in vcbits]
+        twobitsops = [VCSwap(),VCLCNot(),VCRCNot()]
+        for act in twobitsops:
+            for op in vctwobits:
+                print(f'{act.__doc__} of {op} is {act.apply(op)}' )
 
-
-
+    test_one_bit_ops()
+    test_two_bits_ops()
 
 
 
 tests()
+
+def experiment():
+    x = sym.sqrt(2)
+    v = np.array([[1],[0]])
+    print(x*v)
+
+experiment()
