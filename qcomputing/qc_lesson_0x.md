@@ -4,10 +4,10 @@
 
 ```math
 H = \frac{1}{\sqrt(2)}    
-[\begin{array}{cc}
+\[{\begin{array}{cc}
     1 & 1 \\
     1 & -1 \\
-\end{array}] 
+\end{array}}\] 
 ```
 ```math
   H |0\rangle = |+\rangle = \frac{1}{\sqrt(2)} |0\rangle + \frac{1}{\sqrt(2)} |1\rangle
