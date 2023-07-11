@@ -2,4 +2,7 @@
 
 ## Summary of the QC opreations
 
-1. [ $ H |0\rangle = |+\rangle $ ]
+
+```math
+ $ H |0\rangle = |+\rangle $ 
+```
