@@ -3,12 +3,11 @@
 ## Summary of the QC opreations
 
 ```math
-H = \frac{1}{\sqrt(2)}   
-  \left[ {\begin{array}{cc}
+H = \frac{1}{\sqrt(2)}    
+\begin{array}{cc}
     1 & 1 \\
     1 & -1 \\
-  \end{array} } \right]
-
+\end{array} 
 ```
 ```math
   H |0\rangle = |+\rangle = \frac{1}{\sqrt(2)} |0\rangle + \frac{1}{\sqrt(2)} |1\rangle
