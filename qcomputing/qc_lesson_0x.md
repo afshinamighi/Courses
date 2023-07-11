@@ -4,5 +4,6 @@
 
 
 ```math
- $ H |0\rangle = |+\rangle $ 
+  H |0\rangle = |+\rangle 
+  H |1\rangle = |-\rangle 
 ```
