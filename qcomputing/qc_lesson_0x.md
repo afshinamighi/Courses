@@ -20,6 +20,17 @@ X = \left[{\begin{array}{cc}
 ```
 
 
+```math
+Z = \left[{\begin{array}{cc}
+    1 & 0 \\
+    0 & -1 \\
+\end{array}}\right] 
+,
+  Z |1\rangle = -|1\rangle , Z |0\rangle = |0\rangle
+```
+
+
+
 
 ```math
 H = \frac{1}{\sqrt(2)}    
@@ -33,5 +44,11 @@ H = \frac{1}{\sqrt(2)}
 ```
 ```math   
   H |1\rangle = |-\rangle = \frac{1}{\sqrt(2)} |0\rangle - \frac{1}{\sqrt(2)} |1\rangle
+```
+```math   
+  H |+\rangle = |0\rangle 
+```
+```math   
+  H |-\rangle = |1\rangle 
 ```
 
