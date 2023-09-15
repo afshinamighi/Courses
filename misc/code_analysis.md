@@ -2,7 +2,6 @@
 
 ```python
 input_sequence = input("Enter a sequence of numbers separated by spaces: ")
-
 number_strings = input_sequence.split()
 for i in range(len(number_strings)):
     number_strings[i] = int(number_strings[i])
