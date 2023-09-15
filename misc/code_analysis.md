@@ -28,16 +28,13 @@ print(f"processed sequence: {processed_sequence}")
 
 ```python
 def process(numbers):
-    # Perform a simple bubble sort algorithm without using a list
     n = len(numbers)
     for i in range(n - 1):
         for j in range(0, n - i - 1):
             if numbers[j] > numbers[j + 1]:
-                # Swap numbers[j] and numbers[j+1]
                 numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
 input_sequence = input("Enter a sequence of numbers separated by spaces: ")
-
 number_strings = input_sequence.split()
 
 for i in range(len(number_strings)):
@@ -45,7 +42,6 @@ for i in range(len(number_strings)):
 
 process(number_strings)
 
-string using a loop
 processed_sequence = ""
 for num in number_strings:
     processed_sequence += str(num) + " "
