@@ -14,16 +14,16 @@ for i in range(n - 1):
             # Swap number_strings[j] and number_strings[j+1]
             number_strings[j], number_strings[j + 1] = number_strings[j + 1], number_strings[j]
 
-# Convert the sorted number strings back to a space-separated string using a loop
-sorted_sequence = ""
+# Convert the processed number strings back to a space-separated string using a loop
+processed_sequence = ""
 for num_str in number_strings:
-    sorted_sequence += str(num_str) + " "
+    processed_sequence += str(num_str) + " "
 
 # Remove the trailing space
-sorted_sequence = sorted_sequence.rstrip()
+processed_sequence = processed_sequence.rstrip()
 
-# Print the sorted sequence
-print(f"Sorted sequence: {sorted_sequence}")
+# Print the processed sequence
+print(f"processed sequence: {processed_sequence}")
 ```
 
 ```python
@@ -37,12 +37,19 @@ def process(numbers):
                 numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
 input_sequence = input("Enter a sequence of numbers separated by spaces: ")
+
 number_strings = input_sequence.split()
+
 for i in range(len(number_strings)):
     number_strings[i] = int(number_strings[i])
 
 process(number_strings)
 
-sorted_sequence = " ".join(map(str, number_strings))
-print(f"Sorted sequence: {sorted_sequence}")
+string using a loop
+processed_sequence = ""
+for num in number_strings:
+    processed_sequence += str(num) + " "
+
+processed_sequence = processed_sequence.rstrip()
+print(f"processed sequence: {processed_sequence}")
 ```
