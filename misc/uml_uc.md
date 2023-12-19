@@ -20,7 +20,7 @@ PyGrade, a programming assignment grading system, offers streamlined functionali
 ### Scenarios:
 
 
-In software development, a scenario is a narrative description of how a particular feature or system function will be used in real-world situations. It serves as a valuable tool for understanding the practical application of the software, helping to envision user interactions and system responses. To create effective scenarios, the first crucial step is discovering the main users or actors involved in the system. Identifying these key users lays the groundwork for crafting scenarios that capture their unique perspectives, needs, and interactions with the software, ensuring that the developed system aligns closely with user expectations and requirements. Essentially, user discovery is the initial building block for constructing meaningful and user-centric scenarios in the software development process.
+In software development, a scenario is a narrative description of how a particular feature or system function will be used in real-world situations. It serves as a valuable tool for understanding the practical application of the software, helping to envision user interactions and system responses. To create effective scenarios, the first crucial step is discovering the main users or actors involved in the system. Identifying these key users lays the groundwork for crafting scenarios that capture their unique perspectives, needs, and interactions with the software, ensuring that the developed system aligns closely with user expectations and requirements. Essentially, user discovery is the initial building block for constructing meaningful and user-centric scenarios in the software development process. Below we will practice recongnising some scenatrios of PyGrade.
 
 #### Interactions
 
@@ -37,8 +37,10 @@ Teacher Scenario:
 2. Grading: PyGrade simplifies the grading process for teachers, providing an intuitive interface to assign grades and offer constructive comments, ensuring efficient and consistent evaluation.
 3. Communication: Teachers utilize PyGrade to communicate with students, providing clarifications on feedback, answering queries, and facilitating effective interaction to support student learning.
 
+**Activity** Using scenarios and stories of interactions, one can extract functionality of the system. Reading the scenarios of PyGrade, we realise "Submit Assignment" is one of the main functionalities. Extract and write down at least three more functionalities of PyGrade. 
+
 ### Modeling
 
 To make it easier to grasp the scenarios and manage the complexity (of a bigger system), we can use visual representation of PyGrade like use case diagrams. Imagine a "Student" as the main actor. What would be the main functionality desireable to a "Student"? Let's focus on: "Submit Assignment." In a use case diagram, you'd represent the "Student" as a stick figure. What is a visual notation for a use case? In order to specify how "Student" is benefiting from PyGrade, we connect the actor, i.e. "Student" to the "Submit Assignment" use case with a line named "association". This visual representation instantly conveys that the student is interacting with the system by submitting their assignments. Use case diagrams simplify complex textual scenarios into easy-to-understand visuals, making it clearer for stakeholders and development team to visualize how different parts of the system connect and how users, like the student, actively engage with the software.
 
-[todo: add uml diagram here]
+![Using PyGrade student will be able to Submit Assignment.](./ws_uc_imgs/uc_pygrade_01.png "Submit Assignment")
