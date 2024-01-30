@@ -56,7 +56,8 @@ Teacher Scenario:
 
 To make it easier to grasp the scenarios and manage the complexity (of a bigger system), we can use visual representation of PyGrade like use case diagrams. Imagine a "Student" as the main actor. What would be the main functionality desireable to a "Student"? Let's focus on: "Submit Assignment." In a use case diagram, you'd represent the "Student" as a stick figure. What is a visual notation for a use case? In order to specify how "Student" is benefiting from PyGrade, we connect the actor, i.e. "Student" to the "Submit Assignment" use case with a line named "association". This visual representation instantly conveys that the student is interacting with the system by submitting their assignments. Use case diagrams simplify complex textual scenarios into easy-to-understand visuals, making it clearer for stakeholders and development team to visualize how different parts of the system connect and how users, like the student, actively engage with the software.
 
-![Using PyGrade student will be able to Submit Assignment.](./ws_uc_imgs/uc_pygrade_01.png "Submit Assignment")
+<img src="./ws_uc_imgs/uc_pygrade_01.png" alt="Using PyGrade student will be able to Submit Assignment."  width="50%" height="50%">
+
 
 **Activity** You have discovered more functionalities of PyGrade. Moreover, we know there is one more actor using PyGrade. Who (What) is the other actor? Complete Use Case Diagram with new use cases associated with correct actors. Hint: First write down scenarios of some of the functionalities that are important to model.
 
