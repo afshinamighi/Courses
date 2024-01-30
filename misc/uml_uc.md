@@ -10,9 +10,9 @@ In this workshop, we'll focus on writing a simple system description, figuring o
 
 ### Proposal: PyGrade
 
-PyGrade, a programming assignment grading system, offers streamlined functionalities for both students and teachers. Students can submit their Python programming assignments through the platform, receive timely feedback on their code, and access graded results. The system allows students to view detailed comments from teachers, aiding in understanding and improving their coding skills. On the teacher's end, PyGrade simplifies the grading process by providing an intuitive interface for reviewing and evaluating student submissions. Teachers can assign grades, offer constructive feedback, and communicate with students regarding their performance. Additionally, PyGrade supports the management of assignment deadlines, helping teachers efficiently organize and administer programming assessments. Overall, PyGrade enhances the grading experience for both students and teachers, fostering effective communication and improving the learning outcomes of programming courses.
+**Idea:** PyGrade, a programming assignment grading system, offers streamlined functionalities for both students and teachers. Students can submit their Python programming assignments through the platform, receive timely feedback on their code, and access graded results. The system allows students to view detailed comments from teachers, aiding in understanding and improving their coding skills. On the teacher's end, PyGrade simplifies the grading process by providing an intuitive interface for reviewing and evaluating student submissions. Teachers can assign grades, offer constructive feedback, and communicate with students regarding their performance. Additionally, PyGrade supports the management of assignment deadlines, helping teachers efficiently organize and administer programming assessments. Overall, PyGrade enhances the grading experience for both students and teachers, fostering effective communication and improving the learning outcomes of programming courses.
 
-**Activity** Let's without having any knowledge and exprience of Use Case diagrams, sketch the interactions between PyGrade and its environment. More likely, the sketch will be similar to the picture below. Specify and write down three main functionality of PyGrade.
+**Activity** Let's without having any knowledge and exprience of Use Case diagrams, sketch the interactions between PyGrade and its environment. More likely, the sketch will be similar to the picture below. Specify and write down three main functionalities of PyGrade.
 
 ![Alt text](./ws_uc_imgs/ws_uc_sketch.png "A sketch of PyGrade")
 
@@ -20,13 +20,26 @@ PyGrade, a programming assignment grading system, offers streamlined functionali
 ### Scenarios:
 
 
-In software development, a scenario is a narrative description of how a particular feature or system function will be used in real-world situations. It serves as a valuable tool for understanding the practical application of the software, helping to envision user interactions and system responses. To create effective scenarios, the first crucial step is discovering the main users or actors involved in the system. Identifying these key users lays the groundwork for crafting scenarios that capture their unique perspectives, needs, and interactions with the software, ensuring that the developed system aligns closely with user expectations and requirements. Essentially, user discovery is the initial building block for constructing meaningful and user-centric scenarios in the software development process. Below we will practice recongnising some scenatrios of PyGrade.
+In software development, a scenario is a narrative description of how a particular feature or system function will be used in real-world situations. It serves as a valuable tool for understanding the practical application of the software, helping to envision user interactions and system responses. To create effective scenarios, the first crucial step is discovering the main users or actors involved in the system. Identifying these key users lays the groundwork for crafting scenarios that capture their unique perspectives, needs, and interactions with the software, ensuring that the developed system aligns closely with user expectations and requirements. Essentially, user discovery is the initial building block for constructing meaningful and user-centric scenarios in the software development process. 
+
+Suppose a requirement engineer, after some interviews and inspections has formulated the following two scenarios:
+
+#### Student
+""As a student named Alice, I imagine an easy-to-use system for submitting assignments and getting feedback. In this system, I want to log in and easily find the 'Submit Assignment' button. When submitting an assignment, I'd like to attach my code files and documents effortlessly. It would be great if the system can check for plagiarism in real-time, giving me instant feedback.
+
+After submitting, I wish to receive notifications for deadlines and when my feedback is ready. In the system, I also want a straightforward way to see my graded results and the feedback my instructor provided. This simple and user-friendly system would make it easy for me to submit assignments, stay updated, and understand how I'm doing in my courses.""
+
+#### Teacher
+"As Professor Smith, I envision an innovative grading system that caters to my needs as an instructor. In this desired system, upon logging in, I wish to seamlessly navigate to the 'Grading Submissions' section. Once there, I anticipate the ability to review assignments with ease, gaining access to detailed submission details, including code files and additional documents attached by students. As I grade assignments, I express a strong desire for a concurrent plagiarism check feature running in the background. This envisioned system would empower me to provide prompt feedback and address any potential plagiarism concerns immediately. Additionally, I desire a streamlined communication feature that facilitates interaction with students regarding feedback or plagiarism issues. This desired system would revolutionize the grading process, providing efficiency, integrity, and effective communication channels for instructors like myself."
+
+
+Reading the scenarios, we will practice recongnising some functionalities of PyGrade.
 
 #### Interactions
 
 ##### Student:
 
-1. Submission: Students use PyGrade to submit their programming assignments, uploading their code and related files through a straightforward interface.
+1. Assignment Submission: Students use PyGrade to submit their programming assignments, uploading their code and related files through a straightforward interface.
 2. Feedback Access: After submission, students log in to PyGrade to access timely feedback from teachers, viewing comments and suggestions to understand their coding strengths and areas for improvement.
 3. Graded Results: PyGrade allows students to check their graded results, displaying assigned grades and detailed feedback, fostering a transparent and informative grading process.
 Teacher Scenario:
@@ -45,4 +58,21 @@ To make it easier to grasp the scenarios and manage the complexity (of a bigger 
 
 ![Using PyGrade student will be able to Submit Assignment.](./ws_uc_imgs/uc_pygrade_01.png "Submit Assignment")
 
-**Activity** You have discovered more functionalities of PyGrade. Moreover, we know there is one more actor using PyGrade. Complete Use Case Diagram with new use cases associated with correct actors. 
+**Activity** You have discovered more functionalities of PyGrade. Moreover, we know there is one more actor using PyGrade. Who (What) is the other actor? Complete Use Case Diagram with new use cases associated with correct actors. Hint: First write down scenarios of some of the functionalities that are important to model.
+
+### Inclusion
+
+One can elaboarte more details in a use case diagram. Use cases can be broken into smaller pieces. In this way we say one use case includes the other use case. The relashipship between two use cases is a **dependency** labeled as *<< include >>*. 
+
+In simple terms, the "include" relationship in use cases is like putting smaller puzzles into a bigger one. Imagine you have a big use case, like "Ordering Food." Inside that, you might have smaller actions like "Selecting Items" and "Making Payment." The "include" relationship is like saying, "To order food, you must include the actions of selecting items and making payment." It helps break down the big picture into smaller, manageable parts, making it clear how different actions fit together to achieve the main goal. It's like building with building blocks – you include the smaller blocks to create the complete structure.
+
+**Example**: Analysing this setence can reveal one smaller use case included in "Submit Assignment". 
+
+**Students use PyGrade to submit their programming assignments, <ins>uploading their code and related files</ins> through ...**
+
+Check how this is modeled in the following diagram:
+
+![To Submit Assignment this the student needs to Attach File.](./ws_uc_imgs/uc_pygrade_02.png "Attach File")
+
+**Activity** Read the provided scenarios again. Do you recognise smaller use cases (functionalities) included in already modeled use cases? Update your model.
+
