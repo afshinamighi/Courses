@@ -69,7 +69,7 @@ One can elaboarte more details in a use case diagram. Use cases can be broken in
 
 In simple terms, the "include" relationship in use cases is like putting smaller puzzles into a bigger one. Imagine you have a big use case, like "Ordering Food." Inside that, you might have smaller actions like "Selecting Items" and "Making Payment." The "include" relationship is like saying, "To order food, you must include the actions of selecting items and making payment." It helps break down the big picture into smaller, manageable parts, making it clear how different actions fit together to achieve the main goal. It's like building with building blocks – you include the smaller blocks to create the complete structure.
 
-**Example**: Analysing this setence can reveal one smaller use case included in "Submit Assignment". 
+**Example**: Analysing this sentence can reveal one smaller use case included in "Submit Assignment". 
 
 **Students use PyGrade to submit their programming assignments, <ins>uploading their code and related files</ins> through ...**
 
@@ -83,3 +83,20 @@ Check how this is modeled in the following diagram:
 
 **Activity** Read the provided scenarios again. Do you recognise smaller use cases (functionalities) included in already modeled use cases? Update your model.
 
+### Extension
+
+Similar to "inclusion", one can divide a bigger use case into smaller ones but with a relationship that reflects optionality. This is called "extend". Think of the "extend" relationship in use cases like adding extra options to a basic plan. Imagine you have a use case called "Buy Ticket," which is the basic plan. Now, let's say there's a special case where you can also "Upgrade Seat" if you want. The "extend" relationship is like saying, "If you want to, you can extend the basic 'Buy Ticket' plan by adding the extra action of 'Upgrading Seat.'" It allows you to add extra features when needed, keeping the basic plan simple but giving you the option to extend it with additional functionalities. It's like choosing to add toppings to your pizza – the basic pizza is good, but you can extend it with extra flavors if you like.
+
+**Example**: Analysing assignment submission, it seems that students can benefit from adding a note in their submission. However, writing a note in not mandatory. The student has access to such a feature to inform the teacher about the  submission or learning process in case it is helpful. This feature may not be seen and requested by the users in the first place, but a creative requirement engineer can propose such an idea to enrich the system. 
+
+
+Check how this is modeled in the following diagram:
+
+<figure>
+<img src="./ws_uc_imgs/uc_pygrade_03.png" alt="To Submit an Assignment the student can Add Note."  width="50%" height="50%">
+<figcaption> Use Case Model: Add Note extends Submit Assignment </figcaption>
+</figure>
+
+**Note**: It is important to recognise the direction of the arrows in "include" and "extend". This is how one can read the model: Submitting assignment includes attaching files, i.e. it is mandatory. Adding note to the assignment is extending the submitting assignments, i.e. notes are added only in case the student wants it.
+
+**Activity** Read the provided scenarios again. Do you recognise smaller use cases (functionalities) included in already modeled use cases? Update your model.
