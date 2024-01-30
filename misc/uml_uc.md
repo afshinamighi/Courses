@@ -99,4 +99,4 @@ Check how this is modeled in the following diagram:
 
 **Note**: It is important to recognise the direction of the arrows in "include" and "extend". This is how one can read the model: Submitting assignment includes attaching files, i.e. it is mandatory. Adding note to the assignment is extending the submitting assignments, i.e. notes are added only in case the student wants it.
 
-**Activity** Read the provided scenarios again. Do you recognise smaller use cases (functionalities) included in already modeled use cases? Update your model.
+**Activity** Read the provided scenarios again. Do you recognise features that can extend already existing functionalities? If they are not within the current specification, propose your ideas. Update your model.
