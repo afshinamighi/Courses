@@ -1,4 +1,6 @@
-# Introduction
+# Use Case Modeling: Workshop (Basics)
+
+## Introduction
 
 In requirements modeling with UML, use case diagrams serve as a powerful tool for capturing and visualizing the functional requirements of a system from the end user's perspective. Use cases represent specific interactions between users, known as actors, and the system itself, highlighting the various ways in which the system responds to external stimuli. Each use case encapsulates a specific functionality, depicting a coherent and meaningful set of interactions. Actors, representing entities external to the system, are connected to use cases through associations, illustrating the roles users play in the system. By employing use case diagrams, stakeholders gain a clear understanding of the system's expected behavior and functionalities, facilitating effective communication between designers, developers, and end users throughout the software development lifecycle. The workshop will guide participants in creating, analyzing, and interpreting use case diagrams to enhance their skills in requirements modeling for software systems.
 
@@ -100,3 +102,72 @@ Check how this is modeled in the following diagram:
 **Note**: It is important to recognise the direction of the arrows in "include" and "extend". This is how one can read the model: Submitting assignment includes attaching files, i.e. it is mandatory. Adding note to the assignment is extending the submitting assignments, i.e. notes are added only in case the student wants it.
 
 **Activity** Read the provided scenarios again. Do you recognise features that can extend already existing functionalities? If they are not within the current specification, propose your ideas. Update your model.
+
+#### Final Assignment
+
+We have started PyGrade as an example project case to analyse and model. Finishing provided activities, you should have already a ude case model, at least as a draft version.
+
+
+
+### Common mistakes
+
+Just like learning any other skills, usually beginners make miskates in modeling use case diagrams. Here we try to collect some of the mistakes that are common among the beginners and can be easily avoid.
+
+#### Use Case Diagrams vs Process Flow Diagram:
+
+Sometimes beginners model the set of use cases as a flow of processes that are executed one after each other (see the diagram below). Use case diagrams are not meant to model the *sequence* and use cases are not *acitivities*. To model the flow of activities, acitivity diagrams of UML are more suitable.
+
+**Activity** Check the model below. What was the main goal of the designer? Try to remodel the concept in a correct way.
+ 
+<figure>
+<img src="./ws_uc_imgs/use_case_as_flow.png" alt="Common mistake: To specify the flow of activities use Activity Diagram."  width="80%" height="80%">
+<figcaption> Common mistake: To specify the flow of activities use Activity Diagram. </figcaption>
+</figure>
+ 
+#### Every Arrow has a meaning:
+
+UML is a language. It is a **visualised** language. Just like any other language, every element has a meaning. A use case model does not convey its message, if the elements of the use case diagrams are not used correctly. The designer must be careful about the semantics of the actors, use cases, relashinships between two uses cases, relashionship between actor and use case, and relashionship between two actors. Always check this list after your modeling:
+
+- Two use case can relate to each other with: *dependency* and *generalization (inheritance)*.
+- Two actors can relate to each other only through *generalization (inheritance)*.
+- Actor and Use Case can relate to each other only through *association*.
+
+**Note**: In this workshop we didn't cover *generalization (inheritance)*. Student can study and practice when they are confident with inheritance in Object Oriented Design and Programming.
+
+**Activity** Check the model provided below and explain the mistake.
+
+<figure>
+<img src="./ws_uc_imgs/use_case_wrong_rel.png" alt="Common mistake: Model must obey the rules of the language."  width="80%" height="80%">
+<figcaption> Common mistake: Model must obey the rules of the language. </figcaption>
+</figure>
+
+#### Use Cases must be reachable:
+
+Sometimes beginners use a correct arrow but wrong direction. For example, check the model below:
+
+<figure>
+<img src="./ws_uc_imgs/use_case_wrong_ext.png" alt="Common mistake: Use Case B is not reachable."  width="50%" height="50%">
+<figcaption> Common mistake: Use Case B is not reachable. </figcaption>
+</figure>
+
+**Activity** Th problem of the above use case model is that use case B is not reachable. What does it mean when we say? To explain the problem you may need to consult the following models that visually explains the semantics of *extend* and *include*.
+
+<figure>
+<img src="./ws_uc_imgs/use_case_sem_include.png" alt="Semantic: Visual representation of inclusion."  width="90%" height="90%">
+<figcaption> Semantic: Visual representation of inclusion. </figcaption>
+</figure>
+
+<figure>
+<img src="./ws_uc_imgs/use_case_sem_extend.png" alt="Semantic: Visual representation of extension."  width="90%" height="90%">
+<figcaption> Semantic: Visual representation of extension. </figcaption>
+</figure>
+
+
+
+
+ 
+
+## Useful Readings:
+
+1. A helpful reading material about use cases ([here](https://www.informit.com/articles/printerfriendly/30031))
+2. An example ([here](https://agilemodeling.com/essays/useCaseReuse.htm#Figure1))
