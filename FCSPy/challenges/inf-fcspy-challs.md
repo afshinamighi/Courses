@@ -25,7 +25,7 @@ The format of an ISBN-10 number is:
 
 	ISBN [GE]-[PP]-[TE]-[CD]
 
-Example: ISBN 1-85375-390-4. GE is 1, PP is 85375, CD is 390 and CD is 4. The elements of the code are separated by spaces or hyphens. The sizes of the first three parts are variable, but together they are always 9 characters long. The first 9 digits (here: 185375390x) are actually codes, while the last one (xxxxxxxxx4) is used for checking if the other digits are correct, hence its name – check digit.
+Example: ISBN 1-85375-390-4. GE is 1, PP is 85375, TE is 390 and CD is 4. The elements of the code are separated by spaces or hyphens. The sizes of the first three parts are variable, but together they are always 9 characters long. The first 9 digits (here: 185375390x) are actually codes, while the last one (xxxxxxxxx4) is used for checking if the other digits are correct, hence its name – check digit.
 
 The check digit is a value needed to be added to the control number so that it is divisible by 11. The control number is made of the first 9 digits (GE, PP and TE) and is the sum of the 1st digit multiplied by 10, plus the 2nd digit multiplied by 9, plus the 3rd digit multiplied by 8, … , plus the 9th digit multiplied by 2.
 
