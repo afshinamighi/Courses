@@ -136,15 +136,13 @@ After taking this step, you will be able to:
    5. How can you assign a value to a variable? How can we express that two items are equal?
    6. How can you identify the type of a value / variable?
    
-3. Perform a free (re)-search and answer the following questions:
-   1. What are the character and string types in Python? Make examples.
-   2. You have learned how to print something as an output of your program. How can you read something as input? What is the function? What is the type?
-
 4. Using **BRef-01: Chapter 05** discuss and experiment the following questions:
-   1. How can you combine several strings? Implement an example.
-   2. Can you multiply a number with a string? What is the result? Implement an example.
-   3. How can you get character 5 of a given string? How can you get the first character?
-   4. How can you get a substring from a given string?
+   1. What are the character and text string types in Python? Make examples. 
+   2. How can you combine several strings? Implement an example.
+   3. Can you multiply a number with a string? What is the result? Implement an example.
+   4. How can you get character 5 of a given string? How can you get the first character?
+   5. How can you get a substring from a given string?
+   6. You have learned how to print something as an output of your program. How can you read something as input? What is the *function*? What is the type?
 
 
 #### Exercises:
@@ -255,6 +253,7 @@ Implement Python programs to solve the following problem statements:
 	- *Step-03*: Complete solution, i.e. add calculations. 
 
 ## Assignment:
+[todo: a simple string operations can be added]
 
 *Note*: Assignment 1 will be used as a model to practice submission rules and procedure.  
 
