@@ -163,23 +163,14 @@ print(x)
 print(y)
 print(z)
 ```
-
 2. A phone number is a number. Yet we would want to save it as a text. Can you think of a reason why?
-
 3. The number in the address of your house, for example Kerkweg **8**, is a number. Yet we would want to save it as a text. Can you think of a reason why?
-
 4. What is an example from a number we use in the real world that we do want to save as a number in Python, not as a text.
-
 5. User input in Python is always considered a text, even if we just enter numbers, why would it act like this?
-
 6. Define a variable called zipcode (postcode) and give it the value of your own zipcode. Print it using print().
-
 7. Define a variable called favorite food, give it the value "Pizza". Print it. Change the value to "Roti". Print it.  
-
 8. Write down the complete alphabet in a variable. Split it halfway over two different variables. Join them back together in the wrong order and print it. 
-
 9. Explain in your own words with a ```f``` style string is?
-
 10. Finish all the exercises listed in **BRef-01-Chapter 02: Things to Do** and Practice the exercises listed in **BRef-01-Chapter 05: Things to Do**.
 
 
