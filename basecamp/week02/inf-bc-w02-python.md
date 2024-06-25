@@ -70,39 +70,24 @@ After taking this step, you will be able to:
 	- Do the same for the other comparison operators, ```!=```, ```<```, ```>```, ```<=```, ```>=```.
 4. Repeat the second exercise using an *if-statement*. Print ```yes``` or ```no```, for true false. 
 	- Write a comment above the *if-statement* explaining with it does. 
-6. Implement a program in which the user is asked for input. Save the input of the user in a variable. Print ```yes``` if the input contains the character ```e```, ```no``` if not. 
-7. Think of an useful situation where you need to check something with a if-statement within another if-statement (nested if-statements). Code it and write a comment to explain why it needs a nested if. 
-8. Finish all the exercises listed in **BRef-01-Chapter 04: Things to Do**.
+
+5. Students numbers start with 0. Implement a program where the user enters her/his student number and your program must check if it starts with 0.
+
+6. Ask the user to input a number. If it is lower than ```10``` print it, otherwise only print the first character.
+
+7. Look up the Spanish alphabet and put it in a variable. Put the Dutch alphabet in a variable. Print ```yes``` if the letter k is at the same position at both, print ```no``` if not. Use an ```if``` statement. 
+
+8. Implement a program in which the user is asked for input. Save the input of the user in a variable. Print ```yes``` if the input contains the character ```e```, ```no``` if not. 
+
+9. Think of an useful situation where you need to check something with a if-statement within another if-statement (nested if-statements). Code it and write a comment to explain why it needs a nested if. 
+
+10. Finish all the exercises listed in **BRef-01-Chapter 04: Things to Do**.
 
 <hr> 
   
 ### Step-03: Strings are essential.
 #### Goals:
 
-```
-After taking this step, you will be able to:
-	1. interpret and implement basic operations of strings: concatenation (combining), duplicating, scanning and slicing.
-```
-
-#### What to Learn?
-
-1. Using **BRef-01: Chapter 05** discuss and experiment the following questions:
-   1. How can you combine several strings? Implement an example.
-   2. Can you multiply a number with a string? What is the result? Implement an example.
-   3. How can you get character 5 of a given string? How can you get the first character?
-   4. How can you get a substring from a given string?
-
-#### Exercises:
-
-1. We can use a ```+``` or a ```,``` to combine two strings within a print. What's the difference?
-2. Using a program ask the user for input. Print the first and last characters from the input.
-3. Students numbers start with 0. Implement a program where the user enters her/his student number and your program must check if it starts with 0.
-4. Ask the user to input a number. If it is lower than ```10``` print it, otherwise only print the first character.
-5. Write down the complete alphabet in a variable. Split it halfway over two different variables. Join them back together in the wrong order and print it. 
-6. Explain in your own words with a ```f``` style string is?
-7. Look up the Spanish alphabet and put it in a variable. Put the Dutch alphabet in a variable. Print ```yes``` if the letter k is at the same position at both, print ```no``` if not. Use an ```if``` statement. 
-8. Ask the user for a text input. Change both the first and last characters to uppercase and print it. 
-9. Practice the exercises listed in **BRef-01-Chapter 05: Things to Do**.
  
  <hr>    
 
