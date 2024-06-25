@@ -15,13 +15,8 @@ The activities are designed based on these following references:
 
 ## Path:
 
-### Step-01: [todo]?
 
-
-
-<hr>
-
-### Step-02: Tuples.
+### Step-01: Tuples.
 
 #### Goals:
 
@@ -70,7 +65,7 @@ print(do_something(6))
 
 <hr>
 
-### Step-03: Lists.
+### Step-02: Lists.
 
 #### Goals:
 
@@ -125,6 +120,62 @@ After taking this step, you will be able to:
 8. Design two exercises of your own. They should improve understanding topics of this step.
 
 <hr>
+
+
+### Step-03: Functions (more)?
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. interpret and implement Python programs with Python functions: positional arguments, keyword arguments, parameters default values, docstrings.
+```
+
+#### What to Learn?
+
+1. Using **BRef-01: Chapter 09** answer and experiment the following questions:
+   1. What are the positional arguments in Python? What about keyword arguments?
+   2. How can one define default values for function parameters? 
+   3. What are Docstrings? How can they be helpful?
+
+#### Exercises:
+
+1. Describe in your own words what `*args` and `**kwargs` do.
+2. Create a function that takes an `*args` of numbers as argument, which calculates the sum of all numbers and returns the result. Call the function and print the returned value.
+3. Complete the given code below.
+
+ ```python
+def count_passes(**kwargs):
+    count = 0
+    #Complete this function to count the number of passes
+    
+    return count
+#
+result = count_passes(math="Fail", science="Fail", history="Pass", english="Pass")
+print(result)
+```
+
+4. Analyse the given code below without executing it. What will be the result of the program?
+
+ ```python
+def do_something(*args, **kwargs):
+    for i in args:
+        for key, value in kwargs.items():
+            if i == key:
+                print(value)
+#
+#
+do_something("a", "z", "d", "b", a=1, b=2, c=3, d=4)
+```
+
+5. Design two exercises of your own. They should improve understanding topics of this step.
+
+6. **Extra:** Provide your solutions to the exercises f **ORef-01: Functions** 
+
+
+
+<hr>
+
 
 ## Problems:
 
