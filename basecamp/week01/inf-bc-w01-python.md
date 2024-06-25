@@ -128,7 +128,6 @@ After taking this step, you will be able to:
 #### What to Learn?
 
 1. Using **BRef-01: Chapter 02** explore the answers for the following questions: 
-
 *Note: There are some concepts (like objects, classes, references) that students may not be able to grasp completely. The main idea is to try as much as possible. They will be more clear later when they learn Object Oriented programming in Python.*
    1. What is a value? What is a variable?
    2. What is a *type*? Provide five examples.
