@@ -15,39 +15,8 @@ The activities are designed based on these following references:
 
 ## Path:
 
-### Step-01: What is a function?
+### Step-01: [todo]?
 
-#### Goals:
-
-```
-After taking this step, you will be able to:
-	1. interpret and implement Python programs with Python functions: function definition, calling functions, return of a function, functions with arguments.
-```
-
-#### What to Learn?
-
-1. Using **BRef-01: Chapter 09** answer and experiment the following questions:
-   1. What is a function in Python?
-   2. What are the main elements of a Python function? Define a simple function that does nothing.
-   3. How can a function be used (called)? 
-   4. How can one return the result of a function?
-   5. What are the arguments and/or parameters?
-
-#### Exercises:
-
-*Note*: In the following exercises you can decide yourself what should be the name of function in your solution. Check [PEP8 Function and Variable Names](https://peps.python.org/pep-0008/#function-and-variable-names).
-
-1. Explain in your own words the difference between `arguments` and `parameters`.
-2. Create a function that just prints the word `hello`. Call the function and run your program. Where the function is *defined*? Where is it *called*?
-3. Create a function that takes a text as an argument. The function prints the text it receives. Call the function and run your program.
-4. Create a function that takes two numbers as argument. The function adds the numbers together and returns the results. Call the function and run your program.
-5. Create two functions, each takes a number as argument. The first one returns the number multiplied by 2 and returns it. The second multiplies it by 10 and returns it. Calling both functions add the two returned numbers together and print it. Run your program and check the results.
-6. Create two functions. One that prints `hello`, the other prints `bye`. Ask the user to input a number, if the number is higher than 10, call the first function. If the number if lower or equal to 10, call the second function. Test your program.
-7. Create two functions. One that prints `hello`, the other prints `bye`. The first functions calls the second one after printing. Call the first function.
-8. Provide your solutions to the exercises of Python 05: Step-01. **ORef-01: Functions** can be used as extra learning reference.
-9. Design two exercises of your own. They should improve understanding topics of this step.
-10. Install *PyCharm* on your working machine. Implement and run a simple Python program of your choice. 
-	- It is important to learn how to create a new Python program, how to configure interpreter and how to run the program. Where do you see the results?
 
 
 <hr>
