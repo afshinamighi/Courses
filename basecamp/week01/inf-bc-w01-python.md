@@ -248,19 +248,18 @@ Implement Python programs to solve the following problem statements:
 	- *Step-03*: Complete solution, i.e. add calculations. 
 
 ## Assignment:
-[todo: a simple string operations can be added]
 
-*Note*: Assignment 1 will be used as a model to practice submission rules and procedure.  
+*Note*: Assignment 0 will be used as a model to practice submission rules and procedure. The steps to solve this is explained [here](./misc/inf_bc_w01_problem_solving.md)  
 
-1. Implement a program that given number of years as input prints the number of months and days as output. 
+0. Implement a program that given number of years as input prints the number of months and days as output. 
 	- Keep the problem simple: no leap year, each year is 365 days and 12 months, each month 30 days.
 	- Input example: ```Years: 5``` .
 	- Output example: ```Months: 60 , Days: 1825```.
 
-2. The program that you create for this assignment will begin by reading the cost of a meal ordered at a restaurant from the user. Then your program will compute the tax and tip for the meal. Use your local tax rate when computing the amount of tax owing. Compute the tip as 15 percent of the meal amount (without the tax). The output from your program should include the tax amount, the tip amount, and the grand total for the meal including both the tax and the tip.
+1. The program that you create for this assignment will begin by reading the cost of a meal ordered at a restaurant from the user. Then your program will compute the tax and tip for the meal. Use your local tax rate when computing the amount of tax owing. Compute the tip as 15 percent of the meal amount (without the tax). The output from your program should include the tax amount, the tip amount, and the grand total for the meal including both the tax and the tip.
 	- Assume local tax rate 21 percent.
-	- After running your code, it should print the following to the standard output and wait for the user input: `Cost of the meal:`
-	- The user enters the input (we assume the input is always valid and correct), let's say user entered `23.60`. 
+	- After running your code, it should print the following to the standard output and wait for the user input: `Please enter the cost (format 'Cost of the meal: xy.wz'):`
+	- The user enters the input (we assume the input is always valid and correct), let's say user entered `Cost of the meal: 23.60`. 
 	- Then the program should output the following: `Tax: 4.956 , Tip: 3.54 , Total: 32.096`.
 
 <!--(Pay attention to the space characters in the output and also the digits after "." for the grand total. It should be 3 digits. ):-->
