@@ -217,9 +217,12 @@ Ask the user for a text input. Change both the first and last characters to uppe
 ## Problems:
 
 *Note*: A systematic approach to transfer a solution in mind into a Python program can be challenging for novice programmers. 
+	
 	- A check list ([accessible here](./misc/checklist_metacog.pdf)) can be used to guide beginners to solve the following problems. 
+	
 	- A template and a couple of examples are provided [here](./misc/template.py). 
-	- Do you still need more detailed guideline for solving problems? Read and practice [here](./misc/).
+	
+	- Do you still need more detailed guideline for solving problems? Read and practice [here](./misc/inf_bc_w01_python.md).
 
 Implement Python programs to solve the following problem statements:
 
