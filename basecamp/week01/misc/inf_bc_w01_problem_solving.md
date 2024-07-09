@@ -11,12 +11,12 @@ Here we try to provide some general steps for the beginners to apply in order to
 
 1. **Understand the Problem**:
    - Carefully read the problem description.
-   - Identify the inputs and outputs.
    - Note any constraints or assumptions.
+   - Identify the inputs and outputs.
 
 2. **Break Down the Problem**:
-   - Divide the problem into smaller, manageable tasks.
    - Identify the main tasks needed to solve the problem.
+   - Divide the problem into smaller, manageable tasks.
 
 3. **Analyze the Problem Description**:
    - Look for key information and clues in the problem description.
