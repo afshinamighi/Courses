@@ -14,7 +14,6 @@ Here we try to provide some general steps for the beginners to apply in order to
    - Identify the inputs and outputs.
    - Note any constraints or assumptions.
 
-
 2. **Break Down the Problem**:
    - Divide the problem into smaller, manageable tasks.
    - Identify the main tasks needed to solve the problem.
@@ -40,7 +39,6 @@ Here we try to provide some general steps for the beginners to apply in order to
    - Debug any errors and refine the code as needed.
 
 8. **Optimize and Refactor**:
-   - Optimize the code for efficiency if necessary.
    - Refactor the code to improve readability and maintainability.
 
 ## Example 
