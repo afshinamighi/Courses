@@ -227,34 +227,31 @@ Implement Python programs to solve the following problem statements:
 1. Write a program that asks the user to enter his or her name. The program should respond with a message that says hello to the user, using his or her name.
 	- *Step-02*: Complete solution.
 
-2. Implement a program that given number of years as input prints the number of months and days as output. Input example: ```Years: 5``` , Output example: ```Months: 60 , Days: 1825```.
-	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the number of years and the program prints only ```Months: , Days: ```.
-	- *Step-03*: Complete solution, i.e. add calculations. The user enters the number of years and the program prints the number of months and days as output.
-
-3. Write a program that asks the user to enter the width and length of a room. Once the values have been read, your program should compute and display the area of the room. The length and the width will be entered as floating point numbers. Include units in your prompt and output message; either feet or meters, depending on which unit you are more comfortable working with.
+2. Write a program that asks the user to enter the width and length of a room. Once the values have been read, your program should compute and display the area of the room. The length and the width will be entered as floating point numbers. Include units in your prompt and output message; either feet or meters, depending on which unit you are more comfortable working with.
 	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Area of the Room: ```.
 	- *Step-03*: Complete solution, i.e. add calculations. 
 
-4. An online retailer sells two products: widgets and gizmos. Each widget weighs 75 grams. Each gizmo weighs 112 grams. Write a program that reads the number of widgets and the number of gizmos in an order from the user. Then your program should compute and display the total weight of the order.
+3. An online retailer sells two products: widgets and gizmos. Each widget weighs 75 grams. Each gizmo weighs 112 grams. Write a program that reads the number of widgets and the number of gizmos in an order from the user. Then your program should compute and display the total weight of the order.
 	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Total Weight of the Order: ```.
 	- *Step-03*: Complete solution, i.e. add calculations. 
 
-5.  Develop a program that reads a four-digit integer from the user and displays the sum of the digits in the number. For example, if the user enters ```3141``` then your program should display ```3+1+4+1=9```.
+4.  Develop a program that reads a four-digit integer from the user and displays the sum of the digits in the number. For example, if the user enters ```3141``` then your program should display ```3+1+4+1=9```.
 	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters a four-digit integer the program prints only ```Sum: ```.
 	- *Step-03*: Complete solution. 
 
-6. Implement a program that a user enters number of days as input, and the program prints number of hours, minutes and seconds separately as output.
+5. Implement a program that a user enters number of days as input, and the program prints number of hours, minutes and seconds separately as output.
 	- *Step-02*: Partial solution, i.e. no calculation yet.
 	- *Step-03*: Complete solution, i.e. add calculations. 
 
 ## Assignment:
 
-*Note*: Assignment 0 will be used as a model to practice submission rules and procedure. The steps to solve this is explained [here](./misc/inf_bc_w01_problem_solving.md)  
+*Note*: Assignment 0 will be used as a model to practice submission rules and procedure. The steps to solve this are explained [here](./misc/inf_bc_w01_problem_solving.md)  
 
 0. Implement a program that given number of years as input prints the number of months and days as output. 
 	- Keep the problem simple: no leap year, each year is 365 days and 12 months, each month 30 days.
 	- Input example: ```Years: 5``` .
 	- Output example: ```Months: 60 , Days: 1825```.
+	- *Expected Program Behaviour*: After running the program, the program will wait for the user input. The user will enter the full string ```Years: 5```. The program can provide a proper message to guide the user about the correct input format. The program must slice the input and extract the number to process and produce the result. 
 
 1. The program that you create for this assignment will begin by reading the cost of a meal ordered at a restaurant from the user. Then your program will compute the tax and tip for the meal. Use your local tax rate when computing the amount of tax owing. Compute the tip as 15 percent of the meal amount (without the tax). The output from your program should include the tax amount, the tip amount, and the grand total for the meal including both the tax and the tip.
 	- Assume local tax rate 21 percent.
