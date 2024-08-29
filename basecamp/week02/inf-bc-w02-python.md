@@ -172,7 +172,7 @@ Write a program that begins by reading a string of characters from the user. The
 1. Write a program that reads a date from the user and computes its immediate successor. For example, if the user enters values that represent 2013-11-18 then your program should display a message indicating that the day immediately after 2013-11-18 is 2013-11-19. If the user enters values that represent 2013-11-30 then the program should indicate that the next day is 2013-12-01. If the user enters values that represent 2013-12-31 then the program should indicate that the next day is 2014-01-01. 
 	- The date will be entered in ```YYYY-MM-DD``` format. 
 	- Assume there is no leap year and February is always 28 days.
-	- The program must employ a function `is_input_valid(year,month,day)` that checks if the provided input satisfies the expected format. The function returns true. The function must print `Input format ERROR. Correct Format: YYYY-MM-DD` in case the user enters an incorrect input and returns false.
+	- The program must employ a function `is_input_valid(inp_date)` that checks if the provided input satisfies the expected format. The function returns true. The function must print `Input format ERROR. Correct Format: YYYY-MM-DD` in case the user enters an incorrect input and returns false.
  Some examples of incorrect input: ```2013/12/30```,```2013_12_30```, ```0213/12/30```, ```30-12-2013```.
 	- Input example: ```Input Date: 2013-12-31``` , Output example: ```Next Date: 2014-01-01```.
 	- **Optional**: Check if the given date is valid. For example: `2022-13-22` , `2022-11-35` , `0122-11-35` are not valid dates.
