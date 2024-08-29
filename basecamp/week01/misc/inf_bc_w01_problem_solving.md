@@ -119,7 +119,7 @@ output_string = "Months: " + str(months) + ", Days: " + str(days)
 print(output_string)
 ```
 
-7.	Test the Solution:
+7.	**Test the Solution**:
 	- Test Case 1: Input: “Years: 5”
 	- Expected Output: “Months: 60, Days: 1825”
 	- Test Case 2: Input: “Years: 1”
@@ -127,7 +127,7 @@ print(output_string)
 	- Test Case 3: Input: “Years: 0”
 	- Expected Output: “Months: 0, Days: 0”
 
-8.	Optimize and Refactor:
+8.	**Optimize and Refactor**:
 	- Ensure the code is clear and concise.
 	- Add comments for better readability if needed.
 	- Verify the code handles unexpected inputs gracefully (e.g., non-numeric input).
