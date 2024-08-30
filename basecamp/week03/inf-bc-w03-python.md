@@ -230,14 +230,17 @@ print(count)
 	- There are only two templates: ```Job Offer``` and ```Rejection```.
 	- For the ```Job Offer``` email, the program asks: first name, last name, job title, annual salary, starting date.
 	- For the ```Rejection``` email, the program asks: first name, last name, job title, with or without feedback, one feedback statement in case it is with feedback.
-	- The program must check valid input formats.
 	- First and last names: each minimum two characters and maximum ten characters; cotaining only alphabets, both starting with capital letters.
+	- The program must check valid input formats: define a function `is_name_valid(first_name:str,last_name:str)->bool`. The function `is_name_valid` gets two parameters of type string and returns the result of type boolean.
 	- Job title: minimum 10 characters without numbers.
+	- The program must check valid input formats: define a function `is_title_valid(title:str)->bool`. The function `is_title_valid` receives one parameter of type string and returns the result of type boolean.
 	- Salary: valid floating point number between (and including) 20.000,00 and 80.000,00.
+	- The program must check valid input formats: define a function `is_salary_valid(salary:str)->bool`. The function `is_salary_valid` receives one parameter of type string and returns the result of type boolean.
 	- Date: only in ```YYYY-MM-DD``` format, no negative numbers, days between 1 - 31, month between 1 - 12, year only 2021 and 2022.
+	- The program must check valid input formats: define a function `is_date_valid(date:str)->bool`. The function `is_date_valid` receives one parameter of type string and returns the result of type boolean.
 	- Feedback: if the email contains a feedback there is an extra line in the text otherwise that line must be removed (check the example below).
 	- The program will generate emails until the user answers ```No``` to the ```More Letters?``` question.
-	- In case of invalid input from the user, the program must proper message and then repeats the question again.
+	- In case of invalid input from the user, the program must print a proper message and then repeats the question again.
 	- A sample execution is presented below. Use this sample execution for the templates of the emails. Your program must have only **two** templates:
 
 ```
