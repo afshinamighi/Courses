@@ -170,7 +170,7 @@ do_something("a", "z", "d", "b", a=1, b=2, c=3, d=4)
 
 5. Design two exercises of your own. They should improve understanding topics of this step.
 
-6. **Extra:** Provide your solutions to the exercises f **ORef-01: Functions** 
+6. **Extra:** Provide your solutions to the exercises of **ORef-01: Functions** 
 
 
 
