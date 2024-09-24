@@ -41,7 +41,7 @@
   A CSV (Comma-Separated Values) file with coordinates contains tabular data where one or more columns represent geographic coordinates, usually latitude and longitude. These files are simple and widely used to store and share geospatial data that can later be mapped or analyzed.
 
 - **Online Tutorial**:  
-  - [Using CSV Data with Coordinates in QGIS (YouTube)](https://www.youtube.com/watch?v=0z9bmu5J9yE)
+  - [Using CSV Data with Coordinates in QGIS (YouTube)](https://www.youtube.com/watch?v=iXPvUPJvzDo)
   - [Convert CSV to Geospatial Data (GeoJSON)](https://observablehq.com/@tmcw/csv-to-geojson)
 
 ---
@@ -53,10 +53,6 @@
 - **Online Tutorial**:  
   - [Coordinate Reference Systems in Geopandas](https://geopandas.org/en/stable/docs/user_guide/projections.html)
   - [Understanding CRS and Projections (Esri)](https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm)
-
-- **Online Resources**:
-  - [GeoJSON Primer](https://geojson.org/) – Learn about the structure and usage of GeoJSON.
-  - [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/) – Learn the basics of QGIS, one of the most popular open-source GIS tools.
 
 ---
 
