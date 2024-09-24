@@ -5,7 +5,7 @@
 - **Goal**: Understand the fundamentals of geospatial data, key formats, and how cities use this data for urban planning, transportation, and resource management.
 - **Key Concepts**: Geospatial data (latitude, longitude), GeoJSON, Shapefiles, CSV with coordinates, CRS (Coordinate Reference Systems).
 
-### 1. Geospatial Data (Latitude, Longitude)
+### Geospatial Data (Latitude, Longitude)
 - **Explanation**:  
   Geospatial data refers to data that has a geographic component, meaning it is associated with specific locations on Earth. Latitude and longitude are the most common geographic coordinates used to pinpoint locations. Latitude measures how far north or south a point is from the Equator, while longitude measures how far east or west a point is from the Prime Meridian.
 
@@ -15,7 +15,7 @@
 
 ---
 
-### 2. GeoJSON
+### GeoJSON
 - **Explanation**:  
   GeoJSON is a format for encoding a variety of geographic data structures using JavaScript Object Notation (JSON). It supports points, lines, polygons, and their combinations, along with properties like name or description. It is widely used in web mapping applications to represent geospatial data in an easy-to-use format.
 
@@ -25,7 +25,7 @@
 
 ---
 
-### 3. Shapefiles
+### Shapefiles
 - **Explanation**:  
   A shapefile is a popular geospatial vector data format for geographic information system (GIS) software. It stores location, shape, and attributes of geographic features such as points, lines, and polygons. Shapefiles are commonly used to represent areas like countries, rivers, and roads.
 
@@ -35,7 +35,7 @@
 
 ---
 
-### 4. CSV with Coordinates
+### CSV with Coordinates
 - **Explanation**:  
   A CSV (Comma-Separated Values) file with coordinates contains tabular data where one or more columns represent geographic coordinates, usually latitude and longitude. These files are simple and widely used to store and share geospatial data that can later be mapped or analyzed.
 
@@ -45,7 +45,7 @@
 
 ---
 
-### 5. CRS (Coordinate Reference Systems)
+### CRS (Coordinate Reference Systems)
 - **Explanation**:  
   A Coordinate Reference System (CRS) is a system that defines how the two-dimensional, projected map in your GIS relates to real places on Earth. It includes information about the map's projection, datum, and how the coordinates are to be interpreted. Different CRSs can result in distortions if not handled properly in mapping projects.
 
