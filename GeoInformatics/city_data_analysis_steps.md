@@ -10,7 +10,8 @@
   Geospatial data refers to data that has a geographic component, meaning it is associated with specific locations on Earth. Latitude and longitude are the most common geographic coordinates used to pinpoint locations. Latitude measures how far north or south a point is from the Equator, while longitude measures how far east or west a point is from the Prime Meridian.
 
 - **Online Tutorial**:  
-  - [Introduction to Geospatial Concepts (Esri)](https://www.esri.com/training/catalog/57630435851d31e02a43fef5/introduction-to-gis/)
+  - [Introduction to GIS Concepts](https://www.youtube.com/watch?v=SovdBaus7pM)
+  - [Introduction to GeoSpatial Data](https://www.youtube.com/watch?v=gRLOgQ5Bibw)
   - [Latitude and Longitude Coordinates Explained (YouTube)](https://www.youtube.com/watch?v=swKBi6hHHMA)
 
 ---
@@ -20,8 +21,8 @@
   GeoJSON is a format for encoding a variety of geographic data structures using JavaScript Object Notation (JSON). It supports points, lines, polygons, and their combinations, along with properties like name or description. It is widely used in web mapping applications to represent geospatial data in an easy-to-use format.
 
 - **Online Tutorial**:  
-  - [GeoJSON Introduction (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
-  - [Working with GeoJSON in Python (Geopandas)](https://geopandas.org/en/stable/gallery/create_geopandas_from_geojson.html)
+  - [GeoJSON Introduction](https://imfeld.dev/writing/introduction_to_geojson)
+  - [Working with GeoJSON in Python (Geopandas)](https://geopandas.org/en/stable/docs/user_guide/io.html)
 
 ---
 
