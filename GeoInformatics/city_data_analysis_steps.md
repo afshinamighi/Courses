@@ -103,7 +103,7 @@
 ---
 
 ### Final Mini Project Deliverable:
-A Python notebook or a simple web application that:
+A simple web application in Python:
 - Loads and processes city data.
 - Performs geospatial analysis.
 - Visualizes the results on an interactive map using **Folium** or **Kepler.gl**.
