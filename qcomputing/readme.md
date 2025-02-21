@@ -20,12 +20,15 @@ In order to read and understand this collection it would be important to be conf
    - $(x+y)(a+b)=xa+xb+ya+yb$ , $(x+y)(a-b)=xa-xb+ya-yb$ 
 
 2. Basics of 2D Vector and Matrix:
-    - $\[
-\vec{v} = \begin{pmatrix}
-v_1 \\
-v_2
-\end{pmatrix}
-\]$
+
+$
+v = \begin{pmatrix} v \\ w \end{pmatrix}
+$ 
+and 
+$
+M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}
+$
+
 3. 
 - transformation: matrix multiplication
 - function
