@@ -22,7 +22,7 @@ In order to read and understand this collection it would be important to be conf
 2. Basics of 2D Vector and Matrix:
 
 $$ 
-v = \begin{bmatrix} v \\ w \end{bmatrix} 
+v = \begin{pmatrix} v \\ w \end{pmatrix} 
 $$ 
 and 
 $$ 
