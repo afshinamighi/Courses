@@ -54,7 +54,13 @@ y \end{bmatrix} = \begin{bmatrix} ax+by \\
 cx+dy \end{bmatrix}
 $$
 
-4. 
-- function
-- bits in classical computers and basic operations
-- basic symbols: $\psi$, $\phi$, $U_f$
+4. #### Functions
+$f(x)$
+
+5. #### Classical Bits
+  - Each classical bit can have two states represented by $0$ and $1$, two classical bits can be represented as $b_1b_0$ which can provide $2^2$ possible states: $00$ , $01$ , $10$ , $11$
+  - Given a classical bits $b_1b_0$: $\neg b_0$ is the negation of $b_0$, $b_1 \and b_0$ is the AND operation, $b_1 \or b_0$ is the OR operation, $b_1 \oplus b_0$ is the XOR operation
+
+6. #### Basic Symbols: $\psi$, $\phi$, $U_f$
+7. #### Python
+    - Basic Programming in Python
