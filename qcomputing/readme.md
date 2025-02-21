@@ -14,8 +14,19 @@ In this brief introductory course, a collection of self-contained learning mater
 ### Required Background
 [in progress]
 
-- basic algebraic terms
-- vector and matrix
+In order to read and understand this collection it would be important to be confident in the following topics:
+
+1. Manipulating basic algebraic terms:
+   - $(x+y)(a+b)=xa+xb+ya+yb$ , $(x+y)(a-b)=xa-xb+ya-yb$ 
+
+2. Basics of 2D Vector and Matrix:
+    - $\[
+\vec{v} = \begin{pmatrix}
+v_1 \\
+v_2
+\end{pmatrix}
+\]$
+3. 
 - transformation: matrix multiplication
 - function
 - bits in classical computers and basic operations
