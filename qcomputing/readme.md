@@ -17,11 +17,11 @@ In this brief introductory course, a collection of self-contained learning mater
 In order to read and understand this collection it would be important to be confident in the following topics:
 
 1. Manipulating basic algebraic terms:
-   - $(x+y)(a+b)=xa+xb+ya+yb$ , $(x+y)(a-b)=xa-xb+ya-yb$ 
+$(x+y)(a+b)=xa+xb+ya+yb$ , $(x+y)(a-b)=xa-xb+ya-yb$ 
 
 2. Basics of 2D Vector and Matrix:
 
-    - $$ 
+$$ 
 v = \begin{bmatrix} x \\
 y \end{bmatrix} 
 $$
@@ -31,7 +31,7 @@ M = \begin{bmatrix} a & b \\
 c & d \end{bmatrix} 
 $$
 
-    - $$  
+$$  
 v_1 + v_2 = \begin{bmatrix} x_1 \\
 y_1 \end{bmatrix} + \begin{bmatrix} x_2 \\
 y_2 \end{bmatrix} = \begin{bmatrix} x_1 + x_2 \\
