@@ -1,7 +1,7 @@
 
 <div style="text-align: center;">
 
-# Quantum Computing: 
+# Quantum Computing 
 ## A Quick Introduction for Programmers
 
 </div>
