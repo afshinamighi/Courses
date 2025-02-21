@@ -12,11 +12,10 @@ In this brief introductory course, a collection of self-contained learning mater
    
 
 ### Required Background
-[in progress]
 
 In order to read and understand this collection it would be important to be confident in the following topics:
 
-1. #### Manipulating basic algebraic terms:
+1. #### Basic algebraic terms:
 
 $(x+y)(a+b)=xa+xb+ya+yb$ , $(x+y)(a-b)=xa-xb+ya-yb$ 
 
