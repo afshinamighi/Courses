@@ -22,11 +22,13 @@ In order to read and understand this collection it would be important to be conf
 2. Basics of 2D Vector and Matrix:
 
 $$ 
-v = \begin{pmatrix} v \\ w \end{pmatrix} 
-$$ 
+v = \begin{bmatrix} v \ w \end{bmatrix} 
+$$
+
 and 
+
 $$ 
-M = \begin{bmatrix} a & b \\ c & d \end{bmatrix} 
+M = \begin{bmatrix} a & b \ c & d \end{bmatrix} 
 $$
 
 3. 
