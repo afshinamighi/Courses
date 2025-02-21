@@ -21,13 +21,13 @@ In order to read and understand this collection it would be important to be conf
 
 2. Basics of 2D Vector and Matrix:
 
-$
-v = \begin{bmatrix} v \\ w \end{bmatrix}
-$ 
+$$ 
+v = \begin{bmatrix} v \\ w \end{bmatrix} 
+$$ 
 and 
-$
-M = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
-$
+$$ 
+M = \begin{bmatrix} a & b \\ c & d \end{bmatrix} 
+$$
 
 3. 
 - transformation: matrix multiplication
