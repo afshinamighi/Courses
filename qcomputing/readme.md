@@ -5,9 +5,9 @@ In this brief introductory course, a collection of self-contained learning mater
 
 ### Content
 
-1. [We need a different set up](qc_lesson_01.ipynb)
-2. [One Single Quantum Bit](qc_lesson_02.ipynb)
-3. [When Two Quantum Bits are combined](qc_lesson_03.ipynb)
+1. [Reframing the Classical Bit: A Fresh Perspective](qc_lesson_01.ipynb)
+2. [Beyond Binary: The Evolution from Classical Bits to Qubits](qc_lesson_02.ipynb)
+3. [The Quantum Pair: The Dance of Two Entangled Qubits](qc_lesson_03.ipynb)
 4. [Deutch Algorithm: Two QuBits](qc_lesson_04.ipynb)
    
 
