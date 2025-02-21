@@ -38,6 +38,12 @@ y_2 \end{bmatrix} = \begin{bmatrix} x_1 + x_2 \\
 y_1 + y_2 \end{bmatrix} 
 $$
 
+$$  
+s . v = s . \begin{bmatrix} x \\
+y \end{bmatrix} = \begin{bmatrix} s . x \\
+s . y \end{bmatrix} 
+$$
+
 3. 
 - transformation: matrix multiplication
 - function
