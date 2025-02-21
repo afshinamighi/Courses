@@ -16,10 +16,11 @@ In this brief introductory course, a collection of self-contained learning mater
 
 In order to read and understand this collection it would be important to be confident in the following topics:
 
-1. Manipulating basic algebraic terms:
+1. #### Manipulating basic algebraic terms:
+
 $(x+y)(a+b)=xa+xb+ya+yb$ , $(x+y)(a-b)=xa-xb+ya-yb$ 
 
-2. Basics of 2D Vector and Matrix:
+2. #### Basics of 2D Vector and Matrix:
 
 $$ 
 v = \begin{bmatrix} x \\
@@ -44,8 +45,16 @@ y \end{bmatrix} = \begin{bmatrix} s . x \\
 s . y \end{bmatrix} 
 $$
 
-3. 
-- transformation: matrix multiplication
+3. #### Transformation
+
+$$
+M.v = \begin{bmatrix} a & b \\
+c & d \end{bmatrix} . \begin{bmatrix} x \\
+y \end{bmatrix} = \begin{bmatrix} ax+by \\
+cx+dy \end{bmatrix}
+$$
+
+4. 
 - function
 - bits in classical computers and basic operations
 - basic symbols: $\psi$, $\phi$, $U_f$
