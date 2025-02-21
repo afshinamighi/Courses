@@ -21,16 +21,21 @@ In order to read and understand this collection it would be important to be conf
 
 2. Basics of 2D Vector and Matrix:
 
-$$ 
-v = \begin{bmatrix} v \\
-w \end{bmatrix} 
+    - $$ 
+v = \begin{bmatrix} x \\
+y \end{bmatrix} 
 $$
-
 and 
-
 $$ 
 M = \begin{bmatrix} a & b \\
 c & d \end{bmatrix} 
+$$
+
+    - $$  
+v_1 + v_2 = \begin{bmatrix} x_1 \\
+y_1 \end{bmatrix} + \begin{bmatrix} x_2 \\
+y_2 \end{bmatrix} = \begin{bmatrix} x_1 + x_2 \\
+y_1 + y_2 \end{bmatrix} 
 $$
 
 3. 
