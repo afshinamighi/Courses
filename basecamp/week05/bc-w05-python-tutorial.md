@@ -528,13 +528,269 @@ if __name__ == "__main__":
 
 ## Step 03: Functions (more)?
 
+Functions in Python allow us to pass inputs (arguments) to perform specific operations. These arguments provide flexibility by letting functions work with different values without modifying the function itself.
 
+There are three main types of arguments in Python:
 
+1. Positional Arguments: Values are assigned based on the order in which they are passed.
+2.	Keyword Arguments: Values are assigned using parameter names, allowing arguments to be passed in any order.
+3.	Default Values for Arguments: Parameters can have a default value, which is used if no argument is provided.
+
+Using these types of arguments can make functions more readable, flexible, and easier to use. Let’s explore them with different examples.
+
+```python
+def greet(name, age):
+    print(f"Hello, {name}! You are {age} years old.")
+
+# Using positional arguments (order matters)
+greet("Alice", 25)  
+# Output: Hello, Alice! You are 25 years old.
+
+# Using keyword arguments (order does not matter)
+greet(age=30, name="Bob")  
+# Output: Hello, Bob! You are 30 years old.
+```
+
+Sometimes one may need to assigne a default value for an argument of a function. A default value is a value assigned to a function parameter in case no argument is provided by the caller for it. This makes some parameters optional when calling the function. In the example provided below, since `age=18` is set as a default value, the function works even if age is not provided. This makes `age` an optional parameter, improving flexibility.
+
+```python
+def greet(name, age=18):
+    print(f"Hello, {name}! You are {age} years old.")
+
+# Calling the function with both arguments
+greet("Alice", 25)  
+# Output: Hello, Alice! You are 25 years old.
+
+# Calling the function with only one argument (uses the default value for age)
+greet("Bob")  
+# Output: Hello, Bob! You are 18 years old.
+```
+
+Our next example presents mixing positional arguments, keyword arguments and default arguments to provide a flexible solution for ordering a pizza with default and custom toppings.
+
+```python
+def order_pizza(size, crust, topping="cheese"):
+    print(f"Ordered a {size} pizza with {crust} crust and {topping} topping.")
+
+# Using only positional arguments
+order_pizza("large", "thin")  
+# Output: Ordered a large pizza with thin crust and cheese topping.
+
+# Using a mix of positional and keyword arguments
+order_pizza("medium", "stuffed", topping="pepperoni")  
+# Output: Ordered a medium pizza with stuffed crust and pepperoni topping.
+
+# Using all keyword arguments
+order_pizza(size="small", crust="thick", topping="mushrooms")  
+# Output: Ordered a small pizza with thick crust and mushrooms topping.
+``` 
+
+In Python, `*args` and `**kwargs` allow us to create functions that can accept a variable number of arguments, making them more flexible and dynamic.
+
+The `*args` parameter enables a function to accept any number of positional arguments, which are collected into a tuple. This is particularly useful when the exact number of arguments is unknown in advance. For example, a function that sums multiple numbers can take different numbers of inputs each time it is called.
+
+```python
+# Imagine we want a function that calculates the sum of any number of numbers (you don't know how many will be passed).
+def sum_numbers(*args):
+    return sum(args)  # Summing all the values in the tuple
+
+# Calling the function with different numbers of arguments
+print(sum_numbers(1, 2, 3))       # Output: 6
+print(sum_numbers(10, 20, 30, 40)) # Output: 100
+print(sum_numbers())               # Output: 0 (since no numbers were passed)
+```
+
+On the other hand, `**kwargs` allows a function to accept any number of keyword arguments. This is useful when handling optional named parameters dynamically. For instance, a function that processes user details can accept varying sets of attributes such as `name`, `age`, and `occupation` without being explicitly defined for each case.
+
+```python
+# Now, let’s say we want to create a function that accepts a person’s details, but we don’t know exactly which details will be provided.
+
+def display_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+# Calling the function with different keyword arguments
+display_info(name="Alice", age=25, job="Engineer")
+
+# Output:
+# name: Alice
+# age: 25
+# job: Engineer
+
+display_info(city="New York", country="USA", population=8_000_000)
+
+# Output:
+# city: New York
+# country: USA
+# population: 8000000
+```
+
+Let’s build a function that prints order details for a customer.
+
+```python
+def order_summary(customer_name, *items, **details):
+    print(f"Order Summary for {customer_name}:")
+    
+    print("\nItems Ordered:")
+    for item in items:
+        print(f"- {item}")
+    
+    print("\nAdditional Details:")
+    for key, value in details.items():
+        print(f"{key}: {value}")
+
+# Calling the function with various arguments
+order_summary("Bob", "Pizza", "Coke", "Ice Cream", payment="Credit Card", delivery="Home", time="30 mins")
+
+# Output:
+# Order Summary for Bob:
+#
+# Items Ordered:
+# - Pizza
+# - Coke
+# - Ice Cream
+#
+# Additional Details:
+# payment: Credit Card
+# delivery: Home
+# time: 30 mins
+```
+
+A docstring is a special kind of comment in Python that is used to describe what a function, class, or module does. Unlike regular comments (`#`), which are ignored by Python, docstrings are stored as metadata and can be accessed using the `help()` function.
+
+A docstring is written using triple double-quotes (`"""` or `'''`) at the beginning of a function, class, or module. It helps other programmers understand the purpose of the function without reading the full code.
+
+```python
+def add_numbers(a, b):
+    """Returns the sum of two numbers.
+
+    This function takes two numeric values as input and returns their sum.
+    """
+    return a + b
+
+# Using the help() function to display the docstring
+help(add_numbers)
+```
 
 ### Problem Solving
 
+A school wants to develop a student grade management system that:
+	- Stores student information (name, subject, grades).
+	- Keeps track of multiple students.
+	- Process student data.
+	- Provides an option for default values when retrieving student details.
+	- Allows teachers to input multiple grades at once.
+	- Includes docstrings to describe each function.
+
 #### Strategy
+
+To solve this problem efficiently and modularly, we need a clear plan that ensures the program is organized, flexible, and easy to maintain. 
+The following strategy breaks down the problem into manageable steps:
+
+1. Understand the Problem Clearly
+- We need to store student details, including: Name (string), Subject (string), Grades (multiple values, unknown count).
+- We should be able to: Add students dynamically, Handle multiple grades for each student, Calculate the average grade for a student, Display student details in a structured format, Allow optional parameters, such as choosing whether to display the subject.
+
+2. Choose the Right Data Structures
+- Tuples: Use for storing individual student records as (name, subject, grades).
+- Lists: Use to store multiple student records.
+- Functions: Use to modularize operations like adding students, calculating averages, and displaying details.
+- *args: Use to allow flexible grade input.
+- Default Values: Use to provide optional display customization.
+
+3. Break the Problem into Subtasks: To keep the code clean and maintainable, we break it down into four key functions:
+- `add_student(student_list, name, subject, *grades)`
+	- Takes a student `name`, `subject`, and `grades` as input.
+	- Stores the data in a tuple and adds it to the student list.
+- `calculate_average(grades)`
+	- Computes the average grade from a tuple of grades.
+	- Returns `0` if no grades are provided (to avoid division errors).
+- `display_student_info(student, include_subject=True)`
+	- Displays a formatted student profile.
+	- Uses default values to allow optional subject display.
+- `main()`
+	- Handles program execution, adding students, and displaying their information.
+
+
+4. Implement the Solution in a Modular Way: Encapsulate logic into functions to avoid repetitive code, Use `main()` to control program flow, Use docstrings to explain each function.
+
+5. Test with Sample Data: Add multiple students with different numbers of grades, Check edge cases, such as a student with no grades, Verify output formatting for clarity.
+
 
 
 #### Solution
 
+```python
+def add_student(student_list, name, subject, *grades):
+    """Adds a student to the list with their subject and grades.
+
+    Args:
+        student_list (list): The list that stores student records.
+        name (str): The name of the student.
+        subject (str): The subject the student is enrolled in.
+        *grades (float): Variable number of grades for the student.
+
+    Returns:
+        None
+    """
+    student_list.append((name, subject, grades))
+
+
+def calculate_average(grades):
+    """Calculates and returns the average of a given set of grades.
+
+    Args:
+        grades (tuple): A tuple containing numeric grades.
+
+    Returns:
+        float: The average grade, rounded to 2 decimal places.
+    """
+    if not grades:  # Check if grades is empty
+        return 0
+    
+    return round(sum(grades) / len(grades), 2)
+
+def display_student_info(student, include_subject=True):
+    """Displays a student's information, including their average grade.
+
+    Args:
+        student (tuple): A tuple containing (name, subject, grades).
+        include_subject (bool, optional): Whether to display the subject. Defaults to True.
+
+    Returns:
+        None
+    """
+    name, subject, grades = student
+    avg_grade = calculate_average(grades)
+
+    print(f"Student: {name}")
+    if include_subject:
+        print(f"Subject: {subject}")
+    print(f"Grades: {grades}")
+    print(f"Average Grade: {avg_grade}\n")
+
+
+def main():
+    """Main function to manage student grades and display student details."""
+    students = []
+
+    # Adding students using *args to input multiple grades
+    add_student(students, "Alice", "Math", 85, 90, 88)
+    add_student(students, "Bob", "Science", 78, 82, 80, 79)
+    add_student(students, "Charlie", "History", 92, 88)
+
+    # Display all student records
+    print("\nStudent Records:")
+    for student in students:
+        display_student_info(student)
+
+    # Display student details without showing subject (using default value)
+    print("\nDisplaying a student without subject info:")
+    display_student_info(students[0], include_subject=False)
+
+
+# Run the program
+if __name__ == "__main__":
+    main()
+
+```
