@@ -1,5 +1,10 @@
 # Python 05: Tutorial
 
+## Todo
+
+- remove **keywrds and move to week 7, also update the exercises
+- 
+
 ## Introduction
 
 So far, we have learned the fundamental structure of a Python program. We have practiced how to interact with the user using the `input()` and `print()` functions, employed conditional statements (`if`, `elif`, `else`) to make decisions in code execution, and experimented with loops (`for` and `while`) to iterate through sequences of instructions. We have also studied how to define and manipulate primitive data types, such as numbers and strings, and finally, we explored how functions can be used to break down long pieces of code into smaller, manageable components.
