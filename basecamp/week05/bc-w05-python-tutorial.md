@@ -438,13 +438,11 @@ When solving a problem like finding the closest available ambulance using lists,
 	- Use a list of booleans for ambulance availability, where True means available, and False means occupied.
 	- Store the incident location as a tuple (x, y).
 
-3. Break the Problem into Subtasks
-
-To make the solution modular and manageable, break it down into smaller subtasks:
-	- Calculate the Distance
-		- Use the Euclidean distance formula to measure how far an ambulance is from the incident location:
+3. Break the Problem into Subtasks: 
+	1. To make the solution modular and manageable, break it down into smaller subtasks:
+		- Calculate the Distance: Use the Euclidean distance formula to measure how far an ambulance is from the incident location:
 $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
-	- Implement a function that takes two coordinates and returns the computed distance.
+		- Implement a function that takes two coordinates and returns the computed distance.
 	2.	Find the Closest Available Ambulance
 		- Iterate over the ambulance list while checking availability.
 		- Compare the distances and keep track of the ambulance with the shortest distance.
