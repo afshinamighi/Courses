@@ -198,56 +198,82 @@ When solving a problem like coordinating drones using tuples, a structured appro
 ```python
 # Function to combine two tuples of drones
 def combine_drones(group1, group2):
+    """Combines two groups of drones into a single tuple."""
     return group1 + group2  # Uses the + operator to merge the tuples
-
-# Defining two groups of drones (each tuple contains: ID, location (x, y), battery level)
-drones_group1 = (
-    ("D1", (10, 20), 80),
-    ("D2", (5, 15), 60),
-    ("D3", (12, 8), 90)
-)
-
-drones_group2 = (
-    ("D4", (3, 5), 50),
-    ("D5", (20, 10), 75),
-    ("D6", (7, 7), 40)
-)
-
-# Combining the two drone groups using the function
-drones = combine_drones(drones_group1, drones_group2)
 
 # Function to calculate Euclidean distance manually
 def calculate_distance(loc1, loc2):
+    """Calculates the Euclidean distance between two points (x1, y1) and (x2, y2)."""
     x1, y1 = loc1
     x2, y2 = loc2
     return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5  # Square root of sum of squared differences
 
-# Iterating over all drones and displaying details
-print("Drone Fleet:")
-for drone in drones:
-    print(f"Drone {drone[0]} - Location: {drone[1]}, Battery: {drone[2]}%")
+# Function to print all drones
+def display_drones(drones):
+    """Displays all drones with their location and battery level."""
+    print("Drone Fleet:")
+    for drone in drones:
+        print(f"Drone {drone[0]} - Location: {drone[1]}, Battery: {drone[2]}%")
 
-# Finding the drone with the lowest battery
-lowest_battery_drone = drones[0]  # Assume the first drone has the lowest battery
+# Function to find the drone with the lowest battery
+def find_lowest_battery_drone(drones):
+    """Finds and returns the drone with the lowest battery."""
+    lowest_battery_drone = drones[0]  # Assume the first drone has the lowest battery
+    for drone in drones:
+        if drone[2] < lowest_battery_drone[2]:  # Compare battery levels
+            lowest_battery_drone = drone  # Update if a lower battery is found
+    return lowest_battery_drone
 
-for drone in drones:
-    if drone[2] < lowest_battery_drone[2]:  # Compare battery levels
-        lowest_battery_drone = drone  # Update if a lower battery is found
+# Function to find the closest drone to a given target location
+def find_closest_drone(drones, target_location):
+    """Finds and returns the drone closest to the target location."""
+    closest_drone = drones[0]  # Assume the first drone is the closest
+    closest_distance = calculate_distance(drones[0][1], target_location)
 
-# Finding the closest drone manually
-target_location = (10, 10)
-closest_drone = drones[0]  # Assume the first drone is the closest
-closest_distance = calculate_distance(drones[0][1], target_location)
+    for drone in drones:
+        distance = calculate_distance(drone[1], target_location)
+        if distance < closest_distance:  # If a drone is closer, update the best choice
+            closest_drone = drone
+            closest_distance = distance
 
-for drone in drones:
-    distance = calculate_distance(drone[1], target_location)
-    if distance < closest_distance:  # If a drone is closer, update the best choice
-        closest_drone = drone
-        closest_distance = distance
+    return closest_drone, closest_distance
 
-# Displaying results
-print(f"\nDrone with the lowest battery: {lowest_battery_drone[0]} - Battery: {lowest_battery_drone[2]}%")
-print(f"\nBest drone for delivery to {target_location}: {closest_drone[0]} (Distance: {closest_distance:.2f})")
+# Main function to run the program
+def main():
+    """Main function to coordinate drones, find the lowest battery drone, and find the closest drone."""
+    # Defining two groups of drones (each tuple contains: ID, location (x, y), battery level)
+    drones_group1 = (
+        ("D1", (10, 20), 80),
+        ("D2", (5, 15), 60),
+        ("D3", (12, 8), 90)
+    )
+
+    drones_group2 = (
+        ("D4", (3, 5), 50),
+        ("D5", (20, 10), 75),
+        ("D6", (7, 7), 40)
+    )
+
+    # Combining the two drone groups using the function
+    drones = combine_drones(drones_group1, drones_group2)
+
+    # Display all drones
+    display_drones(drones)
+
+    # Find the drone with the lowest battery
+    lowest_battery_drone = find_lowest_battery_drone(drones)
+    print(f"\nDrone with the lowest battery: {lowest_battery_drone[0]} - Battery: {lowest_battery_drone[2]}%")
+
+    # Define target location for delivery
+    target_location = (10, 10)
+
+    # Find the closest drone to the target location
+    closest_drone, closest_distance = find_closest_drone(drones, target_location)
+    print(f"\nBest drone for delivery to {target_location}: {closest_drone[0]} (Distance: {closest_distance:.2f})")
+
+# Run the program
+if __name__ == "__main__":
+    main()
 ```
 
 ## Step 02: Lists
