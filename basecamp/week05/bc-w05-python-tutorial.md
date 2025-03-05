@@ -439,23 +439,19 @@ When solving a problem like finding the closest available ambulance using lists,
 	- Store the incident location as a tuple (x, y).
 
 3. Break the Problem into Subtasks: 
-	1. To make the solution modular and manageable, break it down into smaller subtasks:
+	- To make the solution modular and manageable, break it down into smaller subtasks:
 		- Calculate the Distance: Use the Euclidean distance formula to measure how far an ambulance is from the incident location:
 $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
 		- Implement a function that takes two coordinates and returns the computed distance.
-	2.	Find the Closest Available Ambulance
+	-	Find the Closest Available Ambulance
 		- Iterate over the ambulance list while checking availability.
 		- Compare the distances and keep track of the ambulance with the shortest distance.
-	3.	Return and Display the Result
+	-	Return and Display the Result
 		- If a closest available ambulance is found, print its location and distance.
 		- If no ambulances are available, display an appropriate message.
 
 4. Write Modular and Readable Code
-	- Use functions for:
-	- Calculating distance.
-	- Finding the closest ambulance.
-	- Displaying the dispatch details.
-	- Wrap the logic inside a `main()` function for better organization.
+	- Use functions for: Calculating distance, Finding the closest ambulance, Displaying the dispatch details, Wrap the logic inside a `main()` function for better organization.
 
 5. Test with Sample Data
 	- Try different incident locations and availability scenarios:
