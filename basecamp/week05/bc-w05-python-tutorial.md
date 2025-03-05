@@ -278,27 +278,269 @@ if __name__ == "__main__":
 
 ## Step 02: Lists
 
+A list in Python is a collection of items stored in a specific order. It is similar to a tuple, but the key difference is that lists are **mutable**, meaning their contents can be changed after creation. This makes lists useful when you need a collection of values that may change over time, such as a list of names, numbers, or even a mix of different types.
+
+A list is defined using square brackets `[ ]`, with elements separated by commas. For example, `numbers = [10, 20, 30, 40]` creates a list of four numbers, and `person = ["Alice", 25, "Engineer"]` creates a list containing a mix of text and numbers. Lists can also be empty, like `empty_list = []`. In contrast, a tuple is defined using parentheses `()`, such as `numbers_tuple = (10, 20, 30, 40)`. While both lists and tuples store multiple values, lists allow modifications, whereas tuples do not.
+
+
+```python
+# A list of numbers
+numbers = [10, 20, 30, 40]
+
+# A list of mixed data types
+person = ["Alice", 25, "Engineer"]
+
+# An empty list
+empty_list = []
+```
+
+Like tuples, lists support indexing and slicing to access elements. For example, in `fruits = ["apple", "banana", "cherry", "date"]`, `fruits[0]` gives `"apple"`, while `fruits[2]` gives `"cherry"`. Slicing allows extracting part of a list, such as `fruits[1:3]`, which results in `["banana", "cherry"]`.
+Negative indexing is supported both in lists and tuples. If `"apple"` has the index `0` then `fruits[-1]` returns `"date"` and `fruits[-2]` will result in `"cherry"`.
+
+```python
+fruits = ["apple", "banana", "cherry", "date"]
+
+# Accessing elements using indexes
+print(fruits[0])  # Output: apple
+print(fruits[2])  # Output: cherry
+
+# Negative indexing (counting from the end)
+print(fruits[-1])  # Output: date
+
+# Slicing (extracting a portion of the list)
+print(fruits[1:3])  # Output: ['banana', 'cherry']
+
+# Full slice (returns a copy of the entire list)
+print(fruits[:])  # Output: ['apple', 'banana', 'cherry', 'date']
+
+# Slice from the beginning up to index 3 (excluding index 3)
+print(fruits[:3])  # Output: ['apple', 'banana', 'cherry']
+
+# Slice from the beginning up to index 2 (excluding index 2)
+print(fruits[:2])  # Output: ['apple', 'banana']
+```
+
+
+Since lists are mutable, you can modify their contents in various ways. Unlike tuples, lists allow direct modifications using indexing, and they can also be combined or repeated using mathematical operators.
+
+One way to manipulate a list is by updating a value using an index (offset). Since each element in a list has a specific position, you can replace an existing value by assigning a new one to a particular index. For example, if you have `fruits = ["apple", "banana", "cherry", "date"]` and you want to change `"banana"` to `"blueberry"`, you can do so by writing `fruits[1] = "blueberry"`, which updates the second element of the list. This operation is not allowed in tuples, as they are immutable.
+
+
+```python
+
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "blueberry"  # Replacing 'banana' with 'blueberry'
+print(fruits)  # Output: ['apple', 'blueberry', 'cherry']
+
+fruits_tuple = ("apple", "banana", "cherry")
+# TUPLES ARE IMMUTABLE
+fruits_tuple[1] = "blueberry"  # TypeError: 'tuple' object does not support item assignment
+```
+
+Another way to manipulate lists is by extending them using the `+` operator, which joins two lists together to form a new list. If `list1 = [1, 2, 3]` and `list2 = [4, 5, 6]`, writing `combined_list = list1 + list2` results in `[1, 2, 3, 4, 5, 6]`. This operation does not modify the original lists but instead creates a new one containing elements from both.
+
+Lists can also be multiplied using the `*` operator, which repeats their elements multiple times. If `numbers = [1, 2, 3]`, then `numbers * 3` produces `[1, 2, 3, 1, 2, 3, 1, 2, 3]`, where the original list is repeated three times in the new list.
+
+```python
+# Extending lists using the + operator
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+# Creating a new combined list
+combined_list = list1 + list2
+
+print("Original list1:", list1)  # Output: [1, 2, 3]
+print("Original list2:", list2)  # Output: [4, 5, 6]
+print("Combined list:", combined_list)  # Output: [1, 2, 3, 4, 5, 6]
+
+# Multiplying a list using the * operator
+numbers = [1, 2, 3]
+
+# Creating a new repeated list
+repeated_list = numbers * 3
+
+print("Original numbers list:", numbers)  # Output: [1, 2, 3]
+print("Repeated list:", repeated_list)  # Output: [1, 2, 3, 1, 2, 3, 1, 2, 3]
+```
+
+Lists also allow adding elements dynamically. Using `append()`, you can add an element to the **end of a list**, like `numbers.append(4)`, resulting in `[1, 2, 3, 4]`. The `insert()` method allows inserting at a specific index, such as `numbers.insert(1, 10)`, which results in `[1, 10, 2, 3, 4]`. Similarly, lists allow removing elements. Using `remove()`, you can delete an element by value, like `fruits.remove("banana")`, while `pop()` removes an element by index, such as `removed_item = fruits.pop(1)`, which removes `"cherry"` from the list.
+
+```python
+numbers = [1, 2, 3]
+
+# Append adds an element at the end
+numbers.append(4)
+print(numbers)  # Output: [1, 2, 3, 4]
+
+# Insert adds an element at a specific index
+numbers.insert(1, 10)  # Insert 10 at index 1
+print(numbers)  # Output: [1, 10, 2, 3, 4]
+
+fruits = ["apple", "banana", "cherry", "date"]
+
+# Remove an element by value
+fruits.remove("banana")
+print(fruits)  # Output: ['apple', 'cherry', 'date']
+
+# Remove an element by index
+removed_item = fruits.pop(1)  # Removes 'cherry' (index 1)
+print(fruits)  # Output: ['apple', 'date']
+print("Removed:", removed_item)  # Output: Removed: cherry
+```
+
+
+The `split()` method in Python is used to break a string into a list of words or parts, using a separator (default is a space). It returns a list where each element is a piece of the original string.
+
+```python
+text = "Python is fun"
+words = text.split()  # By default, it splits by spaces
+print(words)  # Output: ['Python', 'is', 'fun']
+
+data = "apple,banana,cherry,date"
+fruits = data.split(",")  # Splitting by commas
+print(fruits)  # Output: ['apple', 'banana', 'cherry', 'date']
+```
+
+Lists offer a variety of built-in methods, such as clear(), count(), sort(), and many more, which provide powerful ways to manipulate and manage list data. However, since our focus is not to provide an exhaustive reference on lists and tuples, we encourage the reader to explore and experiment with these methods independently.
+
+The choice between lists and tuples depends on the use case. Lists are ideal when data needs to be modified, such as a list of students in a class, where names may be added or removed. Tuples, on the other hand, are useful when the data should remain constant, such as storing the coordinates of a location `(x, y)`. Tuples are also slightly faster and use less memory because of their immutability.
+
+### Problem Solving
+
+In a city, there are 20 ambulances stationed at different locations, each represented by its coordinates (x, y). Some ambulances are available, while others are occupied attending to other emergencies.
+
+An incident has just occurred at a specific location, and we need to find the closest available ambulance to dispatch to the scene.
+
+You are given:
+	- A list of ambulance locations represented as tuples (x, y).
+	- A corresponding list indicating availability, where True means the ambulance is available, and False means it is currently in use.
+	- The incident location as a tuple (x, y).
+
+Your task is to identify the closest available ambulance using the Euclidean distance formula and dispatch it to the incident. If no ambulances are available, print a message indicating that all are occupied.
+
+#### Strategy
+
+When solving a problem like finding the closest available ambulance using lists, it is important to follow a structured approach. Here’s a step-by-step strategy to tackle the problem efficiently:
+
+
+1. Understand the Problem Clearly
+	- Identify the inputs:
+		- A list of ambulance coordinates representing their locations in the city.
+		- A list of availability statuses indicating whether each ambulance is available or occupied.
+		- A coordinate for the incident location where help is needed.
+	- Determine the required output:
+		- Find the closest available ambulance based on Euclidean distance.
+		- If no ambulances are available, return a message saying all are occupied.
+
+
+2. Choose the Right Data Structures
+	- Use a list of tuples for ambulance locations, where each tuple represents an (x, y) coordinate.
+	- Use a list of booleans for ambulance availability, where True means available, and False means occupied.
+	- Store the incident location as a tuple (x, y).
+
+3. Break the Problem into Subtasks
+
+To make the solution modular and manageable, break it down into smaller subtasks:
+	- Calculate the Distance
+		- Use the Euclidean distance formula to measure how far an ambulance is from the incident location:
+$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
+	- Implement a function that takes two coordinates and returns the computed distance.
+	2.	Find the Closest Available Ambulance
+		- Iterate over the ambulance list while checking availability.
+		- Compare the distances and keep track of the ambulance with the shortest distance.
+	3.	Return and Display the Result
+		- If a closest available ambulance is found, print its location and distance.
+		- If no ambulances are available, display an appropriate message.
+
+4. Write Modular and Readable Code
+	- Use functions for:
+	- Calculating distance.
+	- Finding the closest ambulance.
+	- Displaying the dispatch details.
+	- Wrap the logic inside a `main()` function for better organization.
+
+5. Test with Sample Data
+	- Try different incident locations and availability scenarios:
+	- Cases where multiple ambulances are available.
+	- Cases where only one ambulance is available.
+	- Cases where all ambulances are occupied.
+
+
+#### Solution
+
+```python
+import math
+
+# Function to calculate Euclidean distance between two points
+def calculate_distance(loc1, loc2):
+    """Calculates the Euclidean distance between two coordinates (x, y)."""
+    x1, y1 = loc1
+    x2, y2 = loc2
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+# Function to find the closest available ambulance
+def find_closest_ambulance(ambulance_locations, ambulance_availability, incident_location):
+    """Finds the closest available ambulance to the given incident location."""
+    closest_ambulance = None
+    closest_distance = float("inf")  # Initialize with a large value
+
+    for i in range(len(ambulance_locations)):
+        if ambulance_availability[i]:  # Check if the ambulance is available
+            distance = calculate_distance(ambulance_locations[i], incident_location)
+            if distance < closest_distance:
+                closest_distance = distance
+                closest_ambulance = ambulance_locations[i]
+
+    return closest_ambulance, closest_distance
+
+# Function to display the dispatch result
+def dispatch_ambulance(closest_ambulance, distance, incident_location):
+    """Prints the details of the closest available ambulance being dispatched."""
+    if closest_ambulance:
+        print(f"Dispatching ambulance at {closest_ambulance} (Distance: {distance:.2f}) to the incident at {incident_location}.")
+    else:
+        print("No available ambulances at the moment.")
+
+# Main function to run the program
+def main():
+    """Main function to manage the ambulance dispatch process."""
+    # Define a list of ambulance locations (x, y)
+    ambulance_locations = [
+        (2, 3), (5, 8), (12, 15), (7, 9), (20, 5), (3, 10), (18, 2), (8, 6),
+        (10, 14), (14, 4), (6, 7), (15, 3), (11, 9), (9, 5), (4, 12), (13, 6),
+        (17, 10), (1, 2), (16, 8), (19, 7)
+    ]
+
+    # Define availability status (True = available, False = occupied)
+    ambulance_availability = [
+        True, False, True, True, False, True, False, True,
+        False, True, True, False, True, False, True, True,
+        False, True, True, False
+    ]
+
+    # Define the incident location (x, y)
+    incident_location = (10, 10)
+
+    # Find the closest available ambulance
+    closest_ambulance, distance = find_closest_ambulance(ambulance_locations, ambulance_availability, incident_location)
+
+    # Display the dispatch result
+    dispatch_ambulance(closest_ambulance, distance, incident_location)
+
+# Run the program
+if __name__ == "__main__":
+    main()
+```
+
 ## Step 03: Functions (more)?
 
 
 
-Here is an example:
 
-```python
-# Getting user input
-name = input("Enter your name: ") # Note the text given to input()
-age = int(input("Enter your age: ")) # Pay attention to the type casting
+### Problem Solving
 
-# Performing a calculation
-birth_year = 2023 - age
+#### Strategy
 
-# Displaying output
-print("Hello, " + name + "! You were born in", birth_year)
-```
 
-In this example, the `input()` function is used to prompt the user to enter their name and age. The input for the age is type casted to an integer using the `int()` function to ensure it is treated as a numerical value.
-
-A calculation is performed to determine the birth year by subtracting the age from the current year `2023`. The result is stored in the `birth_year` variable.
-
-The `print()` function is then used to display a personalized message to the user, including their name and the calculated birth year. The string concatenation operator `+` is used to combine the strings and the variable value in the output.
+#### Solution
 
