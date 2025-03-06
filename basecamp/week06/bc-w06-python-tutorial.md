@@ -242,6 +242,82 @@ The library needs a way to store, retrieve, update, and remove books based on a 
 
 #### Solution
 
+```python
+# Function to initialize the book storage
+def initialize_library():
+    """Creates and returns an empty book storage system."""
+    return {}
+
+# Function to add a new book
+def add_book(library, isbn, title, author):
+    """Adds a new book to the library."""
+    library[isbn] = (title, author)
+    print(f"Book '{title}' added successfully.")
+
+# Function to find a book by ISBN
+def find_book(library, isbn):
+    """Finds and returns a book's details by its ISBN."""
+    return library.get(isbn, "Book not found.")
+
+# Function to remove a book by ISBN
+def remove_book(library, isbn):
+    """Removes a book from the library."""
+    removed_book = library.pop(isbn, None)
+    if removed_book:
+        print(f"Book '{removed_book[0]}' removed successfully.")
+    else:
+        print("Book not found.")
+
+# Function to update book details
+def update_book(library, isbn, new_title=None, new_author=None):
+    """Updates a book's title and/or author."""
+    if isbn in library:
+        title, author = library[isbn]
+        title = new_title if new_title else title
+        author = new_author if new_author else author
+        library[isbn] = (title, author)
+        print(f"Book '{isbn}' updated successfully.")
+    else:
+        print("Book not found.")
+
+# Function to list all books
+def list_books(library):
+    """Displays all books in the library."""
+    if library:
+        print("\nLibrary Collection:")
+        for isbn, (title, author) in library.items():
+            print(f"ISBN: {isbn}, Title: {title}, Author: {author}")
+    else:
+        print("No books in the library.")
+
+# Main function to test the system
+def main():
+    # Initialize the library
+    library = initialize_library()
+
+    # Add books
+    add_book(library, "9780143128540", "To Kill a Mockingbird", "Harper Lee")
+    add_book(library, "9780307949486", "1984", "George Orwell")
+    add_book(library, "9780439023528", "The Hunger Games", "Suzanne Collins")
+
+    # Find a book
+    print("\nFinding a book:")
+    print(find_book(library, "9780307949486"))  # Should return book details
+
+    # Remove a book
+    remove_book(library, "9780439023528")  # Removing "The Hunger Games"
+
+    # Update a book
+    update_book(library, "9780143128540", new_author="Harper Lee (Updated)")  # Updating an author
+
+    # List all books
+    list_books(library)
+
+# Run the program
+if __name__ == "__main__":
+    main()
+
+```
 
 ## Step 02: Lists
 
