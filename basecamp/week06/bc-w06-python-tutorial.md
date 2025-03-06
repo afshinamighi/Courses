@@ -321,7 +321,7 @@ if __name__ == "__main__":
 
 #### Note
 
-In the provided solution above there are new structures that we have not discussed explicitly but at this stage it expected you feel confident to explore and learn them. 
+In the solution provided above, you may encounter some new structures that we have not explicitly discussed. However, at this stage, you are expected to feel confident in exploring and learning them independently.
 
 - A Conditional Operator: It is used to choose a value based on a condition in a compact way. 
 
