@@ -273,8 +273,8 @@ def update_book(library, isbn, new_title=None, new_author=None):
     """Updates a book's title and/or author."""
     if isbn in library:
         title, author = library[isbn]
-        title = new_title if new_title else title
-        author = new_author if new_author else author
+        title = new_title if new_title else title # Keep old title if new_title is not provided
+        author = new_author if new_author else author # Keep old author if new_author is not provided
         library[isbn] = (title, author)
         print(f"Book '{isbn}' updated successfully.")
     else:
@@ -318,6 +318,21 @@ if __name__ == "__main__":
     main()
 
 ```
+
+#### Note
+
+In the provided solution above there are new structures that we have not discussed explicitly but at this stage it expected you feel confident to explore and learn them. 
+
+- A Conditional Operator: It is used to choose a value based on a condition in a compact way. 
+
+```python
+value_if_true if condition else value_if_false
+```
+This means: If `condition` is `True`, return `value_if_true`, otherwise, return `value_if_false`.
+
+- The `dictionary.get(key, default_value)` method:
+
+If `key` exists in the dictionary, `.get()` returns the corresponding value. If `key` does NOT exist, `.get()` returns the `default_value` (instead of raising an error).
 
 ## Step 02: Lists
 
