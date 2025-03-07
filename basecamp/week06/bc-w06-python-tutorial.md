@@ -2,7 +2,7 @@
 
 ## Todo
 
-- 
+- add a section titled as "For Curious Minds": One of the topics that can be explained simply is the notion of efficiency and big-O notation to compare the efficient operations, like having a solution between sets and lists.
 
 ## Introduction
 
@@ -334,12 +334,27 @@ This means: If `condition` is `True`, return `value_if_true`, otherwise, return 
 
 If `key` exists in the dictionary, `.get()` returns the corresponding value. If `key` does NOT exist, `.get()` returns the `default_value` (instead of raising an error).
 
-## Step 02: Lists
+## Step 02: Sets
 
 
 
 ### Problem Solving
 
+Students will develop a Python program that detects plagiarism in student submissions by comparing the similarity between two or more pieces of text. This assignment will help students practice sets and their operations, including union, intersection, and difference, to efficiently compare documents.
+
+Task Description
+
+A teacher receives multiple student essays and wants to check for similar content between them. The program should:
+	1.	Read two or more student submissions (entered as text).
+	2.	Break the text into individual words (ignoring punctuation and case differences).
+	3.	Use sets to compare the unique words in each submission.
+	4.	Calculate similarity based on the number of shared words (intersection).
+	5.	Identify unique words from each submission (difference).
+	6.	Display a plagiarism score based on how much content overlaps.
+
+Expected Outcome
+	•	The program should flag highly similar texts as potential plagiarism.
+	•	It should also highlight unique words that are only present in one submission.
 
 
 #### Strategy
@@ -349,17 +364,279 @@ If `key` exists in the dictionary, `.get()` returns the corresponding value. If 
 #### Solution
 
 
-## Step 03: Functions (more)?
+## Step 03: Functions (more)
+
+In Python, functions are not just blocks of code; they are also objects (just like numbers, strings, and lists). This means we can assign a function to a variable and use it later.
+
+Here, `say_hello` is just another name for `greet`, and it works exactly the same way.
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+# Assign the function to another variable
+say_hello = greet
+
+# Call the function using the new variable
+print(say_hello("Alice"))  # Output: Hello, Alice!
+```
+
+What if we need a function just once and don’t want to name it? Python allows us to define a function on the spot using `lambda` functions (also called anonymous functions because they don’t have a name).
+
+
+```python
+double = lambda x: x * 2
+
+print(double(5))  # Output: 10
+```
+
+In our example above, the anonymous function does the same thing as `def double(x): return x * 2`, but in a shorter way without a specific name.
+This example simply demonstrates how an anonymous function can be defined. However, you might still wonder about the actual benefits of defining double this way. To clarify its usefulness, we will provide two examples where anonymous functions can be particularly helpful.
+
+Lambda functions are very useful when sorting lists based on specific criteria without defining a separate function.
+Imagine, you have a list of students with their names and ages, and you want to sort them. We can use the `sort()` function which is a built-in method for sorting lists in place (modifying the original list). But, we need to specify to the function what is our criteria of sorting. Let's assume we would like to sort our list based on their age.
+Here is our first solution:
+
+```python
+students = [("Alice", 25), ("Bob", 20), ("Charlie", 23)]
+
+def by_age(student):
+    return student[1]  # Return the age
+
+students.sort(key=by_age)  # Sorting using the function
+
+print(students)
+```
+But we can improve our code. More likely the function `by_age()` will not be called (used) in other part of (our imaginary) bigger code. We can employ `lambda` functions on the spot where it is needed. Check our alternative solution here:
+
+```python
+students = [("Alice", 25), ("Bob", 20), ("Charlie", 23)]
+
+students.sort(key=lambda student: student[1])  # Sorting directly with lambda
+
+print(students)
+```
+
+In our alternative solution the code is cleaner and easier to read.
+
+Here is another example where a list of names is processed using a `lambda` expression. In this example, pay close attention to how the anonymous function is defined and how the parameter is passed directly on the spot.
+The `.title()` method in this example is used to convert a string to title case, meaning the first letter of each word is capitalized, and all other letters are converted to lowercase.
+
+```python
+names = ["aLICE johnson", "BOB sMITH", "charlie BROWN"]
+
+# Initialize an empty list to store formatted names
+formatted_names = []
+
+# Using a loop and lambda to format names
+for name in names:
+    formatted_names.append((lambda n: n.title())(name))
+
+print(formatted_names)
+```
+
+### Problem Solving
+
+You are asked to develop a Python program that processes and analyzes customer reviews for an online store. The program will take a list of customer reviews containing: Customer Name (string), Review Text (string), Star Rating (1 to 5 as integer)
+
+1.	Filter Reviews: Extract positive reviews (star rating 4 or 5) and negative reviews (1 or 2 stars).
+2.	Sort Reviews:
+- Sort reviews by rating (highest to lowest).
+- Sort reviews alphabetically by customer name.
+3.	Clean the Text:
+- Remove unnecessary punctuation from reviews.
+- Convert all text to lowercase for consistency.
+4.	Summarize Reviews: Create a short version of each review by keeping only the first 5 words.
+5.	Generate a Summary Report:
+- Count the number of positive and negative reviews.
+- Identify the most frequently used words across all reviews (excluding common words like `“the”`, `“and”`, etc.).
+
+Students must structure their program into functions and apply `lambda` functions where appropriate to make the code concise and readable.
+
+### Strategy
+
+1. Define Data Structure: Each review will be stored as a tuple containing: Customer Name (string), Review Text (string), Star Rating (integer from 1 to 5)
+- Multiple reviews will be stored in a list of tuples.
+
+2. Implement Review Cleaning: Remove punctuation and convert to lowercase for consistency. Potential to use an anonymous function.
+
+3. Filter Positive & Negative Reviews: Use `filter()` to extract positive reviews (ratings 4 or 5) and negative reviews (ratings 1 or 2). Potential to use an anonymous function. 
+
+**Note**: Make some research about function `filter()`. 
+
+4. Sort Reviews: Sort by rating (highest to lowest) and sort by customer name (alphabetically). Potential to use an anonymous function.
+
+**Note**: Make some research about sorting function in Python. 
+
+5. Summarize Reviews: Keep only the first 5 words of each review.
+
+6. Generate a Summary Report: Count positive and negative reviews and find the most frequently used words (excluding common words like `“the”`, `“and”`, etc.).
 
 
 #### Solution
 
+
+```python
+import string
+from collections import Counter
+
+# Sample data: List of customer reviews (name, review text, star rating)
+reviews = [
+    ("Alice", "This product is fantastic! I love it.", 5),
+    ("Bob", "Terrible quality, broke after one use.", 1),
+    ("Charlie", "Decent value for the price.", 3),
+    ("David", "Absolutely wonderful, would buy again!", 5),
+    ("Eve", "Not as described, very disappointed.", 2),
+    ("Frank", "The best purchase I have made this year!", 5),
+    ("Grace", "Horrible experience. Do not recommend.", 1),
+    ("Hannah", "Pretty good but took too long to arrive.", 4),
+    ("Ian", "Fairly average, nothing special.", 3),
+    ("Jack", "Perfect, just what I needed!", 5),
+]
+
+### **Step 1: Clean Review Text (Remove Punctuation & Convert to Lowercase)**
+def clean_text(text):
+    """Removes punctuation manually using replace() and converts text to lowercase."""
+    punctuation = string.punctuation
+    for char in punctuation:
+        text = text.replace(char, "")  # Remove punctuation by replacing it with an empty string
+    return text.lower()  # Convert to lowercase
+
+def clean_reviews(reviews):
+    """Cleans the text of all reviews."""
+    cleaned_reviews = []
+    for name, text, rating in reviews:
+        cleaned_reviews.append((name, clean_text(text), rating))
+    return cleaned_reviews
+
+### **Step 2: Filter Positive & Negative Reviews**
+def filter_positive(reviews):
+    """Filters reviews with a rating of 4 or 5 (Positive)."""
+    positive_reviews = []
+    for review in reviews:
+        if review[2] >= 4:
+            positive_reviews.append(review)
+    return positive_reviews
+
+def filter_negative(reviews):
+    """Filters reviews with a rating of 1 or 2 (Negative)."""
+    negative_reviews = []
+    for review in reviews:
+        if review[2] <= 2:
+            negative_reviews.append(review)
+    return negative_reviews
+
+### **Step 3: Sorting Reviews**
+def sort_reviews_by_rating(reviews):
+    """Sorts reviews from highest to lowest rating."""
+    return sorted(reviews, key=lambda r: r[2], reverse=True)
+
+def sort_reviews_by_name(reviews):
+    """Sorts reviews alphabetically by customer name."""
+    return sorted(reviews, key=lambda r: r[0])
+
+### **Step 4: Summarize Reviews (Keep First 5 Words)**
+def summarize_review(text):
+    """Keeps only the first 5 words of a review."""
+    words = text.split()
+    return " ".join(words[:5])
+
+def summarize_reviews(reviews):
+    """Creates a short version of each review (first 5 words)."""
+    summarized_reviews = []
+    for name, text, rating in reviews:
+        summarized_reviews.append((name, summarize_review(text), rating))
+    return summarized_reviews
+
+### **Step 5: Generate Word Frequency Report**
+def word_frequency(reviews):
+    """Finds the most frequently used words in reviews, excluding common words."""
+    stopwords = {"the", "is", "this", "a", "for", "to", "it", "i", "after", "on"}
+    
+    all_words = []
+    for _, text, _ in reviews:
+        words = text.split()
+        for word in words:
+            if word not in stopwords:
+                all_words.append(word)
+    
+    word_counts = Counter(all_words)
+    return word_counts.most_common(5)  # Get top 5 most common words
+
+### **Main Function to Run the Program**
+def main():
+    """Main function that processes and analyzes customer reviews."""
+    print("\n Cleaning Reviews...")
+    cleaned_reviews = clean_reviews(reviews)
+
+    print("\n Filtering Positive and Negative Reviews...")
+    positive_reviews = filter_positive(cleaned_reviews)
+    negative_reviews = filter_negative(cleaned_reviews)
+
+    print("\n Sorting Reviews by Rating...")
+    sorted_by_rating = sort_reviews_by_rating(cleaned_reviews)
+
+    print("\n Summarizing Reviews (First 5 Words)...")
+    summarized_reviews = summarize_reviews(cleaned_reviews)
+
+    print("\n Generating Word Frequency Report...")
+    common_words = word_frequency(cleaned_reviews)
+
+    ### **Displaying Results**
+    print("\n **Positive Reviews:**")
+    for review in positive_reviews:
+        print(f"- {review[0]}: {review[1]} ({review[2]} stars)")
+
+    print("\n **Negative Reviews:**")
+    for review in negative_reviews:
+        print(f"- {review[0]}: {review[1]} ({review[2]} stars)")
+
+    print("\n **Sorted Reviews by Rating (Highest First):**")
+    for review in sorted_by_rating:
+        print(f"- {review[0]}: {review[1]} ({review[2]} stars)")
+
+    print("\n **Summarized Reviews:**")
+    for review in summarized_reviews:
+        print(f"- {review[0]}: {review[1]}... ({review[2]} stars)")
+
+    print("\n **Most Common Words in Reviews:**")
+    for word, count in common_words:
+        print(f"- {word}: {count} times")
+
+### **Run the program**
+if __name__ == "__main__":
+    main()```
 
 ## Summary
 
 
 
 ## Assignment (Draft)
+
+[todo: this is just an idea. Data set can be provided as a csv file where students must decide how to collect data values as a dictionary. Extend the features of the assignment to integrate more concepts of dictionaries, anonymous functions.]
+
+You are given a dictionary where each key represents a user, and the corresponding value is a set of their friends. For example:
+
+```python
+
+social_network = {
+    "Alice": {"Bob", "Charlie"},
+    "Bob": {"Alice", "Charlie", "David"},
+    "Charlie": {"Alice", "Bob"},
+    "David": {"Bob", "Eve"},
+    "Eve": {"David"}
+}
+```
+
+Your task is to write a program that:
+
+Takes a username as input.
+
+Finds all the friends of the user.
+
+Finds all the friends of those friends (excluding the user and their direct friends).
+
+Recommends these friends as potential new connections.
 
 
 
