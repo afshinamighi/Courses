@@ -336,33 +336,220 @@ If `key` exists in the dictionary, `.get()` returns the corresponding value. If 
 
 ## Step 02: Sets
 
+A set in Python is a collection of unique elements. Unlike lists or tuples, sets do not allow duplicate values and provide fast membership checks. This makes them useful in scenarios where we need to store distinct values and perform operations like removing duplicates, checking membership, or finding common elements between collections.
 
+A set can be created using the `set()` function, which initializes an empty set. Elements can be added using the `.add()` method. Since sets do not allow duplicate elements, adding the same element multiple times has no effect on the set’s content.
+
+```python
+# Create an empty set
+numbers = set()
+
+# Add elements to the set
+numbers.add(10)
+numbers.add(20)
+numbers.add(30)
+numbers.add(10)
+
+print(numbers)  # Output: {10, 20, 30}
+```
+A set can also be created with a collection of pre-existing elements.
+
+```python
+fruits = {"apple", "banana", "cherry"}
+print(fruits)  # Output: {'apple', 'banana', 'cherry'}
+```
+
+You may have noticed that sets are represented using `{ }`. However, when creating an empty set, you should not use `{}` because it initializes a **dictionary** instead. To create an empty set, you must use the `set()` function.
+
+
+For removing an elements you may use `.remove()` or `.discard()`. Use `.remove()` when you are sure the element exists.
+
+```python
+fruits.remove("banana")  # Removes "banana" (raises an error if not found)
+print(fruits)  # Output: {'apple', 'cherry'}
+
+fruits.discard("grape")  # No error if "grape" is not found
+```
+
+One of the key advantages of sets in Python is their fast membership checking. Unlike lists, where checking if an element exists requires searching through all elements, sets provide a very efficient technique to check if an element is within the set.
+
+```python
+fruits = {"apple", "banana", "cherry"}
+
+# Check if "banana" is in the set
+if "banana" in fruits:
+    print("Banana is in the set!")  
+
+# Check if "grape" is in the set
+if "grape" not in fruits:
+    print("Grape is not in the set!")  
+```
+
+Since sets are unordered collections, you can iterate through them using a `for` loop. The order of elements is **not guaranteed** because sets do not store items in a fixed sequence.
+
+```
+colors = {"red", "blue", "green"}
+
+for color in colors:
+    print(color) # Output: The elements might appear in a different order each time you run the code.
+```
+
+Sets in Python provide powerful operations that help in handling unique collections of data efficiently. Four key operations on sets are subset, union, intersection, and difference, which allow us to compare and manipulate sets easily.
+
+A subset (`<=`) is when all elements of one set exist in another. For example, if `A = {1, 2}` and `B = {1, 2, 3, 4}`, then `A` is a subset of `B` because all elements of `A` are also in `B`.
+
+A union (`|`) combines all unique elements from two sets. If `A = {1, 2}` and `B = {2, 3, 4}`, then `A | B = {1, 2, 3, 4}`, meaning all elements from both sets are included, without duplicates.
+
+An intersection (`&`) finds common elements between two sets. If `A = {1, 2, 3}` and `B = {2, 3, 4}`, then `A & B = {2, 3}`, since these are the elements found in both sets.
+
+A difference (`-`) finds elements that are in one set but not in the other. If `A = {1, 2, 3}` and `B = {2, 3, 4}`, then `A - B = {1}`, meaning `1` is in `A` but not in `B`.
+
+```python
+# Students enrolled in Math and Computer Science courses
+math_students = {"Alice", "Bob", "Charlie", "David"}
+cs_students = {"Charlie", "David", "Eve", "Frank"}
+
+# Subset: Check if all Math students are also in CS
+print(math_students <= cs_students)  # Output: False (not all Math students are in CS)
+
+# Union: Get all students enrolled in at least one course
+all_students = math_students | cs_students
+print(all_students)  # Output: {'Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank'}
+
+# Intersection: Find students taking both Math and CS
+common_students = math_students & cs_students
+print(common_students)  # Output: {'Charlie', 'David'}
+
+# Difference: Find students taking Math but not CS
+only_math_students = math_students - cs_students
+print(only_math_students)  # Output: {'Alice', 'Bob'}
+
+# Difference: Find students taking CS but not Math
+only_cs_students = cs_students - math_students
+print(only_cs_students)  # Output: {'Eve', 'Frank'}
+```
 
 ### Problem Solving
 
-Students will develop a Python program that detects plagiarism in student submissions by comparing the similarity between two or more pieces of text. This assignment will help students practice sets and their operations, including union, intersection, and difference, to efficiently compare documents.
-
-Task Description
-
 A teacher receives multiple student essays and wants to check for similar content between them. The program should:
-	1.	Read two or more student submissions (entered as text).
-	2.	Break the text into individual words (ignoring punctuation and case differences).
-	3.	Use sets to compare the unique words in each submission.
-	4.	Calculate similarity based on the number of shared words (intersection).
-	5.	Identify unique words from each submission (difference).
-	6.	Display a plagiarism score based on how much content overlaps.
 
-Expected Outcome
-	•	The program should flag highly similar texts as potential plagiarism.
-	•	It should also highlight unique words that are only present in one submission.
-
+1. Read multiple student submissions (entered as text).
+2. Preprocess the text by:
+- Breaking it into individual words.
+- Ignoring punctuation and case differences.
+3. Convert the processed text into sets to extract unique words.
+4. Compare submissions using set operations:
+- Intersection to find common words between documents.
+- Difference to identify unique words from each submission.
+5. Calculate a plagiarism score based on the proportion of shared words.
+6. Display results, highlighting:
+- Similarity percentages.
+- Words that are only present in one submission.
 
 #### Strategy
 
+To efficiently compare student submissions, we will follow a structured approach:
+
+1. Preprocessing the Text
+- Convert text to lowercase to ensure case insensitivity.
+- Remove punctuation to focus only on words.
+- Split text into words and store them in a set (to automatically remove duplicates).
+
+2. Set Operations for Comparison
+- Use intersection to find common words between two submissions.
+- Use difference to find words unique to each submission.
+- Use union to get the total distinct words across both submissions.
+
+3. Plagiarism Score Calculation
+- The plagiarism score is based on the proportion of common words relative to the total words across both submissions. Formula:
+`Plagiarism Score = (Number of common words/Total unique words in both texts) * 100`
+- A higher percentage suggests a higher similarity.
 
 
 #### Solution
 
+```python
+import string
+
+### **Step 1: Preprocess Text (Remove Punctuation & Convert to Lowercase)**
+def preprocess_text(text):
+    """
+    Cleans the input text by removing punctuation and converting to lowercase.
+    Returns a set of unique words.
+    """
+    # Remove punctuation
+    for char in string.punctuation:
+        text = text.replace(char, "")
+    
+    # Convert to lowercase and split into words
+    words = text.lower().split()
+    
+    # Return unique words as a set
+    return set(words)
+
+### **Step 2: Calculate Plagiarism Score**
+def calculate_similarity(text1, text2):
+    """
+    Compares two texts and calculates a plagiarism score based on shared words.
+    Returns:
+        - Common words
+        - Unique words for each submission
+        - Plagiarism percentage
+    """
+    # Process both texts into sets of words
+    words1 = preprocess_text(text1)
+    words2 = preprocess_text(text2)
+    
+    # Set operations
+    common_words = words1 & words2  # Intersection (common words)
+    unique_words_text1 = words1 - words2  # Words unique to text1
+    unique_words_text2 = words2 - words1  # Words unique to text2
+    total_unique_words = words1 | words2  # Union (total distinct words)
+
+    # Calculate plagiarism percentage
+    if len(total_unique_words) == 0:
+        plagiarism_score = 0  # Avoid division by zero
+    else:
+        plagiarism_score = (len(common_words) / len(total_unique_words)) * 100
+    
+    return common_words, unique_words_text1, unique_words_text2, plagiarism_score
+
+### **Step 3: Display Results**
+def display_results(text1, text2):
+    """
+    Displays plagiarism detection results between two texts.
+    """
+    common_words, unique_words_text1, unique_words_text2, plagiarism_score = calculate_similarity(text1, text2)
+
+    print("\n **Plagiarism Detection Results**\n")
+    
+    print(f" **Plagiarism Score:** {plagiarism_score:.2f}%")
+    
+    print("\n **Common Words (Shared Content):**")
+    print(common_words if common_words else "No common words.")
+
+    print("\n **Unique Words in First Submission:**")
+    print(unique_words_text1 if unique_words_text1 else "No unique words.")
+
+    print("\n **Unique Words in Second Submission:**")
+    print(unique_words_text2 if unique_words_text2 else "No unique words.")
+
+### **Step 4: Main Function**
+def main():
+    """Main function to run the plagiarism detection program."""
+    print(" **Plagiarism Detection Program** \n")
+    
+    # Get student submissions
+    text1 = input("Enter first student submission:\n")
+    text2 = input("Enter second student submission:\n")
+    
+    # Display results
+    display_results(text1, text2)
+
+### **Run the Program**
+if __name__ == "__main__":
+    main()
+```
 
 ## Step 03: Functions (more)
 
@@ -436,6 +623,8 @@ print(formatted_names)
 ```
 
 ### Problem Solving
+
+[todo: needs polishing, remove most common feature. Give an alternative solution where filter and list comprehension are used to make a cleaner and more packed code]
 
 You are asked to develop a Python program that processes and analyzes customer reviews for an online store. The program will take a list of customer reviews containing: Customer Name (string), Review Text (string), Star Rating (1 to 5 as integer)
 
