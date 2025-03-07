@@ -811,46 +811,42 @@ The tutorial also delves into functions, explaining how to write clear and well-
 
 Programming Assignment: Package Delivery Management System
 
-Objective
-
-The goal of this assignment is to practice working with lists, tuples, and functions with positional arguments, default values, and *args while handling package delivery data efficiently. Students will develop a program that processes package information from a CSV file, validates data, sorts packages, and assigns them to delivery cars while ensuring that space constraints are respected.
-
-⸻
 
 Problem Statement
 
 A logistics company receives packages to be delivered across the Netherlands. The package information is stored in a CSV file, where each row contains the following details:
-	1.	Sender Information: First name and last name of the sender.
-	2.	Receiver Information: First name and last name of the receiver.
-	3.	Package Details: Weight (kg) and dimensions (length, width, height in cm).
-	4.	Delivery Address: Street name, house number, and postcode (Dutch format: four digits followed by two letters, e.g., 1234AB).
+
+1. Sender Information: First name and last name of the sender.
+2.	Receiver Information: First name and last name of the receiver.
+3.	Package Details: Weight (kg) and dimensions (length, width, height in cm).
+4.	Delivery Address: Street name, house number, and postcode (Dutch format: four digits followed by two letters, e.g., `1234AB`).
 
 Your task is to develop a Python program that performs the following functionalities:
-	1.	Data Validation & Error Reporting
-	•	Identify and report corrupted data such as:
-	•	Invalid postcodes (not in the Dutch format).
-	•	Invalid box dimensions (negative or zero values).
-	•	Invalid weights (negative or zero values).
-	•	Identify and report incomplete information such as:
-	•	Missing house number, postcode, or receiver details.
-	2.	Sorting Packages by Postcode
-	•	Sort the packages based on postcode so that deliveries can be grouped efficiently for distribution to delivery cars.
-	3.	Calculating Package Volume
-	•	Compute the volume of each package using the formula:
-\text{Volume} = \text{Length} \times \text{Width} \times \text{Height}
-	•	Store the package data, including volume, using an appropriate data structure (e.g., tuples and lists).
-	4.	Assigning Packages to Delivery Cars
-	•	Each delivery car has a maximum cargo volume capacity (given as input).
-	•	Ensure that the total volume of assigned packages does not exceed the car’s capacity.
-	•	If a package cannot fit, it should be left unassigned, and a report should be generated.
 
-⸻
+1. Data Validation & Error Reporting
+- Identify and report corrupted data such as:
+- Invalid postcodes (not in the Dutch format).
+- Invalid box dimensions (negative or zero values).
+- Invalid weights (negative or zero values).
+- Identify and report incomplete information such as:
+- Missing house number, postcode, or receiver details.
+2.	Sorting Packages by Postcode
+- Sort the packages based on postcode so that deliveries can be grouped efficiently for distribution to delivery cars.
+3.	Calculating Package Volume
+- Compute the volume of each package using the formula:
+`Volume = Length * Width * Height`
+- Store the package data, including volume, using an appropriate data structure (e.g., tuples and lists).
+4.	Assigning Packages to Delivery Cars
+- Each delivery car has a maximum cargo volume capacity (given as input).
+- Ensure that the total volume of assigned packages does not exceed the car’s capacity.
+- If a package cannot fit, it should be left unassigned, and a report should be generated.
 
-Implementation Guidelines
-	•	Use tuples for storing immutable package details (e.g., sender and receiver information).
-	•	Use lists for handling multiple packages and sorting them.
-	•	Use functions with positional arguments and default values for data processing.
-	•	Use *args where applicable to handle flexible inputs (e.g., variable numbers of dimensions).
-	•	Ensure clear output that provides insights into invalid packages, sorted deliveries, and car assignments.
 
-⸻
+[should we put this?] Implementation Guidelines
+
+- Use tuples for storing immutable package details (e.g., sender and receiver information).
+- Use lists for handling multiple packages and sorting them.
+- Use functions with positional arguments and default values for data processing.
+- Use `*args` where applicable to handle flexible inputs (e.g., variable numbers of dimensions).
+- Ensure clear output that provides insights into invalid packages, sorted deliveries, and car assignments.
+
