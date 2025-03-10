@@ -187,8 +187,12 @@ calculate_score = lambda scores: (scores[0] * 0.4) + (scores[1] * 0.3) + (scores
 def calculate_bonus(score):
     """Determines if an employee qualifies for a bonus."""
     global BONUS_THRESHOLD, BONUS_PERCENTAGE  # Using global scope
-    return (score * (1 + BONUS_PERCENTAGE / 100)) if score > BONUS_THRESHOLD else score
-
+    
+    if score > BONUS_THRESHOLD:
+        return score * (1 + BONUS_PERCENTAGE / 100)  # Apply bonus
+    else:
+        return score  # No bonus applied
+        
 ### **Step 3: Processing Employee Data**
 def process_employees(employee_data):
     """Calculates scores, applies bonuses, and sorts employees."""
@@ -225,8 +229,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
-#### Note
 
 
 ## Step 02: Sets
