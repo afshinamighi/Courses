@@ -578,7 +578,32 @@ print(double(5))  # Output: 10
 ```
 
 In our example above, the anonymous function does the same thing as `def double(x): return x * 2`, but in a shorter way without a specific name.
-This example simply demonstrates how an anonymous function can be defined. However, you might still wonder about the actual benefits of defining double this way. To clarify its usefulness, we will provide two examples where anonymous functions can be particularly helpful.
+This example illustrates how an anonymous function can be defined and assigned to a name. However, you might still wonder about the practical benefits of defining double in this way. To demonstrate its usefulness, we will first explain how a lambda function can be defined and applied on the spot, followed by a few examples showcasing scenarios where anonymous functions are particularly helpful.
+
+An anonymous function can also be defined and used immediately without storing it in a variable. This can be confusing for beginners because the function is created on the spot and applied directly to an argument.
+The general structure looks like this:
+
+```python
+(lambda parameters: expression)(arguments)
+```
+
+In this structure, `lambda parameters` defines the function, `expression` performs an operation on the parameters, and `(arguments)` calls the lambda function immediately with the provided values.
+
+Let’s create a lambda function that squares a number and apply it on the spot.
+
+```python
+result = (lambda x: x ** 2)(4)
+print(result)  # Output: 16
+```
+In this example `(lambda x: x ** 2)` defines a function that takes `x` and returns its squar without assigning a particular name to the function, `(4)` immediately calls the function with `4` as input, the result of applying lambda on `4` becomes `16` which is stored in `result` and printed.
+
+Now, let’s create a lambda function that adds two numbers and apply it on the spot.
+
+```python
+result = (lambda a, b: a + b)(5, 3)
+print(result)  # Output: 8
+```
+In the example above `(lambda a, b: a + b)` defines a function that takes `a` and `b`, then returns their sum, then `(5, 3)` calls the function with `5` and `3` as arguments, and finally the result `8` is stored in result and printed.
 
 Lambda functions are very useful when sorting lists based on specific criteria without defining a separate function.
 Imagine, you have a list of students with their names and ages, and you want to sort them. We can use the `sort()` function which is a built-in method for sorting lists in place (modifying the original list). But, we need to specify to the function what is our criteria of sorting. Let's assume we would like to sort our list based on their age.
