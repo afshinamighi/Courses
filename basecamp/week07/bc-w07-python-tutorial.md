@@ -379,16 +379,225 @@ print(deep_copy_list) # Output: [[99, 2], [3, 4]] (Only the copy changed)
 
 ## Step 03: Dictionaries and Sets (more).
 
+When working with dictionaries in Python, sometimes we need to create a copy so that changes to one dictionary do not affect the other. However, similar to lists and tuples, Python handles copies in two ways: shallow copy and deep copy.
+
+A shallow copy creates a new dictionary, but if the original dictionary contains lists or other dictionaries inside it, these are not fully copied. Instead, both the original and the copy share the same inner elements.
+
+For example, using the `.copy()` method: 
+
+```python
+original = {'a': 1, 'b': [2, 3]}
+shallow_copy = original.copy()
+
+shallow_copy['b'].append(4)  # Adding an element to the list inside the copy
+
+print(original)       # {'a': 1, 'b': [2, 3, 4]}
+print(shallow_copy)   # {'a': 1, 'b': [2, 3, 4]}
+```
+
+Another way to make a shallow copy is by using the copy module:
+```python
+import copy
+
+original = {'x': 10, 'y': [20, 30]}
+shallow_copy = copy.copy(original)
+
+shallow_copy['y'].append(40)  # Changing the list
+
+print(original)       # {'x': 10, 'y': [20, 30, 40]}
+print(shallow_copy)   # {'x': 10, 'y': [20, 30, 40]}
+```
+
+As shown in the example above, when we modify the list inside `shallow_copy`, the same change appears in original. This happens because both dictionaries still share the same list.
+
+Dictionary comprehension can also create a shallow copy.
+
+```python
+original = {'a': 1, 'b': [2, 3]}
+shallow_copy = {key: value for key, value in original.items()} # Dictionary comprehension
+
+shallow_copy['b'].append(4)
+
+print(original)       # {'a': 1, 'b': [2, 3, 4]}
+print(shallow_copy)   # {'a': 1, 'b': [2, 3, 4]}
+```
+
+Dictionary comprehension is useful for modifying values while copying but does not create a deep copy.
+
+A deep copy, on the other hand, creates a completely independent copy, including all lists and other dictionaries inside it. This means that changes made to the copy do not affect the original.
+
+Dictionaries provide a `copy()` method for shallow copying, but **not** `deepcopy()` because deep copying is more complex. Since dictionaries can store various types of objects (including other dictionaries and lists), Python handles deep copying at a more general level with the copy module.
+
+For example, using `copy.deepcopy()`:
+```python
+import copy
+
+original = {'a': 1, 'b': [2, 3]}
+deep_copy = copy.deepcopy(original)
+
+deep_copy['b'].append(4)  # Modifying the copied dictionary
+
+print(original)   # {'a': 1, 'b': [2, 3]}
+print(deep_copy)  # {'a': 1, 'b': [2, 3, 4]}
+```
+
+Similar to other collective structures, sometimes we need to create a copy of a set. However, copying sets is different from copying lists or dictionaries because **sets cannot contain mutable objects** *like lists*. This makes copying simpler because we don’t need to worry about deep copying in most cases.
+
+There are three common ways to copy a set in Python: shallow Copy using the method `copy()`, shallow Copy using the copy module, copying with set comprehension. Follow examples here:
+
+```python
+original = {1, 2, 3, 4}
+shallow_copy = original.copy()
+
+shallow_copy.add(5)  # Adding an element to the copied set
+
+print(original)       # {1, 2, 3, 4}
+print(shallow_copy)   # {1, 2, 3, 4, 5}
+```
+
+```python
+import copy
+
+original = {10, 20, 30}
+shallow_copy = copy.copy(original)
+
+shallow_copy.add(40)  # Adding an element to the copied set
+
+print(original)       # {10, 20, 30}
+print(shallow_copy)   # {10, 20, 30, 40}
+```
+
+```python
+original = {100, 200, 300}
+comprehension_copy = {item for item in original}
+
+comprehension_copy.add(400)  # Adding an element to the copied set
+
+print(original)            # {100, 200, 300}
+print(comprehension_copy)  # {100, 200, 300, 400}
+```
+
+Unlike lists or dictionaries, sets do not support deep copying because sets cannot contain mutable elements like lists. This means:
+- If you use `copy.deepcopy()`, it behaves the same as a shallow copy.
+- There is no need for deep copying since sets only contain immutable values.
+
+Let's try an example.  Tuples are immutable, which means their contents cannot be changed after they are created. Because of this, we can store tuples inside a set. This is allowed because sets only allow immutable (unchangeable) elements, and tuples meet this requirement.
+
+
+Since sets are mutable, but tuples inside them are immutable, copying a set of tuples follows the same principles as copying a normal set.
+
+```python
+original = {(1, 2), (3, 4), (5, 6)}
+shallow_copy = original.copy()
+
+shallow_copy.add((7, 8))  # Adding a new tuple
+
+print(original)       # {(1, 2), (3, 4), (5, 6)}
+print(shallow_copy)   # {(1, 2), (3, 4), (5, 6), (7, 8)}
+```
+
+```python
+import copy
+
+original = {(1, 2), (3, 4)}
+deep_copy = copy.deepcopy(original)
+
+deep_copy.add((5, 6))  # Adding a new tuple
+
+print(original)   # {(1, 2), (3, 4)}
+print(deep_copy)  # {(1, 2), (3, 4), (5, 6)}
+```
 
 ### Problem Solving
 
+You are developing a student course registration system for a university. The system should allow students to modify their course registrations in a way that ensures the original records remain unchanged.
+
+Write a `function modify_registration(student_data, student_id, new_course)` that:
+
+- Takes the existing student data, a student ID, and a new course name.
+- Creates a separate copy of the student data where changes can be made.
+- Adds the new course to the copied student’s registration without modifying the original records.
+- Returns both the original and the modified student data.
 
 #### Strategy
 
+1. Understand the Data Structure
+- Identify how student data is stored (e.g., a dictionary of student records).
+- Recognize that each student has a name and a list of courses.
+2. Identify the Core Requirement
+- The function must allow modifying a student’s courses without affecting the original records.
+- The function should return both the original and the modified versions.
+3.	Choose a Copying Method
+- A simple assignment (=) won’t work since lists inside dictionaries are mutable.
+- A shallow copy won’t fully solve the issue because nested lists remain shared.
+- A deep copy is needed to ensure complete separation of data.
+4.	Modify the Copied Data
+- Locate the student in the copied dataset using the `student_id`.
+- Append the new_course to the student’s course list in the copied version.
+5.	Return Both Versions
+- Return the original student data and the modified copy.
+6.	Test with Different Cases
+- Try adding a course for different students.
+- Verify that the original data remains unchanged.
+- Handle edge cases (e.g., adding a course to an empty list).
 
 #### Solution
 
+```python
+import copy
 
+def modify_registration(student_data, student_id, new_course):
+    """
+    Creates a deep copy of the student data and modifies the copied version
+    by adding a new course to the given student.
+    """
+    # Ensure deep copy so the original data remains unchanged
+    copied_data = copy.deepcopy(student_data)
+
+    # Modify only the copied version
+    if student_id in copied_data:
+        copied_data[student_id]["courses"].append(new_course)
+    
+    return copied_data
+
+def test_modify_registration():
+    """
+    Function to test the modify_registration function with sample data.
+    """
+    # Sample student data with 8-digit IDs
+    students = {
+        "01234567": {"name": "Alice", "courses": ["Math", "Physics"]},
+        "02345678": {"name": "Bob", "courses": ["Chemistry", "Biology"]},
+    }
+
+    # Print original data before modification
+    print("Original Student Data:")
+    for student_id, details in students.items():
+        print(f"{student_id}: {details}")
+
+    # Test modifying registration
+    modified_students = modify_registration(students, "01234567", "Computer Science")
+
+    # Print data after modification
+    print("\nModified Student Data:")
+    for student_id, details in modified_students.items():
+        print(f"{student_id}: {details}")
+
+    # Validate that the original data remains unchanged
+    print("\nVerifying Original Data is Unchanged:")
+    print(f"Original Data for 01234567: {students['01234567']}")
+    print(f"Modified Data for 01234567: {modified_students['01234567']}")
+
+def main():
+    """
+    Main function to run the test cases.
+    """
+    test_modify_registration()
+
+# Run the main function
+if __name__ == "__main__":
+    main()
+```
 
 ## Summary
 
