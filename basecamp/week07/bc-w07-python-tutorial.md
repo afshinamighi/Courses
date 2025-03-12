@@ -6,7 +6,7 @@
 
 ## Introduction
 
-
+As you continue exploring Python, understanding how data is stored, accessed, and manipulated at different levels becomes crucial for writing efficient and bug-free code. Imagine you’re working on a program that processes customer orders. You decide to use lambda functions to quickly filter high-value purchases, but soon realize that function behavior changes unexpectedly due to variable scope. Similarly, while copying order records, modifying one list unexpectedly alters another—revealing the difference between shallow and deep copies. These are common pitfalls that can lead to subtle bugs if not well understood. This tutorial dives deeper into lambda functions, name scope and variable scope, and copying techniques for lists, tuples, sets, and dictionaries. By mastering these concepts, you’ll gain greater control over how Python manages data, functions, and memory, helping you write more predictable and maintainable code.
 
 ## Step 01: Functions (more).
 
@@ -601,7 +601,11 @@ if __name__ == "__main__":
 
 ## Summary
 
+This tutorial provided an in-depth exploration of lambda functions, name scope, and variable scope, along with shallow and deep copying of lists, tuples, sets, and dictionaries in Python. It began by demonstrating how lambda functions simplified operations such as sorting and filtering, offering concise alternatives to traditional function definitions. The tutorial then delved into variable scope and namespace management, explaining how Python organized variables and controlled their accessibility across different parts of a program. Using practical examples, it illustrated the LEGB (Local, Enclosing, Global, Built-in) rule and the significance of the global keyword.
 
+The tutorial further explored shallow and deep copying, emphasizing the differences in how Python handled mutable and immutable data structures. Through practical scenarios, it highlighted how shallow copies retained references to nested objects, leading to unintended modifications, whereas deep copies created fully independent duplicates. Various copying techniques across lists, tuples, sets, and dictionaries were demonstrated, showing real-world applications, such as modifying student course registrations without altering original records.
+
+By the end of this tutorial, you gained a deeper understanding of Python’s memory management and data handling, enabling you to write more reliable and maintainable code.
 
 ## Assignment (Draft)
 
