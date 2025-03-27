@@ -190,6 +190,7 @@ To carry the exercises of this part, you can use our small medical data set (**T
 ## Books
 
 1. Book: ["Database Anonymization: Privacy Models, Data Utility, and Microaggregation-based Inter-model Connections"](https://www.researchgate.net/publication/290229262_Database_Anonymization_Privacy_Models_Data_Utility_and_Microaggregation-based_Inter-model_Connections)
+2. Book: ["Programming Differential Privacy"](https://programming-dp.com/cover.html)
 
 ## Survey
 
