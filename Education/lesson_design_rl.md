@@ -28,18 +28,15 @@ Use the steps below to plan your lesson. Each includes:
 
 ### 1. Activate Existing Knowledge (Schema Activation)
 
-** What**: Start by connecting the new topic to something students already know or experience.  
-** Why**: Helps students “plug in” new knowledge to an existing schema.  
-** Example**:  
-Teaching lists in Python? Start with:  
-*“Have you ever made a shopping list or playlist?”*
+**What**: Start by connecting the new topic to something students already know or experience.  
+**Why**: Helps students “plug in” new knowledge to an existing schema.  
+**Example**: Teaching lists in Python? Start with:  *“Have you ever made a shopping list or playlist?”*
 
 ### 2. Create Moments of Surprise (Prediction Error)
 
-** What**: Let students guess what will happen, then show them the actual result.  
-** Why**: Surprise grabs attention and strengthens memory.  
-** Example**:  
-Show this code and ask what it does:  
+**What**: Let students guess what will happen, then show them the actual result.  
+**Why**: Surprise grabs attention and strengthens memory.  
+**Example**: Show this code and ask what it does:  
 
 ```python
 my_list = [1, 2, 3]
