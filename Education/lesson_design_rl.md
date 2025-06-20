@@ -42,3 +42,51 @@ Use the steps below to plan your lesson. Each includes:
 my_list = [1, 2, 3]
 print(my_list[3])
 ```
+
+Then run it to reveal the IndexError.
+
+### 3. Break Content into Modules (Hierarchical Structure)
+
+**What**: Organize the topic into logical steps or “mini-schemas.”
+**Why**: Easier to learn and reuse knowledge in new contexts.
+**Example** (for Python lists):
+
+1.	Create a list
+2.	Access items
+3.	Modify items
+4.	Loop through a list
+
+### 4. Use Goal-Oriented Activities (Model-Based Practice)
+
+**What**: Give students clear, purposeful tasks.
+**Why**: Encourages schema use and real-world thinking.
+**Example**: “Create a list of your 3 favorite movies and print each one with its rank.”
+
+### 5. Encourage Abstraction (Dimensionality Reduction)
+
+**What**: Help students see patterns, similarities, or simplifications.
+**Why**: Strengthens the core schema and helps with transfer.
+**Example**: Ask: “How are lists similar to strings? What’s different?”
+
+### 6. Use Visuals or Metaphors (Schema Anchoring)
+
+**What**: Link ideas to images, stories, or metaphors.
+**Why**: Helps students create memorable shortcuts.
+**Example**: A list is like a train — each car is an item, and each one has a number (index).
+
+### 7. Review with Feedback (Schema Consolidation)
+
+**What**: Wrap up with a summary or quick check-in.
+**Why**: Strengthens schema and clears up confusion.
+**Example**: Use a quiz, discussion, or group activity to reinforce learning.
+
+### Final Checklist for Your Lesson Design
+
+- Did you connect to something familiar at the start?
+- Did you include a moment of surprise or error?
+- Did you break it into steps or logical units?
+- Did students complete a goal-based task?
+- Did you help them see patterns or simplify the concept?
+- Did you use a visual or metaphor?
+- Did you include a wrap-up with feedback?
+
