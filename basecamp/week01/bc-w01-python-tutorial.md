@@ -1,4 +1,4 @@
-# Python 01: Getting Started with Computers and Python
+# Python 01: Computers and Python
 
 ## Introduction
 
