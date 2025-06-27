@@ -167,74 +167,9 @@ By understanding this simple flow: `input -> store -> process -> output`  you’
 
 ## Step 3: How to process / calculate?
 
-Almost every Python program follows the same basic pattern:
-1. **Accept input** from the user.
-2. **Store** that input in a variable.
-3. **Do some calculation or processing** with it.
-4. **Print the result** so the user can see what happened.
+Python code is executed by the CPU (Central Processing Unit) of the computer. When you perform calculations in Python using arithmetic operators, such as addition, subtraction, multiplication, and division, these calculations are executed by the CPU.
 
-For example, here’s a small program that asks the user for their name and age, then tells them how old they’ll be next year:
-
-```python
-# Ask the user for their name
-name = input("What is your name? ")
-
-# Ask the user for their age
-age = input("How old are you? ")
-
-# Convert the input age from text to a number
-age = int(age)
-
-# Add 1 to their age
-next_year_age = age + 1
-
-# Print a message with the result
-print("Hello,", name + "!")
-print("Next year you will be", next_year_age)
-```
-
-Let’s break it down:
-- **Input:** `input()` shows a message and waits for the user to type something.
-- **Store:** The typed answer is saved in a variable, like `name` or `age`.
-- **Calculate:** The program does some work — here, it converts the age to an `int` and adds `1`.
-- **Output:** Finally, `print()` shows the result in a friendly message.
-
-This simple flow — **input → process → output** — is the heart of programming. By combining input, variables, calculations, and `print()`, you can turn your ideas into working programs that interact with people and do useful things!
-
-
-
-
-
-
-
-------------------------
-### Variables and Data Types
-
-In programming, variables are used to store and manipulate data. In Python, you can define variables by giving them a name and assigning a value to 
-them. For example:
-
-```python
-# This is a comment statement. When we run a Python code, comments are ignored.
-# An example of assigning a value to a variable. Note the difference between a number and text (string)
-x = 10
-name = "John"
-```
-Here, the variable `x` is assigned the value `10`, and the variable `name` is assigned the string `"John"`. Running a program, when you assign a value to a variable in Python, the value is stored in the computer's memory (RAM) at a specific memory address.
-
-Usually we need to handle more values of the same concept. One solution would be to define several variables, but it will not be very efficient. We can collect more values in one place as a list. Then we can use lists. A list in Python is a collection of ordered elements enclosed in square brackets, and here's an example of initializing a list:
-
-```python
-fruits = ["apple", "banana", "orange"]
-even_digits = [0,2,4,6,8]
-```
-
-### Basic Calculations
-
-Python code is executed by the CPU (Central Processing Unit) of the computer. When you perform calculations in Python using arithmetic operators, such 
-as addition, subtraction, multiplication, and division, these calculations are executed by the CPU.
-
-The CPU retrieves the values stored in the memory (RAM), performs the calculations, and stores the results back in the memory if needed. This process 
-happens at a very high speed, allowing for quick computation.
+The CPU retrieves the values stored in the memory (RAM), performs the calculations, and stores the results back in the memory if needed. This process happens at a very high speed, allowing for quick computation.
 
 For example, let's perform some basic calculations in Python:
 
@@ -254,8 +189,6 @@ print(f)  # Output: 1.6666666666666667
 
 In this example, the variables a and b store numeric values. The CPU performs the calculations defined by the arithmetic operators `(+, -, *, /)`, and the results are printed using the `print()` function.
 
-### Data Types
-
 In the previous examples, you have learned about the distinction between numerical values and text, which are known as strings in Python. Python differentiates between these values based on their types. Each value in Python has a specific type associated with it, and you can determine the type of a data value using the `type()` function. For example:
 
 ```python
@@ -263,21 +196,30 @@ type_of_num = type(10)
 print(type_of_num) # Output: <class 'int'> which means the type is integer
 ```
 
-Sometimes, you may need to convert values from one type to another. This process is called type casting. Python provides various functions for type casting. For instance, you can convert an `int` to a `str` (string) using the `str()` function, or convert a str to an int using the `int()` function. Similarly, you can convert a `str` or an `int` to a `float` using the `float()` function. Here's an example of converting a `str` to an `int`:
+Sometimes, you may need to convert values from one type to another. This process is called type casting. Python provides various functions for type casting. For instance, you can convert an `int` to a `str` (string) using the `str()` function, or convert a str to an int using the `int()` function. Here's an example of converting a `str` to an `int`:
 
 ```python
-age_str = "25"
-age_int = int(age_str)
-print(age_int)
+# Ask the user for their name
+name = input("What is your name? ")
+
+# Ask the user for their age
+age = input("How old are you? ")
+
+# Convert the input age from text to a number
+age = int(age)
+
+# Add 1 to their age and prepare result message
+next_year_age = age + 1
+result_message = "Hello" + name + "." + " Next year you will be " + str(next_year_age) 
+
+# Print a message with the result
+print(result_message)
 ```
 
-### Input and Output in Python
+This simple Python program asks the user for their name and age, then tells them how old they will be next year. When the program uses `input()`, whatever the user types is always stored as text, called a string — even if the user enters a number like `20`, it’s actually stored as `"20"`. To do math with this input, the program converts the `age` from a string to an integer using `int(age)`. This makes it possible to add `1` to the age to find out how old the user will be next year. Then, when building the final message, the program combines pieces of text and the number for next year’s age. Because you can’t directly join a number to a string, it converts the number back to a string using `str(next_year_age)`. This shows how type conversion lets a program switch between text and numbers: input comes in as text, numbers are used for calculations, and results are turned back into text so they can be printed in a friendly message for the user.
 
-Input and output (I/O) in Python refer to the process of getting input from the user and displaying output to the user. Python provides built-in 
-functions for this purpose.
 
-The `input()` function allows interaction with the user by receiving input from the keyboard. It communicates with the computer's hardware I/O, which 
-includes the keyboard, to get the input. The entered value is then made available to the program for further processing. The type of the value returned to the program is of type `str`.
+---------------------
 
 The `print()` function is used to display output to the user. It communicates with the computer's hardware I/O, including the monitor or other output 
 devices, to display the output. The output is visible to the user through the screen or other output mediums.
