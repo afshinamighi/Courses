@@ -8,7 +8,18 @@ A computer program is simply a set of instructions that tells the computer what 
 
 Every program needs to accept some input, process it using logic and data types like numbers and text, and produce useful output. In this chapter, you will learn about the basic parts of a computer and how a simple Python program turns your ideas into actions that a computer can understand and execute.
 
-## Step 1: What is a Program?
+## Getting Started: The Core Building Blocks
+
+### Step 1: What is a Program?
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. understand the general concepts of computer hardware: Hard disk, RAM, CPU, IO.
+	2. understand the concept of (computer and non-computer) programs.
+	3. experience your first taste of Python without knowing all the details.
+```
 
 Understanding how a computer works is important for every programmer. Knowing the basics of hardware, operating systems, and how programs run will help you write better code and solve problems more easily. Even simple Python programs rely on these fundamentals to work correctly.
 
@@ -69,7 +80,17 @@ But it’s not enough for your code to be written correctly — it must also mak
 And that’s it — your first look at how your computer, files, and Python come together to turn your ideas into real results!
 
 
-## Step 2: Programs talk to you.
+### Step 2: Programs talk to you.
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. understand value, variable, primitive data types (int, str, float, boolean).
+	2. understand the concept of mutability (some data types are mutable and some are not).
+	3. implement Python programs containing: variables, assigning values, print.
+	4. interpret and implement basic operations of strings: concatenation (combining), duplicating, scanning and slicing.
+```
 
 Now that you know what a computer and a Python program are, it’s time to learn the basic building blocks you’ll use in every Python program you write.
 
@@ -165,7 +186,16 @@ If you accidentally make a typo, like writing `print(great_message)`, the syntax
 
 By understanding this simple flow: `input -> store -> process -> output`  you’re ready to write your own tiny programs that talk to people and turn their answers into something useful or fun.
 
-## Step 3: How to process / calculate?
+### Step 3: How to process / calculate?
+
+#### Goals:
+```
+After taking this step, you will be able to:
+	1. understand the main arithmetic operations in Python.
+	2. implement arithmetic expressions in Python.
+	3. convert one primitive data type to another using functions: int(), float(), str(), bool().
+	4. implement Python programs containing: input from the user, type conversion, calculation, printing.
+```
 
 Python code is executed by the CPU (Central Processing Unit) of the computer. When you perform calculations in Python using arithmetic operators, such as addition, subtraction, multiplication, and division, these calculations are executed by the CPU.
 
@@ -218,37 +248,164 @@ print(result_message)
 
 This simple Python program asks the user for their name and age, then tells them how old they will be next year. When the program uses `input()`, whatever the user types is always stored as text, called a string — even if the user enters a number like `20`, it’s actually stored as `"20"`. To do math with this input, the program converts the `age` from a string to an integer using `int(age)`. This makes it possible to add `1` to the age to find out how old the user will be next year. Then, when building the final message, the program combines pieces of text and the number for next year’s age. Because you can’t directly join a number to a string, it converts the number back to a string using `str(next_year_age)`. This shows how type conversion lets a program switch between text and numbers: input comes in as text, numbers are used for calculations, and results are turned back into text so they can be printed in a friendly message for the user.
 
+## Dig Deeper: Explore and Discover
 
----------------------
+This section invites the reader to move beyond the basics and use guided exploration to discover each concept in greater depth.
 
-The `print()` function is used to display output to the user. It communicates with the computer's hardware I/O, including the monitor or other output 
-devices, to display the output. The output is visible to the user through the screen or other output mediums.
+### Essentials
 
-So, the `input()` and `print()` functions in Python serve as a bridge between the program and the computer's hardware I/O. They allow the program to 
-interact with the user and exchange information through input and output operations facilitated by the computer's hardware components.
+1. What is a *type*? Provide five examples.
+2. What are the rules in defining a variable name? Define some variables in Python that are not permitted in Python. Experiment with breaking various rules in defining variables. Analyse the error message.
+3. We have learned that `=` is the operator that assigns a value to a variable. It does not mean *equals*. But, how can one check if two variables have equal values? 
+4. Name basic built-in data types in Python. Use examples.
+5. How can you identify the type of a value / variable?
+6. How can you convert:
+	- `int` to `str`
+	- `float` to `str`
+	- `str` to `float` 
+7. What are the character and text string types in Python? Make examples. 
+8. How can you combine several strings? Implement an example.
+9. Can you multiply a number with a string? What is the result? Implement an example.
+10. How can you get character 5 of a given string? How can you get the first character?
+11. How can you get a substring from a given string? For example, the postcodes in The Netherlands consist of 4 digits followed by 2 letters. How can you extract the letters from a given postcode?
+12. You have learned how to print something as an output of your program. How can you read something as input? What is the *function*? What is the type?
+13. What are the basic arithmetic operations? Make a list with the meaning (semantics) of each operation.
+14. Why *precedences* are important? Make examples.
 
-Here is an example:
+### Bonus
+
+### Go Beyond
+
+## Exercises: Practice and Apply
+
+### Step 01:
+
+1. Take each of the given following Python programs and carry out these steps:
+	- Write down sytactical elements that are understandable for you.
+	- Specify statements that you know (or you can guess) the results of the their executions.
+	- Share your lists within your learning group.
+	- Discuss what will be the result of the program (without execution).
+
+*Note*: Certainly there might be some lines that will be impossible to understand fully. The goal is to evaluate your first taste of Python programs and check how intutive they are. You will be learning all details in later stages. *Trust your intuition*.
 
 ```python
-# Getting user input
-name = input("Enter your name: ") # Note the text given to input()
-age = int(input("Enter your age: ")) # Pay attention to the type casting
-
-# Performing a calculation
-birth_year = 2023 - age
-
-# Displaying output
-print("Hello, " + name + "! You were born in", birth_year)
+#Code 02
+a = 16
+b = 12
+b = a
+a = 22
+print(a)
+print(b)
+# what will be printed here?
+```
+	
+```python
+#Code 03
+num = int(input("Enter a number"))
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("Result is", sum)
+```
+	
+```python
+#Code 04
+import random
+print(random.randint(0,9))
+```
+	
+```python
+#Code 05
+my_str = input("Enter a string: ")
+words = [word.lower() for word in my_str.split()]
+words.sort()
+print("The sorted words are:")
+for word in words:
+	print(word)
 ```
 
-In this example, the `input()` function is used to prompt the user to enter their name and age. The input for the age is type casted to an integer using the `int()` function to ensure it is treated as a numerical value.
 
-A calculation is performed to determine the birth year by subtracting the age from the current year `2023`. The result is stored in the `birth_year` variable.
-
-The `print()` function is then used to display a personalized message to the user, including their name and the calculated birth year. The string concatenation operator `+` is used to combine the strings and the variable value in the output.
+2. Using **OPyEditor** try to execute the given programs. Does output of the programs match with your expectations?
 
 
+### Step 02:
 
+1. Check the following program and write down what will be the result of the prints:
+
+```python
+x = 12
+y = 15
+z = 1
+y = z
+z = 12
+y = 13
+x = y 
+y = x
+z = 7
+print(x)
+print(y)
+print(z)
+```
+
+2. A phone number is a number. Yet we would want to save it as a text. Can you think of a reason why?
+3. The number in the address of your house, for example Kerkweg **8**, is a number. Yet we would want to save it as a text. Can you think of a reason why?
+4. What is an example from a number we use in the real world that we do want to save as a number in Python, not as a text.
+5. User input in Python is always considered a text, even if we just enter numbers, why would it act like this?
+6. Define a variable called zipcode (postcode) and give it the value of your own zipcode. Print it using `print()`.
+7. Define a variable called favorite food, give it the value `"Pizza"`. Print it. Change the value to `"Roti"`. Print it.  
+8. Define a variable that stores your school email address. Extract your student number from this email address.
+9. Write down the complete alphabet in a variable. Split it halfway over two different variables. Join them back together in the wrong order and print it. 
+10. Explain in your own words with a ```f``` style string is?
+
+### Step 03:
+
+1. Create two variables with a number in it, you can decide which numbers, add them together and print the result.
+2. Do the same for subtraction, devide and multiply.
+3. Get input from the user. Save it as a number. Print it.
+4. Try to divide something by zero. Describe the error you get.
+5. Create two variables with a text in it. Print them togeter at once, using only print statement.
+6. Python uses PEMDAS. What is that and is it different from the way you learned it?
+7. Create one calculation using at least four parantheses, three multiplications and four subtractions. Print the result.
+8. We can use a ```+``` or a ```,``` to combine two strings within a print. What's the difference?
+9. Using a program ask the user for input. Print the first and last characters from the input.
+Ask the user for a text input. Change both the first and last characters to uppercase and print it. 
+
+
+## Problems:
+
+*Note*: A systematic approach to transfer a solution in mind into a Python program can be challenging for novice programmers. 
+
+- A check list ([accessible here](./misc/checklist_metacog.pdf)) can be used to guide beginners to solve the following problems. 
+- A template and a couple of examples are provided [here](./misc/template.py). 
+- Do you still need more detailed guideline for solving problems? Read and practice [here](./misc/inf_bc_w01_problem_solving.md).
+
+Implement Python programs to solve the following problem statements:
+
+1. Write a program that asks the user to enter his or her name. The program should respond with a message that says hello to the user, using his or her name.
+	- *Step-02*: Complete solution.
+
+2. Write a program that asks the user to enter the width and length of a room. Once the values have been read, your program should compute and display the area of the room. The length and the width will be entered as floating point numbers. Include units in your prompt and output message; either feet or meters, depending on which unit you are more comfortable working with.
+	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Area of the Room: ```.
+	- *Step-03*: Complete solution, i.e. add calculations. 
+
+3. An online retailer sells two products: widgets and gizmos. Each widget weighs 75 grams. Each gizmo weighs 112 grams. Write a program that reads the number of widgets and the number of gizmos in an order from the user. Then your program should compute and display the total weight of the order.
+	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters the requested values the program prints only ```The Total Weight of the Order: ```.
+	- *Step-03*: Complete solution, i.e. add calculations. 
+
+4.  Develop a program that reads a four-digit integer from the user and displays the sum of the digits in the number. For example, if the user enters ```3141``` then your program should display ```3+1+4+1=9```.
+	- *Step-02*: Partial solution, i.e. no calculation yet. The user enters a four-digit integer the program prints only ```Sum: ```.
+	- *Step-03*: Complete solution. 
+
+5. Implement a program that a user enters number of days as input, and the program prints number of hours, minutes and seconds separately as output.
+	- *Step-02*: Partial solution, i.e. no calculation yet.
+	- *Step-03*: Complete solution, i.e. add calculations. 
+
+	
+<!--
 
 **Working with Strings**
 
@@ -283,4 +440,4 @@ Strings are pieces of text. You can do simple operations with strings:
 Slicing uses square brackets `[]` to pick part of the string. The first number is where to start, the second is where to stop (but not including the stop number).
 
 By understanding values, variables, primitive data types, mutability, and basic string operations, you now have the tools to write simple Python programs!
-
+-->
