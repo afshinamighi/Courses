@@ -1,4 +1,4 @@
-# Tutorial: Python 02
+# Python 02: Python Programs Need to Decide and Get Organized
 
 ## Introduction
 
