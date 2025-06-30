@@ -6,17 +6,14 @@ This document presents learning activities for Python 02. In Python 02, you will
 
 ## Getting Started: The Core Building Blocks
 
-### Step 1: Programs Decide
+### Step 1: Truth is crucial
 
 #### Goals:
 
 ```
 After taking this step, you will be able to:
 	1. interpret and implement boolean expressions.
-	2. implement Python programs with conditional statements.
 ```
-
-
 
 You already know how an arithmetic expression works in Python. For example: `result = 5 + 3 * 2`. This does a math calculation and gives a number.
 
@@ -34,6 +31,59 @@ is_not_equal = 5 != 3  # This is True
 ```
 
 These small checks are the building blocks of a boolean expression. They help your program make decisions by asking simple yes/no questions.
+
+Sometimes you want to check two things at the same time. For this, you can use and.
+
+For example, imagine you want to check: *Is a number bigger than 5 and smaller than 10?*
+
+You can write:
+
+```python
+number = 7
+result = number > 5 and number < 10
+print(result)  # This will be True
+```
+The and means both parts must be `True` for the whole thing to be `True`. A truth table shows what happens when you combine two `True/False` checks with `and`:
+
+
+| First check | Second check | Result |
+|-------------|---------------|--------|
+| True        | True          | True   |
+| True        | False         | False  |
+| False       | True          | False  |
+| False       | False         | False  |
+
+
+Example:
+
+```python
+x = 8
+
+# Is x bigger than 5 and smaller than 10?
+result = x > 5 and x < 10
+print(result)  # True, because both parts are True
+
+x = 3
+result = x > 5 and x < 10
+print(result)  # False, because the first part is False
+
+x = 12
+result = x > 5 and x < 10
+print(result)  # False, because the second part is False
+```
+So when you see and, remember: both conditions must be `True`. If not, the whole check is `False`!
+
+### Step 2: Programs decide
+
+#### Goals:
+
+```
+After taking this step, you will be able to:
+	1. implement Python programs with conditional statements.
+```
+
+
+
 
 Boolean expressions are very useful because they help your program make decisions. You use them with a conditional statement like `if`. Conditional statements allow you to execute different blocks of code based on certain conditions. The `if`-statement is used to check a condition and execute the block of code indented below it if the condition is true. If the condition is false, the block is skipped.
 
@@ -60,7 +110,7 @@ else:
 print("This statement always gets executed")
 ```
 
-### Step 2: Organize your programs
+### Step 3: Organize your programs
 
 #### Goals:
 
@@ -123,19 +173,23 @@ This section invites the reader to move beyond the basics and use guided explora
 
 ### Essentials
 
-   1. What is a comment? How can you specify a comment in Python?
-   2. What are: boolean values, boolean expressions, comparison operators?
-   3. What is a conditional statement in Python? What is correct syntax for a correct *if-else* statament? What is a *body* of a *if-else* statement?
-
-
-   1. What is a function in Python?
-   2. What are the main elements of a Python function? Define a simple function that does nothing.
-   3. How can a function be used (called)? 
-   4. How can one return the result of a function?
-   5. What are the arguments and/or parameters?
+1. What if you want your program to do something if at least one condition is True? Search for how the or operator works in Python. Write a small check that prints True if a number is less than 5 or bigger than 10.
+2. How can you turn True into False and False into True? Look up how the not operator works in Python. Try writing a tiny program that checks if a door is locked — and then shows the opposite using not.
+3. What are: boolean values, boolean expressions, comparison operators? Make a list of all comparison operators and provide one example for each.
+4. What is the general syntax for a conditional statement in Python? What is a *body* of a *if-else* statement?
+5. What are the main elements of a Python function? Define a simple function that does nothing.
+6. How can a function be used (called)? 
+7. How can one return the result of a function? Give an example
+8. What are the arguments and/or parameters? Give an example.
 
 
 ### Bonus
+
+1. Sometimes one if and one else is not enough. What if you need to check three or more options in a row? Find out what elif does and write a tiny program that prints a different message for “small”, “medium”, and “large”.
+2. How can a program make a decision, then make another decision only if the first one is true? Try to find out what “nested if” means. Write a simple program that checks if someone is old enough to enter a club — and inside that, checks if they have a ticket.
+3. What happens if you mix and and or in the same check? Look up how Python decides which part to check first. Try writing a condition that checks if a number is smaller than 5 or bigger than 10 and even. See if you can figure out when it’s True or False!
+4. Can you use not with and to flip a whole check? Find an example of not combined with and. Write a tiny program that checks if someone is not an adult — they are under 18 and not an adult. Try to test it with a few ages!
+5. What is the real difference between return and print in a function? Look up how return gives you back a value you can store. Write two tiny functions: one that prints the result of adding two numbers, and one that returns the result — then try to use that result in another calculation!
 
 ### Go Beyond
 
