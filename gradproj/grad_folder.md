@@ -6,7 +6,7 @@ The content is a work in progress and will continue to evolve based on feedback 
 
 ## Graduation Folder Structure:
 
-GraduationFolder
+It is recommended to construct your graduation folder as depicted below:
 
 ```
 |--- Professional Skills, Manage and Control
