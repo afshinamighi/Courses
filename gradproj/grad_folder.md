@@ -8,32 +8,21 @@ The content is a work in progress and will continue to evolve based on feedback 
 
 GraduationFolder
 
-├── Professional Skills, Manage and Control
-
+```
+|--- Professional Skills, Manage and Control
       |-- [contains all the items prepared for this competency]
-
-├── Analysis
-
+|--- Analysis
       |-- [contains all the items prepared for this competency]
-
-├── Design
-
+|--- Design
       |-- [contains all the items prepared for this competency]
-
-├── Implementation
-
+|--- Implementation
       |-- [contains all the items prepared for this competency]
-
-|── Advice
-
+|--- Advice
       |-- [contains all the items prepared for this competency]
-
-|---misc
-
+|--- misc
       |-- [contains extra artefacts / reports / evidence that don't fit within the competencies described]
-
 readme [read me file according to the templated provided as docx or pdf]
-
+```
 
 ## Professional Skills, Manage and Control
 
