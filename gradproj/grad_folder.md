@@ -4,6 +4,24 @@ This document provides an overview of possible items that students **may include
 
 The content is a work in progress and will continue to evolve based on feedback from students and colleagues.
 
+## Graduation Folder Structure:
+
+GraduationFolder
+├── Professional Skills, Manage and Control
+      |-- [contains all the items prepared for this competency]
+├── Analysis
+      |-- [contains all the items prepared for this competency]
+├── Design
+      |-- [contains all the items prepared for this competency]
+├── Implementation
+      |-- [contains all the items prepared for this competency]
+└── Advice
+      |-- [contains all the items prepared for this competency]
+|---misc
+      |-- [contains extra artefacts / reports / evidence that don't fit within the competencies described]
+readme [read me file according to the templated provided as docx or pdf]
+
+
 ## Professional Skills, Manage and Control
 
 - Process, Workflow, Project Management
