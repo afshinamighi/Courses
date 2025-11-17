@@ -1,6 +1,6 @@
 # Graduation Folder
 
-This document provides an overview of possible items that students may include in their graduation folder. It is not intended to be a strict checklist, but rather a guideline to help students reflect on what evidence they can prepare to best demonstrate their work, growth, and competencies during the graduation project.
+This document provides an overview of possible items that students **may include** in their graduation folder. It is not intended to be a strict checklist, but rather a guideline to help students reflect on what evidence they can prepare to best demonstrate their work, growth, and competencies during the graduation project.
 
 The content is a work in progress and will continue to evolve based on feedback from students and colleagues.
 
