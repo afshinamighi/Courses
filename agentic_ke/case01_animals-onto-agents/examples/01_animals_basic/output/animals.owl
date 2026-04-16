@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/animals.owl"
+         xmlns="http://example.org/animals.owl#">
+
+<owl:Ontology rdf:about="http://example.org/animals.owl"/>
+
+<owl:ObjectProperty rdf:about="#hasTrait">
+  <rdfs:domain rdf:resource="#Animal"/>
+  <rdfs:range rdf:resource="#Animal"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Animal">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Vertebrate">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Invertebrate">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mammal">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf rdf:resource="#Vertebrate"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dog">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf rdf:resource="#Mammal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cat">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf rdf:resource="#Mammal"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#Rex">
+  <rdf:type rdf:resource="#Dog"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Whiskers">
+  <rdf:type rdf:resource="#Cat"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

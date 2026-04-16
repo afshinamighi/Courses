@@ -1,0 +1,4 @@
+anthropic>=0.25.0
+owlready2>=0.46
+python-dotenv>=1.0.0
+pydantic>=2.0.0
