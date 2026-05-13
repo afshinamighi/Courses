@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-Anonymity Exercise</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f5f4f0;
+    --surface: #ffffff;
+    --surface-alt: #f0efe9;
+    --border: #d8d6ce;
+    --border-strong: #b0ada3;
+    --text: #1a1916;
+    --text-muted: #6b6860;
+    --text-faint: #9b9890;
+    --accent: #1a1916;
+    --omit-bg: #fff3e0;
+    --omit-border: #e0a030;
+    --omit-text: #7a4a00;
+    --pass-bg: #e8f4e8;
+    --pass-border: #4a9e4a;
+    --pass-text: #1e5c1e;
+    --fail-bg: #fdecea;
+    --fail-border: #c94040;
+    --fail-text: #7a1e1e;
+    --group-colors: #dbeafe, #dcfce7, #fef9c3, #fce7f3, #ede9fe, #ffedd5;
+  }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+  }
+
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1.5px solid var(--text);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h1 strong { font-weight: 500; }
+
+  .instructions {
+    background: var(--surface);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .instructions ol { padding-left: 1.25rem; }
+  .instructions li { margin-bottom: 4px; }
+  .instructions strong { color: var(--text); font-weight: 500; }
+
+  .controls-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .k-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  input[type=number] {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    font-weight: 500;
+    width: 60px;
+    padding: 6px 10px;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--text);
+    text-align: center;
+  }
+
+  input[type=number]:focus { outline: 2px solid var(--text); outline-offset: 1px; }
+
+  .table-wrap {
+    background: var(--surface);
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    table-layout: fixed;
+  }
+
+  thead { background: var(--surface-alt); }
+
+  th {
+    padding: 0;
+    border-bottom: 1px solid var(--border);
+    border-right: 0.5px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th:last-child { border-right: none; }
+
+  .th-inner {
+    padding: 10px 12px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .th-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+
+  th.omitted-col .th-name { color: var(--text-faint); text-decoration: line-through; }
+
+  .omit-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    padding: 3px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--border-strong);
+    background: transparent;
+    color: var(--text-muted);
+    align-self: flex-start;
+    transition: all 0.15s;
+  }
+
+  .omit-btn:hover { border-color: var(--omit-border); color: var(--omit-text); background: var(--omit-bg); }
+  .omit-btn.active { background: var(--omit-bg); color: var(--omit-text); border-color: var(--omit-border); font-weight: 500; }
+
+  td {
+    padding: 0;
+    border-bottom: 0.5px solid var(--border);
+    border-right: 0.5px solid var(--border);
+    vertical-align: middle;
+  }
+
+  td:last-child { border-right: none; }
+  tr:last-child td { border-bottom: none; }
+
+  td.omitted-col { opacity: 0.25; pointer-events: none; }
+
+  td input[type=text] {
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    display: block;
+  }
+
+  td input[type=text]:focus {
+    outline: none;
+    background: #fffde7;
+  }
+
+  td input[type=text]:disabled { color: var(--text-faint); }
+
+  td.frozen {
+    font-size: 13px;
+    padding: 8px 12px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: 1.5px solid var(--text);
+    background: var(--text);
+    color: var(--bg);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn-primary:hover { background: #3a3830; border-color: #3a3830; }
+
+  .btn-secondary {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: 1px solid var(--border-strong);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn-secondary:hover { border-color: var(--text); color: var(--text); }
+
+  .result-box {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    display: none;
+  }
+
+  .result-box.warn  { background: var(--omit-bg);  border-color: var(--omit-border); }
+  .result-box.pass  { background: var(--pass-bg);   border-color: var(--pass-border); }
+  .result-box.fail  { background: var(--fail-bg);   border-color: var(--fail-border); }
+
+  .result-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .result-box.warn .result-title  { color: var(--omit-text); }
+  .result-box.pass .result-title  { color: var(--pass-text); }
+  .result-box.fail .result-title  { color: var(--fail-text); }
+
+  .result-detail {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-muted);
+  }
+
+  .result-detail strong { color: var(--text); }
+
+  code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    background: rgba(0,0,0,0.06);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <p class="eyebrow">Workshop Exercise</p>
+    <h1><strong>K-Anonymity</strong> — Protect a Dataset</h1>
+  </header>
+
+  <div class="instructions">
+    <ol>
+      <li>Study the raw table below. <strong>Identify which column is an explicit identifier</strong> and click <em>Omit</em> to remove it.</li>
+      <li><strong>Generalize</strong> the remaining columns where needed — for example, replace exact ages with ranges like <code>30–40</code>, or shorten ZIP codes.</li>
+      <li>Set your <strong>target k</strong> and click <em>Check k-anonymity</em>. Every combination of values must appear at least k times.</li>
+    </ol>
+  </div>
+
+  <div class="controls-top">
+    <span class="k-label">Target k =</span>
+    <input type="number" id="k-val" min="1" max="10" value="2">
+  </div>
+
+  <div class="table-wrap">
+    <table id="data-table">
+      <thead><tr id="header-row"></tr></thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <div class="actions">
+    <button class="btn-primary" onclick="checkAnonymity()">Check k-anonymity</button>
+    <button class="btn-secondary" onclick="resetTable()">Reset to raw data</button>
+  </div>
+
+  <div class="result-box" id="result-box"></div>
+
+</div>
+
+<script>
+const COLS = [
+  { label: 'Email',     editable: false, sensitive: false },
+  { label: 'Age',       editable: true,  sensitive: false },
+  { label: 'ZIP code',  editable: true,  sensitive: false },
+  { label: 'Gender',    editable: true,  sensitive: false },
+  { label: 'Condition', editable: false, sensitive: true  },
+];
+
+// Target solution for k=2: omit Email, generalize Age to decades, ZIP to 4 digits.
+// Groups after anonymization:
+//   (30–40, 1012, F) → alice, carol          [2 records]
+//   (30–40, 1012, M) → bob, david            [2 records]
+//   (40–50, 1013, F) → emma, iris            [2 records]
+//   (40–50, 1013, M) → frank, henry, james   [3 records — the "at least" lesson]
+//   (60–70, 1015, F) → grace                 [would be 1 — needs more generalization or ZIP merge]
+// Rows are shuffled so pairs/triples are not adjacent.
+const RAW = [
+  ['frank.b@example.com',  '47', '1013 XZ', 'M', 'Asthma'],
+  ['alice.v@example.com',  '34', '1012 AB', 'F', 'Diabetes'],
+  ['henry.d@example.com',  '43', '1013 PL', 'M', 'Flu'],
+  ['carol.m@example.com',  '38', '1012 CD', 'F', 'Flu'],
+  ['james.r@example.com',  '49', '1013 KW', 'M', 'Cancer'],
+  ['grace.t@example.com',  '62', '1015 QR', 'F', 'Asthma'],
+  ['bob.n@example.com',    '31', '1012 EF', 'M', 'Cancer'],
+  ['iris.p@example.com',   '44', '1013 AB', 'F', 'Diabetes'],
+  ['david.s@example.com',  '37', '1012 GH', 'M', 'Flu'],
+  ['emma.k@example.com',   '41', '1013 CD', 'F', 'Cancer'],
+];
+
+const GROUP_COLORS = ['#dbeafe','#dcfce7','#fef9c3','#fce7f3','#ede9fe','#ffedd5'];
+
+let tableData = RAW.map(r => [...r]);
+let omittedCol = null;
+
+function buildTable() {
+  const hr = document.getElementById('header-row');
+  hr.innerHTML = '';
+  COLS.forEach((col, ci) => {
+    const th = document.createElement('th');
+    if (omittedCol === ci) th.classList.add('omitted-col');
+    const inner = document.createElement('div');
+    inner.className = 'th-inner';
+    const name = document.createElement('span');
+    name.className = 'th-name';
+    name.textContent = col.label;
+    inner.appendChild(name);
+    const btn = document.createElement('button');
+    btn.className = 'omit-btn' + (omittedCol === ci ? ' active' : '');
+    btn.textContent = omittedCol === ci ? '✕ Omitted' : 'Omit';
+    btn.onclick = () => toggleOmit(ci);
+    inner.appendChild(btn);
+    th.appendChild(inner);
+    hr.appendChild(th);
+  });
+
+  const tbody = document.getElementById('table-body');
+  tbody.innerHTML = '';
+  tableData.forEach((row, ri) => {
+    const tr = document.createElement('tr');
+    row.forEach((cell, ci) => {
+      const td = document.createElement('td');
+      const col = COLS[ci];
+      const isOmitted = omittedCol === ci;
+      if (isOmitted) td.classList.add('omitted-col');
+
+      if (!col.editable) {
+        td.classList.add('frozen');
+        td.textContent = cell;
+      } else {
+        const inp = document.createElement('input');
+        inp.type = 'text';
+        inp.value = cell;
+        inp.disabled = isOmitted;
+        inp.addEventListener('input', () => {
+          tableData[ri][ci] = inp.value;
+          clearResult();
+        });
+        td.appendChild(inp);
+      }
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+}
+
+function toggleOmit(ci) {
+  omittedCol = omittedCol === ci ? null : ci;
+  buildTable();
+  clearResult();
+}
+
+function clearResult() {
+  const box = document.getElementById('result-box');
+  box.style.display = 'none';
+  box.className = 'result-box';
+  clearHighlights();
+}
+
+function clearHighlights() {
+  document.querySelectorAll('#table-body tr').forEach(tr => tr.style.background = '');
+}
+
+function resetTable() {
+  tableData = RAW.map(r => [...r]);
+  omittedCol = null;
+  buildTable();
+  clearResult();
+}
+
+function checkAnonymity() {
+  const k = parseInt(document.getElementById('k-val').value) || 2;
+
+  if (omittedCol === null) {
+    showResult('warn', 'No column omitted', 'Identify the explicit identifier in the table and click <strong>Omit</strong> under that column before checking.');
+    return;
+  }
+
+  const activeCols = COLS.map((c, i) => i).filter(i => i !== omittedCol && !COLS[i].sensitive);
+
+  const groups = {};
+  tableData.forEach((row, ri) => {
+    const key = activeCols.map(ci => (tableData[ri][ci] || '').trim().toLowerCase()).join('||');
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(ri);
+  });
+
+  const violating = Object.entries(groups).filter(([, idxs]) => idxs.length < k);
+  const passing   = Object.entries(groups).filter(([, idxs]) => idxs.length >= k);
+  const isAnon    = violating.length === 0;
+
+  clearHighlights();
+  let ci2 = 0;
+  Object.entries(groups).forEach(([, idxs]) => {
+    const bg = GROUP_COLORS[ci2 % GROUP_COLORS.length];
+    idxs.forEach(ri => {
+      const tr = document.querySelectorAll('#table-body tr')[ri];
+      if (tr) tr.style.background = bg;
+    });
+    ci2++;
+  });
+
+  const omitLabel = COLS[omittedCol].label;
+  const activeLabels = activeCols.map(i => COLS[i].label);
+
+  let detail = `Omitted: <strong>${omitLabel}</strong> &nbsp;·&nbsp; Grouped on: <strong>${activeLabels.join(', ')}</strong><br><br>`;
+
+  if (isAnon) {
+    detail += `All ${Object.keys(groups).length} groups have ≥ ${k} records:`;
+    passing.forEach(([key, idxs]) => {
+      detail += `<br>· (${key.split('||').join(', ')}) → ${idxs.length} records`;
+    });
+  } else {
+    detail += `${violating.length} group${violating.length > 1 ? 's' : ''} violate k=${k}:`;
+    violating.forEach(([key, idxs]) => {
+      detail += `<br>· (${key.split('||').join(', ')}) → only ${idxs.length} record${idxs.length > 1 ? 's' : ''} (need ${k})`;
+    });
+    if (passing.length) {
+      detail += `<br><br>${passing.length} group${passing.length > 1 ? 's' : ''} already satisfy k=${k}.`;
+    }
+  }
+
+  showResult(isAnon ? 'pass' : 'fail',
+    isAnon ? `✓ The table is ${k}-anonymous` : `✗ The table is not ${k}-anonymous`,
+    detail);
+}
+
+function showResult(type, title, detail) {
+  const box = document.getElementById('result-box');
+  box.className = 'result-box ' + type;
+  box.style.display = 'block';
+  box.innerHTML = `<div class="result-title">${title}</div><div class="result-detail">${detail}</div>`;
+}
+
+buildTable();
+</script>
+</body>
+</html>
