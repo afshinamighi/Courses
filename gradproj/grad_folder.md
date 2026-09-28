@@ -36,7 +36,7 @@ readme [read me file according to the templated provided as docx or pdf]
 This section of the graduation folder contains evidence that demonstrates how the student managed, structured, communicated, and technically controlled the graduation project. The artefacts included here should show professional behavior, informed decision-making, and reflective practice throughout the project.
 
 
-### Process, Workflow, Project Management
+### Project Management, Process, Workflow
 
 - **Project charter**  
   A concise description of the project’s purpose, scope, stakeholders, constraints, and success criteria, agreed upon with supervisors.
@@ -53,9 +53,10 @@ This section of the graduation folder contains evidence that demonstrates how th
 - **Product backlog**  
   A prioritized list of features, user stories, or tasks, including acceptance criteria where applicable.
 
-- **Retrospective summaries**  
-  Reflections on team performance, lessons learned, and improvement actions identified during retrospectives.
+- **Retrospectives**  
+  Evidence of retrospectives and reflections on team performance, lessons learned, and improvement actions identified during retrospectives.
 
+<!--
 - **Work breakdown structure (WBS)**  
   A hierarchical decomposition of the project scope into manageable tasks and deliverables.
 
@@ -64,7 +65,7 @@ This section of the graduation folder contains evidence that demonstrates how th
 
 - **Task estimates and time tracking logs**  
   Records comparing estimated effort with actual time spent, including reflections on deviations.
-
+-->
 ---
 
 ### Communication, Collaboration and Planning
@@ -81,6 +82,7 @@ This section of the graduation folder contains evidence that demonstrates how th
 - **Collaboration channel guidelines**  
   Agreed rules on how communication tools are used within the project.
 
+<!--
 - **Project timeline and milestones**  
   A high-level overview of planned phases, key deliverables, and deadlines.
 
@@ -101,7 +103,7 @@ This section of the graduation folder contains evidence that demonstrates how th
 
 - **Team agreements and working agreements**  
   Explicit agreements defining collaboration, communication, and decision-making practices.
-
+-->
 
 ### Version Control, CI/CD, Cloud Infrastructure
 
@@ -120,9 +122,17 @@ This section of the graduation folder contains evidence that demonstrates how th
 - **CI pipeline configuration**  
   Configuration files that automate building, testing, and validation steps.
 
+<!--
 - **CI metrics summary**  
   Collected metrics such as build times, test results, or coverage, with brief interpretation.
 
+- **Notes on image optimization and caching**  
+  Reflections on container optimization techniques applied during the project.
+
+- **Documentation on scaling, resource limits, monitoring**  
+  Evidence of considerations for performance, reliability, and observability.
+
+-->
 - **Deployment pipeline scripts**  
   Scripts that define automated deployment processes.
 
@@ -135,14 +145,10 @@ This section of the graduation folder contains evidence that demonstrates how th
 - **Docker Compose setup for local development**  
   Configuration supporting local development of multi-service applications.
 
-- **Notes on image optimization and caching**  
-  Reflections on container optimization techniques applied during the project.
 
 - **Deployment and service YAML manifests**  
   Infrastructure-as-code definitions for deployed services and applications.
 
-- **Documentation on scaling, resource limits, monitoring**  
-  Evidence of considerations for performance, reliability, and observability.
 
 - **Cloud resource provisioning notes**  
   Documentation explaining how cloud resources were created, configured, and managed.
