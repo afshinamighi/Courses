@@ -177,9 +177,9 @@ This section of the graduation folder contains evidence that demonstrates how th
   Requirements describing quality attributes such as performance, security, usability, and reliability, expressed in measurable terms.
 
 - **System behaviour descriptions for all major interactions**  
-  Clear explanations of how the system behaves in response to user actions or external events.
+  Clear explanations of how the current system behaves in response to user actions or external events.
 
-- **Data definitions and data dictionary**  
+- **Data definitions**  
   Documentation of key data entities, attributes, formats, and relationships used within the system.
 
 - **Interface specifications for user interfaces, external systems, and APIs**  
@@ -274,11 +274,15 @@ This section of the graduation folder contains evidence that demonstrates how th
 
 ## Advice
 
+This section of the graduation folder contains evidence that demonstrates how the student advices the company regarding the problem statement. In general there are two types of the advices: 1. Advice that explains the solution for the problem statementThe artefacts should show structured thinking, 2. Advice about the future of the project. 
+
+---
+
 - **Opportunities for improvement report**  
-  Clearly formulated improvement opportunities derived from the analysis.
+  Clearly formulated improvement opportunities derived from the analysis and the implementation of your solution.
 
 - **Evaluation criteria and justification for chosen approach**  
-  Explicit criteria used to evaluate alternatives and reasoning behind the final choice.
+  Explicit criteria used to evaluate alternatives and reasoning behind the final choice. It must be clear why do you think you advice will improve the project.
 
 
 - **Project Process improvement proposals**  
@@ -289,7 +293,6 @@ This section of the graduation folder contains evidence that demonstrates how th
 
 
 
-[in progress]
 
 ## Design
 
