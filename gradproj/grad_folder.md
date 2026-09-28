@@ -355,6 +355,8 @@ Modeling (UML, C4, etc) is an effective way to make these design decisions expli
 
 This section of the graduation folder contains evidence that demonstrates how the student translates the design into a working technical solution. The artefacts should demonstrate the ability to develop, integrate, test, and document software using appropriate technologies and software engineering practices. The emphasis is not only on whether the solution works, but also on the quality, correctness, maintainability, and technical depth of the implementation.
 
+---
+
 - **Source Code**
   Relevant parts of the implemented software that demonstrate the realization of the main functionality and technically significant components. The code should be structured, readable, maintainable, and consistent with the design choices made in the project.
 
@@ -369,7 +371,7 @@ This section of the graduation folder contains evidence that demonstrates how th
 
 - **Technical Documentation**
     Documentation that explains the technically significant aspects of the implementation and enables another developer to understand and continue working with the software. This may include design patterns, interfaces and APIs, abstraction and inheritance structures, concurrency and asynchronous processing, algorithms and complex logic, data structures, error and exception handling, security mechanisms, external integrations, performance optimizations, important dependencies, and other non-trivial implementation choices. Where relevant, code fragments, technical diagrams, or references to specific parts of the source code should be used to explain these features.
-    
+
 <!--
 ## Design
 
