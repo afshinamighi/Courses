@@ -192,7 +192,7 @@ The evidence in this section should therefore demonstrate that the student can i
   Clear explanations of how the current system behaves in response to user actions or external events.
 
 - **Data definitions**  
-  Documentation of key data entities, attributes, formats, and relationships used within the system.
+  Documentation of key data entities, attributes, formats, and relationships used within the previous or current system.
 
 - **Interface specifications for user interfaces, external systems, and APIs**  
   Descriptions of how users and other systems interact with the software, including inputs, outputs, and constraints.
@@ -321,7 +321,7 @@ Design refers to the choices and decisions you make about how the different comp
 
 Within this competency, the student must provide evidence of the design decisions that determine both the structure and the behaviour of the system. This includes identifying relevant components, defining their responsibilities, describing the relationships and interactions between them, and explaining the reasoning behind important design choices.
 
-Modeling is an effective way to make these design decisions explicit and understandable. Models and diagrams can be used to represent different aspects of the system, such as its components and their relationships, the flow of information, or the interactions that take place during a particular process. A good model should not only show what the system looks like, but should also help communicate and justify the design decisions that were made.
+Modeling (UML, C4, etc) is an effective way to make these design decisions explicit and understandable. Models and diagrams can be used to represent different aspects of the system, such as its components and their relationships, the flow of information, or the interactions that take place during a particular process. A good model should not only show what the system looks like, but should also help communicate and justify the design decisions that were made.
 
 ---
 
@@ -346,14 +346,30 @@ Modeling is an effective way to make these design decisions explicit and underst
 - **Test Design**
   Systematic testing requires a well-defined test design. This includes defining what needs to be tested, the test criteria and scenarios, the test execution plan, and the expected results and acceptance criteria. A proper test design ensures that testing is structured, repeatable, and aligned with the requirements and quality goals of the project.
 
-[in progress]
+- **Data Models**
+  High-level models and diagrams that represent the main data entities and their relationships within the proposed system. They provide an overview of how the important data concepts are organized and connected, without specifying detailed attributes or implementation-level structures.[in progress]
 
 
 
 ## Implementation
 
-[in progress]
+This section of the graduation folder contains evidence that demonstrates how the student translates the design into a working technical solution. The artefacts should demonstrate the ability to develop, integrate, test, and document software using appropriate technologies and software engineering practices. The emphasis is not only on whether the solution works, but also on the quality, correctness, maintainability, and technical depth of the implementation.
 
+- **Source Code**
+  Relevant parts of the implemented software that demonstrate the realization of the main functionality and technically significant components. The code should be structured, readable, maintainable, and consistent with the design choices made in the project.
+
+- **Technical Scripts and Configuration**
+  Scripts and configuration files that support the implementation, such as data-processing scripts, database scripts, API integrations, build scripts, configuration files, migration scripts, or automation scripts.
+
+- **Tests and Test Results**
+  Automated or manual test implementations together with their results, demonstrating that important functionality and requirements have been systematically verified. Examples include unit, integration, system, performance, and security tests.
+
+- **Working Software and Integrated Components**
+    Evidence that the developed components have been successfully integrated into a working solution. This may include a prototype, application, API, service, database, or other executable software, together with evidence demonstrating its functionality and integration.
+
+- **Technical Documentation**
+    Documentation that explains the technically significant aspects of the implementation and enables another developer to understand and continue working with the software. This may include design patterns, interfaces and APIs, abstraction and inheritance structures, concurrency and asynchronous processing, algorithms and complex logic, data structures, error and exception handling, security mechanisms, external integrations, performance optimizations, important dependencies, and other non-trivial implementation choices. Where relevant, code fragments, technical diagrams, or references to specific parts of the source code should be used to explain these features.
+    
 <!--
 ## Design
 
