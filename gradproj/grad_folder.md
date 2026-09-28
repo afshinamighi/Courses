@@ -346,12 +346,13 @@ Modeling is an effective way to make these design decisions explicit and underst
 - **Test Design**
   Systematic testing requires a well-defined test design. This includes defining what needs to be tested, the test criteria and scenarios, the test execution plan, and the expected results and acceptance criteria. A proper test design ensures that testing is structured, repeatable, and aligned with the requirements and quality goals of the project.
 
+[in progress]
 
 
 
 ## Implementation
 
-[todo]
+[in progress]
 
 <!--
 ## Design
